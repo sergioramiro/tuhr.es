@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { calcularIndemnizacion, type DespidoInput } from '../../lib/despido';
 
 export default function SimuladorDespido() {
-  const [salarioMensual, setSalarioMensual] = useState<number>(2000);
+  const [salarioAnual, setSalarioAnual] = useState<number>(30000);
   const [anosTrabajados, setAnosTrabajados] = useState<number>(3);
   const [mesesTrabajados, setMesesTrabajados] = useState<number>(0);
   const [tipoDespido, setTipoDespido] = useState<DespidoInput['tipoDespido']>('improcedente');
 
   const input: DespidoInput = {
-    salarioMensual,
+    salarioAnual,
     anosTrabajados,
     mesesTrabajados,
     fechaInicio: new Date('2020-01-01'),
@@ -18,42 +18,48 @@ export default function SimuladorDespido() {
 
   const tipoDespidoLabels: Record<string, string> = {
     improcedente: 'Despido improcedente',
-    objetivo: 'Despido objetivo',
+    objetivo: 'Despido objetivo (ETOP)',
     procedente: 'Despido procedente',
+    temporal: 'Fin de contrato temporal',
   };
 
   const tipoDespidoDescriptions: Record<string, string> = {
-    improcedente: 'El empresa no acredita causa. Indemnización de 33 días/año (tope 24 mensualidades).',
-    objetivo: 'Causas económicas, técnicas, organizativas o de producción. Indemnización de 20 días/año (tope 12 mensualidades).',
-    procedente: 'Incumplimiento grave del trabajador. Sin indemnización (salvo que el convenio mejore).',
+    improcedente: 'El empresario no acredita causa. 33 días/año, tope 24 mensualidades.',
+    objetivo: 'Causas económicas, técnicas, organizativas o de producción. 20 días/año, tope 12 mensualidades.',
+    procedente: 'Incumplimiento grave del trabajador. Sin indemnización.',
+    temporal: 'Finalización del contrato temporal. 12 días/año, sin tope mensual.',
   };
 
   return (
     <div className="max-w-2xl mx-auto">
       <div className="bg-surface-card rounded-card p-space-xl shadow-card border border-outline-variant/30">
         <div className="space-y-space-lg">
-          {/* Salario mensual */}
+          {/* Salario anual */}
           <div>
             <label className="block text-body-sm font-semibold text-on-surface mb-space-sm">
-              Salario bruto mensual (€)
+              Salario bruto anual (€) — incluye pagas extras
             </label>
             <input
               type="number"
-              value={salarioMensual}
-              onChange={(e) => setSalarioMensual(Number(e.target.value))}
+              value={salarioAnual}
+              onChange={(e) => setSalarioAnual(Number(e.target.value))}
               className="w-full px-space-md py-space-sm border border-outline-variant rounded-input text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none"
               min={0}
-              step={100}
+              step={500}
             />
             <input
               type="range"
-              min={800}
-              max={10000}
-              step={100}
-              value={salarioMensual}
-              onChange={(e) => setSalarioMensual(Number(e.target.value))}
+              min={10000}
+              max={120000}
+              step={1000}
+              value={salarioAnual}
+              onChange={(e) => setSalarioAnual(Number(e.target.value))}
               className="w-full mt-space-sm accent-primary"
             />
+            <div className="flex justify-between text-body-sm text-on-surface/50 mt-1">
+              <span>10.000€</span>
+              <span>120.000€</span>
+            </div>
           </div>
 
           {/* Tiempo trabajado */}
@@ -110,7 +116,7 @@ export default function SimuladorDespido() {
               Tipo de despido
             </label>
             <div className="space-y-space-sm">
-              {(['improcedente', 'objetivo', 'procedente'] as const).map((tipo) => (
+              {(['improcedente', 'objetivo', 'temporal', 'procedente'] as const).map((tipo) => (
                 <button
                   key={tipo}
                   onClick={() => setTipoDespido(tipo)}
@@ -147,6 +153,11 @@ export default function SimuladorDespido() {
               ⚠️ Se ha aplicado el tope de {result.topeMensualidades} mensualidades
             </p>
           )}
+          {result.baremoDoble && (
+            <p className="mt-space-sm text-body-sm text-blue-600 font-semibold">
+              ℹ️ Baremo doble aplicado (contrato pre/post 12/02/2012)
+            </p>
+          )}
         </div>
 
         <div className="space-y-space-sm">
@@ -159,12 +170,12 @@ export default function SimuladorDespido() {
             <span className="font-semibold text-on-surface">{result.diasPorAno} días</span>
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
-            <span className="text-on-surface/60">Total días de indemnización</span>
-            <span className="font-semibold text-on-surface">{result.desglose.diasTotales} días</span>
-          </div>
-          <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Salario diario</span>
             <span className="font-semibold text-on-surface">{result.desglose.salarioDiario.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+          </div>
+          <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
+            <span className="text-on-surface/60">Meses totales trabajados</span>
+            <span className="font-semibold text-on-surface">{result.desglose.mesesTotales} meses</span>
           </div>
           {!result.topeAplicado && result.tipoDespido !== 'procedente' && (
             <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
