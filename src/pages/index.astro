@@ -1,0 +1,220 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="tuhr.es — Calculadoras, plantillas y guías laborales para trabajadores y autónomos"
+  description="Herramientas gratuitas para trabajadores y autónomos en España: calcula tu nómina, finiquito y pagas extras. Descarga plantillas de contratos y consulta guías laborales."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "tuhr.es",
+      "url": "https://tuhr.es",
+      "description": "Calculadoras, plantillas y guías laborales para trabajadores y autónomos en España",
+      "inLanguage": "es"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo calcular mi nómina bruto a neto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Introduce tu salario bruto anual, pagas extras y estado civil en la calculadora de nómina. El resultado incluye las retenciones de IRPF, cuotas de Seguridad Social y el neto mensual que recibirás."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto me corresponde de finiquito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El finiquito incluye las partes proporcionales de vacaciones no disfrutadas, pagas extras pendientes y el día_Working del mes en curso. Usa nuestra calculadora de finiquito para obtener una estimación según tu tipo de contrato y antigüedad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué documentos necesito para un contrato de alquiler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Un contrato de alquiler válido en España debe incluir las partes, el inmueble, la renta, la duración y las condiciones. Descarga nuestra plantilla de contrato de arrendamiento de vivienda, cumplimenta los datos y fírmalo con tu arrendador."
+          }
+        }
+      ]
+    }
+    </script>
+  </Fragment>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-16 max-w-[72rem] mx-auto px-gutter-desktop flex items-center justify-between gap-space-md">
+      <a href="/" class="flex items-center gap-space-sm no-underline">
+        <span class="font-headline text-headline-md font-extrabold text-on-surface tracking-tight">tuhr<span class="text-primary">.es</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-space-lg text-body-sm font-semibold">
+        <a href="/calculadoras/" class="text-on-surface/70 hover:text-primary transition-colors">Calculadoras</a>
+        <a href="/plantillas/" class="text-on-surface/70 hover:text-primary transition-colors">Plantillas</a>
+        <a href="/guias/" class="text-on-surface/70 hover:text-primary transition-colors">Guías</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-16">
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-primary-fixed/40 to-surface">
+      <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl md:py-space-3xl text-center">
+        <h1 class="font-headline text-headline-xl md:text-headline-xl font-extrabold text-on-surface leading-tight max-w-3xl mx-auto">
+          Herramientas laborales para <span class="text-primary">trabajadores</span> y <span class="text-primary">autónomos</span>
+        </h1>
+        <p class="mt-space-lg text-body-lg text-on-surface/70 max-w-2xl mx-auto">
+          Calcula tu nómina, finiquito y pagas extras. Descarga plantillas de contratos. Consulta guías laborales. Todo en un solo lugar, gratis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Calculadoras -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl">
+      <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-xl text-center">Calculadoras laborales</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+        <a href="/calculadoras/nomina/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <div class="w-12 h-12 rounded-button bg-primary-fixed flex items-center justify-center mb-space-md">
+            <span class="text-primary text-xl">💰</span>
+          </div>
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Nómina bruto → neto</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Introduce tu salario bruto y obtén tu neto mensual con todas las retenciones.</p>
+        </a>
+        <a href="/calculadoras/finiquito/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <div class="w-12 h-12 rounded-button bg-primary-fixed flex items-center justify-center mb-space-md">
+            <span class="text-primary text-xl">📄</span>
+          </div>
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Finiquito</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Calcula indemnización y partes proporcionales según tipo de despido.</p>
+        </a>
+        <a href="/calculadoras/pagas-extras/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <div class="w-12 h-12 rounded-button bg-primary-fixed flex items-center justify-center mb-space-md">
+            <span class="text-primary text-xl">📊</span>
+          </div>
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Pagas extras</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Compara 12 vs 14 pagas y encuentra la mejor opción para ti.</p>
+        </a>
+        <a href="/calculadoras/despido/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <div class="w-12 h-12 rounded-button bg-primary-fixed flex items-center justify-center mb-space-md">
+            <span class="text-primary text-xl">⚖️</span>
+          </div>
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Despido improcedente</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Simula tu indemnización por diferentes escenarios de despido.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Plantillas -->
+    <section class="bg-surface-container-low/50">
+      <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-xl text-center">Plantillas descargables</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+          <a href="/plantillas/contratos/arrendamiento-vivienda/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de arrendamiento de vivienda</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Plantilla completa y válida para alquileres de vivienda habitual en España.</p>
+          </a>
+          <a href="/plantillas/contratos/prestacion-servicios/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de prestación de servicios</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo para autónomos que prestan servicios a empresas o particulares.</p>
+          </a>
+          <a href="/plantillas/contratos/trabajo-indefinido/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de trabajo indefinido</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de contrato laboral a tiempo completo indefinido.</p>
+          </a>
+          <a href="/plantillas/cartas/dimision/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Carta de dimisión</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de carta para comunicar tu baja voluntaria a la empresa.</p>
+          </a>
+          <a href="/plantillas/cartas/reclamacion/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Carta de reclamación</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de reclamación por cantidades adeudadas o incumplimientos.</p>
+          </a>
+          <a href="/plantillas/" class="group bg-surface-card rounded-card p-space-lg border-2 border-dashed border-outline-variant/50 hover:border-primary/50 transition-all duration-200 no-underline flex flex-col items-center justify-center text-center">
+            <span class="text-primary text-2xl mb-space-sm">+</span>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Ver todas las plantillas</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guías -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl">
+      <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-xl text-center">Guías laborales</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+        <a href="/guias/todo-sobre-tu-finiquito/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Todo sobre tu finiquito</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Qué es, cómo calcularlo, qué incluir y tus derechos ante un despido. Guía completa 2026.</p>
+        </a>
+        <a href="/guias/derechos-trabajador-despido/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Derechos del trabajador ante un despido</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Conoce tus derechos, plazos y recursos si has sido despedido.</p>
+        </a>
+        <a href="/guias/como-calcular-nomina/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Cómo calcular tu nómina paso a paso</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Explicación detallada de cada concepto de tu nómina y cómo se calcula.</p>
+        </a>
+        <a href="/guias/contrato-arrendamiento-guia/" class="group bg-surface-card rounded-card p-space-xl shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Guía completa de alquiler de vivienda</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Todo lo que necesitas saber sobre contratos de alquiler en España 2026.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-primary/5 border-y border-outline-variant/20">
+      <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl text-center">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface">¿Necesitas herramientas laborales?</h2>
+        <p class="mt-space-md text-body-md text-on-surface/60 max-w-xl mx-auto">Calculadoras precisas, plantillas actualizadas y guías claras. Todo lo que necesitas para navegar el mundo laboral en España.</p>
+        <div class="mt-space-xl flex flex-wrap justify-center gap-space-md">
+          <a href="/calculadoras/" class="inline-flex items-center gap-space-sm bg-primary text-on-primary font-semibold px-space-xl py-space-md rounded-button hover:bg-primary-container transition-colors no-underline">
+            Usar calculadoras
+          </a>
+          <a href="/plantillas/" class="inline-flex items-center gap-space-sm bg-surface-card text-primary font-semibold px-space-xl py-space-md rounded-button border border-primary/30 hover:bg-primary-fixed transition-colors no-underline">
+            Descargar plantillas
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-low border-t border-outline-variant/20">
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-2xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-space-2xl">
+        <div>
+          <span class="font-headline text-headline-sm font-extrabold text-on-surface">tuhr<span class="text-primary">.es</span></span>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Herramientas laborales gratuitas para trabajadores y autónomos en España.</p>
+        </div>
+        <div>
+          <h4 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Calculadoras</h4>
+          <ul class="space-y-space-sm text-body-sm">
+            <li><a href="/calculadoras/nomina/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Nómina bruto → neto</a></li>
+            <li><a href="/calculadoras/finiquito/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Finiquito</a></li>
+            <li><a href="/calculadoras/pagas-extras/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Pagas extras</a></li>
+            <li><a href="/calculadoras/despido/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Despido improcedente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Legal</h4>
+          <ul class="space-y-space-sm text-body-sm">
+            <li><a href="/aviso-legal/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Aviso legal</a></li>
+            <li><a href="/politica-privacidad/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Política de privacidad</a></li>
+            <li><a href="/cookies/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-space-2xl pt-space-lg border-t border-outline-variant/20 text-center text-body-sm text-on-surface/40">
+        <p>&copy; {new Date().getFullYear()} tuhr.es — Herramientas laborales para trabajadores y autónomos</p>
+      </div>
+    </div>
+  </footer>
+</Layout>

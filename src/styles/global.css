@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Scrollbar oculto */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Safe area para dispositivos con notch */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #0e7c46;
+  outline-offset: 2px;
+}
+
+/* Touch-friendly inputs */
+input[type="number"],
+select {
+  min-height: 44px;
+}
+
+/* CLS Prevention - Font loading optimization */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-display: swap;
+}
+
+/* Prevent layout shift from animations */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform;
+}
+
+/* Optimize content visibility for CLS */
+main {
+  contain: layout style;
+}
+
+/* Hide Netlify HUD badge */
+[data-netlify-site-id],
+[data-nf-variant],
+iframe[src*="netlify"],
+script[src*="netlify/scripts/hud"] {
+  display: none !important;
+}
+
+/* Content visibility for below-the-fold sections */
+section + section,
+footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 800px;
+}
