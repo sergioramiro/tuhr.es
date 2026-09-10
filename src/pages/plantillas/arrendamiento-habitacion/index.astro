@@ -1,0 +1,93 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Contrato de arrendamiento de habitación — Plantilla gratuita | tuhr.es"
+  description="Modelo para alquiler de habitación en piso compartido. Define renta, gastos compartidos y normas de convivencia."
+>
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/plantillas/" class="hover:text-primary transition-colors no-underline">Plantillas</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Contratos</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <div class="flex items-center gap-space-sm mb-space-md">
+        <span class="px-space-sm py-1 bg-primary/10 text-primary text-body-sm font-semibold rounded-button">Contratos</span>
+      </div>
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Contrato de arrendamiento de habitación</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">Modelo para alquiler de habitación en piso compartido. Define renta, gastos compartidos y normas de convivencia.</p>
+    </section>
+
+    <!-- Preview + Download -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-space-xl">
+        <!-- Preview -->
+        <div class="md:col-span-2">
+          <div class="bg-surface-card rounded-card shadow-card border border-outline-variant/30 overflow-hidden">
+            <div class="bg-surface-container p-space-md border-b border-outline-variant/30">
+              <p class="text-body-sm font-semibold text-on-surface">Vista previa del documento</p>
+            </div>
+            <div class="p-space-xl">
+              <iframe 
+                src="/plantillas/pdf/contrato-arrendamiento-habitacion.pdf" 
+                class="w-full h-[600px] border-0 rounded-input"
+                title="Vista previa de Contrato de arrendamiento de habitación"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="space-y-space-lg">
+          <!-- Download -->
+          <div class="bg-surface-card rounded-card p-space-xl shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Descargar plantilla</h3>
+            <a 
+              href="/plantillas/pdf/contrato-arrendamiento-habitacion.pdf" 
+              download="contrato-arrendamiento-habitacion.pdf"
+              class="block w-full bg-primary text-on-primary font-semibold py-space-md rounded-button text-center hover:bg-primary-container transition-colors no-underline"
+            >
+              📥 Descargar PDF
+            </a>
+            <p class="mt-space-sm text-body-sm text-on-surface/50 text-center">Formato PDF · Gratuito · Sin registro</p>
+          </div>
+
+          <!-- How to use -->
+          <div class="bg-surface-card rounded-card p-space-xl shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Cómo usar esta plantilla</h3>
+            <ol class="space-y-space-sm text-body-sm text-on-surface/70 list-decimal list-inside">
+              <li>Descarga el PDF con el botón de arriba</li>
+              <li>Imprime el documento o edítalo en un editor PDF</li>
+              <li>Rellena los campos en blanco con los datos correspondientes</li>
+              <li>Firma ambas partes</li>
+              <li>Cada parte se queda con una copia firmada</li>
+            </ol>
+          </div>
+
+          <!-- Related -->
+          <div class="bg-surface-container-low/50 rounded-card p-space-xl">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Calculadoras relacionadas</h3>
+            <div class="space-y-space-sm">
+              <a href="/calculadoras/nomina/" class="block text-body-sm text-primary hover:underline no-underline">Calculadora de nómina →</a>
+              <a href="/calculadoras/finiquito/" class="block text-body-sm text-primary hover:underline no-underline">Calculadora de finiquito →</a>
+            </div>
+          </div>
+
+          <!-- Disclaimer -->
+          <div className="p-space-md bg-amber-50 border border-amber-200 rounded-card">
+            <p class="text-body-sm text-amber-700">⚠️ Esta plantilla es orientativa. Para contratos con cláusulas específicas o situaciones complejas, consulte con un profesional (abogado, gestor).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

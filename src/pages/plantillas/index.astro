@@ -4,63 +4,81 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout
   title="Plantillas de contratos y documentos — tuhr.es"
-  description="Descarga plantillas gratuitas de contratos, cartas y documentos laborales. Formatos Word y PDF, válidos en España."
+  description="Descarga plantillas gratuitas de contratos, cartas y documentos laborales. Formatos PDF, válidos en España."
 >
   <main class="pt-16">
     <section class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl">
       <h1 class="font-headline text-headline-xl font-extrabold text-on-surface mb-space-xl">Plantillas descargables</h1>
-      <p class="text-body-lg text-on-surface/70 max-w-2xl mb-space-2xl">Modelos de contratos, cartas y documentos laborales listos para usar. Descárgalos gratis en formato PDF.</p>
+      <p class="text-body-lg text-on-surface/70 max-w-2xl mb-space-2xl">Modelos de contratos, cartas y documentos laborales listos para usar. Descárgalos gratis en formato PDF, rellena los campos y fírmalo.</p>
 
+      <!-- Contratos -->
       <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-lg">Contratos</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-2xl">
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Contrato de arrendamiento de vivienda</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo completo para alquiler de vivienda habitual.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Contrato de arrendamiento de habitación</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Para alquiler de habitación en piso compartido.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Contrato de compraventa de vehículo</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo para compraventa de coches entre particulares.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Contrato de prestación de servicios</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Para autónomos que prestan servicios a empresas.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">NDA / Acuerdo de confidencialidad</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Protege la información confidencial entre partes.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Contrato de trabajo indefinido</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de contrato laboral a tiempo completo indefinido.</p>
-        </div>
+        <a href="/plantillas/contrato-arrendamiento-vivienda/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de arrendamiento de vivienda</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Plantilla completa y válida para alquileres de vivienda habitual en España. Cumple LAU.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+        <a href="/plantillas/arrendamiento-habitacion/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de arrendamiento de habitación</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Para alquiler de habitación en piso compartido con gastos y normas de convivencia.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+        <a href="/plantillas/compraventa-vehiculo/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de compraventa de vehículo</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo para compraventa de coches entre particulares con transferencia.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+        <a href="/plantillas/prestacion-servicios/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de prestación de servicios</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Para autónomos que prestan servicios a empresas. Cláusula de no dependencia.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+        <a href="/plantillas/nda/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">NDA — Acuerdo de confidencialidad</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Protege la información confidencial entre empresas o personas.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+        <a href="/plantillas/trabajo-indefinido/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de trabajo indefinido</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de contrato laboral a tiempo completo indefinido con todas las cláusulas.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
       </div>
 
-      <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-lg">Cartas</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg mb-space-2xl">
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Carta de despido</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de carta de comunicación de despido.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Carta de dimisión</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo para comunicar tu baja voluntaria.</p>
-        </div>
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Carta de reclamación</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Reclamación por cantidades adeudadas.</p>
-        </div>
+      <!-- Contratos temporales -->
+      <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-lg">Contrato temporal</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg mb-space-2xl">
+        <a href="/plantillas/trabajo-temporal/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Contrato de trabajo temporal</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Conforme a la Reforma Laboral 2022. Solo causas válidas: obra/servicio o sustitución.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
       </div>
 
+      <!-- Cartas -->
+      <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-lg">Cartas laborales</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg mb-space-2xl">
+        <a href="/plantillas/carta-despido/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Carta de despido</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de carta de comunicación de despido con tipo, indemnización y plazos.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+        <a href="/plantillas/carta-dimision/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Carta de dimisión</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo para comunicar tu baja voluntaria con preaviso y finiquito.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
+      </div>
+
+      <!-- Facturas -->
       <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-lg">Facturas</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-lg">
-        <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
-          <h3 class="font-headline text-headline-sm font-bold text-on-surface">Factura de autónomo</h3>
-          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de factura para autónomos con todos los campos obligatorios.</p>
-        </div>
+        <a href="/plantillas/factura-autonomo/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all border border-outline-variant/30 no-underline">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Factura de autónomo</h3>
+          <p class="mt-space-sm text-body-sm text-on-surface/60">Modelo de factura con todos los campos obligatorios: IVA, retención y datos de ambas partes.</p>
+          <span class="mt-space-md inline-block text-primary text-body-sm font-semibold">Descargar PDF →</span>
+        </a>
       </div>
     </section>
   </main>
