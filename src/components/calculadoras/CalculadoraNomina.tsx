@@ -141,10 +141,30 @@ export default function CalculadoraNomina() {
             <span className="text-on-surface/60">Retención IRPF</span>
             <span className="font-semibold text-on-surface">{result.retencionIrpf.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€ ({result.tipoEfectivoIrpf}%)</span>
           </div>
-          <div className="flex justify-between text-body-sm">
-            <span className="text-on-surface/60">Cuota Seguridad Social</span>
-            <span className="font-semibold text-on-surface">{result.cuotaSs.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+
+          {/* Desglose SS */}
+          <div className="p-space-md bg-surface-card rounded-button">
+            <p className="text-body-sm font-semibold text-on-surface mb-space-sm">Cuota Seguridad Social ({result.cuotaSs.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€)</p>
+            <div className="space-y-1 text-body-sm text-on-surface/60">
+              <div className="flex justify-between">
+                <span>Contingencias comunes (4,70%)</span>
+                <span>{result.desgloseSs.contingenciasComunes.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Desempleo (1,55%)</span>
+                <span>{result.desgloseSs.desempleo.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Formación profesional (0,10%)</span>
+                <span>{result.desgloseSs.formacionProfesional.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              </div>
+              <div className="flex justify-between">
+                <span>MEI — Equidad intergeneracional (0,15%)</span>
+                <span>{result.desgloseSs.mei.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              </div>
+            </div>
           </div>
+
           <div className="flex justify-between text-body-sm border-t border-outline-variant/30 pt-space-sm">
             <span className="text-on-surface/60">Total deducciones</span>
             <span className="font-semibold text-on-surface">{result.totalDeducciones.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
@@ -160,7 +180,7 @@ export default function CalculadoraNomina() {
       </div>
 
       <p className="mt-space-lg text-body-sm text-on-surface/40 text-center">
-        ⚠️ Cálculo orientativo basado en la escala general IRPF y cuotas SS estándar. Consulta con un asesor fiscal para datos exactos.
+        ⚠️ Cálculo orientativo basado en la escala general IRPF estatal, cuotas SS estándar y reducción por obtención de rentas del trabajo. Cada CCAA aplica su tipo autonómico. Consulta con un asesor fiscal para datos exactos.
       </p>
     </div>
   );
