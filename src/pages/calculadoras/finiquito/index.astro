@@ -1,0 +1,64 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CalculadoraFiniquito from '../../../components/calculadoras/CalculadoraFiniquito';
+---
+
+<Layout
+  title="Calculadora de finiquito — ¿Cuánto me corresponde? | tuhr.es"
+  description="Calcula tu finiquito por despido. Incluye vacaciones pendientes, pagas extras y día del mes. Herramienta gratuita con fórmulas oficiales."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de finiquito",
+      "url": "https://tuhr.es/calculadoras/finiquito/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Calcula tu finiquito por despido con vacaciones pendientes, pagas extras y día del mes",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Finiquito</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de finiquito</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        ¿Te han despedido o estás en un proceso de baja? Calcula cuánto te corresponden de finiquito según tu salario, vacaciones pendientes y pagas extras.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <CalculadoraFiniquito client:load />
+    </section>
+
+    <!-- Info -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Qué es el finiquito?</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>El finiquito es la cantidad que la empresa debe abonar al trabajador cuando finaliza la relación laboral. Incluye las cantidades pendientes de cobrar:</p>
+          <p><strong>Parte proporcional de vacaciones no disfrutadas:</strong> Si tienes días de vacaciones acumulados que no has usado, la empresa debe indemnizarte por ellos.</p>
+          <p><strong>Parte proporcional de pagas extras:</strong> Si no has cobrado todas las pagas extras del año, te corresponde la parte proporcional.</p>
+          <p><strong>Día del mes trabajado:</strong> Los días que has trabajado en el mes de salida también se abonan.</p>
+          <p>El finiquito no es lo mismo que la indemnización por despido. El finiquito es una cantidad fija que siempre se cobra, mientras que la indemnización depende del tipo de despido.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

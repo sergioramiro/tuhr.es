@@ -1,0 +1,63 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import ComparativaPagas from '../../../components/calculadoras/ComparativaPagas';
+---
+
+<Layout
+  title="Calculadora de pagas extras — 12 vs 14 pagas | tuhr.es"
+  description="Compara 12 pagas vs 14 pagas y descubre qué opción te conviene más. Calcula la diferencia mensual y anual según tu salario bruto."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de pagas extras",
+      "url": "https://tuhr.es/calculadoras/pagas-extras/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Compara 12 pagas vs 14 pagas y calcula la diferencia según tu salario",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Pagas extras</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de pagas extras</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        ¿Te conviene cobrar 12 o 14 pagas? Compara ambas opciones y descubre cuál se adapta mejor a tus necesidades financieras.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <ComparativaPagas client:load />
+    </section>
+
+    <!-- Info -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">12 vs 14 pagas: ¿cuál elegir?</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>En España, los trabajadores pueden optar entre cobrar en 12 o 14 pagas al año. La diferencia no está en el total, sino en <strong>cómo se distribuye el dinero</strong>.</p>
+          <p><strong>12 pagas:</strong> Recibes un importe mayor cada mes. Las 2 pagas extras se incluyen en cada mensualidad, por lo que tu cheque es más gordo pero no recibes extras en junio y diciembre.</p>
+          <p><strong>14 pagas:</strong> Recibes 12 mensualidades iguales más 2 pagas extraordinarias (generalmente en junio y diciembre). El cheque mensual es menor, pero tienes 2 pagas extra que pueden servir para vacaciones o gastos extraordinarios.</p>
+          <p>El tipo de retención IRPF es el mismo en ambos casos, ya que se calcula sobre la base anual. La única diferencia real es el flujo de caja mensual.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

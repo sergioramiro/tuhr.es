@@ -1,0 +1,63 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CalculadoraNomina from '../../../components/calculadoras/CalculadoraNomina';
+---
+
+<Layout
+  title="Calculadora de nómina 2026 — Bruto a neto | tuhr.es"
+  description="Calcula tu nómina bruto a neto. Introduce tu salario bruto, pagas extras y estado civil. Obtén tu neto mensual con retención IRPF y cuotas de Seguridad Social."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de nómina 2026",
+      "url": "https://tuhr.es/calculadoras/nomina/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Calcula tu nómina bruto a neto con retenciones IRPF y cuotas de Seguridad Social",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Nómina</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de nómina 2026</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        Introduce tu salario bruto anual y obtén tu neto mensual. Incluye retención IRPF (escala general) y cuotas de Seguridad Social a cargo del trabajador.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <CalculadoraNomina client:load />
+    </section>
+
+    <!-- Info -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Cómo se calcula tu nómina?</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Tu nómina neta se calcula restando de tu salario bruto las siguientes deducciones obligatorias:</p>
+          <p><strong>Retención IRPF:</strong> Se aplica la escala general del Impuesto sobre la Renta de las Personas Físicas. El tipo marginal aumenta con la base imponible (desde el 19% hasta el 47%). El porcentaje exacto depende de tu situación familiar y otras circunstancias.</p>
+          <p><strong>Cuotas de Seguridad Social:</strong> El trabajador aporta el 6,40% de contingencias comunes, 1,55% de desempleo (contrato indefinido) y 0,10% de formación profesional. Estas cuotas se calculan sobre la base de cotización, que tiene un tope superior anual.</p>
+          <p>El resultado es aproximado y orientativo. Para cálculos oficiales, consulta con tu departamento de recursos humanos o un asesor fiscal.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

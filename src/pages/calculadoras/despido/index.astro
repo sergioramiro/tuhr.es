@@ -1,0 +1,63 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import SimuladorDespido from '../../../components/calculadoras/SimuladorDespido';
+---
+
+<Layout
+  title="Simulador de despido improcedente — Indemnización 2026 | tuhr.es"
+  description="Simula tu indemnización por despido improcedente, objetivo o procedente. Calcula cuánto te corresponde según tus años trabajados y salario."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Simulador de despido improcedente",
+      "url": "https://tuhr.es/calculadoras/despido/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Simula tu indemnización por despido improcedente, objetivo o procedente",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Despido</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Simulador de despido improcedente</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        ¿Te han despedido? Simula tu indemnización según el tipo de despido (improcedente, objetivo o procedente) y tus años trabajados.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <SimuladorDespido client:load />
+    </section>
+
+    <!-- Info -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Tipos de despido en España</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p><strong>Despido improcedente:</strong> El empresario no puede justificar la causa del despido. La indemnización es de 33 días de salario por año trabajado (para contratos celebrados a partir del 12 de febrero de 2012), con un máximo de 24 mensualidades. Para contratos anteriores a esa fecha, son 45 días/año con tope de 42 mensualidades.</p>
+          <p><strong>Despido objetivo:</strong> Se basa en causas económicas, técnicas, organizativas o de producción. La indemnización es de 20 días de salario por año trabajado, con un máximo de 12 mensualidades.</p>
+          <p><strong>Despido procedente:</strong> Se debe a un incumplimiento grave y culpable del trabajador. No genera indemnización, salvo que el convenio colectivo establezca una mejora.</p>
+          <p>En todos los casos, el trabajador tiene derecho al finiquito (parte proporcional de vacaciones, pagas extras pendientes y día del mes).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
