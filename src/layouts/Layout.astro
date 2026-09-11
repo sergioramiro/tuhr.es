@@ -57,6 +57,17 @@ const canonicalUrl = canonical || `https://tuhr.es${Astro.url.pathname}`;
 
   <!-- Umami Analytics -->
   <script defer data-website-id="39d1ae5b-6f08-488c-9cb9-a83f06837558" src="https://analytics.diashabiles.es/script.js"></script>
+
+  <!-- Remove Netlify HUD banner -->
+  <script>
+    (function() {
+      var observer = new MutationObserver(function() {
+        var hud = document.querySelector('[data-nf-variant]') || document.querySelector('.netlify-banner') || document.querySelector('[class*="announcement"]');
+        if (hud) hud.remove();
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
 </head>
 <body class="bg-surface font-body text-body-md text-on-surface antialiased">
   <slot />
