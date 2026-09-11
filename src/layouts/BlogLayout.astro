@@ -1,0 +1,80 @@
+---
+import Layout from './Layout.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  category: string;
+  date: string;
+  readTime: string;
+}
+
+const { title, description, category, date, readTime } = Astro.props;
+---
+
+<Layout title={`${title} | tuhr.es`} description={description}>
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/blog/" class="hover:text-primary transition-colors no-underline">Blog</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">{title.split(':')[0]}</span>
+      </nav>
+    </div>
+
+    <!-- Article -->
+    <article class="max-w-[56rem] mx-auto px-gutter-desktop pb-space-3xl">
+      <header class="mb-space-2xl">
+        <span class="inline-block text-xs font-semibold text-primary bg-primary/10 px-space-sm py-space-xs rounded-full mb-space-md">
+          {category}
+        </span>
+        <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">{title}</h1>
+        <p class="mt-space-md text-body-sm text-on-surface/50">
+          {date} · {readTime} de lectura
+        </p>
+      </header>
+
+      <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
+        <slot />
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-space-3xl p-space-xl bg-primary/5 rounded-xl border border-primary/10">
+        <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">
+          ¿Necesitas calcular algo?
+        </h3>
+        <p class="text-body-sm text-on-surface/60 mb-space-md">
+          Usa nuestras calculadoras gratuitas para obtener resultados exactos.
+        </p>
+        <div class="flex flex-wrap gap-space-sm">
+          <a href="/calculadoras/nomina/" class="inline-block bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
+            Calcular nómina
+          </a>
+          <a href="/calculadoras/finiquito/" class="inline-block bg-surface text-on-surface border border-outline/20 px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:border-primary/30 transition-colors no-underline">
+            Calcular finiquito
+          </a>
+        </div>
+      </div>
+
+      <!-- Related -->
+      <div class="mt-space-3xl">
+        <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">
+          Artículos relacionados
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+          <a href="/blog/permisos-laborales/" class="block p-space-md bg-surface rounded-lg border border-outline/10 hover:border-primary/30 transition-all no-underline">
+            <span class="text-xs text-primary font-semibold">Derechos</span>
+            <p class="text-body-sm font-semibold text-on-surface mt-space-xs">Permisos laborales retribuidos</p>
+          </a>
+          <a href="/blog/vacaciones-derechos/" class="block p-space-md bg-surface rounded-lg border border-outline/10 hover:border-primary/30 transition-all no-underline">
+            <span class="text-xs text-primary font-semibold">Derechos</span>
+            <p class="text-body-sm font-semibold text-on-surface mt-space-xs">Vacaciones laborales en España</p>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

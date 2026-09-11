@@ -1,0 +1,364 @@
+---
+slug: vacaciones-derechos
+title: "Vacaciones laborales en España: tus derechos reales en 2026"
+meta_title: "Vacaciones laborales en España 2026: derechos y cálculo"
+meta_description: "Cuántos días de vacaciones te corresponden, cómo se calculan, qué pasa con festivos y despidos. Guía práctica basada en el Estatuto de los Trabajadores."
+category: Derechos
+date: 2026-09-11
+readTime: 10 min
+---
+
+# Vacaciones laborales en España: tus derechos reales en 2026
+
+**Última actualización:** Septiembre 2026 | **Lectura:** 10 min
+
+---
+
+Cada verano, miles de trabajadores españoles se enfrentan a las mismas preguntas: ¿cuántos días me corresponden realmente? ¿Los festivos cuentan? ¿Puedo quedarme el dinero si no me voy? ¿Qué pasa si me despiden justo cuando tenía vacaciones pendientes? La respuesta corta es que la ley española protege tu derecho al descanso, pero muchos trabajadores no conocen los detalles — y eso les cuesta dinero o les genera conflictos innecesarios con su empresa.
+
+En esta guía completa te explicamos todo lo que necesitas saber sobre las vacaciones laborales en España en 2026: cuántos días te corresponden, cómo se calculan, qué dice la ley sobre festivos, si puedes intercambiar tus vacaciones por dinero, qué ocurre si te despiden con días pendientes y cómo planificar tus vacaciones para sacarle el máximo partido.
+
+---
+
+## ¿Cuántos días de vacaciones corresponden en España?
+
+La respuesta es clara y está recogida en el **artículo 38 del Estatuto de los Trabajadores** (Real Decreto Legislativo 2/2015): todo trabajador tiene derecho a un **mínimo de 30 días naturales de vacaciones al año**. No hábiles, no laborables: **naturales**. Es decir, incluye sábados, domingos y festivos.
+
+### 30 días naturales ≠ 22 días laborables
+
+Este es el error más frecuente. Los 30 días naturales equivalen a aproximadamente **22 días laborables** (de lunes a viernes). Cuando tu jefe o tu convenio colectivo te dan "22 días de vacaciones", en realidad está hablando de esos 30 días naturales traducidos a días que no trabajas.
+
+**Ejemplo práctico:**
+
+Si te vas de vacaciones del 1 al 30 de julio, estás disfrutando tus 30 días naturales completos. En ese periodo, los sábados 4, 11, 18 y 25 de julio y los domingos 5, 12, 19 y 26 de julio cuentan como parte de tus vacaciones, aunque no trabajes esos días normalmente.
+
+Si en cambio prefieres disfrutar solo los días laborables (lunes a viernes), tendrías derecho a aproximadamente 22 días de ausencia efectiva del trabajo, pero esos días de fin de semana entre medias seguirían contando como parte de tus vacaciones.
+
+### ¿Se pueden dar más de 30 días?
+
+Sí. El artículo 38.1 establece que los 30 días son el **mínimo legal**. Tu convenio colectivo o contrato individual pueden mejorar esta cifra. Muchos convenios de grandes empresas o sectores específicos (banca, energía, administración pública) contemplan 31, 32 o incluso más días de vacaciones. Consulta siempre tu convenio colectivo para saber exactamente cuántos días te corresponden.
+
+**Ejemplo real:** El convenio colectivo del sector de la banca en España establece 34 días naturales de vacaciones para la mayoría de sus trabajadores. Si trabajas en una entidad bancaria, tu derecho supera el mínimo legal.
+
+### ¿Y los menores de 18 años?
+
+El artículo 38.4 del Estatuto de los Trabajadores establece que el periodo de vacaciones de los menores de dieciocho años será, como mínimo, **dos días más** que el de los mayores de esa edad. Esto significa que un trabajador menor de 18 años tiene derecho a al menos 32 días naturales de vacaciones.
+
+---
+
+## ¿Cómo se calculan las vacaciones proporcionalmente?
+
+No todos los trabajadores generan los 30 días completos desde el primer día del año. Si has trabajado menos de 12 meses en la empresa —ya sea por haber empezado en medio de año o por haber terminado la relación laboral—, tus vacaciones se calculan de forma proporcional.
+
+### Fórmula de cálculo proporcional
+
+La fórmula es sencilla:
+
+**(Días de vacaciones anuales × Meses trabajados) ÷ 12**
+
+Cada mes completo trabajado genera 2,5 días naturales de vacaciones (30 días ÷ 12 meses).
+
+**Ejemplo 1 — Incorporación a mitad de año:**
+
+María empieza a trabajar el 1 de julio de 2026. Su contrato contempla 30 días naturales de vacaciones. Trabajará 6 meses (julio a diciembre).
+
+- Cálculo: (30 × 6) ÷ 12 = **15 días naturales de vacaciones**
+
+María tiene derecho a disfrutar 15 días naturales de vacaciones en 2026.
+
+**Ejemplo 2 — Baja durante el año:**
+
+Carlos trabaja en una empresa desde enero pero le despiden el 31 de agosto de 2026. Ha trabajado 8 meses completos.
+
+- Vacaciones generadas: (30 × 8) ÷ 12 = **20 días naturales**
+- Vacaciones disfrutadas hasta agosto: 0
+- Vacaciones pendientes de disfrutar: **20 días**
+
+Estos 20 días se incluirán en su finiquito y se abonarán económicamente.
+
+**Ejemplo 3 — Contrato temporal de 4 meses:**
+
+Ana tiene un contrato temporal de enero a abril de 2026. Trabajará 4 meses.
+
+- Cálculo: (30 × 4) ÷ 12 = **10 días naturales de vacaciones**
+
+### ¿Qué cuenta como mes completo?
+
+Para el cálculo proporcional, se entiende por mes completo aquel en el que el trabajador ha estado dado de alta durante al menos **15 días naturales** del mes. Si empezaste el 20 de marzo, marzo no contará como mes completo a efectos de vacaciones.
+
+---
+
+## ¿Qué pasa con los días festivos? ¿Se descuentan?
+
+Esta es una de las dudas más habituales y la respuesta es inequívoca: **los días festivos no se descuentan de tus vacaciones.**
+
+Si tus vacaciones coinciden con un puente o un festivo nacional o autonómico, ese día festivo sigue siendo festivo y no "consume" tu derecho a vacaciones. Es decir, si te vas de vacaciones del 6 al 10 de enero (del lunes 5 al viernes 9), el martes 6 de enero (Epifanía del Señor) es festivo y no se te descuenta de tus 30 días naturales. Sin embargo, los días de fin de semana entre medias (sábado y domingo) sí cuentan como parte del periodo vacacional, aunque no trabajes esos días.
+
+### Ejemplo práctico del efecto festivos
+
+Imagina que te vas de vacaciones del 29 de diciembre de 2025 al 1 de enero de 2026:
+
+- **29 diciembre (lunes):** vacaciones
+- **30 diciembre (martes):** vacaciones
+- **31 diciembre (miércoles):** vacaciones
+- **1 enero (jueves):** festivo (Año Nuevo) — **NO** consume vacaciones
+- **2 enero (viernes):** vacaciones
+- **3 enero (sábado):** fin de semana — consume vacaciones
+- **4 enero (domingo):** fin de semana — consume vacaciones
+
+En este caso, de los 7 días de ausencia, solo 5 se descuentan de tus vacaciones (30 diciembre, 31 diciembre, 2 enero, 3 enero y 4 enero). El 1 de enero es festivo y el fin de semana 3-4 sí cuenta. Tu.balance real: **5 días de vacaciones consumidos**.
+
+### Los puentes no están regulados estatalmente
+
+El gobierno puede declarar un día como festivo nacional (como el puente del 6 de diciembre cuando cae entre semana), pero la decisión de crear puentes recae en las Comunidades Autónomas. Si tu comunidad no declara el puente, ese día es laborable y, si coinciden con tus vacaciones, no se te descuenta como festivo. Consulta siempre el calendario de tu comunidad.
+
+---
+
+## ¿Se pueden intercambiar vacaciones por dinero?
+
+**No.** El artículo 38.1 del Estatuto de los Trabajadores establece expresamente que las vacaciones son **"no sustituibles por compensación económica"**. Esto significa que, mientras dure la relación laboral, la empresa no puede pagarte para que no te vayas de vacaciones, y tú no puedes "vender" tus días de descanso.
+
+### ¿Por qué existe esta prohibición?
+
+El derecho a vacaciones es un derecho **irrenunciable** del trabajador (artículo 7 del Convenio 132 de la OIT y artículo 38 del Estatuto de los Trabajadores). La finalidad es garantizar que el trabajador descanse efectivamente, ya que el descanso es esencial para la salud física y mental y para la reconciliación de la vida personal y laboral. Si se permitiera el intercambio monetario, muchas empresas presionarían a sus empleados para que no se fueran de vacaciones a cambio de dinero, lo que iría contra el espíritu de la norma.
+
+### La única excepción: finiquito
+
+La única situación en la que las vacaciones se compensan económicamente es cuando se produce la **extinción de la relación laboral** (despido, dimisión, fin de contrato, jubilación, etc.). En ese caso, los días de vacaciones pendientes de disfrutar se incluyen en el finiquito y se abonan económicamente.
+
+**Ejemplo:**
+
+Pedro tiene 30 días de vacaciones al año y solo ha disfrutado 10 días. Le despiden el 30 de noviembre de 2026. Ha trabajado 11 meses.
+
+- Vacaciones generadas en 2026: (30 × 11) ÷ 12 = 27,5 días (redondeado a **27 días**)
+- Vacaciones disfrutadas: 10 días
+- Vacaciones pendientes: **17 días**
+
+En su finiquito, la empresa le pagará esos 17 días de vacaciones pendientes calculados sobre su salario diario.
+
+### ¿Y si te ofrecen dinero en vez de vacaciones?
+
+Si tu empresa te propone "quedarte el dinero de las vacaciones" sin extinguir el contrato, es una propuesta **ilegal**. No estás obligado a aceptarla, y si la aceptas bajo presión, podrías reclamar posteriormente. Si te encuentras en esta situación, lo más recomendable es comunicarlo por escrito y, si es necesario, acudir a un abogado laboralista o a la Inspección de Trabajo.
+
+---
+
+## ¿Qué pasa si me despiden teniendo vacaciones pendientes?
+
+Si te despiden y tienes días de vacaciones no disfrutados, la empresa **está obligada a abonarte económicamente** esos días pendientes en tu finiquito. No pierdes ese derecho bajo ninguna circunstancia.
+
+### ¿Cómo se calcula el pago de vacaciones pendientes?
+
+El cálculo se realiza multiplicando los días de vacaciones pendientes por tu **salario diario** (incluyendo pagas extras prorrateadas si corresponde).
+
+**Fórmula:**
+
+Vacaciones pendientes × (Salario bruto anual incluyendo pagas extras) ÷ 365 días
+
+**Ejemplo detallado:**
+
+Lucía tiene un salario bruto anual de 30.000 € (incluyendo pagas extras). Trabaja en una empresa desde marzo de 2024. La despiden el 15 de septiembre de 2026.
+
+1. **Vacaciones de 2026 generadas hasta la fecha:**
+   - Meses trabajados en 2026: 9 meses (enero a septiembre)
+   - Vacaciones generadas: (30 × 9) ÷ 12 = 22,5 días → **22 días**
+
+2. **Vacaciones disfrutadas en 2026:** 8 días (se fue una semana en junio y un puente en mayo)
+
+3. **Vacaciones pendientes:** 22 - 8 = **14 días**
+
+4. **Salario diario:** 30.000 € ÷ 365 = **82,19 €/día**
+
+5. **Pago de vacaciones pendientes:** 14 × 82,19 = **1.150,66 €** (brutos)
+
+Este importe se abona en el finiquito y tributa como salario habitual (con retención de IRPF y cotizaciones a la Seguridad Social).
+
+### ¿Qué pasa con las vacaciones de años anteriores?
+
+Si tenías vacaciones pendientes de años anteriores (por ejemplo, porque estuviste de baja médica o de excedencia), esas vacaciones también se deben abonar económicamente al extinguirse el contrato. El Tribunal Supremo ha establecido reiteradamente que el trabajador no puede perder el derecho a sus vacaciones por causas ajenas a su voluntad.
+
+---
+
+## Calendario de festivos 2026 en España
+
+Conocer los festivos nacionales te permite planificar mejor tus vacaciones y sacar el máximo partido a los puentes. El Real Decreto del gobierno establece los 10 festivos nacionales (que pueden variar según la Comunidad Autónoma):
+
+| Fecha | Día | Festivo |
+|-------|-----|---------|
+| 1 de enero | Jueves | Año Nuevo |
+| 6 de enero | Martes | Epifanía del Señor |
+| 2 de abril | Jueves | Jueves Santo |
+| 3 de abril | Viernes | Viernes Santo |
+| 1 de mayo | Viernes | Fiesta del Trabajo |
+| 15 de agosto | Sábado | Asunción de la Virgen |
+| 12 de octubre | Lunes | Fiesta Nacional de España |
+| 1 de noviembre | Domingo | Día de Todos los Santos |
+| 6 de diciembre | Domingo | Día de la Constitución |
+| 25 de diciembre | Viernes | Navidad |
+
+### Puentes y fines de semana largos en 2026
+
+2026 es un año particularmente favorable para planificar vacaciones, ya que varios festivos caen cerca de fines de semana:
+
+- **Semana Santa (abril):** Jueves Santo (2 de abril, jueves) + Viernes Santo (3 de abril, viernes) = puente de 4 días si tomas el lunes 6 de abril (aunque no es festivo nacional; depende de tu comunidad autónoma)
+- **Puente del 1 de mayo:** cae en viernes → fin de semana largo de 3 días sin usar vacaciones
+- **Puente de octubre:** el 12 de octubre cae en lunes → fin de semana largo automático de 3 días
+- **Puente de diciembre:** el 6 de diciembre cae en domingo (no genera puente automático); el 25 de diciembre cae en viernes → fin de semana largo de 3 días
+- **Puente de enero:** el 6 de enero cae en martes → puente de 4 días si tomas el lunes 5 de enero
+
+### Festivos autonómicos que debes conocer
+
+Cada Comunidad Autónoma tiene derecho a designar **dos festivos locales** adicionales (uno puede ser sustituido por un festivo local del municipio). Por ejemplo:
+
+- **Cataluña:** Sant Jordi (23 de abril) y Sant Esteve (26 de diciembre)
+- **País Vasco:** Día del País Vasco (25 de octubre)
+- **Comunidad Valenciana:** Día de la Comunidad Valenciana (9 de octubre)
+- **Andalucía:** Día de Andalucía (28 de febrero)
+- **Madrid:** Día de San Isidro (15 de mayo)
+- **Galicia:** Día de Galicia (25 de julio)
+
+Consulta siempre el calendario oficial de tu Comunidad Autónoma para no perderte festivos adicionales.
+
+---
+
+## Consejos prácticos para planificar tus vacaciones en 2026
+
+Planificar bien tus vacaciones no solo te permite disfrutar más, sino también optimizar tus días libres. Aquí tienes los mejores consejos:
+
+### 1. Aprovecha los puentes para maximizar tus días
+
+Con los puentes de 2026, puedes conseguir semanas completas de descanso usando menos días de vacaciones. Por ejemplo:
+
+- **Semana Santa:** Si tomas del 30 de marzo al 6 de abril, usas 4 días de vacaciones y consigues 8 días de descanso (incluyendo Jueves Santo, Viernes Santo y el fin de semana anterior)
+- **Puente del 1 de mayo:** Solo necesitas 3 días de vacaciones (4, 5 y 6 de mayo, de lunes a miércoles) para conseguir una semana libre del 1 al 10 de mayo
+- **Fiesta Nacional (12 octubre):** cae en lunes, así que tienes fin de semana largo automático sin gastar vacaciones
+
+### 2. Negocia las fechas con tu empresa con tiempo
+
+El artículo 38.2 del Estatuto de los Trabajadores dice que el periodo de vacaciones se fijará de **común acuerdo** entre trabajador y empresa, pudiendo dividirse en dos o más periodos (al menos uno de ellos de al menos 15 días naturales).
+
+La empresa puede fijar el periodo de vacaciones si no hay acuerdo, pero siempre con **al menos 2 meses de antelación** respecto al día de inicio del periodo vacacional. Si necesitas unas fechas concretas, comunícalo por escrito a tu empresa con suficiente margen de tiempo.
+
+### 3. Comunica tus vacaciones por escrito
+
+Aunque la ley no exige una forma específica para solicitar vacaciones, es recomendable hacerlo **por escrito** (correo electrónico o formulario interno de la empresa). Esto te protege en caso de disputas futuras. Incluye:
+
+- Fechas de inicio y fin de las vacaciones
+- Número de días que solicitas
+- Confirmación de recepción por parte de la empresa
+
+### 4. No acumules vacaciones al final del año
+
+El artículo 38.5 establece que el periodo de vacaciones debe disfrutarse dentro del **año natural** (de 1 de enero a 31 de diciembre). Si por circunstancias excepcionales no pudiste disfrutarlas (enfermedad, excedencia, etc.), podrás acumularlas hasta un máximo de **18 meses** a partir del 1 de enero del año siguiente.
+
+Acumular vacaciones genera una carga mental innecesaria y puede generar conflictos con la empresa si intentas disfrutarlas todas juntas. Lo ideal es planificar al menos una semana de descanso por trimestre.
+
+### 5. Verifica siempre tu convenio colectivo
+
+El convenio colectivo puede mejorar significativamente tu derecho a vacaciones. Además del número de días, puede incluir condiciones específicas como:
+
+- Vacaciones adicionales por antigüedad
+- Preferencia en la elección de fechas para trabajadores con hijos en edad escolar
+- Bonificaciones por no haber disfrutado vacaciones en el año anterior (en sectores específicos)
+
+Consulta tu convenio colectivo en el BOE o en la web de tu sindicato.
+
+### 6. Si estás de baja médica durante vacaciones
+
+Si coinciden tus vacaciones con una baja médica, el artículo 38.4 del Estatuto de los Trabajadores establece que **las vacaciones se postponen**. Es decir, los días de baja durante el periodo vacacional no consumen vacaciones y podrás disfrutarlos después de reincorporarte.
+
+**Ejemplo:** Estás de vacaciones del 1 al 14 de julio pero te pones enfermo del 5 al 10 de julio. Esos 6 días de baja no se descuentan de tus vacaciones. Podrás disfrutar esos 6 días más adelante (junto con los 8 días de vacaciones restantes que sí disfrutaste).
+
+---
+
+## Errores frecuentes que debes evitar
+
+### Error 1: Aceptar menos días de los que te corresponden
+
+Algunas empresas pagan "22 días de vacaciones" confundiendo días hábiles con días naturales. Recuerda: la ley marca un mínimo de **30 días naturales**. Si tu empresa te ofrece 22 días laborables, en realidad te está dando 30 naturales (los 8 días de fin de semana se incluyen automáticamente).
+
+### Error 2: Creer que los festivos son vacaciones
+
+Como explicamos, los festivos que coincidan con tus vacaciones **no se descuentan**. Si tu empresa te los descuenta, está actuando ilegalmente.
+
+### Error 3: Firmar el finiquito sin revisar las vacaciones pendientes
+
+Antes de firmar el finiquito, verifica que se incluyan correctamente los días de vacaciones pendientes. Solicita un desglose por escrito. Si tienes dudas, no firmes "conforme" — puedes firmar "no conforme" y reclamar después.
+
+### Error 4: No reclamar vacaciones no disfrutadas por presión
+
+Si tu empresa te presiona para no irte de vacaciones o te ofrece dinero en su lugar, recuerda que es ilegal. Tienes derecho a tu descanso y la empresa no puede negártelo sin consecuencias legales.
+
+---
+
+## ¿Qué hacer si tu empresa niega tus vacaciones?
+
+Si tu empresa te niega el derecho a vacaciones, tienes varias opciones:
+
+### 1. Reclamación por escrito
+
+Envía un burofax o un correo electrónico certificado a tu empresa manifestando tu derecho a disfrutar las vacaciones según el artículo 38 del Estatuto de los Trabajadores.
+
+### 2. Inspección de Trabajo
+
+Puedes presentar una denuncia ante la Inspección de Trabajo y Seguridad Social. La empresa puede ser sancionada con multas de hasta **6.250 €** (infracción grave) o **187.515 €** (infracción muy grave) por negar vacaciones.
+
+### 3. Vía judicial
+
+Si la reclamación extrajudicial no funciona, puedes acudir a los **Juzgados de lo Social** para reclamar tu derecho. El plazo para impugnar es de **20 días hábiles** desde que se produjo la negativa. En estos casos es muy recomendable contar con asesoramiento legal.
+
+---
+
+## Tabla resumen: tus derechos en vacaciones
+
+| Concepto | Derecho |
+|----------|---------|
+| Días mínimos al año | 30 días naturales (art. 38 ET) |
+| Reducción por jornada parcial | Mismos días, mismo cómputo |
+| Menores de 18 años | 30 + 2 días = 32 naturales mínimos |
+| Festivos durante vacaciones | No se descuentan |
+| Intercambio por dinero | Prohibido (excepto en finiquito) |
+| Periodo obligatorio continuo | Al menos 15 días naturales |
+| Antelación de la empresa para fijar fechas | Mínimo 2 meses |
+| Plazo máximo de disfrute | Hasta 18 meses del año siguiente |
+| Vacaciones y baja médica | Se postponen (art. 38.4 ET) |
+| Negativa de la empresa | Sanciónable (Inscripción de Trabajo) |
+
+---
+
+## Preguntas frecuentes
+
+### ¿Se generan vacaciones durante un ERTE?
+
+No. Durante un periodo de suspensión del contrato por ERTE, no se generan vacaciones. El cómputo de tiempo trabajado se interrumpe mientras dura la suspensión y se retoma cuando el trabajador se reincorpora.
+
+### ¿Y si estoy en excedencia voluntaria?
+
+Igual que el ERTE, durante la excedencia voluntaria no se generan vacaciones ni se computa tiempo a efectos de antigüedad.
+
+### ¿Puedo solicitar vacaciones el primer día de trabajo?
+
+Sí, pero te corresponderán de forma proporcional. Si empiezas el 1 de marzo, tendrás derecho a 10 días naturales de vacaciones (10 meses × 2,5 días/mes).
+
+### ¿Qué pasa si me voy de vacaciones sin autorización?
+
+Si te ausentas sin la autorización de la empresa, puede ser considerado **abandono del puesto de trabajo** y derivar en un despido disciplinario. Siempre debes comunicar y tener la aprobación de la empresa antes de irte de vacaciones.
+
+### ¿Se pueden acumular vacaciones de dos años?
+
+Solo excepcionalmente. Si por causas justificadas (enfermedad, excedencia forzosa, maternidad/paternidad) no pudiste disfrutar las vacaciones de un año, puedes acumularlas hasta un máximo de **18 meses** a partir del 1 de enero del siguiente año.
+
+---
+
+## Conclusión
+
+Las vacaciones laborales en España están fuertemente protegidas por el Estatuto de los Trabajadores y el derecho europeo. Tienes derecho a un mínimo de 30 días naturales al año, no puedes renunciar a ellos ni cambiarlos por dinero, y si te despiden, la empresa debe pagarte los días pendientes en tu finiquito.
+
+El calendario de festivos 2026 ofrece varias oportunidades para planificar puentes y maximizar tus días de descanso. Aprovecha los festivos del 1 de mayo (viernes), el 12 de octubre (lunes) y el 25 de diciembre (viernes) para conseguir semanas completas de vacaciones usando menos días.
+
+Recuerda siempre: tus vacaciones son un derecho, no un favor de tu empresa. Si tienes cualquier duda sobre tus derechos vacacionales, consulta tu convenio colectivo, acude a un abogado laboralista o contacta con la Inspección de Trabajo. No dejes que te nieguen lo que la ley te garantiza.
+
+---
+
+*Este artículo tiene carácter informativo y no sustituye el asesoramiento legal profesional. Para casos específicos, consulta con un abogado laboralista.*
+
+*Artículo actualizado en septiembre de 2026. Basado en el Estatuto de los Trabajadores (RDL 2/2015), artículos 38 a 40.*

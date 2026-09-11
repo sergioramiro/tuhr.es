@@ -1,0 +1,289 @@
+---
+title: "Registro de jornada en España 2026: guía completa"
+slug: registro-jornada-espana-2026
+description: "Registro de jornada laboral en España 2026: qué dice la ley, quién está obligado, sanciones y cómo impugnar un registro falso."
+date: 2026-09-11
+author: "TuHR.es"
+tags: ["registro jornada", "registro horario", "derecho laboral", "Estatuto de los Trabajadores", "inspección de trabajo"]
+category: "Guías laborales"
+---
+
+# Registro de jornada en España 2026: todo lo que necesitas saber
+
+Llevar un registro de jornada laboral no es opcional. Desde mayo de 2019, toda empresa en España está obligada a registrar diariamente la hora de entrada y salida de cada trabajador. Si todavía no sabes exactamente qué exige la ley, quién está obligado o qué consecuencias tiene no cumplirlo, este artículo te lo explica con detalle, con ejemplos prácticos y sin tecnicismos innecesarios.
+
+---
+
+## ¿Qué dice la ley exactamente sobre el registro de jornada?
+
+La obligación de llevar un registro de jornada nació del **Real Decreto-ley 8/2019, de 8 de marzo**, que modificó el artículo 34 del Estatuto de los Trabajadores. El nuevo apartado 9 establece textualmente:
+
+> *"La empresa garantizará el registro diario de jornada, que deberá incluir el horario concreto de inicio y finalización de la jornada de trabajo de cada persona trabajadora, sin perjuicio de la flexibilidad horaria que se establece en este artículo."*
+
+El mismo artículo añade que estos registros deben ponerse **a disposición de la representación legal de los trabajadores** (comité de empresa o delegados sindicales) y de la **Inspección de Trabajo y Seguridad Social** cuando lo soliciten.
+
+Además, la **Sentencia del Tribunal de Justicia de la Unión Europea de 14 de mayo de 2019** (asunto C-55/18, Deutsche Bank) confirmó que las empresas europeas están obligadas a implantar un sistema de registro objective, fiable y accesible que permita medir la jornada diaria efectiva. Esta sentencia fue el catalizador jurídico que impulsó la reforma española.
+
+En resumen, la ley exige tres cosas:
+
+1. **Registro diario**: cada jornada de cada día laborable debe quedar registrada.
+2. **Horario concreto de inicio y fin**: no basta con indicar el total de horas, hay que anotar la hora exacta de entrada y de salida.
+3. **Disponibilidad**: los registros deben estar disponibles para la representación de los trabajadores y para la Inspección de Trabajo.
+
+---
+
+## ¿Quién está obligado a llevar el registro de jornada?
+
+**Todas las empresas**, sin excepción. No importa el tamaño, el sector o la forma jurídica. Una microempresa de 2 personas, una startup tecnológica o una gran multinacional tienen exactamente la misma obligación.
+
+Tampoco hay exención por tipo de contrato:
+
+- Trabajadores **a tiempo completo**.
+- Trabajadores **a tiempo parcial** (de hecho, para estos el registro ya era obligatorio antes del RDL 8/2019).
+- **Contratos temporales** de cualquier duración.
+- **Trabajadores en teletrabajo**, que además deben registrar la jornada igual que los presenciales.
+- **Jornadas mixtas** (parte presencial, parte en remoto).
+
+La única excepción que establece la ley son los **altos cargos directivos** con autonomía plena sobre su horario, aunque en la práctica esta excepción se interpreta restrictivamente.
+
+### ¿Y los autónomos?
+
+Si trabajas por cuenta propia y no tienes empleados, **no tienes obligación de registrar tu propia jornada**. Pero si contratas personal, la obligación recae sobre ti como empresario.
+
+---
+
+## ¿Cómo debe ser el registro? Diario, individual y fiable
+
+La ley es clara: el registro debe ser **diario**. Esto significa que no se pueden registrar solo las jornadas del mes completo a final de mes, ni consolidar datos semanales o mensuales. Cada día debe quedar documentado por separado.
+
+### Elementos mínimos del registro
+
+Un registro de jornada válido debe incluir, como mínimo:
+
+| Campo | Descripción |
+|-------|-------------|
+| **Nombre del trabajador** | Identificación individual de cada persona |
+| **Fecha del día** | Día concreto de la jornada |
+| **Hora de inicio** | Hora exacta de entrada o comienzo de la jornada |
+| **Hora de fin** | Hora exacta de salida o finalización de la jornada |
+| **Firma o acreditación** | Confirmación del trabajador de que los datos son correctos |
+
+### Métodos válidos de registro
+
+La ley **no impone un método concreto** de registro. Esto significa que la empresa puede elegir libremente cómo implementarlo, siempre que el sistema sea objetivo, fiable y accesible. Los métodos más habituales son:
+
+- **Fichaje biométrico**: relojes de presencia por huella dactilar o reconocimiento facial. Muy habitual en grandes empresas.
+- **Fichaje por código QR o NFC**: el trabajador escanea un código con su móvil al entrar y al salir.
+- **Software de control horario**: aplicaciones web o móviles donde el trabajador registra sus horas. Cada vez más utilizado por pymes.
+- **Fichaje por tarjeta magnética**: clásico pero válido.
+- **Hoja de registro manual**: un formulario en papel donde el trabajador anota su hora de entrada y salida. Es válido, pero **la Inspección de Trabajo ya no lo considera fiable** como método principal a día de hoy.
+
+### ¿Qué dice el Real Decreto 176/2025 sobre el registro digital?
+
+El **Real Decreto 176/2025**, que desarrolla el articulado del Estatuto de los Trabajadores sobre registro de jornada, ha establecido requisitos más estrictos:
+
+- El registro debe ser **fiable, inalterable y accesible** a los trabajadores y sus representantes.
+- La **Inspección de Trabajo ya no admite** como válido un registro en papel sin control de integridad, ni un archivo Excel editable que cualquiera pueda modificar sin registro de cambios.
+- El sistema debe garantizar la **imposibilidad de alteración retroactiva** de los datos.
+- La conservación mínima es de **cuatro años**, coincidiendo con el plazo de prescripción de las infracciones laborales.
+
+---
+
+## Ejemplo práctico: así debe quedar un registro diario
+
+Imagina que trabajas en una consultora en Madrid con un horario de 9:00 a 18:00 con una hora de descanso. Tu registro diario debería verse así:
+
+| Fecha | Entrada | Salida | Horas trabajadas | Firma trabajador |
+|-------|---------|--------|------------------|-------------------|
+| 08/09/2026 | 09:00 | 18:00 | 8h | María García |
+| 09/09/2026 | 09:15 | 18:15 | 8h | María García |
+| 10/09/2026 | 08:45 | 19:30 | 10h 15min | María García |
+| 11/09/2026 | 09:00 | 18:00 | 8h | María García |
+
+**Nota sobre el día 10/09**: María trabajó 10 horas y 15 minutos. Eso supone 2 horas y 15 minutos de jornada extraordinaria (si su jornada normal es de 8 horas). La empresa debe registrar esa diferencia y puede que tenga que abonar esas horas extraordinarias o compensarlas con descanso según lo que diga el convenio colectivo.
+
+### Ejemplo con jornada flexible
+
+Si tu empresa tiene horario flexible (por ejemplo, puedes entrar entre 8:00 y 10:00 y salir 8 horas después), el registro debe reflejar igualmente la hora exacta de entrada y salida. No vale indicar solo "8 horas trabajadas".
+
+| Fecha | Entrada | Salida | Horas trabajadas | Firma |
+|-------|---------|--------|------------------|-------|
+| 08/09/2026 | 08:15 | 17:15 | 8h | Carlos Ruiz |
+| 09/09/2026 | 09:45 | 18:45 | 8h | Carlos Ruiz |
+| 10/09/2026 | 08:30 | 19:00 | 9h 30min | Carlos Ruiz |
+
+---
+
+## Sanciones por no llevar registro de jornada
+
+El incumplimiento de la obligación de registro de jornada constituye una **infracción grave** en materia de tiempo de trabajo. Las consecuencias varían según la gravedad:
+
+### Infracciones leves
+
+No se aplican directamente al registro de jornada, pero sí a ciertos aspectos formales como errores aislados en la conservación de registros.
+
+### Infracciones graves (las más comunes)
+
+| Concepto | Sanción |
+|----------|---------|
+| No llevar registro de jornada | Multa de **751 € a 7.500 €** por empresa o centro de trabajo |
+| No conservar los registros 4 años | Multa de **751 € a 7.500 €** |
+| No facilitar los registros a la representación legal | Multa de **751 € a 7.500 €** |
+
+### Infracciones muy graves
+
+| Concepto | Sanción |
+|----------|---------|
+| Falsificación del registro de jornada | Multa de hasta **225.018 €** |
+| Obstrucción a la Inspección de Trabajo | Multa de hasta **225.018 €** |
+| Fraude deliberado en el registro | Multa de hasta **225.018 €** |
+
+### ¿Qué ocurre si el trabajador reclama horas extraordinarias y no hay registro?
+
+Aquí es donde entra en juego un criterio fundamental del **Tribunal Supremo** (Sentencia 372/2026, de 15 de abril):
+
+- **Si el trabajador tiene un horario fijo y predeterminado**: la ausencia de registro **no genera automáticamente** que el trabajador tenga razón. Debe aportar al menos indicios (mensajes, correos, tiques, cuadrantes, geolocalización) de que realmente trabajó más de lo pactado.
+- **Si el trabajador tiene horarios variables o impredecibles**: la carga de probar la jornada recae directamente sobre la empresa. Si no tiene registro, **el juez puede dar por acreditada la jornada que declare el trabajador**, siempre que no sea ilógica o desproporcionada.
+
+En cualquier caso, la empresa que no lleva registro se sitúa en una posición procesal muy desfavorable. La regla práctica es clara: **no tener registro es casi peor que tener uno imperfecto**.
+
+---
+
+## ¿Cómo impugnar si el registro no se ajusta a la realidad?
+
+Si eres trabajador y tu empresa lleva un registro de jornada que no refleja la realidad de tu tiempo de trabajo, tienes derecho a impugnarlo. Este es el proceso paso a paso:
+
+### Paso 1: Recopila pruebas
+
+Antes de acudir a un juez, necesitas reunir evidencias que demuestren que el registro no es veraz. Algunas pruebas útiles:
+
+- **Mensajes de WhatsApp o Telegram** con tu jefe o compañeros en horarios que no coinciden con el registro.
+- **Correos electrónicos** enviados o recibidos fuera del horario registrado.
+- **Fotos de pantallas** con fechas y horas visibles.
+- **Tiques de parking, transporte o comedor** que acrediten tu presencia en determinadas horas.
+- **Testimonios de compañeros** de trabajo.
+- **Datos de geolocalización** del móvil o del sistema de la empresa.
+
+### Paso 2: Intenta una reclamación interna
+
+Antes de demandar, es recomendable plantear la cuestión internamente. Solicita por escrito a tu empresa una rectificación del registro y conserva copia de esa solicitud.
+
+### Paso 3: Presenta una papeleta de conciliación
+
+Antes de acudir a un juzgado de lo social, debes presentar una **papeleta de conciliación** ante el SMAC (Servicio de Mediación, Arbitraje y Conciliación) de tu comunidad autónoma. Este paso es obligatorio en España.
+
+- **Plazo**: dentro de los **20 días hábiles** desde que conociste el problema.
+- **Coste**: gratuito.
+- **Dónde**: en la oficina del SMAC de tu localidad o telemáticamente.
+
+### Paso 4: Demanda ante el Juzgado de lo Social
+
+Si la conciliación no produce resultado (o la empresa no acude), puedes interponer una **demanda ante el Juzgado de lo Social**.
+
+En la demanda puedes solicitar:
+
+- **Reconocimiento de la jornada real** efectivamente trabajada.
+- **Pago de horas extraordinarias** no abonadas, con el recargo correspondiente.
+- **Indemnización** por daños y perjuicios si procede.
+
+### Plazo para impugnar
+
+El plazo general para reclamaciones laborales es de **20 días hábiles** desde que tuviste conocimiento de la irregularidad. No lo confundas con el plazo de 4 años de conservación de los registros: ese es el que tiene la empresa para guardarlos, no el que tienes tú para reclamar.
+
+### ¿Necesitas abogado?
+
+Para reclamaciones simples de horas extraordinarias puedes acudir a un **graduado social** o incluso presentar la demanda tú mismo. Sin embargo, si la cuantía es elevada o la empresa tiene un departamento jurídico potente, contar con **abogado especializado en derecho laboral** aumenta significativamente tus posibilidades de éxito.
+
+---
+
+## Los errores más comunes de las empresas con el registro de jornada
+
+La Inspección de Trabajo ha identificado los mismos errores una y otra vez. Conocerlos te permite detectar si tu empresa los está cometiendo:
+
+### 1. Usar un archivo Excel editable sin control de cambios
+
+Es el error más frecuente. Un archivo Excel se puede modificar sin dejar rastro de quién hizo el cambio ni cuándo. La Inspección de Trabajo en 2026 **ya no acepta** un Excel editable como registro válido. Necesita un sistema que garantice la integridad de los datos.
+
+### 2. Registrar solo el total de horas, no la hora de entrada y salida
+
+Muchas empresas anotan "8 horas trabajadas" en lugar de "entrada: 9:00, salida: 18:00". La ley es explícita: debe incluir el **horario concreto de inicio y finalización**. No basta con el total.
+
+### 3. No registrar diariamente
+
+Algunas empresas consolidan el registro a final de semana o de mes. Esto incumple la obligación de registro **diario**. Cada día debe quedar documentado individualmente.
+
+### 4. No hacer firmar a los trabajadores
+
+El registro debe ser verificable por el trabajador. Si este no lo firma ni puede comprobarlo, la empresa está en una posición débil ante cualquier reclamación. Un registro que el trabajador no ha validado es fácilmente impugnable.
+
+### 5. No conservar los registros durante 4 años
+
+La conservación mínima es de **cuatro años**. Si la empresa destruye o pierde los registros de hace tres años y un trabajador reclama horas extraordinarias de ese periodo, la empresa queda en evidencia.
+
+### 6. No poner los registros a disposición de la representación de los trabajadores
+
+La ley exige que los registros estén disponibles para el comité de empresa o los delegados sindicales. Si la empresa se niega a facilitarlos, comete una infracción autónoma.
+
+### 7. Falsificar registros retroactivamente
+
+Algunas empresas "completan" registros meses después, añadiendo días que no se registraron en su momento. Esto puede constituir **infracción muy grave** con multas de hasta 225.018 €, y en casos extremos puede haber responsabilidad penal por falsedad documental.
+
+---
+
+## Casos especiales: teletrabajo, turnos y jornadas variables
+
+### Teletrabajo
+
+Desde la Ley de Trabajo a Distancia (Ley 10/2021), los trabajadores en teletrabajo también deben registrar su jornada. El método puede ser digital (software de fichaje, aplicación móvil) pero no hay excepción a la obligación.
+
+**Ejemplo**: Ana trabaja en remoto 3 días a la semana para una empresa de Barcelona. Su empresa usa una aplicación donde ficha al empezar y al terminar. Los días que está en la oficina, usa el reloj de presencia. Ambos métodos son válidos siempre que registren entrada y salida.
+
+### Trabajadores por turnos
+
+En empresas con varios turnos (hostelería, sanidad, industria), cada turno de cada trabajador debe registrarse por separado. El registro no puede agrupar turnos.
+
+### Jornada.compressiva o arranques y paradas
+
+Si tu jornada no es continua (por ejemplo, trabajas de 9:00 a 14:00 y de 17:00 a 20:00), el registro debe reflejar ambas franjas horarias.
+
+| Fecha | Entrada 1 | Salida 1 | Entrada 2 | Salida 2 | Total horas |
+|-------|-----------|----------|-----------|----------|-------------|
+| 08/09/2026 | 09:00 | 14:00 | 17:00 | 20:00 | 8h |
+
+---
+
+## Conclusión
+
+El registro de jornada laboral en España no es un trámite burocrático sin importancia. Es una **obligación legal de carácter diario** que afecta a todas las empresas sin excepción. No llevarlo puede costar desde 751 euros hasta más de 225.000 euros en sanciones graves y muy graves. Y para el trabajador, la ausencia de registro o la manipulación del mismo puede ser el punto de partida de una reclamación laboral legítima.
+
+Si eres **empresa**: implanta hoy mismo un sistema de registro fiable, diario y con integridad de datos. No esperes a una inspección.
+
+Si eres **trabajador**: revisa tu registro y asegúrate de que refleja tu jornada real. Si no es así, tienes derecho a impugnarlo y a reclamar lo que te corresponde.
+
+---
+
+## Preguntas frecuentes
+
+### ¿Puede la empresa sancionarme si no ficho?
+
+**Sí, pero con matices.** La empresa puede establecer medidas disciplinarias si el trabajador se niega sistemáticamente a fichar. Sin embargo, la **obligación de registro recae sobre la empresa, no sobre el trabajador**. Es la empresa quien debe garantizar que el registro se lleva a cabo. Si un trabajador puntualmente no ficha, la empresa debe gestionar el registro de todos modos (por ejemplo, anotándolo manualmente con el visto bueno del trabajador).
+
+### ¿Qué pasa si la empresa no tiene comité de empresa?
+
+Si no existe representación legal de los trabajadores, la obligación de poner los registros a disposición de los trabajadores sigue vigente. En la práctica, la empresa debe facilitar los registros a cualquier trabajador que lo solicite.
+
+### ¿Los registros de hace más de 4 años se pueden destruir?
+
+**Sí**, la empresa no tiene obligación de conservarlos más allá de los cuatro años. Si un trabajador reclama horas extraordinarias de hace 5 años y la empresa ya destruyó los registros, la carga de prueba puede volverse favorable al trabajador según las circunstancias.
+
+### ¿Es válido un registro en formato papel?
+
+**En teoría sí, en la práctica no.** La ley no prohíbe expresamente el registro en papel, pero el Real Decreto 176/2025 y las instrucciones de la Inspección de Trabajo consideran que un registro en papel no garantiza la fiabilidad e inalterabilidad exigidas. Para evitar problemas, la recomendación es usar un sistema digital con registro de cambios.
+
+### ¿Cuánto tiempo tarda la Inspección de Trabajo en revisar un registro?
+
+No hay un plazo fijo. La Inspección puede actuar por denuncia del trabajador o por inspección programada. En general, la resolución de un expediente sancionador puede tardar entre **3 y 12 meses**, aunque en casos urgentes puede ser más rápido.
+
+---
+
+*Artículo actualizado en septiembre de 2026. La información legal contenida tiene carácter orientativo y no sustituye el asesoramiento de un abogado laboralista o graduado social. Para casos concretos, consulta con un profesional.*

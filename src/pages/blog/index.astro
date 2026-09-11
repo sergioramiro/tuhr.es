@@ -1,0 +1,103 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    slug: 'finiquito-errores',
+    title: 'Cómo calcular tu finiquito: errores comunes que te hacen perder dinero',
+    description: 'Descubre los errores más frecuentes al calcular tu finiquito y cómo evitar que te paguen de menos. Ejemplos reales y consejos prácticos.',
+    category: 'Finiquito',
+    date: '2026-09-11',
+    readTime: '12 min',
+  },
+  {
+    slug: 'permisos-laborales',
+    title: 'Permisos laborales retribuidos en España 2026: guía completa',
+    description: 'Todos los permisos retribuidos que te corresponden como trabajador en España: nacimiento, matrimonio, fallecimiento y más.',
+    category: 'Derechos',
+    date: '2026-09-11',
+    readTime: '10 min',
+  },
+  {
+    slug: 'baja-medica',
+    title: 'Baja médica: cuánto cobras y qué derechos tienes',
+    description: 'Guía completa sobre la baja por enfermedad en España: cuánto cobras por enfermedad común, accidente laboral y qué derechos conservas.',
+    category: 'Derechos',
+    date: '2026-09-11',
+    readTime: '11 min',
+  },
+  {
+    slug: 'autonomo-vs-ajena',
+    title: 'Trabajo autónomo vs cuenta ajena: qué te conviene más en 2026',
+    description: 'Comparativa completa entre ser autónomo y trabajar por cuenta ajena: impuestos, seguridad social, derechos y cuándo te conviene cada opción.',
+    category: 'Empleo',
+    date: '2026-09-11',
+    readTime: '13 min',
+  },
+  {
+    slug: 'registro-jornada',
+    title: 'Registro de jornada laboral en España 2026: cómo funciona',
+    description: 'Todo lo que necesitas saber sobre el registro de jornada: qué dice la ley, quién está obligado, sanciones y cómo impugnar.',
+    category: 'Normativa',
+    date: '2026-09-11',
+    readTime: '10 min',
+  },
+  {
+    slug: 'vacaciones-derechos',
+    title: 'Vacaciones laborales en España: tus derechos reales en 2026',
+    description: 'Cuántos días de vacaciones corresponden, cómo se calculan, qué pasa con los festivos y qué hacer si te los niegan.',
+    category: 'Derechos',
+    date: '2026-09-11',
+    readTime: '10 min',
+  },
+];
+---
+
+<Layout
+  title="Blog | tuhr.es"
+  description="Artículos prácticos sobre derecho laboral en España: finiquito, permisos, baja médica, vacaciones y más. Información actualizada 2026."
+>
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Blog</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-2xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Blog</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/60 max-w-2xl">
+        Artículos prácticos sobre tus derechos laborales. Información actualizada, sin jaleo legal.
+      </p>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-3xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+        {articles.map((article) => (
+          <a
+            href={`/blog/${article.slug}/`}
+            class="group block bg-surface rounded-xl border border-outline/10 p-space-lg hover:border-primary/30 transition-all no-underline"
+          >
+            <span class="inline-block text-xs font-semibold text-primary bg-primary/10 px-space-sm py-space-xs rounded-full mb-space-md">
+              {article.category}
+            </span>
+            <h2 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors mb-space-sm">
+              {article.title}
+            </h2>
+            <p class="text-body-sm text-on-surface/60 mb-space-md line-clamp-3">
+              {article.description}
+            </p>
+            <div class="flex items-center gap-space-md text-xs text-on-surface/40">
+              <span>{article.readTime} de lectura</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+</Layout>
