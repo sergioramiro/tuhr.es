@@ -1,15 +1,15 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import GuideLayout from '../../../layouts/GuideLayout.astro';
 import { marked } from 'marked';
 import fs from 'fs';
 import path from 'path';
 
-const mdPath = path.join(process.cwd(), 'src/pages/guias/contrato-prestacion-servicios/content.md');
+const mdPath = path.join(process.cwd(), 'src/pages/guias/contrato-prestacion-servicios/_content.md');
 const md = fs.readFileSync(mdPath, 'utf8');
 const htmlContent = marked.parse(md);
 ---
 
-<Layout
+<GuideLayout
   title="Contrato de prestación de servicios: todo lo que necesitas saber | tuhr.es"
   description="Diferencias con el contrato laboral, cláusulas esenciales, implicaciones fiscales y consejos para autónomos que prestan servicios a empresas."
 >
@@ -33,4 +33,4 @@ const htmlContent = marked.parse(md);
       </div>
     </article>
   </main>
-</Layout>
+</GuideLayout>

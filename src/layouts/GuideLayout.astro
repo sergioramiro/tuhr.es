@@ -1,0 +1,27 @@
+---
+import Layout from './Layout.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalUrl = `https://tuhr.es${Astro.url.pathname}`;
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tuhr.es/" },
+    { "@type": "ListItem", "position": 2, "name": "Guías", "item": "https://tuhr.es/guias/" },
+    { "@type": "ListItem", "position": 3, "name": title.split("|")[0].trim() }
+  ]
+});
+---
+
+<Layout title={title} description={description}>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json" set:html={breadcrumbSchema} />
+  </Fragment>
+  <slot />
+</Layout>

@@ -1,15 +1,15 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import GuideLayout from '../../../layouts/GuideLayout.astro';
 import { marked } from 'marked';
 import fs from 'fs';
 import path from 'path';
 
-const mdPath = path.join(process.cwd(), 'src/pages/guias/contrato-arrendamiento-guia/content.md');
+const mdPath = path.join(process.cwd(), 'src/pages/guias/contrato-arrendamiento-guia/_content.md');
 const md = fs.readFileSync(mdPath, 'utf8');
 const htmlContent = marked.parse(md);
 ---
 
-<Layout
+<GuideLayout
   title="Guía completa de alquiler de vivienda 2026 | tuhr.es"
   description="Todo lo que necesitas saber sobre alquiler de vivienda en España: tipos de contrato, derechos del inquilino, fianza, actualización de renta y legislación vigente."
 >
@@ -33,4 +33,4 @@ const htmlContent = marked.parse(md);
       </div>
     </article>
   </main>
-</Layout>
+</GuideLayout>

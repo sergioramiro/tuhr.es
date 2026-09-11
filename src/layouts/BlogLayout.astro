@@ -7,12 +7,55 @@ export interface Props {
   category: string;
   date: string;
   readTime: string;
+  slug?: string;
 }
 
-const { title, description, category, date, readTime } = Astro.props;
+const { title, description, category, date, readTime, slug } = Astro.props;
+const canonicalUrl = `https://tuhr.es${Astro.url.pathname}`;
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Organization",
+    "name": "tuhr.es",
+    "url": "https://tuhr.es"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "tuhr.es",
+    "url": "https://tuhr.es",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tuhr.es/favicon.svg"
+    }
+  },
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalUrl
+  },
+  "articleSection": category,
+  "inLanguage": "es"
+});
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tuhr.es/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tuhr.es/blog/" },
+    { "@type": "ListItem", "position": 3, "name": title.split(":")[0] }
+  ]
+});
 ---
 
 <Layout title={`${title} | tuhr.es`} description={description}>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json" set:html={articleSchema} />
+    <script type="application/ld+json" set:html={breadcrumbSchema} />
+  </Fragment>
   <main class="pt-16">
     <!-- Breadcrumb -->
     <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">

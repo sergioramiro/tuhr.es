@@ -1,15 +1,15 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
+import GuideLayout from '../../../layouts/GuideLayout.astro';
 import { marked } from 'marked';
 import fs from 'fs';
 import path from 'path';
 
-const mdPath = path.join(process.cwd(), 'src/pages/guias/derechos-trabajador-despido/content.md');
+const mdPath = path.join(process.cwd(), 'src/pages/guias/derechos-trabajador-despido/_content.md');
 const md = fs.readFileSync(mdPath, 'utf8');
 const htmlContent = marked.parse(md);
 ---
 
-<Layout
+<GuideLayout
   title="Derechos del trabajador ante un despido | tuhr.es"
   description="Conoce todos tus derechos si te han despedido: tipos de despido, indemnización, plazos para impugnar, finiquito y cómo actuar paso a paso."
 >
@@ -33,4 +33,4 @@ const htmlContent = marked.parse(md);
       </div>
     </article>
   </main>
-</Layout>
+</GuideLayout>
