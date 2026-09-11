@@ -61,6 +61,7 @@ import Layout from '../layouts/Layout.astro';
         <a href="/calculadoras/" class="text-on-surface/70 hover:text-primary transition-colors">Calculadoras</a>
         <a href="/plantillas/" class="text-on-surface/70 hover:text-primary transition-colors">Plantillas</a>
         <a href="/guias/" class="text-on-surface/70 hover:text-primary transition-colors">Guías</a>
+        <a href="/blog/" class="text-on-surface/70 hover:text-primary transition-colors">Blog</a>
       </nav>
     </div>
   </header>
@@ -169,6 +170,35 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
+    <!-- Blog -->
+    <section class="bg-surface-container-low/50">
+      <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-xl text-center">Blog laboral</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+          <a href="/blog/finiquito-errores/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <span class="text-xs text-primary font-semibold">Finiquito</span>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors mt-space-sm">Cómo calcular tu finiquito</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Errores comunes que te hacen perder dinero.</p>
+          </a>
+          <a href="/blog/baja-medica/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <span class="text-xs text-primary font-semibold">Baja médica</span>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors mt-space-sm">Baja médica: qué derechos tienes</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Cuánto cobras y qué puedes hacer.</p>
+          </a>
+          <a href="/blog/permisos-laborales/" class="group bg-surface-card rounded-card p-space-lg shadow-card hover:shadow-card-hover transition-all duration-200 border border-outline-variant/30 no-underline">
+            <span class="text-xs text-primary font-semibold">Permisos</span>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors mt-space-sm">Permisos laborales retribuidos</h3>
+            <p class="mt-space-sm text-body-sm text-on-surface/60">Todos los permisos que te corresponden en 2026.</p>
+          </a>
+        </div>
+        <div class="mt-space-xl text-center">
+          <a href="/blog/" class="inline-flex items-center gap-space-sm text-primary font-semibold hover:underline no-underline">
+            Ver todos los artículos →
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="bg-primary/5 border-y border-outline-variant/20">
       <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-3xl text-center">
@@ -201,6 +231,15 @@ import Layout from '../layouts/Layout.astro';
             <li><a href="/calculadoras/finiquito/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Finiquito</a></li>
             <li><a href="/calculadoras/pagas-extras/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Pagas extras</a></li>
             <li><a href="/calculadoras/despido/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Despido improcedente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Blog</h4>
+          <ul class="space-y-space-sm text-body-sm">
+            <li><a href="/blog/finiquito-errores/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Errores de finiquito</a></li>
+            <li><a href="/blog/baja-medica/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Baja médica</a></li>
+            <li><a href="/blog/permisos-laborales/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Permisos laborales</a></li>
+            <li><a href="/blog/" class="text-on-surface/60 hover:text-primary transition-colors no-underline">Ver todos →</a></li>
           </ul>
         </div>
         <div>
