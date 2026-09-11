@@ -18,9 +18,10 @@ const articleSchema = JSON.stringify({
   "headline": title,
   "description": description,
   "author": {
-    "@type": "Organization",
-    "name": "tuhr.es",
-    "url": "https://tuhr.es"
+    "@type": "Person",
+    "name": "Sergio Ramiro",
+    "jobTitle": "Experto en derecho laboral",
+    "url": "https://tuhr.es/aviso-legal/"
   },
   "publisher": {
     "@type": "Organization",
@@ -59,7 +60,7 @@ const breadcrumbSchema = JSON.stringify({
   <main class="pt-16">
     <!-- Breadcrumb -->
     <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
-      <nav class="text-body-sm text-on-surface/50">
+      <nav class="text-body-sm text-on-surface/60">
         <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
         <span class="mx-space-sm">›</span>
         <a href="/blog/" class="hover:text-primary transition-colors no-underline">Blog</a>
@@ -75,13 +76,24 @@ const breadcrumbSchema = JSON.stringify({
           {category}
         </span>
         <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">{title}</h1>
-        <p class="mt-space-md text-body-sm text-on-surface/50">
+        <p class="mt-space-md text-body-sm text-on-surface/60">
           {date} · {readTime} de lectura
         </p>
       </header>
 
       <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
         <slot />
+      </div>
+
+      <!-- Author -->
+      <div class="mt-space-3xl flex items-center gap-space-md p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/20">
+        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <span class="text-primary font-bold text-lg">SR</span>
+        </div>
+        <div>
+          <p class="text-body-sm font-bold text-on-surface">Sergio Ramiro</p>
+          <p class="text-body-sm text-on-surface/60">Experto en derecho laboral. Más de 10 años asesorando a trabajadores y autónomos en España.</p>
+        </div>
       </div>
 
       <!-- CTA -->
