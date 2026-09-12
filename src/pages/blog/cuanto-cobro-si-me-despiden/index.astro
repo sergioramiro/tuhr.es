@@ -1,0 +1,29 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from 'marked';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '07-cuanto-cobro-si-me-despiden.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+---
+
+<BlogLayout
+  title="Cuánto cobro si me despiden: guía completa con ejemplos"
+  description="Descubre cuánto cobras si te despiden en España: tipos de despido, cálculo de finiquito e indemnización, y qué derechos tienes como trabajador."
+  category="Despido"
+  date="12 septiembre 2026"
+  readTime="10 min"
+  cta={{
+    title: "Calcula tu despido ahora",
+    description: "Descubre cuánto te corresponden de finiquito e indemnización con nuestra calculadora gratuita.",
+    links: [
+      { href: "/calculadoras/despido/", text: "Calcular indemnización", primary: true },
+      { href: "/calculadoras/finiquito/", text: "Calcular finiquito", primary: false }
+    ]
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

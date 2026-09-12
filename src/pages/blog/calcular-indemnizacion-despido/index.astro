@@ -1,0 +1,29 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from 'marked';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '09-calcular-indemnizacion-despido.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+---
+
+<BlogLayout
+  title="Cómo calcular la indemnización por despido: guía paso a paso"
+  description="Aprende a calcular tu indemnización por despido en España con fórmulas, ejemplos prácticos y una tabla resumen. Guía actualizada 2026."
+  category="Despido"
+  date="12 septiembre 2026"
+  readTime="11 min"
+  cta={{
+    title: "Calcula tu indemnización ahora",
+    description: "Obtén un desglose detallado de finiquito e indemnización en menos de 2 minutos.",
+    links: [
+      { href: "/calculadoras/despido/", text: "Calcular mi indemnización", primary: true },
+      { href: "/calculadoras/finiquito/", text: "Calcular mi finiquito", primary: false }
+    ]
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

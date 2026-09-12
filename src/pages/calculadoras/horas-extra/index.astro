@@ -1,0 +1,64 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CalculadoraHorasExtra from '../../../components/calculadoras/CalculadoraHorasExtra';
+---
+
+<Layout
+  title="Calculadora de horas extra — Cuánto cobrar 2026 | tuhr.es"
+  description="Calcula cuánto cobrarás por tus horas extra. Multiplicador 1.5× normal, 2× nocturno. Herramienta gratuita con fórmulas oficiales del Estatuto de los Trabajadores."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de horas extra",
+      "url": "https://tuhr.es/calculadoras/horas-extra/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Calcula cuánto cobrarás por tus horas extra con multiplicadores oficiales",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Horas extra</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de horas extra</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        ¿Cuánto cobrarás por tus horas extra? Calcula tu retribución con los multiplicadores oficiales: 1.5× para horas normales y 2× para nocturnas. Herramienta gratuita.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <CalculadoraHorasExtra client:load />
+    </section>
+
+    <!-- Info -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Cómo se calculan las horas extra?</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Según el Estatuto de los Trabajadores, las horas extraordinarias son todas aquellas que superen la jornada laboral máxima de 40 horas semanales (o el tope establecido en el convenio).</p>
+          <p><strong>Multiplicador normal:</strong> 1.5× sobre el salario hora base. Se aplica a las horas extra realizadas en jornada diurna.</p>
+          <p><strong>Multiplicador nocturno:</strong> 2× sobre el salario hora base. Se aplica a las horas extra realizadas entre las 22:00 y las 6:00.</p>
+          <p><strong>Salario hora:</strong> Se calcula dividiendo el salario mensual entre las horas mensuales (basado en 40h semanales).</p>
+          <p><strong>Límite legal:</strong> No se pueden realizar más de 80 horas extra al año (salvo que el convenio establezca un tope inferior).</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

@@ -14,6 +14,64 @@ const htmlContent = marked.parse(md);
   description="Aprende a leer y calcular tu nómina: salario base, complementos, retención IRPF, cuotas de Seguridad Social y pagas extras. Guía práctica con ejemplos."
   ogImage="https://tuhr.es/images/og-nomina.jpg"
 >
+  <Fragment>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es una nómina y cómo se estructura?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Una nómina en España se divide en tres grandes bloques: percepciones salariales (salario base, complementos, pagas extras, horas extra), percepciones no salariales (dietas, desplazamientos, planes de pensiones) y deducciones (IRPF, cuotas de Seguridad Social, anticipos). La diferencia entre percepciones y deducciones es el salario neto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre salario bruto y salario neto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El salario bruto es el total de percepciones salariales antes de deducciones. El salario neto es lo que realmente recibes en tu cuenta bancaria después de restar las cuotas de Seguridad Social y la retención de IRPF. La fórmula es: Percepciones salariales − Deducciones = Salario neto."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué porcentaje de Seguridad Social paga el trabajador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El trabajador cotiza aproximadamente un 7,85%-7,90% de su base de cotización: 4,70% por contingencias comunes, 1,55% por contingencias profesionales, 1,55%-1,60% por desempleo (según tipo de contrato) y 0,10% por formación profesional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se calcula la retención del IRPF en la nómina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El porcentaje de retención de IRPF depende del salario bruto anual, la situación familiar, discapacidad y otros factores personales. Para 2026, los tramos van desde 0% (hasta 12.450 €) hasta el 47% (más de 60.000 €). La empresa está obligada a comunicarte el porcentaje de retención que aplica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué son las pagas extraordinarias y cómo se calculan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Las pagas extraordinarias son remuneraciones adicionales que se cobran generalmente en junio y diciembre. El Estatuto de los Trabajadores establece como mínimo dos pagas al año. La reserva mensual se calcula como: (salario base × número de pagas extras) / 12 meses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo comprobar si mi nómina es correcta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para verificar tu nómina: comprueba que el salario base coincide con tu contrato, revisa que aparecen todos los complementos que te corresponden, verifica que la base de cotización incluye salario base + complementos + horas extra, calcula la cuota SS del trabajador con los porcentajes oficiales y revisa que la retención IRPF es coherente con tu salario bruto."
+          }
+        }
+      ]
+    }
+    </script>
+  </Fragment>
   <main class="pt-16">
     <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
       <nav class="text-body-sm text-on-surface/60">

@@ -1,0 +1,29 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from 'marked';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '08-baja-voluntaria-sin-preaviso.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+---
+
+<BlogLayout
+  title="Baja voluntaria sin preaviso: qué consecuencias tiene"
+  description="¿Puedo darme de baja sin preaviso? Consecuencias legales, indemnización que puedes perder, y qué hacer si necesitas irte de inmediato."
+  category="Despido"
+  date="12 septiembre 2026"
+  readTime="9 min"
+  cta={{
+    title: "Calcula tu finiquito antes de irte",
+    description: "¿Vas a dimitir? Calcula cuánto te corresponden de finiquito para no perder dinero.",
+    links: [
+      { href: "/calculadoras/finiquito/", text: "Calcular mi finiquito", primary: true },
+      { href: "/calculadoras/nomina/", text: "Ver tu nómina", primary: false }
+    ]
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

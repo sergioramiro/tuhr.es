@@ -1,0 +1,63 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraAntiguedad';
+---
+
+<Layout
+  title="Calculadora de antigüedad — Plus de antigüedad 2026 | tuhr.es"
+  description="Calcula tu plus de antigüedad según tus años trabajados y salario. Herramienta gratuita con fórmulas oficiales del convenio colectivo."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de antigüedad",
+      "url": "https://tuhr.es/calculadoras/antiguedad/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Calcula tu plus de antigüedad según tus años trabajados y salario",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Antigüedad</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de antigüedad</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        ¿Cuánto te corresponde de plus de antigüedad? Calcula tu indemnización según tus años trabajados en la empresa y tu salario bruto anual. Herramienta gratuita con fórmulas oficiales.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <CalculadoraAntiguedad client:load />
+    </section>
+
+    <!-- Info -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Qué es el plus de antigüedad?</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>El plus de antigüedad (o plus de permanencia) es una complemento salarial que reconocen muchos convenios colectivos para trabajadores con varios años de antigüedad en la empresa.</p>
+          <p><strong>¿Cómo se calcula?</strong> Generalmente, el porcentaje se incrementa cada 2 años de antigüedad, comenzando en 1% y llegando a un máximo del 10% a partir de 20 años.</p>
+          <p><strong>¿Es obligatorio?</strong> No es un derecho legal general, pero muchos convenios colectivos lo establecen. Consulta tu convenio para conocer el porcentaje exacto.</p>
+          <p><strong>Ejemplo:</strong> Un trabajador con 10 años de antigüedad y 30.000€ de salario anual recibiría un 5% adicional, es decir, 1.500€ anuales extra.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
