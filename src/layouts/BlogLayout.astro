@@ -8,9 +8,14 @@ export interface Props {
   date: string;
   readTime: string;
   slug?: string;
+  cta?: {
+    title: string;
+    description: string;
+    links: Array<{ href: string; text: string; primary?: boolean }>;
+  };
 }
 
-const { title, description, category, date, readTime, slug } = Astro.props;
+const { title, description, category, date, readTime, slug, cta } = Astro.props;
 const canonicalUrl = `https://tuhr.es${Astro.url.pathname}`;
 const articleSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -19,7 +24,7 @@ const articleSchema = JSON.stringify({
   "description": description,
   "author": {
     "@type": "Person",
-    "name": "Sergio Ramiro",
+    "name": "Carlos Méndez",
     "jobTitle": "Experto en derecho laboral",
     "url": "https://tuhr.es/aviso-legal/"
   },
@@ -88,31 +93,49 @@ const breadcrumbSchema = JSON.stringify({
       <!-- Author -->
       <div class="mt-space-3xl flex items-center gap-space-md p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/20">
         <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-          <span class="text-primary font-bold text-lg">SR</span>
+          <span class="text-primary font-bold text-lg">CM</span>
         </div>
         <div>
-          <p class="text-body-sm font-bold text-on-surface">Sergio Ramiro</p>
+          <p class="text-body-sm font-bold text-on-surface">Carlos Méndez</p>
           <p class="text-body-sm text-on-surface/60">Experto en derecho laboral. Más de 10 años asesorando a trabajadores y autónomos en España.</p>
         </div>
       </div>
 
       <!-- CTA -->
-      <div class="mt-space-3xl p-space-xl bg-primary/5 rounded-xl border border-primary/10">
-        <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">
-          ¿Necesitas calcular algo?
-        </h3>
-        <p class="text-body-sm text-on-surface/60 mb-space-md">
-          Usa nuestras calculadoras gratuitas para obtener resultados exactos.
-        </p>
-        <div class="flex flex-wrap gap-space-sm">
-          <a href="/calculadoras/nomina/" class="inline-block bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
-            Calcular nómina
-          </a>
-          <a href="/calculadoras/finiquito/" class="inline-block bg-surface text-on-surface border border-outline/20 px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:border-primary/30 transition-colors no-underline">
-            Calcular finiquito
-          </a>
+      {cta ? (
+        <div class="mt-space-3xl p-space-xl bg-primary/5 rounded-xl border border-primary/10">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">
+            {cta.title}
+          </h3>
+          <p class="text-body-sm text-on-surface/60 mb-space-md">
+            {cta.description}
+          </p>
+          <div class="flex flex-wrap gap-space-sm">
+            {cta.links.map((link) => (
+              <a href={link.href} class={`inline-block px-space-md py-space-sm rounded-lg text-body-sm font-semibold transition-colors no-underline ${link.primary !== false ? 'bg-primary text-on-primary hover:bg-primary/90' : 'bg-surface text-on-surface border border-outline/20 hover:border-primary/30'}`}>
+                {link.text}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : (
+        <div class="mt-space-3xl p-space-xl bg-primary/5 rounded-xl border border-primary/10">
+          <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">
+            ¿Necesitas calcular algo?
+          </h3>
+          <p class="text-body-sm text-on-surface/60 mb-space-md">
+            Usa nuestras calculadoras gratuitas para obtener resultados exactos.
+          </p>
+          <div class="flex flex-wrap gap-space-sm">
+            <a href="/calculadoras/nomina/" class="inline-block bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
+              Calcular nómina
+            </a>
+            <a href="/calculadoras/finiquito/" class="inline-block bg-surface text-on-surface border border-outline/20 px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:border-primary/30 transition-colors no-underline">
+              Calcular finiquito
+            </a>
+          </div>
+        </div>
+      )}
 
       <!-- Related -->
       <div class="mt-space-3xl">

@@ -16,6 +16,14 @@ const htmlContent = marked.parse(md);
   category="Finiquito"
   date="11 septiembre 2026"
   readTime="10 min"
+  cta={{
+    title: "Calcula tu finiquito ahora",
+    description: "Evita errores y descubre cuánto te corresponden realmente con nuestra calculadora gratuita.",
+    links: [
+      { href: "/calculadoras/finiquito/", text: "Calcular mi finiquito", primary: true },
+      { href: "/calculadoras/despido/", text: "Calcular indemnización por despido", primary: false }
+    ]
+  }}
 >
   <Fragment set:html={htmlContent} />
 </BlogLayout>

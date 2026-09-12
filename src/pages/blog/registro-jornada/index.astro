@@ -16,6 +16,14 @@ const htmlContent = marked.parse(md);
   category="Normativa"
   date="11 septiembre 2026"
   readTime="10 min"
+  cta={{
+    title: "¿Te están registrando bien tu jornada?",
+    description: "Verifica que tu empresa cumple la ley y conoce tus derechos si no es así.",
+    links: [
+      { href: "/calculadoras/nomina/", text: "Revisar mi nómina", primary: true },
+      { href: "/blog/permisos-laborales/", text: "Conocer tus permisos", primary: false }
+    ]
+  }}
 >
   <Fragment set:html={htmlContent} />
 </BlogLayout>

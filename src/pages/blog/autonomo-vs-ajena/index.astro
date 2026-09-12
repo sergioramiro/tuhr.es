@@ -16,6 +16,14 @@ const htmlContent = marked.parse(md);
   category="Empleo"
   date="11 septiembre 2026"
   readTime="10 min"
+  cta={{
+    title: "¿Cuánto ganas realmente?",
+    description: "Compara tu nómina actual con lo que ganarías como autónomo con nuestras calculadoras.",
+    links: [
+      { href: "/calculadoras/nomina/", text: "Calcular mi nómina actual", primary: true },
+      { href: "/blog/finiquito-errores/", text: "Errores comunes en finiquitos", primary: false }
+    ]
+  }}
 >
   <Fragment set:html={htmlContent} />
 </BlogLayout>

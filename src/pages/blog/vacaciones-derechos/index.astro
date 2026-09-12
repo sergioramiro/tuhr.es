@@ -16,6 +16,14 @@ const htmlContent = marked.parse(md);
   category="Derechos"
   date="11 septiembre 2026"
   readTime="10 min"
+  cta={{
+    title: "Calcula tus pagas extras",
+    description: "¿Sabías que las pagas extras también se calculan según tus días trabajados? Descuánto te corresponden.",
+    links: [
+      { href: "/calculadoras/pagas-extras/", text: "Calcular pagas extras", primary: true },
+      { href: "/calculadoras/finiquito/", text: "Incluir vacaciones en finiquito", primary: false }
+    ]
+  }}
 >
   <Fragment set:html={htmlContent} />
 </BlogLayout>

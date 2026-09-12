@@ -16,6 +16,14 @@ const htmlContent = marked.parse(md);
   category="Derechos"
   date="11 septiembre 2026"
   readTime="10 min"
+  cta={{
+    title: "¿Necesitas calcular tu permiso?",
+    description: "Usa nuestras herramientas para saber cuánto te corresponden por tus permisos laborales.",
+    links: [
+      { href: "/calculadoras/nomina/", text: "Calcular mi nómina", primary: true },
+      { href: "/calculadoras/pagas-extras/", text: "Calcular pagas extras", primary: false }
+    ]
+  }}
 >
   <Fragment set:html={htmlContent} />
 </BlogLayout>

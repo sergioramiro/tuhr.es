@@ -16,6 +16,14 @@ const htmlContent = marked.parse(md);
   category="Derechos"
   date="11 septiembre 2026"
   readTime="10 min"
+  cta={{
+    title: "¿Te han dado de baja?",
+    description: "Calcula cuánto vas a cobrar durante tu baja médica y conoce tus derechos.",
+    links: [
+      { href: "/calculadoras/nomina/", text: "Simular mi nómina durante la baja", primary: true },
+      { href: "/blog/vacaciones-derechos/", text: "Ver tus derechos laborales", primary: false }
+    ]
+  }}
 >
   <Fragment set:html={htmlContent} />
 </BlogLayout>
