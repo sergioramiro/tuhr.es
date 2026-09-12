@@ -28,6 +28,51 @@ const htmlContent = marked.parse(md);
         <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Cómo calcular tu nómina paso a paso </h1>
         <p class="mt-space-md text-body-lg text-on-surface/60">Publicado en tuhr.es · Guía actualizada 2026</p>
       </header>
+
+      <!-- Diagrama: Estructura de una nómina -->
+      <div class="mb-space-2xl p-space-lg bg-surface-container-low rounded-xl border border-outline/10">
+        <svg viewBox="0 0 800 350" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+          <!-- Título -->
+          <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">Estructura de tu nómina</text>
+
+          <!-- Devengos -->
+          <rect x="50" y="50" width="320" height="30" rx="6" fill="#0e7c46"/>
+          <text x="210" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="white">DEVENGOS (lo que ganas)</text>
+
+          <rect x="50" y="90" width="320" height="120" rx="6" fill="#e8f5e9" stroke="#0e7c46" stroke-width="1"/>
+          <text x="70" y="115" font-size="12" fill="#1a1a1a">• Salario base</text>
+          <text x="70" y="135" font-size="12" fill="#1a1a1a">• Complementos (antigüedad, nocturnidad...)</text>
+          <text x="70" y="155" font-size="12" fill="#1a1a1a">• Horas extra</text>
+          <text x="70" y="175" font-size="12" fill="#1a1a1a">• Pagas extras (parte proporcional)</text>
+          <text x="70" y="195" font-size="12" fill="#1a1a1a">• Plus de transporte, comida, etc.</text>
+
+          <!-- Deducciones -->
+          <rect x="430" y="50" width="320" height="30" rx="6" fill="#c62828"/>
+          <text x="590" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="white">DEDUCCIONES (lo que te descuentan)</text>
+
+          <rect x="430" y="90" width="320" height="120" rx="6" fill="#ffebee" stroke="#c62828" stroke-width="1"/>
+          <text x="450" y="115" font-size="12" fill="#1a1a1a">• Seguridad Social (trabajador: ~6,35%)</text>
+          <text x="450" y="135" font-size="12" fill="#1a1a1a">• IRPF (según tramos, 19-47%)</text>
+          <text x="450" y="155" font-size="12" fill="#1a1a1a">• Desempleo (1,55% indefinido / 1,60% temporal)</text>
+          <text x="450" y="175" font-size="12" fill="#1a1a1a">• Formación profesional (0,10%)</text>
+          <text x="450" y="195" font-size="12" fill="#1a1a1a">• Complemento por IT (si aplica)</text>
+
+          <!-- Líneas de convergencia -->
+          <line x1="210" y1="210" x2="210" y2="240" stroke="#0e7c46" stroke-width="2"/>
+          <line x1="590" y1="210" x2="590" y2="240" stroke="#c62828" stroke-width="2"/>
+          <line x1="210" y1="240" x2="400" y2="260" stroke="#555" stroke-width="2"/>
+          <line x1="590" y1="240" x2="400" y2="260" stroke="#555" stroke-width="2"/>
+
+          <!-- Resultado -->
+          <rect x="250" y="260" width="300" height="50" rx="8" fill="#1a1a1a"/>
+          <text x="400" y="282" text-anchor="middle" font-size="14" font-weight="bold" fill="white">NÓMINA LÍQUIDA</text>
+          <text x="400" y="300" text-anchor="middle" font-size="12" fill="#ccc">= Devengos − Deducciones</text>
+
+          <!-- Nota -->
+          <text x="400" y="340" text-anchor="middle" font-size="11" fill="#888">* Usa nuestra calculadora para simular tu nómina con tus datos reales</text>
+        </svg>
+      </div>
+
       <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
         <Fragment set:html={htmlContent} />
       </div>
