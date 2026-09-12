@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <rect width="800" height="600" fill="#ffffff"/>
+    <text x="400" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#1a1a1a">¿Qué incluye tu finiquito?</text>
+    
+        <rect x="300" y="80" width="200" height="60" rx="10" fill="#0e7c46"/>
+        <text x="400" y="115" text-anchor="middle" font-size="18" font-weight="bold" fill="white">FINIQUITO</text>
+
+        <line x1="400" y1="140" x2="400" y2="180" stroke="#0e7c46" stroke-width="3"/>
+        <line x1="200" y1="180" x2="600" y2="180" stroke="#0e7c46" stroke-width="3"/>
+
+        <line x1="150" y1="180" x2="150" y2="200" stroke="#0e7c46" stroke-width="2"/>
+        <rect x="50" y="200" width="200" height="100" rx="8" fill="#e8f5e9" stroke="#0e7c46"/>
+        <text x="150" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e7c46">Salario del mes</text>
+        <text x="150" y="255" text-anchor="middle" font-size="12" fill="#666">Días trabajados</text>
+        <text x="150" y="280" text-anchor="middle" font-size="12" fill="#0e7c46">Ej: 871€</text>
+
+        <line x1="350" y1="180" x2="350" y2="200" stroke="#0e7c46" stroke-width="2"/>
+        <rect x="250" y="200" width="200" height="100" rx="8" fill="#e8f5e9" stroke="#0e7c46"/>
+        <text x="350" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e7c46">Pagas extras</text>
+        <text x="350" y="255" text-anchor="middle" font-size="12" fill="#666">Parte proporcional</text>
+        <text x="350" y="280" text-anchor="middle" font-size="12" fill="#0e7c46">Ej: 2.839€</text>
+
+        <line x1="500" y1="180" x2="500" y2="200" stroke="#0e7c46" stroke-width="2"/>
+        <rect x="450" y="200" width="200" height="100" rx="8" fill="#e8f5e9" stroke="#0e7c46"/>
+        <text x="550" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e7c46">Vacaciones</text>
+        <text x="550" y="255" text-anchor="middle" font-size="12" fill="#666">Días pendientes</text>
+        <text x="550" y="280" text-anchor="middle" font-size="12" fill="#0e7c46">Ej: 516€</text>
+
+        <line x1="650" y1="180" x2="650" y2="200" stroke="#0e7c46" stroke-width="2"/>
+        <rect x="550" y="200" width="200" height="100" rx="8" fill="#e8f5e9" stroke="#0e7c46"/>
+        <text x="650" y="230" text-anchor="middle" font-size="14" font-weight="bold" fill="#0e7c46">Horas extra</text>
+        <text x="650" y="255" text-anchor="middle" font-size="12" fill="#666">Pendientes</text>
+        <text x="650" y="280" text-anchor="middle" font-size="12" fill="#0e7c46">Ej: 360€</text>
+
+        <line x1="400" y1="300" x2="400" y2="350" stroke="#0e7c46" stroke-width="3"/>
+        <rect x="250" y="350" width="300" height="80" rx="10" fill="#0e7c46"/>
+        <text x="400" y="380" text-anchor="middle" font-size="18" font-weight="bold" fill="white">TOTAL: 4.586€</text>
+        <text x="400" y="405" text-anchor="middle" font-size="14" fill="white">brutos</text>
+
+        <text x="400" y="500" text-anchor="middle" font-size="16" fill="#666">Calcula tu finiquito en tuhr.es</text>
+        
+    <text x="400" y="580" text-anchor="middle" font-size="14" fill="#666666">tuhr.es - Herramientas gratuitas para trabajadores</text>
+</svg>
