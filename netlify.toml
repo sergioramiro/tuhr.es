@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/blog/como-calcular-finiquito-errores-comunes/"
+  to = "/guias/todo-sobre-tu-finiquito/"
+  status = 301
+
+[[redirects]]
+  from = "/blog/finiquito-errores/"
+  to = "/guias/todo-sobre-tu-finiquito/"
+  status = 301

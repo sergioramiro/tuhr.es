@@ -204,7 +204,9 @@ Cuando se extingue un contrato temporal (obras y servicios, interinidad, etc.), 
 
 Calcular correctamente un finiquito requiere revisar todos los conceptos que hemos mencionado y comprobar que la empresa ha aplicado bien los porcentajes, días y cantidades correspondientes. Un error en un solo concepto puede significar cientos de euros que pierdes.
 
-En **tuhr.es** puedes encontrar herramientas que te ayudan a calcular tu finiquito de forma rápida y sencilla, introduciendo tus datos laborales y obteniendo un desglose detallado de lo que te corresponde.
+**[Calcula tu finiquito ahora](/calculadoras/finiquito/)** — Usa nuestra calculadora gratuita para obtener un desglose detallado de lo que te corresponde.
+
+¿Quieres ver los errores más frecuentes? Consulta nuestro artículo sobre [errores comunes al calcular el finiquito](/blog/finiquito-errores/).
 
 No dejes dinero en la mesa. Revisa tu finiquito, verifica los cálculos y, si tienes dudas, consulta con un profesional. Tu trabajo tiene un valor, y el finiquito es la última oportunidad de que la empresa reconozca ese valor económicamente.
 
