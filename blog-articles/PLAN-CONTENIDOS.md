@@ -137,7 +137,7 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 
 ## Artículos publicados previamente (no reutilizar)
 
-Los siguientes artículos ya existen en `src/pages/blog/`:
+Los siguientes artículos ya existen en `src/pages/blog/` o `blog-articles/`:
 - 01-finiquito-errores
 - 02-permisos-laborales
 - 03-baja-medica
@@ -147,3 +147,5 @@ Los siguientes artículos ya existen en `src/pages/blog/`:
 - 07-cuanto-cobro-si-me-despiden
 - 08-baja-voluntaria-sin-preaviso
 - 09-calcular-indemnizacion-despido
+- 10-despido-procedente-improcedente
+- 11-convenio-colectivo-guia
