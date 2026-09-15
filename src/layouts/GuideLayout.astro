@@ -5,10 +5,22 @@ export interface Props {
   title: string;
   description: string;
   ogImage?: string;
+  category?: string;
+  readTime?: string;
+  authorName?: string;
+  authorRole?: string;
 }
 
-const { title, description, ogImage } = Astro.props;
-const canonicalUrl = `https://tuhr.es${Astro.url.pathname}`;
+const {
+  title,
+  description,
+  ogImage,
+  category = 'Guía Laboral',
+  readTime = '5 min de lectura',
+  authorName = 'Gabinete Jurídico tuhr.es',
+  authorRole = 'Especialistas en Estatuto de los Trabajadores',
+} = Astro.props;
+
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -24,5 +36,137 @@ const breadcrumbSchema = JSON.stringify({
   <Fragment slot="json-ld">
     <script type="application/ld+json" set:html={breadcrumbSchema} />
   </Fragment>
-  <slot />
+
+  <!-- Reading Progress Bar -->
+  <div class="w-full bg-surface-container-low h-1 sticky top-16 z-40">
+    <div class="h-full bg-primary transition-all duration-150 w-0" id="read-progress"></div>
+  </div>
+
+  <!-- Breadcrumb -->
+  <nav class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-3" aria-label="Breadcrumb">
+    <ol class="flex items-center gap-1.5 text-sm font-body text-on-surface-variant">
+      <li><a href="/" class="hover:text-primary transition-colors">Inicio</a></li>
+      <li><span class="text-outline-variant">/</span></li>
+      <li><a href="/guias/" class="hover:text-primary transition-colors">Guías</a></li>
+      <li><span class="text-outline-variant">/</span></li>
+      <li class="text-on-surface font-medium truncate max-w-[200px] sm:max-w-none">{title.split("|")[0].trim()}</li>
+    </ol>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="w-full bg-surface py-space-xl md:py-space-2xl">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12">
+      <div class="max-w-4xl">
+        <!-- Category & Badges -->
+        <div class="flex flex-wrap items-center gap-space-sm mb-space-md">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-primary font-body-sm font-semibold tracking-wide uppercase">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            {category}
+          </span>
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-[15px]">schedule</span>
+            {readTime}
+          </span>
+          <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant text-sm">
+            <span class="material-symbols-outlined text-[15px]">verified_user</span>
+            Revisión Jurídica tuhr.es
+          </span>
+        </div>
+
+        <!-- H1 Title -->
+        <h1 class="font-headline text-headline-xl text-on-surface tracking-tight mb-space-md">
+          {title.split("|")[0].trim()}
+        </h1>
+
+        <!-- Lead paragraph (slot) -->
+        <div class="text-body-lg text-on-surface-variant mb-space-lg max-w-3xl">
+          <slot name="lead" />
+        </div>
+
+        <!-- Author Info -->
+        <div class="flex items-center gap-space-md pt-space-xs text-outline text-sm">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary">
+              <span class="material-symbols-outlined text-[18px]">gavel</span>
+            </div>
+            <div>
+              <p class="font-body font-semibold text-on-surface text-[13px] leading-tight">{authorName}</p>
+              <p class="text-outline text-[11px]">{authorRole}</p>
+            </div>
+          </div>
+          <span class="text-outline-variant">•</span>
+          <span>Vigente normativa 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two-Column Editorial Layout -->
+  <div class="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 py-space-2xl w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-space-2xl">
+
+      <!-- LEFT SIDEBAR: TOC + Promo Cards -->
+      <aside class="lg:col-span-4 order-2 lg:order-1">
+        <div class="sticky top-24 space-y-space-lg">
+
+          <!-- TOC Card -->
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card">
+            <div class="flex items-center justify-between pb-space-sm mb-space-sm">
+              <span class="font-headline text-headline-sm text-on-surface flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-[20px]">list_alt</span>
+                Índice de materias
+              </span>
+            </div>
+            <nav class="space-y-1 text-sm text-on-surface-variant">
+              <slot name="toc" />
+            </nav>
+          </div>
+
+          <!-- Promo Card -->
+          <div class="bg-primary rounded-card p-space-lg text-on-primary shadow-card">
+            <div class="flex items-center gap-2 text-primary-fixed text-sm font-semibold mb-space-xs">
+              <span class="material-symbols-outlined text-[16px]">verified</span>
+              Herramienta oficial tuhr.es
+            </div>
+            <h3 class="font-headline text-headline-md text-on-primary mb-2">Calculadora Laboral</h3>
+            <p class="text-sm text-on-primary-container mb-space-md">
+              Genera tu borrador oficial en PDF introduciendo tus datos laborales.
+            </p>
+            <a class="w-full flex items-center justify-center gap-2 px-space-md py-2.5 rounded-full bg-surface-card text-primary font-body font-semibold text-sm hover:bg-surface-container-low transition-colors" href="/calculadoras/">
+              <span>Abrir simulador gratuito</span>
+              <span class="material-symbols-outlined text-[18px]">launch</span>
+            </a>
+          </div>
+
+          <!-- Quick Help Card -->
+          <div class="bg-surface-container-low rounded-card p-space-md text-on-surface">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary text-[28px]">support_agent</span>
+              <div>
+                <p class="font-headline text-headline-sm text-on-surface">¿Dudas con tu caso?</p>
+                <p class="text-sm text-outline">Revisamos tu situación antes de actuar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT COLUMN: Content -->
+      <article class="lg:col-span-8 order-1 lg:order-2 text-on-surface">
+        <slot />
+      </article>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Script -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (window.scrollY / docHeight) * 100;
+      const progressBar = document.getElementById('read-progress');
+      if (progressBar) {
+        progressBar.style.width = scrolled + '%';
+      }
+    });
+  </script>
 </Layout>
