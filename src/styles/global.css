@@ -92,3 +92,87 @@ footer {
   content-visibility: auto;
   contain-intrinsic-size: auto 800px;
 }
+
+/* Prose heading styles — markdown renders plain <h2>/<h3> without Tailwind classes */
+.prose h1 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  color: #0F172A;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.prose h2 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: #0F172A;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  scroll-margin-top: 7rem;
+}
+.prose h3 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 19px;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #0F172A;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.prose h4 {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #0F172A;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.prose p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+.prose strong {
+  font-weight: 600;
+  color: #0F172A;
+}
+.prose ul, .prose ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+.prose li {
+  font-size: 16px;
+  line-height: 28px;
+  color: #475569;
+  margin-bottom: 0.25rem;
+}
+.prose a {
+  color: #0e7c46;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose a:hover {
+  color: #0a6236;
+}
+.prose code {
+  font-size: 14px;
+  background: #eff8f2;
+  padding: 0.15em 0.4em;
+  border-radius: 0.25rem;
+  color: #0e7c46;
+}
+.prose blockquote {
+  border-left: 3px solid #0e7c46;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: #475569;
+  font-style: italic;
+}
