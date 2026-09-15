@@ -12,25 +12,59 @@ const htmlContent = marked.parse(md);
 <GuideLayout
   title="Guía completa de alquiler de vivienda 2026 | tuhr.es"
   description="Todo lo que necesitas saber sobre alquiler de vivienda en España: tipos de contrato, derechos del inquilino, fianza, actualización de renta y legislación vigente."
+  category="Guía Inmobiliaria Actualizada 2026"
+  readTime="14 min de lectura"
 >
-  <main class="pt-16">
-    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
-      <nav class="text-body-sm text-on-surface/60">
-        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
-        <span class="mx-space-sm">›</span>
-        <a href="/guias/" class="hover:text-primary transition-colors no-underline">Guías</a>
-        <span class="mx-space-sm">›</span>
-        <span class="text-on-surface">Guía completa de alquiler de vivienda 2026 </span>
-      </nav>
-    </div>
-    <article class="max-w-[56rem] mx-auto px-gutter-desktop pb-space-3xl">
-      <header class="mb-space-2xl">
-        <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Guía completa de alquiler de vivienda 2026 </h1>
-        <p class="mt-space-md text-body-lg text-on-surface/60">Publicado en tuhr.es · Guía actualizada 2026</p>
-      </header>
-      <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
-        <Fragment set:html={htmlContent} />
-      </div>
-    </article>
-  </main>
+  <Fragment slot="lead">
+    <p>
+      Alquilar una vivienda en España no es solo cuestión de encontrar el piso adecuado y firmar un contrato. Hay toda una serie de derechos, obligaciones y aspectos legales que tanto el arrendador como el arrendatario deben conocer para evitar problemas.
+    </p>
+  </Fragment>
+
+  <Fragment slot="toc">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#tipos-contrato">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>1. Tipos de contrato de alquiler</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#lau">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>2. La LAU: normativa básica</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#fianza">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>3. La fianza: cuánto pagas</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#actualizacion-renta">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>4. Actualización de la renta</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#derechos-inquilino">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>5. Derechos del inquilino</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#obligaciones-inquilino">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>6. Obligaciones del inquilino</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#obligaciones-propietario">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>7. Obligaciones del propietario</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#impuestos">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>8. Impuestos del alquiler</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#problemas-comunes">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>9. Problemas comunes</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#consejos-practicos">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>10. Consejos prácticos</span>
+    </a>
+  </Fragment>
+
+  <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
+    <Fragment set:html={htmlContent} />
+  </div>
 </GuideLayout>

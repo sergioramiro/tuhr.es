@@ -12,25 +12,59 @@ const htmlContent = marked.parse(md);
 <GuideLayout
   title="Derechos del trabajador ante un despido | tuhr.es"
   description="Conoce todos tus derechos si te han despedido: tipos de despido, indemnización, plazos para impugnar, finiquito y cómo actuar paso a paso."
+  category="Guía Laboral Actualizada 2026"
+  readTime="12 min de lectura"
 >
-  <main class="pt-16">
-    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
-      <nav class="text-body-sm text-on-surface/60">
-        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
-        <span class="mx-space-sm">›</span>
-        <a href="/guias/" class="hover:text-primary transition-colors no-underline">Guías</a>
-        <span class="mx-space-sm">›</span>
-        <span class="text-on-surface">Derechos del trabajador ante un despido </span>
-      </nav>
-    </div>
-    <article class="max-w-[56rem] mx-auto px-gutter-desktop pb-space-3xl">
-      <header class="mb-space-2xl">
-        <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Derechos del trabajador ante un despido </h1>
-        <p class="mt-space-md text-body-lg text-on-surface/60">Publicado en tuhr.es · Guía actualizada 2026</p>
-      </header>
-      <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
-        <Fragment set:html={htmlContent} />
-      </div>
-    </article>
-  </main>
+  <Fragment slot="lead">
+    <p>
+      Ser despedido es una de las experiencias más estresantes que puede enfrentar un trabajador. Pero más allá del impacto emocional, es fundamental que conozcas tus derechos para poder defenderlos. La legislación laboral española protege al trabajador de forma significativa, pero solo si sabes cuáles son tus garantías y cómo ejercerlas.
+    </p>
+  </Fragment>
+
+  <Fragment slot="toc">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#tipos-despido">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>1. Tipos de despido en España</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#indemnizaciones">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>2. Indemnizaciones en cada caso</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#derechos-trabajador">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>3. Derechos durante el despido</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#plazos-clave">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>4. Plazos clave</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#impugnar-despido">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>5. Cómo impugnar un despido</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#despido-nulo">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>6. El despido nulo</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#empresa-no-tiene-razon">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>7. ¿Qué pasa si la empresa no tiene razón?</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#despido-baja-medica">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>8. Despido durante baja médica</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#colectivos-protegidos">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>9. Colectivos especialmente protegidos</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-hacer-despues">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>10. ¿Qué hacer inmediatamente?</span>
+    </a>
+  </Fragment>
+
+  <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
+    <Fragment set:html={htmlContent} />
+  </div>
 </GuideLayout>

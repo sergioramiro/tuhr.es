@@ -12,25 +12,51 @@ const htmlContent = marked.parse(md);
 <GuideLayout
   title="Contrato de prestación de servicios: todo lo que necesitas saber | tuhr.es"
   description="Diferencias con el contrato laboral, cláusulas esenciales, implicaciones fiscales y consejos para autónomos que prestan servicios a empresas."
+  category="Guía Jurídica Actualizada 2026"
+  readTime="11 min de lectura"
 >
-  <main class="pt-16">
-    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
-      <nav class="text-body-sm text-on-surface/60">
-        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
-        <span class="mx-space-sm">›</span>
-        <a href="/guias/" class="hover:text-primary transition-colors no-underline">Guías</a>
-        <span class="mx-space-sm">›</span>
-        <span class="text-on-surface">Contrato de prestación de servicios: todo lo que necesitas saber </span>
-      </nav>
-    </div>
-    <article class="max-w-[56rem] mx-auto px-gutter-desktop pb-space-3xl">
-      <header class="mb-space-2xl">
-        <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Contrato de prestación de servicios: todo lo que necesitas saber </h1>
-        <p class="mt-space-md text-body-lg text-on-surface/60">Publicado en tuhr.es · Guía actualizada 2026</p>
-      </header>
-      <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
-        <Fragment set:html={htmlContent} />
-      </div>
-    </article>
-  </main>
+  <Fragment slot="lead">
+    <p>
+      Cada vez más profesionales trabajan como autónomos o como empresas que prestan servicios a otras empresas. El contrato de prestación de servicios regula esta relación y tiene consecuencias muy importantes en materia de derechos, obligaciones y fiscalidad.
+    </p>
+  </Fragment>
+
+  <Fragment slot="toc">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-es">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>1. ¿Qué es un contrato de prestación de servicios?</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#diferencias">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>2. Diferencias con el contrato laboral</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#consecuencias">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>3. Relación laboral encubierta</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#clausulas-esenciales">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>4. Cláusulas esenciales del contrato</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#implicaciones-fiscales">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>5. Implicaciones fiscales</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-comunes">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>6. Errores comunes</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#como-saber">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>7. ¿Laboral o prestación de servicios?</span>
+    </a>
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-hacer">
+      <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+      <span>8. ¿Qué hacer si estás en relación encubierta?</span>
+    </a>
+  </Fragment>
+
+  <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
+    <Fragment set:html={htmlContent} />
+  </div>
 </GuideLayout>
