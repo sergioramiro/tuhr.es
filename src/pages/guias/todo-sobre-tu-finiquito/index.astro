@@ -1,6 +1,6 @@
 ---
 import GuideLayout from '../../../layouts/GuideLayout.astro';
-import { marked } from 'marked';
+import { marked } from '../../../lib/marked-config';
 import fs from 'fs';
 import path from 'path';
 
@@ -23,31 +23,31 @@ const htmlContent = marked.parse(md);
   </Fragment>
 
   <Fragment slot="toc">
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-es">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-es-el-finiquito">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>1. ¿Qué es el finiquito?</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#diferencias">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#diferencia-entre-finiquito-y-indemnizacion">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>2. Finiquito vs. Indemnización</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-incluye">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-incluye-el-finiquito">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>3. Conceptos computables</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#calculo-paso-a-paso">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#como-calcular-tu-finiquito-paso-a-paso">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>4. Cálculo paso a paso</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-comunes">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-comunes-al-cobrar-el-finiquito">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>5. Errores al cobrar y firmar</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#situaciones-laborales">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#el-finiquito-y-la-plus-de-antiguedad">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>6. Situaciones contractuales</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#reclamacion">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#el-finiquito-en-contratos-temporales">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>7. Cómo reclamar</span>
     </a>

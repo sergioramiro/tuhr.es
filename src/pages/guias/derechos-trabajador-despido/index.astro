@@ -1,6 +1,6 @@
 ---
 import GuideLayout from '../../../layouts/GuideLayout.astro';
-import { marked } from 'marked';
+import { marked } from '../../../lib/marked-config';
 import fs from 'fs';
 import path from 'path';
 
@@ -22,43 +22,43 @@ const htmlContent = marked.parse(md);
   </Fragment>
 
   <Fragment slot="toc">
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#tipos-despido">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#tipos-de-despido-en-espana">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>1. Tipos de despido en España</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#indemnizaciones">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-indemnizaciones-corresponden-en-cada-caso">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>2. Indemnizaciones en cada caso</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#derechos-trabajador">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#derechos-del-trabajador-durante-el-despido">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>3. Derechos durante el despido</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#plazos-clave">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#plazos-clave-que-debes-conocer">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>4. Plazos clave</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#impugnar-despido">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#como-impugnar-un-despido-pasos-concretos">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>5. Cómo impugnar un despido</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#despido-nulo">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#el-despido-nulo-cuando-la-empresa-se-equivoca-de-lleno">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>6. El despido nulo</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#empresa-no-tiene-razon">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-pasa-si-la-empresa-no-tiene-razon">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>7. ¿Qué pasa si la empresa no tiene razón?</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#despido-baja-medica">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#y-si-me-despiden-durante-la-baja-medica">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>8. Despido durante baja médica</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#colectivos-protegidos">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#despido-de-colectivos-especialmente-protegidos">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>9. Colectivos especialmente protegidos</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-hacer-despues">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-hacer-inmediatamente-despues-de-un-despido">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>10. ¿Qué hacer inmediatamente?</span>
     </a>

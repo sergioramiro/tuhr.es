@@ -1,6 +1,6 @@
 ---
 import GuideLayout from '../../../layouts/GuideLayout.astro';
-import { marked } from 'marked';
+import { marked } from '../../../lib/marked-config';
 import fs from 'fs';
 import path from 'path';
 
@@ -22,35 +22,35 @@ const htmlContent = marked.parse(md);
   </Fragment>
 
   <Fragment slot="toc">
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-es">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-es-un-contrato-de-prestacion-de-servicios">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>1. ¿Qué es un contrato de prestación de servicios?</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#diferencias">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#diferencias-clave-con-el-contrato-laboral">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>2. Diferencias con el contrato laboral</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#consecuencias">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#consecuencias-de-una-relacion-laboral-encubierta">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>3. Relación laboral encubierta</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#clausulas-esenciales">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#clausulas-esenciales-del-contrato-de-prestacion-de-servicios">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>4. Cláusulas esenciales del contrato</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#implicaciones-fiscales">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#implicaciones-fiscales-del-contrato-de-prestacion-de-servicios">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>5. Implicaciones fiscales</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-comunes">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-comunes-en-contratos-de-prestacion-de-servicios">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>6. Errores comunes</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#como-saber">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#como-saber-si-tu-relacion-es-laboral-o-de-prestacion-de-servicios">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>7. ¿Laboral o prestación de servicios?</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-hacer">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#que-hacer-si-estas-en-una-relacion-laboral-encubierta">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>8. ¿Qué hacer si estás en relación encubierta?</span>
     </a>

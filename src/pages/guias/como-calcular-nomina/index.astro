@@ -1,6 +1,6 @@
 ---
 import GuideLayout from '../../../layouts/GuideLayout.astro';
-import { marked } from 'marked';
+import { marked } from '../../../lib/marked-config';
 import fs from 'fs';
 import path from 'path';
 
@@ -23,27 +23,27 @@ const htmlContent = marked.parse(md);
   </Fragment>
 
   <Fragment slot="toc">
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#estructura-basica">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#estructura-basica-de-una-nomina">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>1. Estructura básica de una nómina</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#conceptos-salario">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#conceptos-que-componen-el-salario">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>2. Conceptos que componen el salario</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#deducciones">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#deducciones-lo-que-la-empresa-retiene">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>3. Deducciones: lo que retiene la empresa</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#ejemplo-nomina">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#ejemplo-practico-completo-de-nomina">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>4. Ejemplo práctico completo</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-habituales">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#errores-habituales-en-las-nominas">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>5. Errores habituales en las nóminas</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#comprobar-nomina">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#como-comprobar-si-tu-nomina-es-correcta">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>6. ¿Cómo comprobar si tu nómina es correcta?</span>
     </a>

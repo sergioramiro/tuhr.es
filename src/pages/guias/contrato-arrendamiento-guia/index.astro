@@ -1,6 +1,6 @@
 ---
 import GuideLayout from '../../../layouts/GuideLayout.astro';
-import { marked } from 'marked';
+import { marked } from '../../../lib/marked-config';
 import fs from 'fs';
 import path from 'path';
 
@@ -22,43 +22,43 @@ const htmlContent = marked.parse(md);
   </Fragment>
 
   <Fragment slot="toc">
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#tipos-contrato">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#tipos-de-contrato-de-alquiler">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>1. Tipos de contrato de alquiler</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#lau">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#la-lau-normativa-basica-del-alquiler">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>2. La LAU: normativa básica</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#fianza">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#la-fianza-cuanto-pagas-y-que-ocurre-con-ella">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>3. La fianza: cuánto pagas</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#actualizacion-renta">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#actualizacion-de-la-renta">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>4. Actualización de la renta</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#derechos-inquilino">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#derechos-del-inquilino">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>5. Derechos del inquilino</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#obligaciones-inquilino">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#obligaciones-del-inquilino">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>6. Obligaciones del inquilino</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#obligaciones-propietario">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#obligaciones-del-propietario">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>7. Obligaciones del propietario</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#impuestos">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#impuestos-del-alquiler">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>8. Impuestos del alquiler</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#problemas-comunes">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#problemas-comunes-en-el-alquiler-y-como-resolverlos">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>9. Problemas comunes</span>
     </a>
-    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#consejos-practicos">
+    <a class="flex items-center gap-2 py-1.5 px-2.5 rounded-lg hover:bg-surface-container-low hover:text-primary transition-colors" href="#alquiler-de-vivienda-y-vulnerabilidad-social">
       <span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
       <span>10. Consejos prácticos</span>
     </a>
