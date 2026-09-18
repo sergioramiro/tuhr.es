@@ -4,7 +4,7 @@
 
 ---
 
-Cuando se acabó la relación laboral —ya sea por dimisión, despido o fin de contrato temporal— el finiquito es la última作业 que la empresa debe hacer con el trabajador. Sin embargo, muchos trabajadores no saben exactamente qué les corresponde, cómo se calcula o qué pueden reclamar si algo no cuadra.
+Cuando se acabó la relación laboral —ya sea por dimisión, despido o fin de contrato temporal— el finiquito es la última gestión que la empresa debe hacer con el trabajador. Sin embargo, muchos trabajadores no saben exactamente qué les corresponde, cómo se calcula o qué pueden reclamar si algo no cuadra.
 
 En esta guía completa te explicamos todo lo que necesitas saber sobre el finiquito laboral en España: qué es, qué componentes tiene, cómo calcularlo paso a paso y cuáles son tus derechos si consideras que no te han pagado lo justo.
 
@@ -160,6 +160,87 @@ Más el finiquito con salarios, vacaciones y pagas extras pendientes.
 
 Cuando un trabajador fallece, sus herederos tienen derecho a cobrar el finiquito. La empresa debe abonar a los herederos los salarios, vacaciones y pagas extras pendientes, así como una indemnización de 30 días de salario por año trabajado (con un máximo de 12 mensualidades), que se calcula sobre la base de cotización máxima de la Seguridad Social.
 
+## Ejemplo completo de liquidación de finiquito
+
+Para que tengas una referencia clara, aquí tienes una tabla de ejemplo con todos los conceptos desglosados. Supongamos que trabajaste del 1 de enero al 15 de octubre de 2026 con un salario mensual de 2.000 euros brutos.
+
+| Concepto | Base de cálculo | Días/Meses | Importe |
+|---|---|---|---|
+| Salario del mes en curso (1–15 oct) | 2.000 €/mes | 15 días / 31 | 967,74 € |
+| Parte proporcional paga extra 1 (junio) | 2.000 € | 288 días / 365 | 1.578,08 € |
+| Parte proporcional paga extra 2 (diciembre) | 2.000 € | 288 días / 365 | 1.578,08 € |
+| Vacaciones no disfrutadas | 2.000 € / 30 | 8,6 días pendientes | 573,33 € |
+| Horas extra pendientes | 12,50 €/h × 1,25 | 20 horas | 312,50 € |
+| Complemento por antigüedad (2% × 3 años) | 2.000 € × 2% × 3 | 9 meses / 12 | 90,00 € |
+| **Total finiquito (bruto)** | | | **5.099,73 €** |
+| Retención IRPF estimada (~19%) | | | −968,95 € |
+| **Total finiquito (neto)** | | | **4.130,78 €** |
+
+> **Nota:** Esta tabla es un ejemplo orientativo. Los importes reales dependerán de tu salario, convenio colectivo, días efectivamente trabajados y porcentaje de retención que te corresponda. Usa nuestra [calculadora de finiquito](/calculadoras/finiquito/) para obtener tu cifra exacta.
+
+## Tabla comparativa: finiquito según tipo de extinción
+
+No todos los tipos de extinción laboral generan los mismos derechos económicos. La siguiente tabla resume las diferencias clave entre las causas de extinción más habituales:
+
+| Causa de extinción | Finiquito | Indemnización | Prestación por desempleo | Plazo para reclamar |
+|---|---|---|---|---|
+| Dimisión voluntaria | ✅ Sí | ❌ No | ❌ No (salvo excepciones) | 20 días hábiles |
+| Despido disciplinario procedente | ✅ Sí | ❌ No | ✅ Sí | 20 días hábiles |
+| Despido disciplinario improcedente | ✅ Sí | ✅ 33 días/año (máx. 24 mensualidades) | ✅ Sí | 20 días hábiles |
+| Despido objetivo | ✅ Sí | ✅ 20 días/año (máx. 12 mensualidades) | ✅ Sí | 20 días hábiles |
+| Fin de contrato temporal | ✅ Sí | ✅ 12 días/año (desde reforma 2022) | ✅ Sí | 20 días hábiles |
+| Mutuo acuerdo | ✅ Sí | ❌ No (salvo pacto) | ✅ Sí (si hay causa atribuible al empresario) | 20 días hábiles |
+| Muerte, jubilación o incapacidad | ✅ Sí (a herederos o trabajador) | ✅ 30 días/año (máx. 12 mensualidades) | ❌ No | Sin límite |
+| ERTE (extinción por causas ETOP) | ✅ Sí | ❌ No (si se readmite al finalizar) | Depende del caso | 20 días hábiles |
+
+## Casos prácticos de finiquito
+
+Veamos varios escenarios reales para que puedas identificar tu situación y saber exactamente qué te corresponde cobrar.
+
+### Caso 1: Despido objetivo por causas económicas
+
+**Situación:** María lleva 4 años trabajando como contable en una pyme. La empresa ha atravesado dificultades económicas y decide extinguir su contrato por causas económicas. Salario mensual: 1.900 € brutos.
+
+**Qué cobra María:**
+- **Finiquito:** Salario del mes en curso + vacaciones no disfrutadas + pagas extras proporcionales.
+- **Indemnización:** 20 días de salario por año trabajado = (1.900 / 30) × 20 × 4 = **5.066,67 €** (máx. 12 mensualidades).
+- **Desempleo:** Tiene derecho a cobrar la prestación por desempleo, ya que la extinción no es imputable al trabajador.
+
+**Clave:** En un despido objetivo la empresa debe comunicar la extinción con 15 días de preaviso. Si no lo hace, se incrementa la indemnización en los salarios correspondientes a esos 15 días.
+
+### Caso 2: Dimisión voluntaria con preaviso
+
+**Situación:** Pedro ha encontrado un mejor empleo y decide dimitir. Lleva 2 años en la empresa con un salario de 1.700 € brutos. Presenta la dimisión con 15 días de antelación (como exige su contrato).
+
+**Qué cobra Pedro:**
+- **Finiquito:** Salario del mes en curso proporcional + vacaciones no disfrutadas + pagas extras proporcionales.
+- **Indemnización:** No corresponde. En una dimisión voluntaria no hay indemnización.
+- **Desempleo:** No tiene derecho a prestación por desempleo, ya que la causa de la extinción es imputable al trabajador.
+
+**Clave:** Si Pedro no hubiera dado el preaviso de 15 días, la empresa podría descontar del finiquito los salarios de esos días no preavisados.
+
+### Caso 3: Fin de contrato temporal
+
+**Situación:** Lucía trabajó 8 meses bajo un contrato de obra y servicio para una consultora. Salario mensual: 1.600 € brutos. El contrato finaliza por cumplimiento del plazo pactado.
+
+**Qué cobra Lucía:**
+- **Finiquito:** Salario del mes en curso + vacaciones no disfrutadas + pagas extras proporcionales.
+- **Indemnización:** Desde la reforma laboral de 2022, le corresponden 12 días de salario por año trabajado = (1.600 / 30) × 12 × (8/12) = **512,00 €**.
+- **Desempleo:** Sí, tiene derecho a prestación por desempleo al extinguirse el contrato por causa ajena a su voluntad.
+
+**Clave:** Si el contrato temporal se hubiera prorrogado más de dos veces o superado la duración máxima legal, podría reclamar la consideración de contrato indefinente y, en su caso, una indemnización por despido improcedente.
+
+### Caso 4: Afectada por ERTE y posterior extinción
+
+**Situación:** Ana fue incluida en un ERTE de causas económicas durante 3 meses. Tras la reincorporación, la empresa la despide objetivamente un mes después. Salario mensual: 2.100 € brutos. Antigüedad: 6 años.
+
+**Qué cobra Ana:**
+- **Finiquito:** Salario del mes en curso + vacaciones no disfrutadas + pagas extras proporcionales (el tiempo de ERTE no genera vacaciones).
+- **Indemnización:** 20 días × 6 años × (2.100 / 30) = **8.400 €** (despido objetivo).
+- **Desempleo:** Sí, tiene derecho a prestación por desempleo. Los 3 meses de ERTE no consumen paro, ya que durante el ERTE se percibe la prestación extraordinaria, que no reduce la duración de la prestación por desempleo contributiva.
+
+**Clave:** El periodo en ERTE no computa como tiempo trabajado a efectos de vacaciones ni de pagas extras. Esto significa que, en el cálculo del finiquito, solo se tienen en cuenta los meses efectivamente trabajados (en este caso, los 3 meses de actividad antes del ERTE y el mes tras la reincorporación, no los 3 de ERTE).
+
 ## ¿Qué hacer si el finiquito es incorrecto o insuficiente?
 
 Si tras revisar tu finiquito consideras que algo no cuadra, tienes varias opciones:
@@ -199,6 +280,38 @@ El despido objetivo se produce por causas económicas, técnicas, organizativas 
 ### Fin de contrato temporal
 
 Cuando se extingue un contrato temporal (obras y servicios, interinidad, etc.), la empresa debe pagar un finiquito con los salarios y vacaciones pendientes. Además, desde la reforma laboral de 2022, en determinadas circunstancias puede corresponder una indemnización.
+
+## Preguntas frecuentes sobre el finiquito
+
+### ¿Qué pasa si la empresa no me paga el finiquito en 20 días?
+
+Si la empresa no abona el finiquito en el plazo legal (el mismo día de la extinción o al día siguiente hábil), puedes actuar de forma inmediata. Lo primero es presentar una **papeleta de conciliación** ante el SMAC de tu comunidad autónoma. Este procedimiento es gratuito y la empresa queda citada para intentar un acuerdo.
+
+Si la conciliación fracasa, puedes interponer una demanda judicial. Un retraso injustificado en el pago del finiquito puede ser considerado **vulneración de derechos fundamentales** (artículo 24 de la Constitución), lo que acelera el procedimiento judicial y puede generar intereses y costas a cargo de la empresa. Además, el juez puede condenar a la empresa a pagar una indemnización adicional por el retraso.
+
+### ¿Puedo renunciar al finiquito?
+
+No puedes renunciar al finiquito de forma anticipada (antes de que se produzca la extinción del contrato), ya que se trata de un derecho irrenunciable mientras exista relación laboral. Sin embargo, una vez extinguido el contrato, si la empresa te ofrece el finiquito y tú lo aceptas, estás firmando una transacción que puede incluir cláusulas de renuncia a futuras reclamaciones.
+
+**Importante:** Si firmas el finiquito sin la mención "con reserva de acciones" o "no conforme", se entiende que aceptas la cantidad como definitiva. Por eso es fundamental revisar cada concepto antes de firmar y, si tienes dudas, firmar con reserva. No puedes renunciar retroactivamente a un finiquito que ya te fue abonado, pero sí puedes impugnarlo si consideras que es incorrecto dentro del plazo de 20 días hábiles.
+
+### ¿Qué pasa con el paro si cobro finiquito?
+
+Cobrar finiquito **no afecta** a tu prestación por desempleo. Son conceptos completamente independientes: el finiquito es el pago de salarios y derechos pendientes, mientras que la prestación por desempleo es una cobertura de la Seguridad Social.
+
+Lo que sí determina si puedes cobrar paro es la **causa de la extinción del contrato**:
+- Si te despiden (objetivo, improcedente, procedente) o se extingue tu contrato temporal → **sí tienes derecho a paro**.
+- Si dimites voluntariamente → **no tienes derecho a paro**, salvo excepciones muy concretas (mutuo acuerdo, incumplimiento grave del empresario, etc.).
+
+El finiquito que recibas no se descuenta de la prestación por desempleo. De hecho, puedes cobrar finiquito y empezar a cobrar el paro simultáneamente.
+
+### ¿Cómo afecta el finiquito a mi jubilación?
+
+El finiquito en sí mismo **no afecta directamente** a tu jubilación. Los conceptos que componen el finiquito (salario pendiente, vacaciones, pagas extras) se consideran rendimientos del trabajo y tributan como tales, pero no computan como cotizaciones a la Seguridad Social.
+
+Lo que sí puede afectar a tu jubilación es el **periodo de cotización** que dejas de generar al extinguirse el contrato. Si no encuentras empleo antes de jubilarte, ese periodo sin cotización puede reducir tu pensión. Por eso es importante que, si estás cerca de la jubilación y te despiden, busques empleo lo antes posible o, si no es posible, compruebes si cumples los requisitos mínimos de cotización (mínimo 15 años cotizados, de los cuales 2 deben estar dentro de los 15 anteriores a la jubilación).
+
+Además, si el finiquito incluye una indemnización por despido improcedente, esa cantidad está exenta de tributación hasta ciertos límites y no afecta a tu base de cotización futura.
 
 ## ¿Necesitas ayuda con tu finiquito?
 

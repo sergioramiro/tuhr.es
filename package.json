@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/check": "^0.9.10",
     "@astrojs/react": "^6.0.5",
     "@astrojs/sitemap": "^3.7.4",
     "@types/react": "^19.3.0",
@@ -20,7 +21,8 @@
     "marked": "^18.0.12",
     "puppeteer-core": "^25.10.0",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "typescript": "^6.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.5.5",
