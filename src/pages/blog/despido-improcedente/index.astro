@@ -1,0 +1,320 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+const title = "Despido improcedente: qué es, cuánto cobras y cómo impugnar";
+const description = "Guía completa sobre despido improcedente: qué es, cuánto cobras por despido improcedente, fórmula de cálculo, plazos para impugnar y tus derechos como trabajador.";
+const canonicalUrl = `https://tuhr.es${Astro.url.pathname}`;
+
+const articleSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "author": {
+    "@type": "Person",
+    "name": "Carlos Méndez",
+    "jobTitle": "Experto en derecho laboral",
+    "url": "https://tuhr.es/aviso-legal/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "tuhr.es",
+    "url": "https://tuhr.es",
+    "logo": { "@type": "ImageObject", "url": "https://tuhr.es/favicon.svg" }
+  },
+  "datePublished": "2026-09-19",
+  "dateModified": "2026-09-19",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
+  "articleSection": "Derechos laborales",
+  "inLanguage": "es"
+});
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://tuhr.es/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tuhr.es/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "Despido improcedente" }
+  ]
+});
+
+const faqSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cobro por despido improcedente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La indemnización es de 33 días por año trabajado con un máximo de 24 mensualidades. Para contratos anteriores al 12 de febrero de 2012, se aplica una fórmula mixta: 45 días/año para el período previo y 33 días/año a partir de esa fecha."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tiempo tengo para impugnar un despido improcedente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tienes 20 días hábiles desde la fecha de notificación del despido para presentar papeleta de conciliación ante el SMAC o demanda ante el Juzgado de lo Social."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué pasa si me despiden por causas objetivas y no estoy de acuerdo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si el despido por causas objetivas no cumple los requisitos legales (causa real, carta de despido con detalles, preaviso de 15 días), el juez puede declararlo improcedente y deberán pagarte la indemnización correspondiente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo ser readmitido en mi puesto de trabajo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. El juez puede optar por la readmisión con abono de salarios de tramitación o por la indemnización. En la práctica, en contratos temporales suele optarse por la indemnización. En indefinidos, la readmisión es más frecuente."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tarda un juicio por despido improcedente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El proceso completo — desde la papeleta de conciliación hasta la sentencia — suele durar entre 6 y 12 meses. La conciliación se resuelve en 30 días y el juicio se celebra dentro de los 2-4 meses siguientes a la demanda."
+      }
+    }
+  ]
+});
+---
+
+<Layout title={`${title} | tuhr.es`} description={description}>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json" set:html={articleSchema} />
+    <script type="application/ld+json" set:html={breadcrumbSchema} />
+    <script type="application/ld+json" set:html={faqSchema} />
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/60">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/blog/" class="hover:text-primary transition-colors no-underline">Blog</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Despido improcedente</span>
+      </nav>
+    </div>
+
+    <article class="max-w-[56rem] mx-auto px-gutter-desktop pb-space-3xl">
+      <header class="mb-space-2xl">
+        <span class="inline-block text-xs font-semibold text-primary bg-primary/10 px-space-sm py-space-xs rounded-full mb-space-md">Derechos laborales</span>
+        <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Despido improcedente: qué es, cuánto cobras y cómo impugnar</h1>
+        <p class="mt-space-md text-body-sm text-on-surface/60">19 septiembre 2026 · 8 min de lectura</p>
+      </header>
+
+      <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
+
+        <!-- Qué es el despido improcedente -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Qué es el despido improcedente</h2>
+          <p>Un despido improcedente es aquel que el juez declara contrario al derecho porque no se ajusta a las causas legales establecidas en el <strong>Estatuto de los Trabajadores</strong>. Se considera improcedente cuando:</p>
+          <ul class="list-disc pl-space-lg space-y-space-xs">
+            <li>El empresario no demuestra la causa real del despido.</li>
+            <li>La causa alegada no se ajusta a los supuestos legales (despido disciplinario o por causas objetivas).</li>
+            <li>No se cumplen los requisitos formales: carta de despido con detalle de causas, preaviso de 15 días en despidos objetivos, o audiencia previa a los representantes.</li>
+            <li>El despido vulnera derechos fundamentales o garantías del trabajador.</li>
+          </ul>
+          <p>En caso de despido disciplinario, la improcedencia puede derivar de la desproporción de la sanción o de la insuficiencia de pruebas. En los objetivos, se suele deber a que la empresa no acredita suficientemente la causa económica, técnica, organizativa o de producción.</p>
+        </section>
+
+        <!-- Cuánto cobras -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Cuánto cobras por despido improcedente</h2>
+          <p>La indemnización por despido improcedente se calcula con esta fórmula:</p>
+          <div class="p-space-lg bg-primary/5 rounded-xl border border-primary/10 my-space-md">
+            <p class="font-mono text-on-surface font-semibold text-center text-lg">
+              33 días × salario diario × años trabajados
+            </p>
+            <p class="text-body-sm text-on-surface/60 text-center mt-space-xs">(Máximo: 24 mensualidades de salario)</p>
+          </div>
+          <p>El <strong>salario diario</strong> se calcula dividiendo la nómina anual (incluidas pagas extras) entre 365 días.</p>
+
+          <h3 class="font-headline text-headline-md font-bold text-on-surface">Ejemplos prácticos</h3>
+          <p>Veamos cuánto cobrarías en tres casos habituales, con 5 años de antigüedad:</p>
+          <div class="overflow-x-auto">
+            <table class="w-full text-body-sm border-collapse">
+              <thead>
+                <tr class="border-b border-outline/20">
+                  <th class="text-left py-space-sm font-semibold text-on-surface">Salario anual</th>
+                  <th class="text-left py-space-sm font-semibold text-on-surface">Salario diario</th>
+                  <th class="text-left py-space-sm font-semibold text-on-surface">Indemnización</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-outline/10">
+                  <td class="py-space-sm">25.000 €</td>
+                  <td class="py-space-sm">68,49 €</td>
+                  <td class="py-space-sm font-semibold text-primary">11.291 €</td>
+                </tr>
+                <tr class="border-b border-outline/10">
+                  <td class="py-space-sm">35.000 €</td>
+                  <td class="py-space-sm">95,89 €</td>
+                  <td class="py-space-sm font-semibold text-primary">15.822 €</td>
+                </tr>
+                <tr>
+                  <td class="py-space-sm">50.000 €</td>
+                  <td class="py-space-sm">136,99 €</td>
+                  <td class="py-space-sm font-semibold text-primary">22.603 €</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="mt-space-md">¿Necesitas un cálculo exacto para tu caso? Usa nuestra <a href="/calculadoras/indemnizacion-despido/" class="text-primary hover:underline font-medium">calculadora de indemnización por despido</a> o <a href="/calculadoras/despido/" class="text-primary hover:underline font-medium">simula tu despido</a> con todos los datos.</p>
+        </section>
+
+        <!-- Contratos anteriores al 2012 -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Contratos anteriores al 12 de febrero de 2012</h2>
+          <p>Si tu contrato es anterior al 12 de febrero de 2012, se aplica la <strong>disposición transitoria quinta del Estatuto de los Trabajadores</strong> con una fórmula mixta:</p>
+          <div class="p-space-lg bg-primary/5 rounded-xl border border-primary/10 my-space-md">
+            <ul class="space-y-space-sm text-body-sm">
+              <li><strong>Antes del 12/02/2012:</strong> 45 días de indemnización por año trabajado.</li>
+              <li><strong>A partir del 12/02/2012:</strong> 33 días de indemnización por año trabajado.</li>
+              <li><strong>Tope máximo:</strong> 42 mensualidades para el período anterior y 24 mensualidades para el posterior.</li>
+            </ul>
+          </div>
+          <p>Esta regla solo se aplica cuando la empresa tiene más de 25 trabajadores (en empresas de menos de 25 empleados, se aplica el régimen general de 33 días sin distinción de fechas). El cálculo puede resultar significativamente más favorable para trabajadores con larga antigüedad.</p>
+        </section>
+
+        <!-- Cómo impugnar -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Cómo impugnar un despido improcedente</h2>
+          <p>Si consideras que tu despido es improcedente, tienes <strong>20 días hábiles</strong> desde la notificación para actuar. Este plazo es improrrogable y se cuentan sin incluir sábados, domingos ni festivos.</p>
+
+          <h3 class="font-headline text-headline-md font-bold text-on-surface">1. Papeleta de conciliación</h3>
+          <p>El primer paso es presentar una papeleta de conciliación ante el <strong>SMAC</strong> (Servicio de Mediación, Arbitraje y Conciliación) de tu comunidad autónoma. Este trámite es obligatorio antes de ir a juicio. La empresa tiene 20 días para contestar y, si hay acuerdo, se cierra el caso sin necesidad de demanda.</p>
+
+          <h3 class="font-headline text-headline-md font-bold text-on-surface">2. Demanda ante el Juzgado de lo Social</h3>
+          <p>Si la conciliación no prospera o la empresa no comparece, tienes que presentar demanda ante el Juzgado de lo Social. El plazo para hacerlo es de <strong>15 días hábiles</strong> desde la celebración (o fracaso) de la conciliación. En la demanda se solicita la declaración de improcedencia y la indemnización correspondiente.</p>
+
+          <h3 class="font-headline text-headline-md font-bold text-on-surface">3. Sentencia y opciones</h3>
+          <p>El juez dicta sentencia declarando el despido improcedente y establece la indemnización. La empresa puede optar entre:</p>
+          <ul class="list-disc pl-space-lg space-y-space-xs">
+            <li><strong>Readmitirte</strong> en tu puesto con el abono de todos los salarios de tramitación desde el despido hasta la sentencia.</li>
+            <li><strong>Pagarte la indemnización</strong> en los 10 días siguientes a la sentencia.</li>
+          </ul>
+          <p>Si la empresa no cumple con la readmisión o el pago, puedes solicitar la ejecución judicial.</p>
+        </section>
+
+        <!-- Qué hacer paso a paso -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Qué hacer paso a paso si te despiden improcedentemente</h2>
+          <ol class="list-decimal pl-space-lg space-y-space-md">
+            <li><strong>No firmes nada sin leer.</strong> Si te dan una carta de despido, revísala detenidamente. Puedes firmar "no conforme" para que conste tu disconformidad.</li>
+            <li><strong>Guarda toda la documentación.</strong> Carta de despido, nóminas, contrato de trabajo, comunicaciones por escrito con la empresa. Todo es importante como prueba.</li>
+            <li><strong>Cuenta los días.</strong> Tienes 20 días hábiles desde la notificación para presentar la papeleta de conciliación. Anota la fecha exacta del despido.</li>
+            <li><strong>Consulta con un abogado laboralista.</strong> Un profesional puede valorar si tu despido es impugnable y estimar la indemnización que te corresponde.</li>
+            <li><strong>Presenta la papeleta de conciliación.</strong> Puedes hacerlo presencialmente en el SMAC o, en algunas comunidades, telemáticamente.</li>
+            <li><strong>Solicita el paro si lo necesitas.</strong> El desempleo por despido improcedente da derecho a prestación por desempleo. La indemnización no afecta a esta prestación.</li>
+            <li><strong>Reúne pruebas.</strong> Emails, mensajes de WhatsApp, testigos. Cualquier evidencia que respalde que el despido fue injustificado.</li>
+          </ol>
+          <p>Para más detalles sobre tus derechos completos, consulta nuestra <a href="/guias/derechos-trabajador-despido/" class="text-primary hover:underline font-medium">guía de derechos del trabajador ante un despido</a>.</p>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Preguntas frecuentes</h2>
+
+          <details class="border border-outline/20 rounded-lg mb-space-sm">
+            <summary class="p-space-md font-semibold text-on-surface cursor-pointer hover:bg-surface-container-low transition-colors">¿Cuánto cobro por despido improcedente?</summary>
+            <div class="px-space-md pb-space-md text-on-surface/80">
+              <p>La indemnización es de <strong>33 días por año trabajado</strong> con un máximo de 24 mensualidades de salario. Para contratos anteriores al 12 de febrero de 2012 se aplica una fórmula mixta: 45 días/año para el período previo y 33 días/año a partir de esa fecha.</p>
+            </div>
+          </details>
+
+          <details class="border border-outline/20 rounded-lg mb-space-sm">
+            <summary class="p-space-md font-semibold text-on-surface cursor-pointer hover:bg-surface-container-low transition-colors">¿Cuánto tiempo tengo para impugnar un despido?</summary>
+            <div class="px-space-md pb-space-md text-on-surface/80">
+              <p>Tienes <strong>20 días hábiles</strong> desde la notificación del despido para presentar papeleta de conciliación ante el SMAC. Este plazo es improrrogable. Si la conciliación no prospera, dispones de 15 días hábiles más para presentar demanda judicial.</p>
+            </div>
+          </details>
+
+          <details class="border border-outline/20 rounded-lg mb-space-sm">
+            <summary class="p-space-md font-semibold text-on-surface cursor-pointer hover:bg-surface-container-low transition-colors">¿Qué pasa si me despiden por causas objetivas y no estoy de acuerdo?</summary>
+            <div class="px-space-md pb-space-md text-on-surface/80">
+              <p>Si el despido por causas objetivas no cumple los requisitos legales — causa real, carta de despido con detalles, preaviso de 15 días — el juez puede declararlo improcedente y deberán pagarte la indemnización correspondiente.</p>
+            </div>
+          </details>
+
+          <details class="border border-outline/20 rounded-lg mb-space-sm">
+            <summary class="p-space-md font-semibold text-on-surface cursor-pointer hover:bg-surface-container-low transition-colors">¿Puedo ser readmitido en mi puesto de trabajo?</summary>
+            <div class="px-space-md pb-space-md text-on-surface/80">
+              <p>Sí. El juez puede optar por la readmisión con abono de salarios de tramitación o por la indemnización. En la práctica, en contratos temporales suele optarse por la indemnización. En indefinidos, la readmisión es más frecuente.</p>
+            </div>
+          </details>
+
+          <details class="border border-outline/20 rounded-lg mb-space-sm">
+            <summary class="p-space-md font-semibold text-on-surface cursor-pointer hover:bg-surface-container-low transition-colors">¿Cuánto tarda un juicio por despido improcedente?</summary>
+            <div class="px-space-md pb-space-md text-on-surface/80">
+              <p>El proceso completo — desde la papeleta de conciliación hasta la sentencia — suele durar entre <strong>6 y 12 meses</strong>. La conciliación se resuelve en 30 días y el juicio se celebra dentro de los 2-4 meses siguientes a la demanda.</p>
+            </div>
+          </details>
+        </section>
+
+        <!-- Referencias legales -->
+        <section>
+          <h2 class="font-headline text-headline-lg font-bold text-on-surface">Referencias legales</h2>
+          <ul class="list-disc pl-space-lg space-y-space-sm text-body-sm text-on-surface/70">
+            <li><strong>Art. 54 del Estatuto de los Trabajadores</strong> — Causas del despido disciplinario.</li>
+            <li><strong>Art. 56 del Estatuto de los Trabajadores</strong> — Indemnización por despido improcedente y opción de readmisión.</li>
+            <li><strong>Disposición transitoria 5ª del ET</strong> — Régimen transitorio de indemnización para contratos anteriores al 12/02/2012.</li>
+            <li><strong>Art. 122 de la Ley Reguladora de la Jurisdicción Social</strong> — Suplicación y casación en materia de despido.</li>
+          </ul>
+          <p class="mt-space-md text-body-sm text-on-surface/60"><em>Nota: Esta información es orientativa y no sustituye el asesoramiento legal profesional. Cada caso tiene particularidades que pueden afectar al resultado.</em></p>
+        </section>
+
+      </div>
+
+      <!-- Autor -->
+      <div class="mt-space-3xl flex items-center gap-space-md p-space-lg bg-surface-container-low rounded-xl border border-outline-variant/20">
+        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <span class="text-primary font-bold text-lg">CM</span>
+        </div>
+        <div>
+          <p class="text-body-sm font-bold text-on-surface">Carlos Méndez</p>
+          <p class="text-body-sm text-on-surface/60">Experto en derecho laboral. Más de 10 años asesorando a trabajadores y autónomos en España.</p>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-space-3xl p-space-xl bg-primary/5 rounded-xl border border-primary/10">
+        <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">¿Te han despedido?</h3>
+        <p class="text-body-sm text-on-surface/60 mb-space-md">Calcula tu indemnización y conoce exactamente cuánto te corresponde con nuestras herramientas gratuitas.</p>
+        <div class="flex flex-wrap gap-space-sm">
+          <a href="/calculadoras/indemnizacion-despido/" class="inline-block bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:bg-primary/90 transition-colors no-underline">
+            Calcular mi indemnización
+          </a>
+          <a href="/calculadoras/despido/" class="inline-block bg-surface text-on-surface border border-outline/20 px-space-md py-space-sm rounded-lg text-body-sm font-semibold hover:border-primary/30 transition-colors no-underline">
+            Simular mi despido
+          </a>
+        </div>
+      </div>
+
+      <!-- Artículos relacionados -->
+      <div class="mt-space-3xl">
+        <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-md">Artículos relacionados</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+          <a href="/blog/finiquito-errores/" class="block p-space-md bg-surface rounded-lg border border-outline/10 hover:border-primary/30 transition-all no-underline">
+            <span class="text-xs text-primary font-semibold">Finiquito</span>
+            <p class="text-body-sm font-semibold text-on-surface mt-space-xs">Errores comunes al calcular tu finiquito</p>
+          </a>
+          <a href="/guias/derechos-trabajador-despido/" class="block p-space-md bg-surface rounded-lg border border-outline/10 hover:border-primary/30 transition-all no-underline">
+            <span class="text-xs text-primary font-semibold">Guía</span>
+            <p class="text-body-sm font-semibold text-on-surface mt-space-xs">Derechos del trabajador ante un despido</p>
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+</Layout>

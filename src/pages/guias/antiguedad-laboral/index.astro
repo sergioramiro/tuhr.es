@@ -189,4 +189,53 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
 
   <p class="text-body-default text-text-secondary">💡 <a href="/calculadoras/antiguedad/" class="text-primary hover:underline font-medium">Calcula tu plus de antigüedad con nuestra herramienta gratuita</a>.</p>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿La antigüedad se pierde si cambio de empresa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. La antigüedad se calcula por empresa. Si cambias de trabajo, vuelves a empezar desde cero. La única excepción es el encadenamiento de contratos temporales, donde se puede computar la antigüedad acumulada."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿El plus de antigüedad es obligatorio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. El Estatuto de los Trabajadores no obliga a pagar plus de antigüedad. Solo es obligatorio si tu convenio colectivo lo recoge. Muchos convenios industriales y de hostelería sí lo incluyen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se computan los contratos temporales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, si están encadenados. La Reforma Laboral 2022 (RDL 32/2021) establece que si superas 24 meses en 2 años con la misma empresa mediante contratos temporales, se presume contrato indefinido y la antigüedad se computa desde el primer contrato."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo afecta la antigüedad a la indemnización?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La indemnización se calcula multiplicando los días por año trabajado × tu salario diario. Con 10 años de antigüedad y salario de 35.000€, una indemnización improcedente sería: 33 días × 10 años × 95,89€/día = 31.644€."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo perder la antigüedad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Solo si hay una interrupción en la relación laboral (baja y nuevo alta). Un cambio de categoría o un ERE no rompen la antigüedad. Tampoco la reducción de jornada por guarda legal."
+      }
+    }
+  ]
+}
+</script>
+
 </GuideLayout>
