@@ -47,17 +47,186 @@ import CalculadoraIndemnizacionDespido from '../../../components/calculadoras/Ca
       <CalculadoraIndemnizacionDespido client:load />
     </section>
 
-    <!-- Info -->
+    <!-- Cómo usar -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo usar esta calculadora</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">1</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Selecciona el tipo</h3>
+            <p class="text-body-sm text-on-surface/60">Elige entre despido objetivo (20 días/año) o improcedente (33 días/año). Si no sabes cuál es, el improcedente es el más habitual.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">2</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Introduce salario y años</h3>
+            <p class="text-body-sm text-on-surface/60">Tu salario bruto anual (incluyendo pagas extras) y cuántos años llevas en la empresa.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">3</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Revisa el desglose</h3>
+            <p class="text-body-sm text-on-surface/60">Obtén tu indemnización con el desglose: días por año, salario diario, tope de mensualidades y cálculo completo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplos -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Tipos de despido en España</h2>
-        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p><strong>Despido objetivo:</strong> Se basa en causas económicas, técnicas, organizativas o de producción. La indemnización es de 20 días de salario por año trabajado, con un máximo de 12 mensualidades.</p>
-          <p><strong>Despido improcedente:</strong> El empresario no puede justificar la causa del despido. La indemnización es de 33 días de salario por año trabajado (para contratos celebrados a partir del 12 de febrero de 2012), con un máximo de 24 mensualidades.</p>
-          <p><strong>Despido procedente:</strong> Se debe a un incumplimiento grave y culpable del trabajador. No genera indemnización.</p>
-          <p><strong>Tope legal:</strong> Para contratos anteriores al 12/02/2012, el despido improcedente genera 45 días/año con un tope de 42 mensualidades.</p>
-          <p class="mt-4">¿Quieres saber más? Consulta nuestra <a href="/guias/todo-sobre-tu-despido/" class="text-primary hover:underline">guía completa sobre el despido</a> para entender todos los conceptos, errores comunes y tus derechos.</p>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplos: cuánto cobras por despido</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse bg-surface-card rounded-card overflow-hidden shadow-card">
+            <thead>
+              <tr class="border-b border-outline-variant/30">
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Salario anual</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Años</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Tipo</th>
+                <th class="p-space-md text-body-sm font-bold text-primary">Indemnización</th>
+              </tr>
+            </thead>
+            <tbody class="text-body-sm text-on-surface/70">
+              <tr class="border-b border-outline-variant/20"><td class="p-space-md">25.000€</td><td class="p-space-md">3</td><td class="p-space-md">Objetivo</td><td class="p-space-md font-bold text-primary">~4.167€</td></tr>
+              <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">30.000€</td><td class="p-space-md">5</td><td class="p-space-md">Improcedente</td><td class="p-space-md font-bold text-primary">~13.750€</td></tr>
+              <tr class="border-b border-outline-variant/20"><td class="p-space-md">45.000€</td><td class="p-space-md">10</td><td class="p-space-md">Improcedente</td><td class="p-space-md font-bold text-primary">~41.250€</td></tr>
+              <tr><td class="p-space-md">60.000€</td><td class="p-space-md">15</td><td class="p-space-md">Improcedente</td><td class="p-space-md font-bold text-primary">~82.500€*</td></tr>
+            </tbody>
+          </table>
         </div>
+        <p class="mt-space-md text-body-sm text-on-surface/50">* Tope de 24 mensualidades. Sin tope serían 90.750€. Usa la calculadora para tu caso exacto.</p>
+      </div>
+    </section>
+
+    <!-- Tipos de despido -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Tipos de despido en España</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Despido improcedente</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">El empresario no puede justificar la causa. Es el más habitual.</p>
+            <ul class="text-body-sm text-on-surface/50 space-y-1 list-disc list-inside">
+              <li><strong class="text-on-surface">33 días/año</strong> trabajado (contratos desde 12/02/2012)</li>
+              <li><strong class="text-on-surface">Tope: 24 mensualidades</strong></li>
+              <li>Contratos anteriores: 45 días/año, tope 42 mensualidades</li>
+            </ul>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Despido objetivo</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">Causas económicas, técnicas, organizativas o de producción.</p>
+            <ul class="text-body-sm text-on-surface/50 space-y-1 list-disc list-inside">
+              <li><strong class="text-on-surface">20 días/año</strong> trabajado</li>
+              <li><strong class="text-on-surface">Tope: 12 mensualidades</strong></li>
+              <li>Requiere carta con causas justificadas</li>
+            </ul>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Despido procedente</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">Incumplimiento grave y culpable del trabajador.</p>
+            <ul class="text-body-sm text-on-surface/50 space-y-1 list-disc list-inside">
+              <li><strong class="text-on-surface">Sin indemnización</strong></li>
+              <li>Sí se cobra finiquito (salario, extras, vacaciones)</li>
+              <li>El convenio puede mejorar esta situación</li>
+            </ul>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Fin contrato temporal</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">Se agrega la duración pactada del contrato.</p>
+            <ul class="text-body-sm text-on-surface/50 space-y-1 list-disc list-inside">
+              <li><strong class="text-on-surface">12 días/año</strong> trabajado</li>
+              <li><strong class="text-on-surface">Tope: 24 mensualidades</strong></li>
+              <li>Indemnización mínima desde RDL 32/2021</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fórmulas -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Fórmulas de cálculo</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Indemnización improcedente</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">(Salario diario × 33 × Años trabajados)</p>
+            <p class="text-body-sm text-on-surface/50">Salario diario = Salario anual ÷ 12 ÷ 30. Tope: no puede superar 24 mensualidades de salario.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Indemnización objetiva</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">(Salario diario × 20 × Años trabajados)</p>
+            <p class="text-body-sm text-on-surface/50">Tope: no puede superar 12 mensualidades de salario. Requiere carta de despido con causas.</p>
+          </div>
+        </div>
+        <p class="mt-space-md text-body-sm text-on-surface/50">⚠️ Estas fórmulas son orientativas. La indemnización real puede verse afectada por convenio colectivo, cláusulas contractuales y sentencias judiciales.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="space-y-space-sm">
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Cuánto cobro si me despiden con 5 años?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Con un salario de 30.000€/año y despido improcedente: 33 días × 5 años × 83,33€/día = <strong>13.750€</strong>. Si es objetivo: 20 días × 5 años × 83,33€/día = <strong>8.333€</strong>.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Qué es el tope de mensualidades?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Es el máximo que puedes cobrar. Para improcedente: 24 mensualidades de salario. Para objetivo: 12 mensualidades. Si el cálculo supera ese tope, se aplica el tope.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿La indemnización tributa por IRPF?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Sí. Existe una exención de hasta 180.000€ para despidos reconocidos judicialmente. Los despidos amistosos tributan integramente.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Puedo impugnar el despido?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Sí. Tienes 20 días hábiles desde la notificación. Consulta nuestra <a href="/guias/derechos-trabajador-despido/" class="text-primary hover:underline">guía de derechos del trabajador</a>.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Qué pasa si no me dan carta de despido?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Sin carta, el despido se considera improcedente por defecto. La empresa está obligada a entregarla en el momento de la baja.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-2xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-md">Referencias legales</h2>
+        <ul class="space-y-space-sm text-body-sm text-on-surface/60">
+          <li><strong>Art. 53 ET</strong> — Despido por causas objetivas</li>
+          <li><strong>Art. 54 ET</strong> — Despido disciplinario</li>
+          <li><strong>Art. 56 ET</strong> — Indemnización improcedente (33 días/año)</li>
+          <li><strong>Disposición transitoria 5ª ET</strong> — Régimen transitorio 45 días/año</li>
+          <li><strong>Ley 39/2015</strong> — Plazo 20 días hábiles para impugnar</li>
+        </ul>
       </div>
     </section>
   </main>
