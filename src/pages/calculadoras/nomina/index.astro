@@ -47,16 +47,152 @@ import CalculadoraNomina from '../../../components/calculadoras/CalculadoraNomin
       <CalculadoraNomina client:load />
     </section>
 
-    <!-- Info -->
+    <!-- Cómo usar -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo usar esta calculadora</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">1</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Salario bruto anual</h3>
+            <p class="text-body-sm text-on-surface/60">Introduce tu salario bruto total del año, incluyendo pagas extras si no están prorrateadas.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">2</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Situación personal</h3>
+            <p class="text-body-sm text-on-surface/60">Selecciona tu estado civil, número de hijos y si tienes discapacidad. Esto afecta a la reducción del IRPF.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">3</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Revisa tu neto</h3>
+            <p class="text-body-sm text-on-surface/60">Comprueba tu neto mensual y anual, con el desglose completo de IRPF y Seguridad Social.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplos prácticos -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Cómo se calcula tu nómina?</h2>
-        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>Tu nómina neta se calcula restando de tu salario bruto las siguientes deducciones obligatorias:</p>
-          <p><strong>Retención IRPF:</strong> Se aplica la escala general del Impuesto sobre la Renta de las Personas Físicas. El tipo marginal aumenta con la base imponible (desde el 19% hasta el 47%). El porcentaje exacto depende de tu situación familiar y otras circunstancias.</p>
-          <p><strong>Cuotas de Seguridad Social:</strong> El trabajador aporta el 4,70% de contingencias comunes, 1,55% de desempleo (contrato indefinido), 0,10% de formación profesional y 0,15% del Mecanismo de Equidad Intergeneracional (MEI). Estas cuotas se calculan sobre la base de cotización, que tiene un tope superior de 5.101,20€/mes en 2026.</p>
-          <p>El resultado es aproximado y orientativo. Para cálculos oficiales, consulta con tu departamento de recursos humanos o un asesor fiscal.</p>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplos: cuánto cobras realmente</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse bg-surface-card rounded-card overflow-hidden shadow-card">
+            <thead>
+              <tr class="border-b border-outline-variant/30">
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Bruto anual</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Pagas</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">IRPF aprox.</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">SS trabajador</th>
+                <th class="p-space-md text-body-sm font-bold text-primary">Neto mensual</th>
+              </tr>
+            </thead>
+            <tbody class="text-body-sm text-on-surface/70">
+              <tr class="border-b border-outline-variant/20"><td class="p-space-md">20.000€</td><td class="p-space-md">14</td><td class="p-space-md">~11%</td><td class="p-space-md">~6,5%</td><td class="p-space-md font-bold text-primary">~1.430€</td></tr>
+              <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">30.000€</td><td class="p-space-md">14</td><td class="p-space-md">~16%</td><td class="p-space-md">~6,5%</td><td class="p-space-md font-bold text-primary">~1.980€</td></tr>
+              <tr class="border-b border-outline-variant/20"><td class="p-space-md">45.000€</td><td class="p-space-md">14</td><td class="p-space-md">~22%</td><td class="p-space-md">~6,5%</td><td class="p-space-md font-bold text-primary">~2.720€</td></tr>
+              <tr><td class="p-space-md">60.000€</td><td class="p-space-md">14</td><td class="p-space-md">~27%</td><td class="p-space-md">~6,5%</td><td class="p-space-md font-bold text-primary">~3.400€</td></tr>
+            </tbody>
+          </table>
         </div>
+        <p class="mt-space-md text-body-sm text-on-surface/50">* Valores orientativos para un soltero sin hijos. El IRPF varía según comunidad autónoma y circunstancias personales.</p>
+      </div>
+    </section>
+
+    <!-- Cómo funciona IRPF y SS -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula tu nómina</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Retención IRPF</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">El IRPF se aplica sobre la base imponible (bruto anual menos cotizaciones SS y reducciones). La escala general va del 19% al 47%:</p>
+            <ul class="text-body-sm text-on-surface/50 space-y-1 list-disc list-inside">
+              <li>Hasta 12.450€ → 19%</li>
+              <li>12.450€ – 20.200€ → 24%</li>
+              <li>20.200€ – 35.200€ → 30%</li>
+              <li>35.200€ – 60.000€ → 37%</li>
+              <li>Más de 60.000€ → 47%</li>
+            </ul>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Cuotas Seguridad Social</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">El trabajador aporta un ~6,5% de su base de cotización mensual:</p>
+            <ul class="text-body-sm text-on-surface/50 space-y-1 list-disc list-inside">
+              <li>Contingencias comunes: 4,70%</li>
+              <li>Desempleo (indefinido): 1,55%</li>
+              <li>Formación profesional: 0,10%</li>
+              <li>MEI (Equidad intergeneracional): 0,15%</li>
+            </ul>
+            <p class="text-body-sm text-on-surface/50 mt-space-sm">Tope base 2026: 5.101,20€/mes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="space-y-space-sm">
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Qué diferencia hay entre 12 y 14 pagas?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Con 14 pagas cobras el mismo bruto anual pero repartido en 12 nóminas normales + 2 pagas extras (julio y diciembre). Con 12 pagas, las extras están prorrateadas y cobras más cada mes pero no recibes paga extra aparte.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Por qué mi IRPF es más alto del esperado?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Si es tu primer empleo del año, el primer mes se aplica un IRPF muy bajo (o cero) y luego se vai ajustando. También influyen pagas extras, horas extra (que tributan al 15% fijo) y complementos que se consideran rendimientos del trabajo.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Qué es la reducción por obtención de rentas?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Es una deducción que reduce la base imponible de hasta 6.498€ anuales para trabajadores con bruto bajo. Se aplica automáticamente y reduce el IRPF efectivo de salarios pequeños.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿El IRPF varía según la comunidad autónoma?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Sí. Cada CCAA aplica su tipo autonómico del IRPF. Por ejemplo, Madrid tiene bonificaciones más favorables que Cataluña. Esta calculadora usa la escala general estatal como referencia.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Las horas extra tributan diferente?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Sí. Las horas extra voluntarias tributan al <strong>15% fijo</strong> de retención, independientemente de tu tipo marginal. Esto puede ser ventajoso si tu IRPF normal es alto.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias legales -->
+    <section class="px-gutter-desktop py-space-2xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-md">Referencias legales</h2>
+        <ul class="space-y-space-sm text-body-sm text-on-surface/60">
+          <li><strong>Ley 35/2006</strong> — Ley del IRPF (escala general estatal)</li>
+          <li><strong>Real Decreto Legislativo 5/2015</strong> — Texto refundido de la Ley General de la Seguridad Social</li>
+          <li><strong>Orden ESS/106/2024</strong> — Bases de cotización a la Seguridad Social 2026</li>
+          <li><strong>Real Decreto 424/2025</strong> — Reglamento de retenciones IRPF</li>
+        </ul>
       </div>
     </section>
   </main>

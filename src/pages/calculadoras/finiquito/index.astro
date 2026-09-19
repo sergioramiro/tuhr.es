@@ -47,18 +47,161 @@ import CalculadoraFiniquito from '../../../components/calculadoras/CalculadoraFi
       <CalculadoraFiniquito client:load />
     </section>
 
-    <!-- Info -->
+    <!-- Cómo usar la calculadora -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo usar esta calculadora</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">1</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Introduce tu salario</h3>
+            <p class="text-body-sm text-on-surface/60">Escribe tu salario bruto anual incluyendo pagas extras. Si las tienes prorrateadas, marca la casilla.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">2</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Ajusta vacaciones y días</h3>
+            <p class="text-body-sm text-on-surface/60">Indica los días de vacaciones pendientes y cuántos días has trabajado en el mes de salida.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">3</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Revisa el desglose</h3>
+            <p class="text-body-sm text-on-surface/60">Obtén tu finiquito desglosado por conceptos: salario del mes, vacaciones, pagas extras y total.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplos prácticos -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplos prácticos de finiquito</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse bg-surface-card rounded-card overflow-hidden shadow-card">
+            <thead>
+              <tr class="border-b border-outline-variant/30">
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Escenario</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Bruto anual</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Vacaciones</th>
+                <th class="p-space-md text-body-sm font-bold text-on-surface">Días mes</th>
+                <th class="p-space-md text-body-sm font-bold text-primary">Finiquito</th>
+              </tr>
+            </thead>
+            <tbody class="text-body-sm text-on-surface/70">
+              <tr class="border-b border-outline-variant/20"><td class="p-space-md">Despido con 15 días de vacaciones</td><td class="p-space-md">30.000€</td><td class="p-space-md">15 días</td><td class="p-space-md">15</td><td class="p-space-md font-bold text-primary">~3.437€</td></tr>
+              <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">Baja voluntaria sin vacaciones pendientes</td><td class="p-space-md">24.000€</td><td class="p-space-md">0 días</td><td class="p-space-md">20</td><td class="p-space-md font-bold text-primary">~1.333€</td></tr>
+              <tr class="border-b border-outline-variant/20"><td class="p-space-md">Fin de contrato temporal</td><td class="p-space-md">36.000€</td><td class="p-space-md">10 días</td><td class="p-space-md">15</td><td class="p-space-md font-bold text-primary">~2.833€</td></tr>
+              <tr><td class="p-space-md">Salario alto, 20 días pendientes</td><td class="p-space-md">60.000€</td><td class="p-space-md">20 días</td><td class="p-space-md">10</td><td class="p-space-md font-bold text-primary">~5.333€</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-space-md text-body-sm text-on-surface/50">* Estos valores son orientativos y no incluyen indemnización por despido. Usa la calculadora para tu caso concreto.</p>
+      </div>
+    </section>
+
+    <!-- Qué es el finiquito -->
+    <section class="px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
         <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Qué es el finiquito?</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>El finiquito es la cantidad que la empresa debe abonar al trabajador cuando finaliza la relación laboral. Incluye las cantidades pendientes de cobrar:</p>
-          <p><strong>Parte proporcional de vacaciones no disfrutadas:</strong> Si tienes días de vacaciones acumulados que no has usado, la empresa debe indemnizarte por ellos.</p>
-          <p><strong>Parte proporcional de pagas extras:</strong> Si no has cobrado todas las pagas extras del año, te corresponde la parte proporcional.</p>
-          <p><strong>Día del mes trabajado:</strong> Los días que has trabajado en el mes de salida también se abonan.</p>
-          <p>El finiquito no es lo mismo que la indemnización por despido. El finiquito es una cantidad fija que siempre se cobra, mientras que la indemnización depende del tipo de despido.</p>
-          <p class="mt-4">¿Quieres saber más? Consulta nuestra <a href="/guias/todo-sobre-tu-finiquito/" class="text-primary hover:underline">guía completa sobre el finiquito</a> para entender todos los conceptos, errores comunes y tus derechos.</p>
+          <p>El finiquito es la cantidad que la empresa debe abonar al trabajador cuando finaliza la relación laboral, independientemente del motivo. Está regulado por el <strong>artículo 49 del Estatuto de los Trabajadores</strong> (RDL 2/2015) y se liquida en el momento de la baja.</p>
+          <p>A diferencia de la indemnización por despido —que solo se cobra en determinados tipos de extinción— el finiquito <strong>siempre se cobra</strong>: tanto en un despido como en una dimisión voluntaria.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Fórmulas -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Fórmulas del finiquito</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Salario del mes trabajado</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">(Salario base mensual + complementos) ÷ 30 × días trabajados</p>
+            <p class="text-body-sm text-on-surface/50">Se usa una base de 30 días independientemente del mes real. Si trabajaste del 1 al 15, cobras 15/30 partes.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Paga extra proporcional</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">(Importe paga extra × meses trabajados desde última paga) ÷ 12</p>
+            <p class="text-body-sm text-on-surface/50">Solo aplica si no están prorrateadas. Si llevas 6 meses sin cobrarla, te corresponden 6/12 partes.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Vacaciones no disfrutadas</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">(Salario mensual ÷ 30) × días de vacaciones pendientes</p>
+            <p class="text-body-sm text-on-surface/50">La ley establece 30 días naturales por año trabajado (2.5 días/mes). Se pagan los días no disfrutados.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Total finiquito</h3>
+            <p class="text-body-sm text-on-surface/60 mb-space-sm">Salario mes + Extras proporcionales + Vacaciones pendientes</p>
+            <p class="text-body-sm text-on-surface/50">Este es el finiquito base. La indemnización por despido se suma aparte y depende del tipo de extinción.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="space-y-space-sm">
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Cuánto tiempo tengo para cobrar el finiquito?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              La empresa debe liquidar el finiquito <strong>el mismo día de la baja</strong>. Si no lo paga, puedes reclamarlo judicialmente en el plazo de 1 año (art. 60 ET).
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿El finiquito incluye indemnización?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              No. El finiquito salda las deudas pendientes (salario, extras, vacaciones). La indemnización es un concepto adicional que solo se paga en despidos y ERE.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Pierdo el finiquito si me voy sin preaviso?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              No. El finiquito es un derecho irrenunciable. Sin preaviso, la empresa puede descontarte 15 días del salario, pero no el finiquito ni las vacaciones pendientes.
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Qué diferencia hay entre finiquito e indemnización?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              El finiquito siempre se cobra (es el saldo de la empresa contigo). La indemnización compensa la pérdida del empleo y su cuantía varía: 20 días/año (despido objetivo) o 33 días/año (improcedente).
+            </div>
+          </details>
+          <details class="bg-surface-card rounded-card border border-outline-variant/30 shadow-card group">
+            <summary class="p-space-md cursor-pointer font-headline text-headline-sm font-bold text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
+              <span>¿Firmo como "conforme" o "no conforme"?</span>
+              <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
+            </summary>
+            <div class="px-space-md pb-space-md text-body-sm text-on-surface/70 border-t border-outline-variant/20 pt-space-sm">
+              Puedes firmar como "recibí sin estar de acuerdo". No pierdes tu derecho a impugnar. El plazo para impugnar un despido es de <strong>20 días hábiles</strong> desde la notificación (art. 59.2 ET).
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias legales -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-2xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-md">Referencias legales</h2>
+        <ul class="space-y-space-sm text-body-sm text-on-surface/60">
+          <li><strong>Art. 49 ET</strong> — Extinción del contrato de trabajo y liquidación de finiquito</li>
+          <li><strong>Art. 56 ET</strong> — Preaviso en despidos (15 días mínimo)</li>
+          <li><strong>Art. 59.2 ET</strong> — Plazo de 20 días hábiles para impugnar despidos</li>
+          <li><strong>Art. 147 Real Decreto Legislativo 5/2015</strong> — Regulación del finiquito</li>
+        </ul>
       </div>
     </section>
   </main>
