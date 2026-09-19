@@ -76,10 +76,10 @@ const breadcrumbSchema = JSON.stringify({
           </span>
         </div>
 
-        <!-- H1 Title -->
-        <h1 class="font-headline-h1 text-headline-h1 text-text-primary tracking-tight mb-space-md">
+        <!-- H1 Title (SEO: the content provides the H1, this is a visual title) -->
+        <div class="font-headline-h1 text-headline-h1 text-text-primary tracking-tight mb-space-md" aria-hidden="true">
           {title.split("|")[0].trim()}
-        </h1>
+        </div>
 
         <!-- Lead paragraph (slot) -->
         <div class="font-body-lead text-body-lead text-text-secondary mb-space-lg max-w-3xl">
