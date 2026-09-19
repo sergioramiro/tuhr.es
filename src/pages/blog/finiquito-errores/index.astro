@@ -11,8 +11,8 @@ const htmlContent = marked.parse(md);
 ---
 
 <BlogLayout
-  title="Cómo calcular tu finiquito: errores comunes que te hacen perder dinero"
-  description="Descubre los errores más frecuentes al calcular tu finiquito y cómo evitar que te paguen de menos. Ejemplos reales y consejos prácticos."
+  title="Modelo finiquito laboral: errores comunes | tuhr.es"
+  description="Modelo de finiquito laboral: errores más frecuentes al calcular tu finiquito y cómo evitar que te paguen de menos. Consejos prácticos."
   category="Finiquito"
   date="11 septiembre 2026"
   readTime="10 min"
@@ -26,4 +26,11 @@ const htmlContent = marked.parse(md);
   }}
 >
   <Fragment set:html={htmlContent} />
+
+  <!-- CTA: Calculadora relacionada -->
+  <div class="mt-space-2xl p-space-lg bg-surface-container-low rounded-xl border border-outline/10">
+    <p class="text-body-md text-on-surface/80">
+      ¿Quieres evitar estos errores? <a href="/calculadoras/finiquito/" class="text-primary hover:underline font-medium">Calcula tu finiquito con nuestra herramienta gratuita</a> y comprueba que no te están pagando de menos.
+    </p>
+  </div>
 </BlogLayout>

@@ -10,8 +10,8 @@ const htmlContent = marked.parse(md);
 ---
 
 <GuideLayout
-  title="Derechos del trabajador ante un despido | tuhr.es"
-  description="Conoce todos tus derechos si te han despedido: tipos de despido, indemnización, plazos para impugnar, finiquito y cómo actuar paso a paso."
+  title="Derechos del trabajador en caso de despido | tuhr.es"
+  description="Tus derechos del trabajador en caso de despido: tipos de despido, indemnización, plazos para impugnar y cómo actuar paso a paso."
   category="Guía Laboral Actualizada 2026"
   readTime="12 min de lectura"
 >
@@ -66,5 +66,12 @@ const htmlContent = marked.parse(md);
 
   <div class="prose max-w-none text-body-md text-on-surface/80 space-y-space-lg">
     <Fragment set:html={htmlContent} />
+  </div>
+
+  <!-- CTA: Calculadoras relacionadas -->
+  <div class="mt-space-2xl p-space-lg bg-surface-container-low rounded-xl border border-outline/10">
+    <p class="text-body-md text-on-surface/80">
+      ¿Necesitas calcular cuánto te corresponde? <a href="/calculadoras/despido/" class="text-primary hover:underline font-medium">Calcula tu indemnización con nuestra calculadora de despido</a> o <a href="/calculadoras/finiquito/" class="text-primary hover:underline font-medium">comprueba tu finiquito paso a paso</a>.
+    </p>
   </div>
 </GuideLayout>
