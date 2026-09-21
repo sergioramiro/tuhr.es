@@ -149,3 +149,5 @@ Los siguientes artículos ya existen en `src/pages/blog/` o `blog-articles/`:
 - 09-calcular-indemnizacion-despido
 - 10-despido-procedente-improcedente
 - 11-convenio-colectivo-guia
+- 12-baja-maternidad-paternidad-2026
+- 13-contrato-temporal-reforma-laboral
