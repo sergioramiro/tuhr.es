@@ -66,7 +66,7 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 ## Semana 8 (29 sep - 5 oct 2026) — Artículo 14 y 15
 
 ### Artículo 14: "Accidente laboral: qué hacer, cuánto cobras y tus derechos"
-- **Slug:**-accidente-laboral-derechos
+- **Slug:** accidente-laboral-derechos
 - **Categoría:** Derecho Laboral
 - **Tags:** accidente laboral, incapacidad temporal, seguridad social, indemnización
 - **Descripción:** Guía práctica ante un accidente laboral en España: pasos a seguir, cuánto cobras por IT, quién paga y cómo reclamar indemnización.
@@ -151,3 +151,5 @@ Los siguientes artículos ya existen en `src/pages/blog/` o `blog-articles/`:
 - 11-convenio-colectivo-guia
 - 12-baja-maternidad-paternidad-2026
 - 13-contrato-temporal-reforma-laboral
+- 14-accidente-laboral-derechos
+- 15-horas-extraordinarias-espana
