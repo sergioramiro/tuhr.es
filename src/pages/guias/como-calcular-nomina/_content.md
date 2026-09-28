@@ -6,7 +6,7 @@
 
 Cobrar la nómina es algo que hacemos todos los meses, pero ¿sabemos realmente qué significan todos esos conceptos que aparecen en ella? Base de cotización, complementos, retenciones de IRPF, cotizaciones a la Seguridad Social… Para muchos trabajadores, la nómina es un documento casi misterioso.
 
-En esta guía te explicamos cómo calcular tu nómina paso a paso, desglosando cada concepto para que sepas exactamente cuánto ganas, cuánto te retienen y por qué. Al final, también te daremos un ejemplo práctico completo para que puedas comprobar si tu nómina es correcta.
+En esta guía te explicamos cómo calcular tu nómina paso a paso, desglosando cada concepto para que sepas exactamente cuánto ganas, cuánto te retienen y por qué. Al final, también te daremos un ejemplo práctico completo para que puedas comprobar si tu nómina es correcta. Y si prefieres no hacerlo a mano, usa nuestra [calculadora de nómina](/calculadoras/nomina/) para pasar de bruto a neto al instante.
 
 ## Estructura básica de una nómina
 

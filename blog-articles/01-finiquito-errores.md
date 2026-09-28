@@ -17,7 +17,7 @@ canonical: "https://tuhr.es/blog/como-calcular-finiquito-errores-comunes/"
 
 Cada año, miles de trabajadores españoles dejan su puesto de trabajo —por dimisión, despido o fin de contrato— y firman un finiquito sin entender bien cómo se ha calculado. Lo peor es que muchos de esos finiquitos tienen errores que cuestan dinero real: cientos, a veces miles de euros que no recuperan porque no sabían qué comprobar.
 
-El finiquito no es un trámite administrativo irrelevante. Es el pago que la empresa te debe por todo lo que has generado durante tu relación laboral: días trabajados, vacaciones pendientes, pagas extras, horas extra, comisiones. Si la empresa comete un error —intencional o por descuido— y tú no lo detectas, pierdes ese dinero.
+El finiquito no es un trámite administrativo irrelevante. Es el pago que la empresa te debe por todo lo que has generado durante tu relación laboral: días trabajados, vacaciones pendientes, pagas extras, horas extra, comisiones. Si la empresa comete un error —intencional o por descuido— y tú no lo detectas, pierdes ese dinero. La referencia para no perderlo es nuestra [guía completa de finiquito](/guias/todo-sobre-tu-finiquito/).
 
 En esta guía te explicamos los errores más frecuentes que cometen los trabajadores al calcular su finiquito, cómo identificarlos y cómo evitar que te cuesten euros. Al final, encontrarás un ejemplo completo con tabla de cálculo y un enlace a nuestra calculadora de finiquito gratuita para que puedas verificar los números por ti mismo.
 

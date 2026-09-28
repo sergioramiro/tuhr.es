@@ -15,7 +15,7 @@ canonical: "https://tuhr.es/blog/cuanto-cobro-si-me-despiden/"
 
 ---
 
-Te despiden. El primer pensamiento es: ¿cuánto dinero me van a dar? Es normal. Es tu sustento y necesitas saber a qué atenerte. Pero el importe que cobras no es un número fijo: depende de por qué te despiden, cuántos años llevas en la empresa y cuánto ganas. En esta guía te explicamos todo lo que necesitas saber para calcular cuánto cobras si te despiden en España, con ejemplos reales y las fórmulas exactas que usa la ley.
+Te despiden. El primer pensamiento es: ¿cuánto dinero me van a dar? Es normal. Es tu sustento y necesitas saber a qué atenerte. Pero el importe que cobras no es un número fijo: depende de por qué te despiden, cuántos años llevas en la empresa y cuánto ganas. En esta guía te explicamos todo lo que necesitas saber para calcular cuánto cobras si te despiden en España, con ejemplos reales y las fórmulas exactas que usa la ley. Si lo que quieres es la cifra al detalle, empieza por nuestra guía de [cómo calcular tu indemnización por despido](/blog/calcular-indemnizacion-despido/).
 
 ## Primero: finiquito e indemnización no son lo mismo
 
