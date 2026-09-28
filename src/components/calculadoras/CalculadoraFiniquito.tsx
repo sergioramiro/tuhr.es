@@ -127,23 +127,23 @@ export default function CalculadoraFiniquito() {
         <div className="text-center mb-space-xl">
           <p className="text-body-sm text-on-surface/60">Total estimado</p>
           <p className="font-headline text-headline-xl font-extrabold text-primary">
-            {result.totalFiniquito.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+            {result.totalFiniquito.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
           </p>
         </div>
 
         <div className="space-y-space-sm">
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Salario día del mes ({result.desglose.diasTrabajados} días × {result.desglose.salarioDiario}€/día)</span>
-            <span className="font-semibold text-on-surface">{result.salarioPendienteMes.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.salarioPendienteMes.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Vacaciones no disfrutadas ({result.desglose.vacacionesPendientes} días)</span>
-            <span className="font-semibold text-on-surface">{result.vacacionesProporcionales.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.vacacionesProporcionales.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
           {!pagasProrrateadas && mesesDesdeUltimaPaga > 0 && (
             <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
               <span className="text-on-surface/60">Pagas extras proporcionales ({result.desglose.mesesDesdeUltimaPaga} meses)</span>
-              <span className="font-semibold text-on-surface">{result.pagasExtrasProporcionales.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              <span className="font-semibold text-on-surface">{result.pagasExtrasProporcionales.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
             </div>
           )}
           {pagasProrrateadas && (

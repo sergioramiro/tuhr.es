@@ -164,25 +164,25 @@ export default function CalculadoraHorasExtra() {
         <div className="text-center mb-space-xl">
           <p className="text-body-sm text-on-surface/60">Total bruto a cobrar</p>
           <p className="font-headline text-headline-xl font-extrabold text-primary">
-            {result.totalBruto.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+            {result.totalBruto.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
           </p>
         </div>
 
         <div className="space-y-space-sm">
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Salario hora base</span>
-            <span className="font-semibold text-on-surface">{result.salarioHoraNormal.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€/h</span>
+            <span className="font-semibold text-on-surface">{result.salarioHoraNormal.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€/h</span>
           </div>
           {horasNormales > 0 && (
             <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
               <span className="text-on-surface/60">Horas normales ({horasNormales}h × 1.5×)</span>
-              <span className="font-semibold text-on-surface">{(horasNormales * result.salarioHoraNormal * 1.5).toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              <span className="font-semibold text-on-surface">{(horasNormales * result.salarioHoraNormal * 1.5).toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
             </div>
           )}
           {horasNocturnas > 0 && (
             <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
               <span className="text-on-surface/60">Horas nocturnas ({horasNocturnas}h × 2×)</span>
-              <span className="font-semibold text-on-surface">{(horasNocturnas * result.salarioHoraNormal * 2).toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              <span className="font-semibold text-on-surface">{(horasNocturnas * result.salarioHoraNormal * 2).toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
             </div>
           )}
         </div>

@@ -146,7 +146,7 @@ export default function SimuladorDespido() {
         <div className="text-center mb-space-xl">
           <p className="text-body-sm text-on-surface/60">Total indemnización</p>
           <p className="font-headline text-headline-xl font-extrabold text-primary">
-            {result.indemnizacion.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+            {result.indemnizacion.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
           </p>
           {result.topeAplicado && (
             <p className="mt-space-sm text-body-sm text-amber-600 font-semibold">
@@ -171,7 +171,7 @@ export default function SimuladorDespido() {
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Salario diario</span>
-            <span className="font-semibold text-on-surface">{result.desglose.salarioDiario.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.desglose.salarioDiario.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Meses totales trabajados</span>
@@ -186,7 +186,7 @@ export default function SimuladorDespido() {
           {result.topeAplicado && (
             <div className="flex justify-between text-body-sm p-space-sm bg-amber-50 border border-amber-200 rounded-button">
               <span className="text-amber-700">Sin tope habría sido</span>
-              <span className="font-semibold text-amber-700">{result.indemnizacionSinTope.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+              <span className="font-semibold text-amber-700">{result.indemnizacionSinTope.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
             </div>
           )}
         </div>

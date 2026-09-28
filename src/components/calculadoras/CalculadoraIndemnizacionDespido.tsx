@@ -161,7 +161,7 @@ export default function CalculadoraIndemnizacionDespido() {
         <div className="text-center mb-space-xl">
           <p className="text-body-sm text-on-surface/60">Total indemnización estimada</p>
           <p className="font-headline text-headline-xl font-extrabold text-primary">
-            {result.indemnizacionTotal.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+            {result.indemnizacionTotal.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
           </p>
         </div>
 
@@ -176,7 +176,7 @@ export default function CalculadoraIndemnizacionDespido() {
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Salario diario</span>
-            <span className="font-semibold text-on-surface">{result.salarioDiario.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.salarioDiario.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Tope máximo</span>

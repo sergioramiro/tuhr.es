@@ -45,7 +45,7 @@ export default function ComparativaPagas() {
           <div className="text-center mb-space-lg">
             <p className="text-body-sm text-on-surface/60">Cada mes cobras</p>
             <p className="font-headline text-headline-lg font-extrabold text-primary">
-              {result.pagas12.mensualBruto.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+              {result.pagas12.mensualBruto.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
             </p>
           </div>
           <p className="text-body-sm text-on-surface/60 text-center">{result.pagas12.description}</p>
@@ -57,12 +57,12 @@ export default function ComparativaPagas() {
           <div className="text-center mb-space-lg">
             <p className="text-body-sm text-on-surface/60">Cada mes cobras</p>
             <p className="font-headline text-headline-lg font-extrabold text-primary">
-              {result.pagas14.mensualBruto.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+              {result.pagas14.mensualBruto.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
             </p>
             <p className="mt-space-sm text-body-sm text-on-surface/60">
               + 2 pagas extras de{' '}
               <span className="font-semibold text-on-surface">
-                {result.pagas14.pagaExtraBruto.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+                {result.pagas14.pagaExtraBruto.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
               </span>
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function ComparativaPagas() {
       <div className="mt-space-lg p-space-lg bg-primary/5 rounded-card border border-primary/20 text-center">
         <p className="text-body-sm text-on-surface/60">Diferencia mensual</p>
         <p className="font-headline text-headline-md font-bold text-on-surface">
-          {result.diferenciaMensual.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€ más al mes con 12 pagas
+          {result.diferenciaMensual.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€ más al mes con 12 pagas
         </p>
       </div>
 
@@ -83,7 +83,7 @@ export default function ComparativaPagas() {
         <h4 className="font-headline text-headline-sm font-bold text-on-surface mb-space-md">¿Cuál me conviene?</h4>
         <div className="text-body-sm text-on-surface/70 space-y-space-sm">
           <p>
-            <strong>12 pagas:</strong> Cobras más cada mes (en este caso, {result.diferenciaMensual.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€ más). Ideal si necesitas un flujo de caja mensual más alto o tienes gastos fijos elevados.
+            <strong>12 pagas:</strong> Cobras más cada mes (en este caso, {result.diferenciaMensual.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€ más). Ideal si necesitas un flujo de caja mensual más alto o tienes gastos fijos elevados.
           </p>
           <p>
             <strong>14 pagas:</strong> Cobras menos al mes pero recibes 2 pagas extra en junio y diciembre. Útil si prefieres tener un colchón para gastos extraordinarios o vacaciones.

@@ -128,53 +128,53 @@ export default function CalculadoraNomina() {
         <div className="grid grid-cols-2 gap-space-md">
           <div className="bg-surface-card rounded-button p-space-md text-center">
             <p className="text-body-sm text-on-surface/60">Bruto mensual</p>
-            <p className="font-headline text-headline-md font-bold text-on-surface">{result.brutoMensual.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</p>
+            <p className="font-headline text-headline-md font-bold text-on-surface">{result.brutoMensual.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</p>
           </div>
           <div className="bg-surface-card rounded-button p-space-md text-center">
             <p className="text-body-sm text-on-surface/60">Neto mensual</p>
-            <p className="font-headline text-headline-md font-bold text-primary">{result.netoMensual.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</p>
+            <p className="font-headline text-headline-md font-bold text-primary">{result.netoMensual.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</p>
           </div>
         </div>
 
         <div className="mt-space-lg space-y-space-sm">
           <div className="flex justify-between text-body-sm">
             <span className="text-on-surface/60">Retención IRPF</span>
-            <span className="font-semibold text-on-surface">{result.retencionIrpf.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€ ({result.tipoEfectivoIrpf}%)</span>
+            <span className="font-semibold text-on-surface">{result.retencionIrpf.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€ ({result.tipoEfectivoIrpf}%)</span>
           </div>
 
           {/* Desglose SS */}
           <div className="p-space-md bg-surface-card rounded-button">
-            <p className="text-body-sm font-semibold text-on-surface mb-space-sm">Cuota Seguridad Social ({result.cuotaSs.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€)</p>
+            <p className="text-body-sm font-semibold text-on-surface mb-space-sm">Cuota Seguridad Social ({result.cuotaSs.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€)</p>
             <div className="space-y-1 text-body-sm text-on-surface/60">
               <div className="flex justify-between">
                 <span>Contingencias comunes (4,70%)</span>
-                <span>{result.desgloseSs.contingenciasComunes.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+                <span>{result.desgloseSs.contingenciasComunes.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
               </div>
               <div className="flex justify-between">
                 <span>Desempleo (1,55%)</span>
-                <span>{result.desgloseSs.desempleo.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+                <span>{result.desgloseSs.desempleo.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
               </div>
               <div className="flex justify-between">
                 <span>Formación profesional (0,10%)</span>
-                <span>{result.desgloseSs.formacionProfesional.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+                <span>{result.desgloseSs.formacionProfesional.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
               </div>
               <div className="flex justify-between">
                 <span>MEI — Equidad intergeneracional (0,15%)</span>
-                <span>{result.desgloseSs.mei.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+                <span>{result.desgloseSs.mei.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
               </div>
             </div>
           </div>
 
           <div className="flex justify-between text-body-sm border-t border-outline-variant/30 pt-space-sm">
             <span className="text-on-surface/60">Total deducciones</span>
-            <span className="font-semibold text-on-surface">{result.totalDeducciones.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.totalDeducciones.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
         </div>
 
         <div className="mt-space-lg p-space-md bg-surface-card rounded-button">
           <div className="flex justify-between text-body-sm">
             <span className="text-on-surface/60">Neto anual</span>
-            <span className="font-semibold text-on-surface">{result.netoAnual.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.netoAnual.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
         </div>
       </div>

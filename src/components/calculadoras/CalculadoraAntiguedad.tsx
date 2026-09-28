@@ -112,7 +112,7 @@ export default function CalculadoraAntiguedad() {
         <div className="text-center mb-space-xl">
           <p className="text-body-sm text-on-surface/60">Total anual estimado</p>
           <p className="font-headline text-headline-xl font-extrabold text-primary">
-            {result.salarioMesesAntiguedad.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€
+            {result.salarioMesesAntiguedad.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€
           </p>
         </div>
 
@@ -123,7 +123,7 @@ export default function CalculadoraAntiguedad() {
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Salario base anual</span>
-            <span className="font-semibold text-on-surface">{result.desglose.salarioBase.toLocaleString('es-ES', { minimumFractionDigits: 2 })}€</span>
+            <span className="font-semibold text-on-surface">{result.desglose.salarioBase.toLocaleString('es-ES', { minimumFractionDigits: 2, useGrouping: true })}€</span>
           </div>
           <div className="flex justify-between text-body-sm p-space-sm bg-surface-card rounded-button">
             <span className="text-on-surface/60">Porcentaje aplicable</span>
