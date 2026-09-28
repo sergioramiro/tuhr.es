@@ -2,7 +2,7 @@
 title: "ERTE en España 2026: qué es, tipos, cuánto cobras y cómo se solicita"
 slug: "erte-espana"
 description: "Guía completa sobre el ERTE en España 2026: diferencias entre fuerza mayor y ETOP, cuánto cobras de prestación por desempleo, requisitos, trámites, exoneraciones y tus derechos como trabajador."
-date: 2026-10-06
+date: 2026-09-28
 author: "tuhr.es"
 category: "Derechos"
 tags:
