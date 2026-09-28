@@ -1,0 +1,288 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CalculadoraParo from '../../../components/calculadoras/CalculadoraParo';
+---
+
+<Layout
+  title="Calculadora de paro 2026: cuánto cobrarás | tuhr.es"
+  description="Calcula tu prestación por desempleo en España: cuantía mensual según tu base reguladora, topes del SEPE, duración en meses y neto estimado. Datos oficiales 2026."
+>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadora de paro",
+      "url": "https://tuhr.es/calculadoras/paro/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "description": "Calcula cuánto cobrarás de prestación por desempleo: cuantía, topes, duración y neto estimado con las cuantías oficiales del SEPE",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Paro</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de paro</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        Calcula tu prestación por desempleo en España con las cuantías oficiales del SEPE para 2026:
+        cuánto cobras al mes, durante cuántos meses y qué neto estimado te queda después de las deducciones.
+      </p>
+      <p class="mt-space-sm text-body-sm text-on-surface/50">
+        Si tu empresa está en ERTE y quieres saber qué cobras en ese caso, te lo explicamos en la
+        <a href="/blog/erte-espana/" class="text-primary hover:underline">guía sobre el ERTE en España 2026</a>.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <CalculadoraParo client:load />
+    </section>
+
+    <!-- Cómo usar la calculadora -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo usar esta calculadora</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">1</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Mira tu base reguladora</h3>
+            <p class="text-body-sm text-on-surface/60">Es la media de tus bases de cotización por desempleo de los últimos 180 días cotizados, sin horas extra. Como aproximación, tu bruto mensual con pagas extras prorrateadas.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">2</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Suma tus días cotizados</h3>
+            <p class="text-body-sm text-on-surface/60">En tu informe de vida laboral, suma los días con cotización por desempleo de los últimos 6 años. Con 360 días ya hay paro; la duración depende de esa suma.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">3</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Indica tus hijos a cargo</h3>
+            <p class="text-body-sm text-on-surface/60">Suben el tope máximo que el SEPE puede pagarte: 1.225 € sin hijos, 1.400 € con uno y 1.575 € con dos o más.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo se calcula -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula el paro paso a paso</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p><strong>1. La base reguladora.</strong> El SEPE coge la media de tus bases de cotización por desempleo de los <strong>últimos 180 días cotizados</strong> (no hace falta que sean consecutivos) y descarta las horas extraordinarias. Esta base es también la que se usa para cotizar a la Seguridad Social mientras cobras el paro.</p>
+          <p><strong>2. El porcentaje.</strong> Sobre esa base se paga el <strong>70 % durante los primeros 180 días</strong> de prestación y el <strong>60 % a partir del día 181</strong> hasta que se agote. Es decir, los 6 primeros meses cobras algo más que a partir del mes 7.</p>
+          <p><strong>3. Los topes.</strong> El resultado nunca puede quedar por debajo del mínimo ni por encima del máximo legal. Los dos dependen de si tienes hijos o hijas a cargo (menores de 26 años o mayores con discapacidad que conviven contigo, dependen de ti y no superan el SMI en rentas).</p>
+          <p><strong>Ejemplo:</strong> base reguladora de 2.000 €/mes y sin hijos a cargo. El 70 % daría 1.400 €, pero el tope máximo son 1.225 €, así que los 6 primeros meses cobras 1.225 €. Del mes 7, el 60 % da 1.200 €, que ya queda por debajo del tope y se paga íntegro. Misma base con un hijo a cargo: el tope sube a 1.400 € y los 6 primeros meses cobras los 1.400 € completos. Prueba tu caso: los topes cambian mucho el resultado.</p>
+        </div>
+
+        <!-- Topes -->
+        <div class="mt-space-2xl overflow-x-auto">
+          <table class="w-full text-body-sm border border-outline-variant/40 rounded-button overflow-hidden">
+            <thead class="bg-surface-card text-on-surface">
+              <tr>
+                <th class="text-left p-space-md font-semibold">Situación familiar</th>
+                <th class="text-right p-space-md font-semibold">Tope mínimo</th>
+                <th class="text-right p-space-md font-semibold">Tope máximo</th>
+              </tr>
+            </thead>
+            <tbody class="bg-surface/50 text-on-surface/80">
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">Sin hijos a cargo</td>
+                <td class="text-right p-space-md">560,00 €/mes</td>
+                <td class="text-right p-space-md">1.225,00 €/mes</td>
+              </tr>
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">1 hijo o hija a cargo</td>
+                <td class="text-right p-space-md">749,00 €/mes</td>
+                <td class="text-right p-space-md">1.400,00 €/mes</td>
+              </tr>
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">2 o más hijos a cargo</td>
+                <td class="text-right p-space-md">749,00 €/mes</td>
+                <td class="text-right p-space-md">1.575,00 €/mes</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-space-sm text-body-sm text-on-surface/50">Cuantías oficiales del SEPE para 2026 (IPREM: 600 €/mes).</p>
+        </div>
+
+        <!-- Duración -->
+        <h3 class="font-headline text-headline-md font-bold text-on-surface mt-space-2xl mb-space-md">¿Cuánto dura el paro?</h3>
+        <p class="text-body-md text-on-surface/70 mb-space-md">Depende de los días cotizados por desempleo en los <strong>6 años anteriores</strong> a tu situación legal de desempleo (o de cuando cesó la obligación de cotizar):</p>
+        <div class="overflow-x-auto">
+          <table class="w-full text-body-sm border border-outline-variant/40 rounded-button overflow-hidden">
+            <thead class="bg-surface-card text-on-surface">
+              <tr>
+                <th class="text-left p-space-md font-semibold">Días cotizados</th>
+                <th class="text-right p-space-md font-semibold">Días de prestación</th>
+                <th class="text-right p-space-md font-semibold">Meses</th>
+              </tr>
+            </thead>
+            <tbody class="bg-surface/50 text-on-surface/80">
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 360 a 539</td><td class="text-right p-space-md">120</td><td class="text-right p-space-md">4</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 540 a 719</td><td class="text-right p-space-md">180</td><td class="text-right p-space-md">6</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 720 a 899</td><td class="text-right p-space-md">240</td><td class="text-right p-space-md">8</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 900 a 1.079</td><td class="text-right p-space-md">300</td><td class="text-right p-space-md">10</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 1.080 a 1.259</td><td class="text-right p-space-md">360</td><td class="text-right p-space-md">12</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 1.260 a 1.439</td><td class="text-right p-space-md">420</td><td class="text-right p-space-md">14</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 1.440 a 1.619</td><td class="text-right p-space-md">480</td><td class="text-right p-space-md">16</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 1.620 a 1.799</td><td class="text-right p-space-md">540</td><td class="text-right p-space-md">18</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 1.800 a 1.979</td><td class="text-right p-space-md">600</td><td class="text-right p-space-md">20</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">De 1.980 a 2.159</td><td class="text-right p-space-md">660</td><td class="text-right p-space-md">22</td></tr>
+              <tr class="border-t border-outline-variant/30"><td class="p-space-md">2.160 o más</td><td class="text-right p-space-md">720</td><td class="text-right p-space-md">24</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-space-sm text-body-sm text-on-surface/50">Escala oficial: 24 meses es el máximo (unas 6 años cotizados).</p>
+        </div>
+
+        <!-- Deducciones -->
+        <h3 class="font-headline text-headline-md font-bold text-on-surface mt-space-2xl mb-space-md">Qué se descuenta de la cuantía bruta</h3>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p><strong>Seguridad Social:</strong> mientras cobras el paro se sigue cotizando. La aportación del trabajador es del <strong>4,85 % sobre tu base reguladora</strong> (no sobre el 70 % que cobras), y se descuenta de la prestación. La aportación empresarial la paga el SEPE.</p>
+          <p><strong>IRPF:</strong> se practica una retención que, como mínimo, suele ser del 2 % de la prestación. Puedes pedir al SEPE que la suba si en tu declaración te sale a devolver cada año. Si tu cuantía es muy baja, la retención puede ser cero por los mínimos personales y familiares.</p>
+          <p><strong>El pago:</strong> por mensualidades de 30 días, entre los días 10 y 15 del mes siguiente al que corresponde, en la cuenta que indiques.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menos de 360 días -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Y si no tienes 360 días cotizados?</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>No hay prestación contributiva, pero sí puede haber <strong>subsidio por cotizaciones insuficientes</strong> si has cotizado al menos 90 días y estás en situación legal de desempleo:</p>
+          <ul class="list-disc pl-space-lg space-y-space-sm">
+            <li><strong>Con responsabilidades familiares:</strong> con 90 días cotizados ya se puede tener derecho.</li>
+            <li><strong>Sin responsabilidades familiares:</strong> se exigen 180 días cotizados.</li>
+            <li><strong>Cuantía:</strong> 95 % del IPREM (570 €/mes) los primeros 180 días, 90 % (540 €) del día 181 al 360 y 80 % (480 €) a partir del 361.</li>
+            <li><strong>Duración:</strong> coincide con los días cotizados, hasta 6 meses: 90 días cotizados → 3 meses de subsidio, 120 → 4 meses, 150 → 5 meses y 180 → 6 meses (y hasta 21 meses con responsabilidades familiares).</li>
+            <li><strong>Requisitos adicionales:</strong> carencia de rentas (por debajo del 75 % del SMI: 915,75 €/mes), suscribir el acuerdo de actividad y solicitarlo en los 6 meses siguientes al hecho causante.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo solicitarlo -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo solicitar el paro</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Requisitos</h3>
+            <ul class="list-disc pl-space-lg text-body-sm text-on-surface/70 space-y-space-sm">
+              <li>Estar en situación legal de desempleo (despido, fin de contrato, baja voluntaria con preaviso, etc.)</li>
+              <li>Haber cotizado al menos <strong>360 días por desempleo en los 6 años anteriores</strong>, sin haberlos usado en una prestación anterior</li>
+              <li>Estar inscrito y dado de alta como demandante de empleo</li>
+              <li>No haber cumplido la edad ordinaria de jubilación</li>
+            </ul>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Trámites</h3>
+            <ul class="list-disc pl-space-lg text-body-sm text-on-surface/70 space-y-space-sm">
+              <li>Inscríbete como demandante de empleo (SEPE o servicio autonómico)</li>
+              <li>Pide cita en tu oficina de prestaciones o usa la Sede Electrónica del SEPE con certificado, DNIe o cl@ve</li>
+              <li>Presenta el modelo oficial de solicitud con tu identidad y la de tus hijos a cargo</li>
+              <li>Si estás en un <a href="/blog/erte-espana/" class="text-primary hover:underline">ERTE</a>, solicita la prestación de forma individual e indica en observaciones el tipo de ERTE y la empresa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="space-y-space-md max-w-3xl">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">¿Cuánto se cobra de paro con 1.500 € de base reguladora?</h3>
+            <p class="text-body-sm text-on-surface/70">Sin hijos a cargo, el 70 % serían 1.050 € los 6 primeros meses y el 60 %, 900 € a partir del mes 7. Con un hijo a cargo, el tope máximo sube a 1.400 € y no te afecta.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">¿El paro sube con la inflación?</h3>
+            <p class="text-body-sm text-on-surface/70">Los topes mínimo y máximo se revisan con el IPREM, que lleva congelado en 600 €/mes desde 2023. Por eso, en la práctica, muchas cuantías máximas no han subido.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">¿Se puede cobrar paro y trabajar a la vez?</h3>
+            <p class="text-body-sm text-on-surface/70">Incompatibilidad total: si empiezas a trabajar por cuenta ajena a jornada completa, se suspende la prestación. Con un trabajo a tiempo parcial por debajo de media jornada puedes pedir compatibilización parcial. Si capitalizas el paro para poner tu negocio, consulta las modalidades de pago único.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">¿Cuánto tarda el SEPE en pagar?</h3>
+            <p class="text-body-sm text-on-surface/70">El pago es mensual, entre los días 10 y 15 del mes siguiente al devengo. En los primeros meses de reconocimiento el SEPE puede tardar varias semanas, y después paga los atrasos de una vez.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">¿El paro consume la cotización para la jubilación?</h3>
+            <p class="text-body-sm text-on-surface/70">Mientras cobras prestación por desempleo se sigue cotizando por contingencias comunes y tu aportación se descuenta de la prestación, pero no genera cotización por desempleo nuevo. Para tu jubilación, consulta tu informe de vida laboral y tu cuenta de la Seguridad Social.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias legales -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-2xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-md">Referencias legales y fuentes</h2>
+        <ul class="space-y-space-sm text-body-sm text-on-surface/60">
+          <li><strong>Art. 264 LGSS</strong> — Requisitos y período mínimo de cotización (360 días en 6 años)</li>
+          <li><strong>Art. 265 LGSS</strong> — Cuantía de la prestación: 70 % los primeros 180 días y 60 % después, con topes mínimos y máximos</li>
+          <li><strong>RD 625/2014</strong> — Reglamento de las prestaciones por desempleo (duración según días cotizados)</li>
+          <li><strong>RD 126/2026</strong> — Salario mínimo interprofesional 2026 (1.221,00 €/mes) · <strong>IPREM 2026</strong>: 600 €/mes</li>
+          <li><strong>SEPE — Cuantías anuales</strong> y <strong>duración de la prestación contributiva</strong> (fuentes de las tablas de esta página)</li>
+        </ul>
+      </div>
+    </section>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto se cobra de paro con 1.500 € de base reguladora?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sin hijos a cargo, el 70 % serían 1.050 € los 6 primeros meses y el 60 %, 900 € a partir del mes 7. Con un hijo a cargo, el tope máximo sube a 1.400 € y no se ve limitada la cuantía."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura el paro en España?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depende de los días cotizados por desempleo en los 6 años anteriores: desde 4 meses con 360 días cotizados hasta un máximo de 24 meses con 2.160 días o más."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué descuentos tiene el paro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dos: la cuota a la Seguridad Social del trabajador, del 4,85 % sobre la base reguladora, y la retención de IRPF, que como mínimo suele ser del 2 % de la prestación."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede cobrar paro con menos de 360 días cotizados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No hay prestación contributiva, pero sí subsidio por cotizaciones insuficientes desde 90 días cotizados con responsabilidades familiares (o 180 sin ellas), con carencia de rentas y acuerdo de actividad."
+          }
+        }
+      ]
+    }
+    </script>
+  </main>
+</Layout>
