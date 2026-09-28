@@ -8,6 +8,14 @@ start_date: 2026-09-15
 
 # Plan de contenidos blog tuhr.es
 
+> **Nota (28/09/2026):** desde octubre el calendario de contenidos manda sobre la
+> frecuencia: `Obsidian/Cerebro/proyectos/calendario-contenido-tuhr.md` publica
+> 1 herramienta + 1 contenido editorial por semana. La secuencia de archivos de
+> `blog-articles/` ya lleva el **16 = artículo de ERTE** (se publica el 6/10/2026),
+> así que los artículos de este plan empiezan en el 17. Al generar contenido,
+> respeta el siguiente número libre de `blog-articles/`, no el número de esta lista.
+
+
 ## Instrucciones para el agente
 
 Cada lunes a las 10:00, generar los 2 artículos asignados a esa semana. Cada artículo debe:
@@ -81,9 +89,9 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 - **Enlazar a:** /calculadoras/horas-extra/, /blog/convenio-colectivo-guia/, /calculadoras/nomina/
 - **Estructura:** Definición legal → Límite (80/año) → Pago mínimo (150% o convenio) → Voluntarias vs obligatorias → Registro → Reclamación → Casos prácticos
 
-## Semana 9 (6-12 oct 2026) — Artículo 16 y 17
+## Semana 9 (6-12 oct 2026) — Artículo 17 y 18
 
-### Artículo 16: "Protección ante el despido de trabajadoras embarazadas: qué dice la ley"
+### Artículo 17: "Protección ante el despido de trabajadoras embarazadas: qué dice la ley"
 - **Slug:** despido-trabajadora-embarazada
 - **Categoría:** Derechos
 - **Tags:** despido nulo, embarazo, protección trabajadora, igualdad
@@ -91,7 +99,7 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 - **Enlazar a:** /blog/despido-procedente-improcedente/, /guias/derechos-trabajador-despido/, /blog/cuanto-cobro-si-me-despiden/
 - **Estructura:** Marco legal → Despido nulo → Presunción de nulidad → Plazo para reclamar → Indemnización → Sentencias relevantes → Qué hacer si te despiden estando embarazada
 
-### Artículo 17: "SMI 2026: cuánto es, a quién afecta y cómo se calcula tu nómina"
+### Artículo 18: "SMI 2026: cuánto es, a quién afecta y cómo se calcula tu nómina"
 - **Slug:** smi-2026-salario-minimo
 - **Categoría:** Nómina
 - **Tags:** salario mínimo interprofesional, SMI, nómina, cotización
@@ -99,9 +107,9 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 - **Enlazar a:** /calculadoras/nomina/, /blog/convenio-colectivo-guia/, /guias/como-calcular-nomina/
 - **Estructura:** Cuantía SMI 2026 → A quién afecta → Diferencia bruto/neto → Impacto en cotizaciones → Casos prácticos → Comparativa con convenios
 
-## Semana 10 (13-19 oct 2026) — Artículo 18 y 19
+## Semana 10 (13-19 oct 2026) — Artículo 19 y 20
 
-### Artículo 18: "Subrogación empresarial: qué pasa con tu trabajo si cambia la empresa"
+### Artículo 19: "Subrogación empresarial: qué pasa con tu trabajo si cambia la empresa"
 - **Slug:** subrogacion-empresarial-guia
 - **Categoría:** Derechos
 - **Tags:** subrogación, cesión trabajadores, cambio empresa, derechos laborales
@@ -109,7 +117,7 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 - **Enlazar a:** /plantillas/prestacion-servicios/, /blog/autonomo-vs-cuenta-ajena/, /plantillas/contrato-arrendamiento-vivienda/
 - **Estructura:** Qué es subrogación → Causas (externalización, venta, concesión) → Derechos del trabajador → Antigüedad y salario → Qué hacer si te subrogan → Casos reales
 
-### Artículo 19: "Impuestos de autónomos en 2026: cómo pagar menos legalmente"
+### Artículo 20: "Impuestos de autónomos en 2026: cómo pagar menos legalmente"
 - **Slug:** impuestos-autonomos-2026
 - **Categoría:** Autónomos
 - **Tags:** impuestos autónomos, IRPF, deducciones, fiscalidad
@@ -117,9 +125,9 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 - **Enlazar a:** /plantillas/factura-autonomo/, /blog/autonomo-vs-cuenta-ajena/, /calculadoras/nomina/
 - **Estructura:** Cuota de autónomos 2026 → Retenciones IRPF → Deducciones principales → Gastos deducibles → Estimación directa vs módulos → Errores comunes
 
-## Semana 11 (20-26 oct 2026) — Artículo 20 y 21
+## Semana 11 (20-26 oct 2026) — Artículo 21 y 22
 
-### Artículo 20: "Carta de reclamación salarial: modelo y cómo presentarla"
+### Artículo 21: "Carta de reclamación salarial: modelo y cómo presentarla"
 - **Slug:** carta-reclamacion-salarial-modelo
 - **Categoría:** Derechos
 - **Tags:** reclamación salarial, carta reclamación, cobrar nómina, derechos trabajador
@@ -127,7 +135,7 @@ Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen br
 - **Enlazar a:** /plantillas/, /blog/convenio-colectivo-guia/, /blog/horas-extraordinarias-espana/
 - **Estructura:** Cuándo presentarla → Estructura de la carta → Modelo descargable → Plazos → Si no responden → Papeleta de conciliación → Juicio verbal
 
-### Artículo 21: "Cese de actividad de autónomos: prestación y cómo solicitarla"
+### Artículo 22: "Cese de actividad de autónomos: prestación y cómo solicitarla"
 - **Slug:** cese-actividad-autonomos
 - **Categoría:** Autónomos
 - **Tags:** cese actividad, prestación cese, autónomos, Seguridad Social
@@ -153,3 +161,4 @@ Los siguientes artículos ya existen en `src/pages/blog/` o `blog-articles/`:
 - 13-contrato-temporal-reforma-laboral
 - 14-accidente-laboral-derechos
 - 15-horas-extraordinarias-espana
+- 16-erte-espana-2026 (calendario de contenidos)
