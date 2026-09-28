@@ -2,7 +2,7 @@
 title: "Accidente laboral en España: qué hacer, cuánto cobras y tus derechos"
 slug: "accidente-laboral-derechos"
 description: "Guía práctica ante un accidente laboral en España: pasos a seguir, cuánto cobras por incapacidad temporal, quién paga, cómo reclamar indemnización y qué derechos tienes."
-date: 2026-09-29
+date: 2026-09-28
 author: "tuhr.es"
 category: "Derecho Laboral"
 tags:

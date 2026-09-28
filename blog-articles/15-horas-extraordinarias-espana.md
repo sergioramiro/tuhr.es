@@ -2,7 +2,7 @@
 title: "Horas extraordinarias en España: límite, pago y cómo reclamarlas"
 slug: "horas-extraordinarias-espana"
 description: "Las horas extraordinarias en España: cuántas puedes hacer al año, cómo se pagan, límites legales, voluntarias u obligatorias y qué hacer si no te las pagan."
-date: 2026-09-29
+date: 2026-09-28
 author: "tuhr.es"
 category: "Nómina"
 tags:

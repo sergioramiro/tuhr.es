@@ -1,0 +1,63 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '14-accidente-laboral-derechos.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    "q": "¿Pueden despedirme por haber tenido un accidente laboral?",
+    "a": "No. Despedirte por accidente de trabajo es un despido nulo o, como mínimo, improcedente si el despido encubre una represalia. Además, estás protegido durante los 12 meses siguientes si eres representante sindical o si concurre alguna causa de nulidad."
+  },
+  {
+    "q": "¿Quién paga los 15 primeros días de baja por accidente laboral?",
+    "a": "Si la contingencia es profesional, desde el día 1 paga la mutua (o el INSS si no hay mutua). En caso de hospitalización, la empresa puede quedar exenta de abonar el salario en los días de estancia, salvo que el convenio diga otra cosa."
+  },
+  {
+    "q": "¿Qué pasa si no hay parte de accidente porque la empresa no lo firmó?",
+    "a": "Puedes presentar el parte por tu cuenta (tenemos un modelo explicado en nuestra sección de plantillas) y denunciar a la inspección de trabajo. La Seguridad Social puede abrir expediente y, en muchos casos, reconoce la contingencia profesional aunque la empresa no colaborara."
+  },
+  {
+    "q": "¿Puedo cobrar la IT y demandar a la vez?",
+    "a": "Sí. Son vías independientes: la IT es una prestación de la Seguridad Social y la indemnización es responsabilidad civil de la empresa. Cobrar una no te priva de reclamar la otra."
+  },
+  {
+    "q": "¿Y si el accidente ocurre teletrabajando desde casa?",
+    "a": "Sigue siendo accidente laboral si ocurre \"con ocasión del trabajo\". El reto es probarlo: guarda correos con la hora del incidente, avisa a tu responsable enseguro y, si hay duda, pide que conste como accidente laboral."
+  }
+];
+---
+
+<BlogLayout
+  title="Accidente laboral en España: qué hacer, cuánto cobras y tus derechos"
+  description="Guía práctica ante un accidente laboral en España: pasos a seguir, cuánto cobras por incapacidad temporal, quién paga, cómo reclamar indemnización y qué derechos tienes."
+  category="Derecho Laboral"
+  date="28 septiembre 2026"
+  readTime="12 min"
+  slug="accidente-laboral-derechos"
+  datePublished="2026-09-28"
+  dateModified="2026-09-28"
+  faq={faq}
+  cta={{
+  "title": "¿Has tenido un accidente laboral?",
+  "description": "Mira cuánto cobrarías de prestación y repasa los plazos y los pasos que tienes que dar.",
+  "links": [
+    {
+      "href": "/calculadoras/paro/",
+      "text": "Calcular mi prestación",
+      "primary": true
+    },
+    {
+      "href": "/guias/derechos-trabajador-despido/",
+      "text": "Ver mis derechos"
+    }
+  ]
+}}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

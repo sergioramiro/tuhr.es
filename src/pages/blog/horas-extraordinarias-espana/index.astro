@@ -1,0 +1,67 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '15-horas-extraordinarias-espana.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    "q": "¿Puedo negarme a hacer horas extra?",
+    "a": "Sí, salvo que estén pactadas en tu convenio o contrato, o que haya fuerza mayor. Negarse no es causa de despido disciplinario si no hay pacto previo."
+  },
+  {
+    "q": "¿Se pueden hacer más de 80 horas extra al año?",
+    "a": "No, con la excepción de las de fuerza mayor y de las que se compensen con descanso en los 4 meses siguientes. Superar ese tope supone infracción para la empresa."
+  },
+  {
+    "q": "¿Las horas extra entran en el cálculo de la indemnización por despido?",
+    "a": "Sí. Si cobras horas extra de forma habitual y regular, forman parte de tu salario regulador y deben tenerse en cuenta para calcular la indemnización. Revisa que así sea en cuánto cobro si me despiden y en el cálculo de la indemnización."
+  },
+  {
+    "q": "¿Y si me las compensan con descanso?",
+    "a": "Perfecto, siempre que el descanso dure lo mismo que las horas hechas y se disfrute dentro de los 4 meses. Si no se disfruta en plazo, se convierte en dinero."
+  },
+  {
+    "q": "¿Puedo reclamar las horas extra de mi contrato temporal?",
+    "a": "Sí, exactamente igual que cualquier indefinido. El tipo de contrato no cambia tus derechos sobre jornada y salario."
+  },
+  {
+    "q": "¿Qué pasa si la empresa no tiene registro de jornada?",
+    "a": "Que juega en tu contra: sin registro, la Inspección puede multarla y en vía judicial suele primar la versión del trabajador. Pide tu registro por escrito y guárdalo."
+  }
+];
+---
+
+<BlogLayout
+  title="Horas extraordinarias en España: límite, pago y cómo reclamarlas"
+  description="Las horas extraordinarias en España: cuántas puedes hacer al año, cómo se pagan, límites legales, voluntarias u obligatorias y qué hacer si no te las pagan."
+  category="Nómina"
+  date="28 septiembre 2026"
+  readTime="12 min"
+  slug="horas-extraordinarias-espana"
+  datePublished="2026-09-28"
+  dateModified="2026-09-28"
+  faq={faq}
+  cta={{
+  "title": "¿Te deben horas extra?",
+  "description": "Calcula lo que te corresponden y comprueba en tu nómina que te las están pagando bien.",
+  "links": [
+    {
+      "href": "/calculadoras/horas-extra/",
+      "text": "Calcular mis horas extra",
+      "primary": true
+    },
+    {
+      "href": "/calculadoras/nomina/",
+      "text": "Revisar mi nómina"
+    }
+  ]
+}}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>
