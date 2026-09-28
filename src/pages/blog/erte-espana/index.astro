@@ -1,0 +1,56 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '16-erte-espana-2026.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Cuánto cobro en un ERTE?',
+    a: 'El 70 % de tu base reguladora en fuerza mayor durante toda la medida, y en un ERTE ETOP el 70 % los 6 primeros meses y el 60 % después, con topes de 1.225 € a 1.575 € al mes según hijos a cargo. Si trabajas con jornada reducida, cobras además la parte proporcional del salario por las horas que sí trabajas.',
+  },
+  {
+    q: '¿Me pueden despedir estando en ERTE?',
+    a: 'Un ERTE no extingue tu contrato, pero tampoco lo protege indefinidamente: mientras la medida está vigente la empresa no puede usar esa misma causa para despedirte. Si te despiden durante el ERTE, el despido se valora por separado y puedes impugnarlo en 20 días hábiles.',
+  },
+  {
+    q: '¿Necesito cotizaciones para cobrar en un ERTE?',
+    a: 'Depende del tipo. En un ERTE por fuerza mayor autorizado no se exigen cotizaciones: el SEPE reconoce la prestación independientemente de lo que hayas cotizado. En un ERTE ETOP necesitas los 360 días habituales de la prestación contributiva.',
+  },
+  {
+    q: '¿Qué pasa cuando termina el ERTE?',
+    a: 'Te reincorporas a tu puesto en las mismas condiciones. Si la empresa no te reincorpora, podrías considerar extinción de la relación laboral con derecho a la indemnización que corresponda, y tienes 20 días hábiles para reclamar.',
+  },
+  {
+    q: '¿Y si no llego a los 360 días cotizados?',
+    a: 'Puedes tener derecho al subsidio por cotizaciones insuficientes desde 90 días cotizados con responsabilidades familiares (o 180 sin ellas), con rentas por debajo del 75 % del SMI (915,75 €/mes). La cuantía es del 95 % del IPREM (570 €/mes) durante los primeros 180 días.',
+  },
+];
+---
+
+<BlogLayout
+  title="ERTE en España 2026: qué es, tipos, cuánto cobras y cómo se solicita"
+  description="Guía completa sobre el ERTE en España 2026: diferencias entre fuerza mayor y ETOP, cuánto cobras de prestación por desempleo, requisitos, trámites, exoneraciones y tus derechos como trabajador."
+  category="Derechos"
+  date="6 octubre 2026"
+  readTime="12 min"
+  slug="erte-espana"
+  datePublished="2026-10-06"
+  dateModified="2026-10-06"
+  faq={faq}
+  cta={{
+    title: 'Calcula cuánto cobrarías en tu ERTE',
+    description: 'Introduce tu base reguladora y mira la cuantía mensual, la duración y el neto estimado con las cuantías oficiales del SEPE.',
+    links: [
+      { href: '/calculadoras/paro/', text: 'Calcular paro', primary: true },
+      { href: '/calculadoras/nomina/', text: 'Calcular nómina', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>
