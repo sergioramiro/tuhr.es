@@ -1,0 +1,56 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '17-dias-vacaciones-laborales.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Cuántos días de vacaciones laborales me corresponden?',
+    a: 'Un mínimo de 30 días naturales al año (art. 38 del Estatuto de los Trabajadores), que equivalen a unos 22 días laborables de lunes a viernes. Si tu convenio mejora esa cifra, te corresponden los del convenio; si trabajas menos de 12 meses en el año, se prorratean a razón de 2,5 días naturales por mes trabajado.',
+  },
+  {
+    q: '¿22 días de vacaciones son lo mismo que 30 días naturales?',
+    a: 'Sí, en la práctica. 30 días naturales continuos incluyen 8 días de fin de semana que no trabajas, por eso equivalen a unos 21-22 días laborables de ausencia. Cuando un convenio habla de 22 días suele referirse a ese equivalente; la forma de comprobarlo es pedir por escrito si la unidad es "natural" o "laborable".',
+  },
+  {
+    q: '¿Cómo se calculan las vacaciones si solo he trabajado parte del año?',
+    a: 'Con la fórmula proporcional: (días anuales × meses trabajados) ÷ 12, considerando completo el mes con 15 días naturales de alta o más. Ejemplo: entras el 1 de marzo y trabajas todo el año → 10 meses → 25 días naturales. Si el cálculo es para un finiquito, se hace a día exacto: (días anuales × días de alta) ÷ 365.',
+  },
+  {
+    q: '¿Se pueden cobrar las vacaciones que no disfruto?',
+    a: 'Solo al finalizar la relación laboral: los días pendientes se pagan en el finiquito (días pendientes × salario diario con pagas extras incluidas). Mientras sigues contratado, las vacaciones no son sustituibles por compensación económica: la empresa no puede pagártelas para que no te vayas.',
+  },
+  {
+    q: '¿Puede mi convenio darme más días de vacaciones que el Estatuto?',
+    a: 'Sí, y es muy habitual. El Estatuto marca 30 días naturales como mínimo y no regula tramos por antigüedad: los tramos (32, 34, 36 días...) los fija tu convenio colectivo, que siempre que mejore la ley se aplica a tu favor. Consulta el texto de tu convenio y contrasta tu antigüedad real.',
+  },
+];
+---
+
+<BlogLayout
+  title="Días de vacaciones laborales 2026: cómo se calculan"
+  description="Cuántos días de vacaciones laborales te corresponden en 2026: 30 naturales o 22 laborables, cálculo proporcional por días trabajados, tabla por antigüedad, conversión de días y cómo se pagan las no disfrutadas."
+  category="Derechos"
+  date="13 octubre 2026"
+  readTime="11 min"
+  slug="dias-vacaciones-laborales"
+  datePublished="2026-10-13"
+  dateModified="2026-10-13"
+  faq={faq}
+  cta={{
+    title: 'Calcula tus días de vacaciones pendientes',
+    description: 'Comprueba los días que te corresponden y cuánto valen: introduce tus meses trabajados y tu salario para ver las vacaciones no disfrutadas en el finiquito.',
+    links: [
+      { href: '/calculadoras/finiquito/', text: 'Calcular finiquito', primary: true },
+      { href: '/calculadoras/pagas-extras/', text: 'Calcular pagas extras', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

@@ -50,6 +50,8 @@ El artículo 38.4 del Estatuto de los Trabajadores establece que el periodo de v
 
 No todos los trabajadores generan los 30 días completos desde el primer día del año. Si has trabajado menos de 12 meses en la empresa —ya sea por haber empezado en medio de año o por haber terminado la relación laboral—, tus vacaciones se calculan de forma proporcional.
 
+Si solo quieres el número, tenemos una guía de [cómo se calculan los días de vacaciones laborales](/blog/dias-vacaciones-laborales/) con las fórmulas, las tablas de conversión entre días naturales y laborables y el prorrateo mes a mes.
+
 ### Fórmula de cálculo proporcional
 
 La fórmula es sencilla:
