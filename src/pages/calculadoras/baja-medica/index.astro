@@ -1,0 +1,204 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import CalculadoraBajaMedica from '../../../components/calculadoras/CalculadoraBajaMedica';
+
+const title = 'Baja médica cuánto cobro 2026: calculadora de IT | tuhr.es';
+const description =
+  '¿Baja médica, cuánto cobro? Calcula tu prestación por incapacidad temporal: tramos del 60 %, 75 % y 100 %, tres primeros días sin abonar y topes de cotización 2026. Gratis y sin registro.';
+
+const webAppSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: 'Calculadora de baja médica',
+  url: 'https://tuhr.es/calculadoras/baja-medica/',
+  applicationCategory: 'FinanceApplication',
+  operatingSystem: 'Web',
+  description:
+    'Calcula cuánto cobras de baja médica (incapacidad temporal): tramos del 60 %, 75 % y 100 %, topes de cotización 2026 y contingencias comunes y profesionales',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+});
+
+const faqs = [
+  {
+    q: '¿Cuánto se cobra de baja médica con 1.800 € de base?',
+    a: 'Con 1.800 €/mes de base de cotización la base reguladora diaria son 60 €. En enfermedad común los tres primeros días no se abonan; del día 4 al 20 cobras el 60 % (36 €/día), del 21 al 27 el 75 % (45 €/día) y desde el día 28 el 100 % (60 €/día). En 30 días de baja serían 1.107 € brutos, 36,90 €/día de media.',
+  },
+  {
+    q: '¿Los tres primeros días de baja médica se pagan?',
+    a: 'No, con la regla general de las contingencias comunes (art. 173.2 LGSS). Sí se abonan si tu baja continúa un proceso anterior de IT sin que hayas vuelto a trabajar, si tu convenio colectivo lo mejora, o si es un accidente de trabajo o una enfermedad profesional: en ese caso se cobra el 100 % desde el día 1.',
+  },
+  {
+    q: '¿Cuánto se cobra de una baja por accidente laboral?',
+    a: 'El 100 % de la base reguladora diaria desde el día 1, incluidos los tres primeros días. Con 1.800 €/mes de base, 30 días de baja por accidente de trabajo darían 1.800 € brutos, sin días sin abonar.',
+  },
+  {
+    q: '¿Qué base de cotización se usa para calcular la baja?',
+    a: 'La base de cotización del mes anterior al hecho causante, sin horas extras ni pluses variables, dividida entre 30. En 2026 está sujeta a topes: 1.424,40 €/mes de mínima general (grupos 4 a 7) y 5.101,20 €/mes de máxima, aunque tu salario real sea mayor o menor.',
+  },
+  {
+    q: '¿Quién paga los días de baja y cuánto puede durar?',
+    a: 'En enfermedad común no se abonan los tres primeros días, la empresa abona los días 4 a 15 y la Seguridad Social o la mutua abona desde el día 16. La incapacidad temporal puede durar hasta 365 días naturales, prorrogables otros 180 días cuando se espera la curación (art. 169 LGSS).',
+  },
+];
+
+const faqSchema = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+});
+---
+
+<Layout title={title} description={description}>
+  <Fragment slot="json-ld">
+    <script type="application/ld+json" set:html={webAppSchema} />
+    <script type="application/ld+json" set:html={faqSchema} />
+  </Fragment>
+
+  <main class="pt-16">
+    <!-- Breadcrumb -->
+    <div class="max-w-[72rem] mx-auto px-gutter-desktop py-space-md">
+      <nav class="text-body-sm text-on-surface/50">
+        <a href="/" class="hover:text-primary transition-colors no-underline">Inicio</a>
+        <span class="mx-space-sm">›</span>
+        <a href="/calculadoras/" class="hover:text-primary transition-colors no-underline">Calculadoras</a>
+        <span class="mx-space-sm">›</span>
+        <span class="text-on-surface">Baja médica</span>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de baja médica</h1>
+      <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
+        ¿Baja médica, cuánto cobro? Calcula tu prestación por incapacidad temporal en España con los
+        porcentajes legales: el 60 % de los días 4 a 20, el 75 % del 21 al 27 y el 100 % desde el día 28,
+        con los tres primeros días sin abonar y los topes de cotización de 2026.
+      </p>
+      <p class="mt-space-sm text-body-sm text-on-surface/50">
+        Si te han dado de baja y antes quieres entender tus derechos, quién paga cada día y qué partes
+        tienes que tramitar, te lo explicamos en la
+        <a href="/blog/baja-medica/" class="text-primary hover:underline">guía completa de baja médica 2026</a>.
+      </p>
+    </section>
+
+    <!-- Calculadora -->
+    <section class="px-gutter-desktop pb-space-3xl">
+      <CalculadoraBajaMedica client:load />
+    </section>
+
+    <!-- Cómo usar la calculadora -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo usar esta calculadora</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">1</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Mira tu base de cotización</h3>
+            <p class="text-body-sm text-on-surface/60">Es la del mes anterior a la baja, sin horas extras ni pluses variables: la encuentras en tu nómina o en tu informe de vida laboral. Dividida entre 30 da la base reguladora diaria.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">2</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Indica los días de baja</h3>
+            <p class="text-body-sm text-on-surface/60">Cuenta días naturales, no laborables, desde el parte de baja. En enfermedad común los tres primeros días no generan prestación salvo continuidad con un proceso anterior o mejora de convenio.</p>
+          </div>
+          <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+            <div class="w-10 h-10 rounded-button bg-primary/10 flex items-center justify-center mb-space-md"><span class="text-primary font-headline text-headline-md font-bold">3</span></div>
+            <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">Elige el tipo de baja</h3>
+            <p class="text-body-sm text-on-surface/60">Enfermedad común o accidente no laboral (tramos del 60 % al 100 %) frente a accidente de trabajo o enfermedad profesional, que se abona al 100 % de la base desde el día 1.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo se calcula -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula la baja médica paso a paso</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p><strong>1. La base reguladora diaria.</strong> Se toma tu base de cotización del mes anterior al hecho causante —sin horas extraordinarias ni pluses variables— y se divide entre 30. Esa base queda sujeta a los topes de 2026: no puede calcularse por debajo de 1.424,40 €/mes (mínima general, grupos 4 a 7) ni por encima de 5.101,20 €/mes (máxima de cotización), aunque tu salario real sea mayor o menor.</p>
+          <p><strong>2. Los porcentajes por tramos.</strong> Sobre esa base diaria se aplican los porcentajes del art. 172 LGSS según los días de baja que lleves. En accidente de trabajo o enfermedad profesional el 100 % se aplica desde el día 1, incluidos los tres primeros días.</p>
+          <p><strong>3. Quién paga cada día.</strong> En enfermedad común los tres primeros días no se abonan, la empresa abona los días 4 a 15 y la Seguridad Social o la mutua abona desde el día 16 hasta el alta. Muchos convenios colectivos mejoran ese esquema pagando los tres primeros días o el 100 % desde el día 1.</p>
+          <p><strong>Ejemplo:</strong> 1.800 €/mes de base y 30 días de baja por enfermedad común. La base diaria son 60 €: nada por los tres primeros días, 36 €/día (60 %) del día 4 al 20, son 612 €; 45 €/día (75 %) del 21 al 27, otros 315 €; y 60 €/día (100 %) del 28 al 30, 180 €. Total: <strong>1.107 € brutos</strong>, con una media de 36,90 € por día de baja. Si la misma baja fuera por accidente de trabajo, cobrarías los 1.800 € completos, porque se paga el 100 % desde el día 1.</p>
+        </div>
+
+        <!-- Tramos -->
+        <div class="mt-space-2xl overflow-x-auto">
+          <table class="w-full text-body-sm border border-outline-variant/40 rounded-button overflow-hidden">
+            <thead class="bg-surface-card text-on-surface">
+              <tr>
+                <th class="text-left p-space-md font-semibold">Días de baja</th>
+                <th class="text-right p-space-md font-semibold">Enfermedad común o accidente no laboral</th>
+                <th class="text-right p-space-md font-semibold">Accidente de trabajo o enfermedad profesional</th>
+              </tr>
+            </thead>
+            <tbody class="bg-surface/50 text-on-surface/80">
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">Días 1 a 3</td>
+                <td class="text-right p-space-md">0 % — no se abonan</td>
+                <td class="text-right p-space-md">100 %</td>
+              </tr>
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">Días 4 a 20</td>
+                <td class="text-right p-space-md">60 %</td>
+                <td class="text-right p-space-md">100 %</td>
+              </tr>
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">Días 21 a 27</td>
+                <td class="text-right p-space-md">75 %</td>
+                <td class="text-right p-space-md">100 %</td>
+              </tr>
+              <tr class="border-t border-outline-variant/30">
+                <td class="p-space-md">Desde el día 28</td>
+                <td class="text-right p-space-md">100 %</td>
+                <td class="text-right p-space-md">100 %</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mt-space-sm text-body-sm text-on-surface/50">Porcentajes del art. 172 LGSS sobre la base reguladora diaria. Con continuidad con un proceso anterior de IT, los tres primeros días sí se abonan al 60 %; con mejora de convenio habitual, al 100 %.</p>
+        </div>
+
+        <!-- CTA: guía relacionada -->
+        <div class="mt-space-2xl p-space-lg bg-surface-container-low rounded-xl border border-outline/10">
+          <p class="text-body-md text-on-surface/80">
+            ¿Te han dado de baja y además del dinero te preocupa el papeleo? Lee la
+            <a href="/blog/baja-medica/" class="text-primary hover:underline font-medium">guía completa de baja médica</a>:
+            quién paga cada día, qué partes tienes que entregar y qué derechos conservas mientras estás de baja.
+            Y si quieres ver cómo queda tu nómina con la prestación, <a href="/calculadoras/nomina/" class="text-primary hover:underline font-medium">simula tu nómina</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="space-y-space-md max-w-3xl">
+          {faqs.map((f) => (
+            <div class="bg-surface-card rounded-card p-space-lg shadow-card border border-outline-variant/30">
+              <h3 class="font-headline text-headline-sm font-bold text-on-surface mb-space-sm">{f.q}</h3>
+              <p class="text-body-sm text-on-surface/70">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Referencias legales -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-2xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-md">Referencias legales y fuentes</h2>
+        <ul class="space-y-space-sm text-body-sm text-on-surface/60">
+          <li><strong>Art. 169 LGSS</strong> — Duración de la incapacidad temporal: hasta 365 días naturales, prorrogables otros 180 cuando se espera la curación</li>
+          <li><strong>Art. 172 LGSS</strong> — Cuantía de la prestación de IT: 60 % de los días 4 a 20, 75 % del 21 al 27 y 100 % desde el día 28; 100 % desde el día 1 en contingencias profesionales</li>
+          <li><strong>Art. 173 LGSS</strong> — Días sin abonar en enfermedad común o accidente no laboral (los tres primeros días, salvo continuidad o mejora de convenio)</li>
+          <li><strong>Orden PJC/297/2026</strong> — Bases de cotización 2026: mínima general de 1.424,40 €/mes (grupos 4 a 7) y máxima de 5.101,20 €/mes</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>
