@@ -74,7 +74,7 @@ Funciona con el esqueleto del ETOP: misma base reguladora, mismos topes y la esc
 | Tipo de expediente | % sobre la base reguladora | Cotizaciones exigidas |
 |---|---|---|
 | Fuerza mayor (art. 47.5 ET) | 70 % durante toda la medida | No se tienen en cuenta |
-| Causas ETOP (arts. 47.1 a 47.4 ET) | 70 % los 180 días, 60 % después | 360 días cotizados en los 6 años anteriores |
+| Causas ETOP (arts. 47.1 a 47.3 ET) | 70 % los 180 días, 60 % después | 360 días cotizados en los 6 años anteriores |
 | Mecanismo RED | Igual que ETOP | Igual que ETOP |
 
 La duración de la prestación, en un ERTE, depende de cuánto dure la medida. En los ETOP también cuenta lo que tengas cotizado y sin usar de los últimos seis años. Ojo: el tiempo que pasas en ERTE cobrando prestación **no se computa como periodo cotizado** para futuras prestaciones, aunque sí que cotizas (lo ves en el paso 5).

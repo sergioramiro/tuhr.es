@@ -44,15 +44,17 @@ Si lo que te proponen es un ERE, es decir, un despido colectivo, los números ca
 
 ## Los tres tipos de ERTE en España en 2026
 
-### 1. ERTE por fuerza mayor (art. 47.3 ET)
+### 1. ERTE por fuerza mayor (art. 47.5 ET)
 
 Es el que se activa cuando un **evento externo, imprevisible e irresistible** impide la actividad: un incendio forestal, un temporal, una inundación, una pandemia declarada... La empresa lo solicita ante la **autoridad laboral**, que tiene **5 días hábiles** para resolver y, si no resuelve, se entiende producido el silencio administrativo positivo.
 
 Ejemplo real de 2026: los temporales de febrero en Andalucía y Extremadura activaron ERTE por fuerza mayor en cientos de negocios con medidas de protección social y exoneraciones de cuotas (RD-ley 5/2026).
 
-### 2. ERTE por causas ETOP (art. 47.4 ET)
+Dentro de la fuerza mayor hay un supuesto específico, el del **art. 47.6 ET**: los ERTE por **impedimentos o limitaciones** en la actividad normalizada decididos por una autoridad pública, incluidas las medidas de protección de la salud pública. Se tramitan por el procedimiento del 47.5, con las particularidades de informe de la Inspección y plazos que fija ese mismo apartado.
 
-**E**conómicas, **T**écnicas, **O**rganizativas o de **P**roducción: caída de pedidos, reorganización, problemas de producción. Es el ERTE "de libro", el que tramita la empresa por su cuenta, sin necesidad de autorización administrativa previa, pero con **periodo de consultas** con los representantes de los trabajadores.
+### 2. ERTE por causas ETOP (arts. 47.1 a 47.3 ET)
+
+**E**conómicas, **T**écnicas, **O**rganizativas o de **P**roducción: caída de pedidos, reorganización, problemas de producción. Es el ERTE "de libro", el que tramita la empresa por su cuenta, sin necesidad de autorización administrativa previa, pero con **periodo de consultas** con los representantes de los trabajadores (art. 47.3 ET: 15 días, o 7 en empresas de menos de 50 personas).
 
 Clave: al no pedir autorización, **la empresa asume el riesgo de que la medida sea impugnada**. Si las causas alegadas no se sostienen, el ERTE puede declararse nulo y la empresa tendrá que abonar los salarios y cotizaciones devengados.
 
@@ -182,7 +184,7 @@ Y un sexto, el que más pesa al final: **no mirar qué pasa cuando se levanta el
 
 | Concepto | Fuerza mayor | ETOP |
 |---|---|---|
-| Base legal | Art. 47.3 ET | Art. 47.4 ET |
+| Base legal | Art. 47.5 ET | Arts. 47.1 a 47.3 ET |
 | Causa | Evento externo imprevisible | Causas económicas, técnicas, organizativas o de producción |
 | Autorización | Autoridad laboral (5 días hábiles, silencio positivo) | No la necesita; sí periodo de consultas |
 | % prestación | 70 % toda la vigencia | 70 % (180 días) → 60 % después |
