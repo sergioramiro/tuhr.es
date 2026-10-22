@@ -73,6 +73,7 @@ const ogImageUrl = ogImage || 'https://tuhr.es/og-image.png';
       var interactuo = false;
       var enviado = false;
       var maxImporte = 0;
+      var valoresPrevios = null;
       var t = null;
 
       function enviar(evento, datos) {
@@ -81,17 +82,17 @@ const ogImageUrl = ogImage || 'https://tuhr.es/og-image.png';
         }
       }
 
-      function importeMaximo() {
+      function importes() {
         var texto = document.body.innerText || '';
         var re = /(\d{1,3}(?:\.\d{3})+|\d+)(?:,(\d{1,2}))?\s*€/g;
-        var m, max = 0;
+        var m, vals = [];
         while ((m = re.exec(texto)) !== null) {
           var entero = parseInt(m[1].replace(/\./g, ''), 10);
           var dec = m[2] ? parseInt(m[2], 10) / 100 : 0;
           var v = entero + dec;
-          if (v > max) max = v;
+          if (v > 0 && v < 1000000) vals.push(Math.round(v));
         }
-        return max;
+        return vals;
       }
 
       function banda(v) {
@@ -105,8 +106,12 @@ const ogImageUrl = ogImage || 'https://tuhr.es/og-image.png';
 
       function comprobar() {
         if (!interactuo) return;
-        var v = importeMaximo();
-        if (v > maxImporte) maxImporte = v;
+        var previos = valoresPrevios || [];
+        var nuevos = importes().filter(function (v) { return previos.indexOf(v) === -1; });
+        if (nuevos.length) {
+          var max = Math.max.apply(null, nuevos);
+          if (max > maxImporte) maxImporte = max;
+        }
         if (maxImporte > 0 && !enviado) {
           enviado = true;
           enviar('resultado-calculadora', {
@@ -119,6 +124,7 @@ const ogImageUrl = ogImage || 'https://tuhr.es/og-image.png';
       document.addEventListener('input', function (e) {
         if (!e.target || !e.target.closest('main')) return;
         if (!interactuo) {
+          valoresPrevios = importes();
           interactuo = true;
           enviar('interaccion-calculadora', { calculadora: calculadora });
         }
