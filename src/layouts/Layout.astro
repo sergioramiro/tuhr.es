@@ -64,6 +64,78 @@ const ogImageUrl = ogImage || 'https://tuhr.es/og-image.png';
   <!-- Umami Analytics -->
   <script defer data-website-id="39d1ae5b-6f08-488c-9cb9-a83f06837558" src="https://analytics.diashabiles.es/script.js"></script>
 
+  <!-- Medición de uso de calculadoras: interacción y resultado mostrado (sin datos personales) -->
+  <script is:inline>
+    (function () {
+      if (!/^\/calculadoras\/[^\/]+/.test(location.pathname)) return;
+
+      var calculadora = (location.pathname.match(/^\/calculadoras\/([^\/]+)/) || [])[1] || 'otra';
+      var interactuo = false;
+      var enviado = false;
+      var maxImporte = 0;
+      var t = null;
+
+      function enviar(evento, datos) {
+        if (window.umami && typeof window.umami.track === 'function') {
+          window.umami.track(evento, datos);
+        }
+      }
+
+      function importeMaximo() {
+        var texto = document.body.innerText || '';
+        var re = /(\d{1,3}(?:\.\d{3})+|\d+)(?:,(\d{1,2}))?\s*€/g;
+        var m, max = 0;
+        while ((m = re.exec(texto)) !== null) {
+          var entero = parseInt(m[1].replace(/\./g, ''), 10);
+          var dec = m[2] ? parseInt(m[2], 10) / 100 : 0;
+          var v = entero + dec;
+          if (v > max) max = v;
+        }
+        return max;
+      }
+
+      function banda(v) {
+        if (v <= 0) return 'sin-importe';
+        if (v < 1000) return 'hasta-1000';
+        if (v < 3000) return '1000-3000';
+        if (v < 6000) return '3000-6000';
+        if (v < 12000) return '6000-12000';
+        return 'mas-de-12000';
+      }
+
+      function comprobar() {
+        if (!interactuo) return;
+        var v = importeMaximo();
+        if (v > maxImporte) maxImporte = v;
+        if (maxImporte > 0 && !enviado) {
+          enviado = true;
+          enviar('resultado-calculadora', {
+            calculadora: calculadora,
+            importe: banda(maxImporte)
+          });
+        }
+      }
+
+      document.addEventListener('input', function (e) {
+        if (!e.target || !e.target.closest('main')) return;
+        if (!interactuo) {
+          interactuo = true;
+          enviar('interaccion-calculadora', { calculadora: calculadora });
+        }
+        clearTimeout(t);
+        t = setTimeout(comprobar, 700);
+      }, true);
+
+      document.addEventListener('change', function (e) {
+        if (!e.target || !e.target.closest('main')) return;
+        clearTimeout(t);
+        t = setTimeout(comprobar, 700);
+      }, true);
+
+      setTimeout(comprobar, 1500);
+    })();
+  </script>
+
   <!-- Remove Netlify HUD banner -->
   <script>
     (function() {
