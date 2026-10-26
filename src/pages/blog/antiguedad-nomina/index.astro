@@ -1,0 +1,56 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '19-antiguedad-nomina.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Cómo se calcula la antigüedad en una nómina?',
+    a: 'Se cuenta desde la fecha de alta hasta la fecha de cierre del periodo de esa nómina, expresada en años, meses y días. El día de alta cuenta como el primero, así que un mes incompleto se arrastra hasta completarse.',
+  },
+  {
+    q: '¿Tiene que aparecer la antigüedad en el recibo de salario?',
+    a: 'No es un campo obligatorio, pero sí lo es que cada cantidad abonada figure con su importe. Si tu convenio contempla plus de antigüedad y no aparece ningún concepto equivalente, conviene revisar el convenio y, en su caso, reclamar.',
+  },
+  {
+    q: '¿Qué pasa si mi empresa me hace un contrato nuevo cada año?',
+    a: 'Si hay baja y alta reales de forma encadenada, la empresa está rompiendo la continuidad de forma indebida: superados los 24 meses en dos años el contrato se considera indefinido y los años se computan desde el primer contrato. Guarda todas las nóminas y pide el reconocimiento por escrito.',
+  },
+  {
+    q: '¿Cuánto tiempo tengo para reclamar un plus no pagado?',
+    a: 'Un año desde que cada mensualidad debió percibirse (artículo 59 del Estatuto de los Trabajadores). Presentar la papeleta de conciliación interrumpe ese plazo, por lo que conviene interponerla antes de que venza el año.',
+  },
+  {
+    q: '¿Dónde calculo mi antigüedad y su importe?',
+    a: 'En la calculadora de antigüedad, con tu salario y los tramos de tu convenio, y para comprobar cómo se leen los conceptos de tu recibo en la guía de cálculo de nómina.',
+  },
+];
+---
+
+<BlogLayout
+  title="Antigüedad en tu nómina: cómo se calcula y qué hacer si no te la pagan"
+  description="Cómo se calcula la antigüedad en tu nómina, qué conceptos la confirman, cómo verificarla con tu vida laboral y qué hacer si no consta o no te pagan el plus."
+  category="Nómina"
+  date="20 octubre 2026"
+  readTime="11 min"
+  slug="antiguedad-nomina"
+  datePublished="2026-10-20"
+  dateModified="2026-10-20"
+  faq={faq}
+  cta={{
+    title: 'Calcula tu antigüedad y el plus que te corresponde',
+    description: 'Introduce tu fecha de alta y tu salario para ver los años, meses y días que llevas, y el importe del plus según los tramos de tu convenio.',
+    links: [
+      { href: '/calculadoras/antiguedad/', text: 'Calcular antigüedad', primary: true },
+      { href: '/calculadoras/nomina/', text: 'Calcular nómina', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>
