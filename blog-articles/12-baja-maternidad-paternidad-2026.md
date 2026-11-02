@@ -18,7 +18,7 @@ canonical: "https://tuhr.es/blog/baja-maternidad-paternidad-2026/"
 
 ¿Te vas a convertir en padre o madre y no estás seguro de cuántos días de permiso te corresponden, cuánto cobrarás o qué trámites debes realizar? La **baja por maternidad y paternidad** es una de las prestaciones más importantes de la Seguridad Social española, y entenderla a fondo te permite planificar tu situación laboral y familiar sin sorpresas. En 2026, la normativa vigente consolidó los permisos iguales e intransferibles que se han ido ampliando en los últimos años, y existen matices que conviene conocer: diferencias entre nacimiento, adopción y acogida, situaciones de autónomos, protección frente al despido y opciones de excedencia voluntaria.
 
-**Última actualización:** septiembre 2026 · **Lectura:** 11 min
+**Última actualización:** octubre 2026 · **Lectura:** 11 min
 
 ---
 
@@ -138,7 +138,7 @@ Desde 2024, la mayoría de trámites se pueden realizar de forma telemática a t
 
 ## Permisos laborales retribuidos relacionados
 
-Además de la baja por maternidad y paternidad, existen otros permisos laborales retribuidos que conviene conocer. En nuestro artículo sobre [permisos laborales retribuidos en España](/blog/permisos-laborales-retribuidos-espana/) encontrarás un listado completo.
+Además de la baja por maternidad y paternidad, existen otros permisos laborales retribuidos que conviene conocer. En nuestro artículo sobre [permisos laborales retribuidos en España](/blog/permisos-laborales/) encontrarás un listado completo.
 
 Por ejemplo, tras el nacimiento, el progenitor tiene derecho a:
 
@@ -229,14 +229,14 @@ Sí. El progenitor puede iniciar su baja por paternidad en cualquier momento den
 
 Si quieres saber con precisión cuánto cobrarás durante tu baja por maternidad o paternidad, lo más sencillo es utilizar herramientas específicas. En [tuhr.es](/) tenemos una [calculadora de nómina](/calculadoras/nomina/) que te permite simular tu prestación introduciendo tu base de cotización. También puedes consultar nuestra [guía sobre cómo calcular tu nómina](/guias/como-calcular-nomina/) para entender todos los conceptos que influyen en el cálculo.
 
-Para más información sobre permisos laborales en general, te recomendamos leer nuestro artículo sobre [permisos laborales retribuidos en España](/blog/permisos-laborales-retribuidos-espana/). Y si tienes dudas sobre qué hacer ante una baja médica, consulta nuestra guía sobre [baja médica: cuánto cobras y cuáles son tus derechos](/blog/baja-medica-cuanto-cobras-derechos/).
+Para más información sobre permisos laborales en general, te recomendamos leer nuestro artículo sobre [permisos laborales retribuidos en España](/blog/permisos-laborales/). Y si tienes dudas sobre qué hacer ante una baja médica, consulta nuestra guía sobre [baja médica: cuánto cobras y cuáles son tus derechos](/blog/baja-medica/).
 
 ---
 
 ## Artículos relacionados
 
-- [Permisos laborales retribuidos en España](/blog/permisos-laborales-retribuidos-espana/) — Listado completo de todos los permisos que tienes como trabajador.
-- [Baja médica: cuánto cobras y cuáles son tus derechos](/blog/baja-medica-cuanto-cobras-derechos/) — Guía sobre la prestación por incapacidad temporal.
+- [Permisos laborales retribuidos en España](/blog/permisos-laborales/) — Listado completo de todos los permisos que tienes como trabajador.
+- [Baja médica: cuánto cobras y cuáles son tus derechos](/blog/baja-medica/) — Guía sobre la prestación por incapacidad temporal.
 - [Calculadora de nómina](/calculadoras/nomina/) — Simula tu salario y prestaciones con precisión.
 - [Guía: cómo calcular tu nómina](/guias/como-calcular-nomina/) — Explicación completa de todos los conceptos de tu nómina.
 

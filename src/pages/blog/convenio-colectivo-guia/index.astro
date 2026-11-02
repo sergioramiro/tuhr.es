@@ -1,0 +1,56 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '11-convenio-colectivo-guia.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Mi empresa tiene obligación de aplicarme el convenio?',
+    a: 'Sí. Si la actividad económica de la empresa está cubierta por un convenio colectivo vigente, la empresa está obligada a aplicarlo. No hacerlo constituye un incumplimiento que puede ser sancionado por la Inspección de Trabajo.',
+  },
+  {
+    q: '¿Qué pasa si mi convenio ha caducado?',
+    a: 'Cuando un convenio colectivo caduca sigue aplicándose hasta que se negocie uno nuevo o hasta que transcurra un año desde su denuncia. Es la llamada ultractividad: durante ese tiempo las condiciones del convenio anterior siguen vigentes.',
+  },
+  {
+    q: '¿Puedo renunciar a derechos de mi convenio?',
+    a: 'No. Los derechos establecidos en convenio colectivo son irrenunciables. La empresa no puede hacerte firmar un acuerdo que te quite derechos que te reconoce el convenio; si lo hace, ese acuerdo es nulo.',
+  },
+  {
+    q: '¿Cómo afecta el convenio a mi nómina?',
+    a: 'Tu nómina debe reflejar todos los conceptos que establece tu convenio: salario base según categoría, complementos, pagas extras y cualquier otro concepto que recoja. Si falta alguno, la empresa está incumpliendo.',
+  },
+  {
+    q: '¿Puedo reclamar diferencias salariales retroactivas?',
+    a: 'Sí, con un límite temporal: para cantidades salariales el plazo de prescripción es de un año, así que puedes reclamar las diferencias de los últimos doce meses, no de años anteriores.',
+  },
+];
+---
+
+<BlogLayout
+  title="Convenio colectivo: qué es, cómo saber cuál te aplica y qué derechos tienes"
+  description="Qué es un convenio colectivo, cómo saber cuál te aplica, qué derechos mejora sobre el Estatuto y cómo reclamar si tu empresa no lo cumple."
+  category="Derechos"
+  date="26 octubre 2026"
+  readTime="13 min"
+  slug="convenio-colectivo-guia"
+  datePublished="2026-10-26"
+  dateModified="2026-10-26"
+  faq={faq}
+  cta={{
+    title: 'Comprueba si tu nómina cumple tu convenio',
+    description: 'Introduce tu salario y categoría para ver el desglose de conceptos y detectar si falta algo que tu convenio te reconoce.',
+    links: [
+      { href: '/calculadoras/nomina/', text: 'Calcular nómina', primary: true },
+      { href: '/guias/como-calcular-nomina/', text: 'Cómo leer tu nómina', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

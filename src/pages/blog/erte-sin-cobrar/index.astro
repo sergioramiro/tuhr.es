@@ -1,0 +1,52 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '21-erte-sin-cobrar.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Cuánto tarda el SEPE en pagar un ERTE?',
+    a: 'El primer pago llega con un desfase de semanas desde el reconocimiento. Que tarde no es señal de problema; que no llegue ni resolución ni ingreso tras un tiempo razonable sí lo es, y apunta a alguna de las causas que se explican en el artículo.',
+  },
+  {
+    q: '¿Necesito cotizaciones para cobrar en un ERTE por fuerza mayor?',
+    a: 'No. En los ERTE por fuerza mayor autorizados por la autoridad laboral, el SEPE reconoce la prestación con independencia de las cotizaciones. En los ETOP sí se exigen 360 días cotizados en los seis años anteriores.',
+  },
+  {
+    q: '¿La empresa tiene que comunicar el ERTE o lo hago yo?',
+    a: 'La comunicación de la medida al SEPE la hace la empresa; la inscripción como demandante de empleo y la solicitud de la prestación las haces tú. Si falta cualquiera de las dos, no se reconoce el pago.',
+  },
+  {
+    q: '¿Puedo cobrar más de lo que me están dando?',
+    a: 'Comprueba tu base reguladora en la resolución y pásala por la calculadora de paro. Si la diferencia viene de un error de la empresa o de cotizaciones mal registradas, reclama; si es una retención o la cuota de desempleo, el importe es correcto.',
+  },
+];
+---
+
+<BlogLayout
+  title="ERTE sin cobrar: por qué no recibes la prestación y qué hacer"
+  description="Estás en un ERTE y no cobras: las causas reales (inscripción, comunicación de la empresa, cotizaciones, errores de pago) y cómo reclamar al SEPE."
+  category="Derechos"
+  date="27 octubre 2026"
+  readTime="11 min"
+  slug="erte-sin-cobrar"
+  datePublished="2026-10-27"
+  dateModified="2026-10-27"
+  faq={faq}
+  cta={{
+    title: 'Comprueba cuánto deberías cobrar en tu ERTE',
+    description: 'Introduce tu base reguladora para ver la cuantía mensual que te corresponde y compararla con lo que te está pagando el SEPE.',
+    links: [
+      { href: '/calculadoras/paro/', text: 'Calcular paro', primary: true },
+      { href: '/blog/erte-espana/', text: 'Guía completa del ERTE', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

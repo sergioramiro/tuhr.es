@@ -11,7 +11,7 @@ canonical: "https://tuhr.es/blog/contrato-temporal-reforma-laboral/"
 
 # Contrato temporal en España: tipos, duración e indemnización tras la reforma laboral de 2022
 
-**Última actualización:** septiembre 2026 · **Lectura:** 12 min
+**Última actualización:** octubre 2026 · **Lectura:** 12 min
 
 ---
 
@@ -19,7 +19,7 @@ La reforma laboral aprobada en diciembre de 2021 mediante el Real Decreto-ley 32
 
 Con la reforma, el legislador puso coto a esta tendencia introduciendo causas tasadas más restrictivas, duraciones máximas más cortas, una **presunción de indefinición** del contrato de trabajo y un régimen de sanciones que hace más costoso fraudar la temporalidad. En esta guía analizamos cómo funciona el contrato temporal en España a partir de 2022, qué tipos quedan, cuánto dura y qué derecho tienes si te contratan bajo una de estas modalidades.
 
-Si estás valorando cambiar de empleo o estás en proceso de firma de contrato, también puede interesarte nuestra guía sobre [autónomo vs. cuenta ajena](/blog/autonomo-vs-cuenta-ajena/) para entender qué tipo de relación laboral se adapta mejor a tu situación.
+Si estás valorando cambiar de empleo o estás en proceso de firma de contrato, también puede interesarte nuestra guía sobre [autónomo vs. cuenta ajena](/blog/autonomo-vs-ajena/) para entender qué tipo de relación laboral se adapta mejor a tu situación.
 
 ## Qué cambió con la reforma laboral de 2022
 
@@ -189,14 +189,14 @@ En tuhr.es ponemos a tu disposición herramientas gratuitas para que puedas cono
 
 - [Descarga plantilla de contrato indefinido](/plantillas/trabajo-indefinido/) — Si estás a punto de firmar un contrato indefinido, utiliza esta plantilla como referencia.
 
-- [Autónomo vs. cuenta ajena](/blog/autonomo-vs-cuenta-ajena/) — ¿Te planteas darte de alta como autónomo o prefieres seguir en relación laboral? Esta guía te ayuda a decidir.
+- [Autónomo vs. cuenta ajena](/blog/autonomo-vs-ajena/) — ¿Te planteas darte de alta como autónomo o prefieres seguir en relación laboral? Esta guía te ayuda a decidir.
 
 ---
 
 **Artículos relacionados:**
 
 - [¿Cuánto cobro si me despiden?](/blog/cuanto-cobro-si-me-despiden/)
-- [Despido procedente vs. improcedente: qué significa y qué te corresponde](/blog/despido-procedente-improcedente/)
+- [Despido procedente vs. improcedente: qué significa y qué te corresponde](/blog/despido-improcedente/)
 - [Finiquito: errores comunes y cómo reclamar](/blog/finiquito-errores/)
 - [Permisos laborales en España: guía completa](/blog/permisos-laborales/)
 - [Baja médica: qué hacer si te dan de baja](/blog/baja-medica/)

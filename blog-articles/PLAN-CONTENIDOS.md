@@ -1,164 +1,84 @@
 ---
-title: Plan de contenidos blog tuhr.es — Semanas 6-11
+title: Plan de contenidos blog tuhr.es
 created: 2026-09-14
+updated: 2026-11-02
 status: active
-frequency: 2 artículos/semana
-start_date: 2026-09-15
+source_of_truth: "Obsidian/Cerebro/proyectos/calendario-contenido-tuhr.md"
 ---
 
-# Plan de contenidos blog tuhr.es
+# Plan de contenidos — tuhr.es
 
-> **Nota (28/09/2026):** desde octubre el calendario de contenidos manda sobre la
-> frecuencia: `Obsidian/Cerebro/proyectos/calendario-contenido-tuhr.md` publica
-> 1 herramienta + 1 contenido editorial por semana. La secuencia de archivos de
-> `blog-articles/` ya lleva el **16 = artículo de ERTE** (se publica el 6/10/2026),
-> así que los artículos de este plan empiezan en el 17. Al generar contenido,
-> respeta el siguiente número libre de `blog-articles/`, no el número de esta lista.
+> **Reescrito el 02/11/2026.** El cron llevaba tres semanas generando contra un calendario
+> que ya no era el real y acumuló once piezas escritas sin página publicada. El calendario
+> bueno —el que elige keywords con datos de GSC— vive en
+> `~/Obsidian/Cerebro/proyectos/calendario-contenido-tuhr.md`. Si los dos discrepan, gana el
+> de Obsidian y este fichero se actualiza en la misma sesión.
 
+## Estado real a 02/11/2026
 
-## Instrucciones para el agente
+- **Publicadas: 18 piezas.** Las cuatro últimas salieron el 26-27/10 del backlog que llevaba
+  semanas parado: convenio colectivo, baja por maternidad y paternidad, contrato temporal y
+  ERTE sin cobrar.
+- **Bloqueadas a propósito: 2.** `18-calculadora-erte` y `20-calculadora-vacaciones`. Su
+  canonical apunta a `/calculadoras/erte/` y `/calculadoras/vacaciones/`, que no existen.
+  **No se publican hasta que exista la herramienta**: publicarlas manda a Google a un 404 y
+  promete al lector algo que no puede usar.
+- **Descartada: 1.** `descartados/10-despido-procedente-improcedente.md` duplicaba
+  `/blog/despido-improcedente/`, ya publicado. Se conserva como material de partida.
 
-Cada lunes a las 10:00, generar los 2 artículos asignados a esa semana. Cada artículo debe:
-- Tener 2.000-2.500 palabras
-- Incluir frontmatter YAML con title, slug, description, date, author ("tuhr.es"), category, tags, canonical
-- Seguir el estilo de los artículos existentes en `src/pages/blog/`
-- Incluir al menos 1 enlace a calculadora existente
-- Incluir al menos 1 enlace a plantilla o guía SEO existente
-- Incluir al menos 1 enlace interno a otro artículo del blog
-- Usar H2 y H3 para estructura
-- Incluir tabla resumen o lista práctica cuando aplique
-- Terminar con CTA a herramientas de tuhr.es
-- Idioma: español de España, tono cercano pero profesional
+## Reglas para el agente (además de las de estilo)
 
-Los artículos se guardan en `blog-articles/` como markdown (numeroso: 10-articulo.md, 11-articulo.md, etc.)
-Después de escribir, hacer commit con mensaje "feat(blog): artículo N — [título corto]"
+1. **Comprobar que el tema no está cubierto antes de escribir.** Buscar la keyword y sus
+   sinónimos en `src/pages/` y en `blog-articles/`. Si ya hay una URL que responde a esa
+   intención, no se escribe otra pieza: se mejora la existente. Los clusters de despido,
+   finiquito e indemnización ya tienen canibalización medida en GSC.
+2. **Enlaces internos solo a URLs que existan.** Antes de commitear, validar cada
+   `](/ruta/)` contra `src/pages/`. Se corrigieron cuatro enlaces rotos que apuntaban a slugs
+   que nunca se crearon: `/blog/smi-2026-salario-minimo/`,
+   `/blog/baja-medica-cuanto-cobras-derechos/`, `/blog/permisos-laborales-retribuidos-espana/`
+   y `/blog/autonomo-vs-cuenta-ajena/`.
+3. **Escribir el markdown no publica nada.** Cada artículo necesita su
+   `src/pages/blog/<slug>/index.astro` que lea el md, más su entrada en
+   `src/pages/blog/index.astro`. Sin eso el trabajo se queda en el cajón, que es lo que pasó
+   con once piezas.
+4. **El canonical apunta a la URL real**, nunca a una herramienta que aún no existe.
+5. **Fechas coherentes:** `datePublished` igual al día real de publicación y el "Última
+   actualización" del cuerpo en el mismo mes.
 
-Al finalizar los 2 artículos de la semana, notificar a Sergio con un resumen breve.
+## Semanas próximas
 
-## Semana 6 (15-21 sep 2026) — Artículo 10 y 11
+### Semana 5 (3-7 nov)
+- [x] 📝 **Convenio colectivo** — publicado el 26/10 en `/blog/convenio-colectivo-guia/`.
+- [ ] ⬜ **Hueco libre.** "Horas extra: cuánto cobras" se cae: ya lo cubren
+  `/blog/horas-extraordinarias-espana/` y `/calculadoras/horas-extra/`. Candidato natural
+  para ocuparlo: el editorial del cluster ERTE en cuanto exista `/calculadoras/erte/`.
 
-### Artículo 10: "Despido procedente vs improcedente: diferencias y cuánto cobras"
-- **Slug:** despido-procedente-improcedente
-- **Categoría:** Despido
-- **Tags:** despido procedente, despido improcedente, indemnización, derechos trabajador
-- **Descripción:** Diferencias entre despido procedente e improcedente en España 2026. Cálculo de indemnización, ejemplos prácticos y qué hacer si no estás de acuerdo.
-- **Enlazar a:** /calculadoras/indemnizacion-despido/, /guias/derechos-trabajador-despido/, /blog/calcular-indemnizacion-despido/
-- **Estructura:** Qué es despido procedente → Causas justificadas → Qué es improcedente → Cuánto cobras en cada caso → Ejemplos con números → Plazo para impugnar → Qué hacer si no estás de acuerdo
+### Semana 6 (10-14 nov)
+- [ ] 📝 **Autónomo vs asalariado (actualizado)** — ya existe `/blog/autonomo-vs-ajena/`.
+  Es **actualización de esa pieza**, no un artículo nuevo.
+- [ ] 📝 **Contrato temporal vs indefinido** — ojo: `/blog/contrato-temporal-reforma-laboral/`
+  se publicó el 26/10 y ya cubre tipos, duración e indemnización. Solo tiene sentido si el
+  ángulo es la comparación directa y la pieza publicada queda como madre del cluster.
 
-### Artículo 11: "Convenio colectivo: qué es, cómo saber cuál te aplica y qué derechos tienes"
-- **Slug:** convenio-colectivo-guia
-- **Categoría:** Derechos
-- **Tags:** convenio colectivo, salario, derechos trabajador, sectorial
-- **Descripción:** Guía completa sobre convenios colectivos en España: qué son, cómo saber cuál se aplica a tu caso, y qué derechos mejoran sobre el Estatuto de los Trabajadores.
-- **Enlazar a:** /plantillas/, /calculadoras/nomina/, /guias/como-calcular-nomina/
-- **Estructura:** Qué es un convenio colectivo → Diferencia con Estatuto → Cómo saber cuál te aplica → Qué mejoras incluye → Casos prácticos → Dónde consultar el tuyo
+### Semana 7 (1-5 dic)
+- [ ] 🔧 **Calculadora de jubilación** — keyword: "calcular jubilación".
+- [ ] 📝 **Subsidio por desempleo 2026** — keyword: "subsidio desempleo".
 
-## Semana 7 (22-28 sep 2026) — Artículo 12 y 13
+## Herramientas pendientes (desbloquean contenido parado)
 
-### Artículo 12: "Baja por maternidad y paternidad en 2026: cuánto cobras y cómo solicitarla"
-- **Slug:** baja-maternidad-paternidad-2026
-- **Categoría:** Prestaciones
-- **Tags:** baja maternidad, baja paternidad, permiso parental, seguridad social
-- **Descripción:** Todo sobre la baja por maternidad y paternidad en España 2026: duración, cuánto cobras, quién paga y trámites. Incluye autónomos.
-- **Enlazar a:** /calculadoras/nomina/, /blog/permisos-laborales-retribuidos-espana/, /blog/baja-medica-cuanto-cobras-derechos/
-- **Estructura:** Duración permiso → Cuánto cobras (100% base) → Diferencia maternidad/paternidad → Autónomos → Trámites → Excedencia voluntaria → Derechos si te despiden
+| Herramienta | Ruta | Desbloquea |
+|---|---|---|
+| Calculadora de ERTE | `/calculadoras/erte/` | artículo 18 |
+| Calculadora de vacaciones | `/calculadoras/vacaciones/` | artículo 20 |
 
-### Artículo 13: "Contrato temporal en España tras la reforma laboral: tipos, duración y derechos"
-- **Slug:** contrato-temporal-reforma-laboral
-- **Categoría:** Contratos
-- **Tags:** contrato temporal, reforma laboral, tipos contrato, derecho laboral
-- **Descripción:** Tipos de contrato temporal en España después de la reforma laboral 2022. Duración máxima, causas legales y derechos del trabajador temporal.
-- **Enlazar a:** /plantillas/trabajo-temporal/, /blog/autonomo-vs-cuenta-ajena/, /plantillas/trabajo-indefinido/
-- **Estructura:** Tipos actuales (obra/servicio, interinidad, circunstancias) → Duración máxima → Causas legales → Derechos del temporal → Indemnización al vencer → Conversión a indefinido
+Las dos pueden construirse reutilizando la lógica de `/calculadoras/paro/` y
+`/calculadoras/finiquito/`. Mientras no existan, esos artículos no se tocan.
 
-## Semana 8 (29 sep - 5 oct 2026) — Artículo 14 y 15
+## Estilo
 
-### Artículo 14: "Accidente laboral: qué hacer, cuánto cobras y tus derechos"
-- **Slug:** accidente-laboral-derechos
-- **Categoría:** Derecho Laboral
-- **Tags:** accidente laboral, incapacidad temporal, seguridad social, indemnización
-- **Descripción:** Guía práctica ante un accidente laboral en España: pasos a seguir, cuánto cobras por IT, quién paga y cómo reclamar indemnización.
-- **Enlazar a:** /calculadoras/finiquito/, /blog/baja-medica-cuanto-cobras-derechos/, /guias/todo-sobre-tu-finiquito/
-- **Estructura:** Definición legal → Qué hacer inmediatamente → Parts involved → Cuánto cobras (100% desde día 1) → Reclamación → Indemnización complementaria → Autónomos
+2.000-2.500 palabras · frontmatter YAML completo (title, slug, description, date, author
+"tuhr.es", category, tags, canonical) · H2 y H3 · al menos un enlace a calculadora y otro a
+guía o plantilla · tabla o lista práctica · CTA a herramientas · español de España, cercano y
+profesional.
 
-### Artículo 15: "Horas extraordinarias en España: límite, pago y cómo reclamarlas"
-- **Slug:** horas-extraordinarias-espana
-- **Categoría:** Nómina
-- **Tags:** horas extra, salario, convenio colectivo, derecho laboral
-- **Descripción:** Las horas extraordinarias en España: cuántas puedes hacer, cómo se pagan, límites legales y qué hacer si no te las pagan.
-- **Enlazar a:** /calculadoras/horas-extra/, /blog/convenio-colectivo-guia/, /calculadoras/nomina/
-- **Estructura:** Definición legal → Límite (80/año) → Pago mínimo (150% o convenio) → Voluntarias vs obligatorias → Registro → Reclamación → Casos prácticos
-
-## Semana 9 (6-12 oct 2026) — Artículo 17 y 18
-
-### Artículo 17: "Protección ante el despido de trabajadoras embarazadas: qué dice la ley"
-- **Slug:** despido-trabajadora-embarazada
-- **Categoría:** Derechos
-- **Tags:** despido nulo, embarazo, protección trabajadora, igualdad
-- **Descripción:** La protección reforzada de las trabajadoras embarazadas frente al despido en España: cuándo es nulo, presunción de nulidad y cómo actuar.
-- **Enlazar a:** /blog/despido-procedente-improcedente/, /guias/derechos-trabajador-despido/, /blog/cuanto-cobro-si-me-despiden/
-- **Estructura:** Marco legal → Despido nulo → Presunción de nulidad → Plazo para reclamar → Indemnización → Sentencias relevantes → Qué hacer si te despiden estando embarazada
-
-### Artículo 18: "SMI 2026: cuánto es, a quién afecta y cómo se calcula tu nómina"
-- **Slug:** smi-2026-salario-minimo
-- **Categoría:** Nómina
-- **Tags:** salario mínimo interprofesional, SMI, nómina, cotización
-- **Descripción:** El Salario Mínimo Interprofesional en España 2026: cuánto es, quién lo cobra, cómo afecta a tu nómina y a las cotizaciones.
-- **Enlazar a:** /calculadoras/nomina/, /blog/convenio-colectivo-guia/, /guias/como-calcular-nomina/
-- **Estructura:** Cuantía SMI 2026 → A quién afecta → Diferencia bruto/neto → Impacto en cotizaciones → Casos prácticos → Comparativa con convenios
-
-## Semana 10 (13-19 oct 2026) — Artículo 19 y 20
-
-### Artículo 19: "Subrogación empresarial: qué pasa con tu trabajo si cambia la empresa"
-- **Slug:** subrogacion-empresarial-guia
-- **Categoría:** Derechos
-- **Tags:** subrogación, cesión trabajadores, cambio empresa, derechos laborales
-- **Descripción:** Qué es la subrogación empresarial en España, cuándo ocurre, qué derechos conservas y cómo proteger tu puesto de trabajo.
-- **Enlazar a:** /plantillas/prestacion-servicios/, /blog/autonomo-vs-cuenta-ajena/, /plantillas/contrato-arrendamiento-vivienda/
-- **Estructura:** Qué es subrogación → Causas (externalización, venta, concesión) → Derechos del trabajador → Antigüedad y salario → Qué hacer si te subrogan → Casos reales
-
-### Artículo 20: "Impuestos de autónomos en 2026: cómo pagar menos legalmente"
-- **Slug:** impuestos-autonomos-2026
-- **Categoría:** Autónomos
-- **Tags:** impuestos autónomos, IRPF, deducciones, fiscalidad
-- **Descripción:** Guía práctica para autónomos en España 2026: cuánto pagas, deducciones disponibles y estrategias legales para reducir tu carga fiscal.
-- **Enlazar a:** /plantillas/factura-autonomo/, /blog/autonomo-vs-cuenta-ajena/, /calculadoras/nomina/
-- **Estructura:** Cuota de autónomos 2026 → Retenciones IRPF → Deducciones principales → Gastos deducibles → Estimación directa vs módulos → Errores comunes
-
-## Semana 11 (20-26 oct 2026) — Artículo 21 y 22
-
-### Artículo 21: "Carta de reclamación salarial: modelo y cómo presentarla"
-- **Slug:** carta-reclamacion-salarial-modelo
-- **Categoría:** Derechos
-- **Tags:** reclamación salarial, carta reclamación, cobrar nómina, derechos trabajador
-- **Descripción:** Modelo de carta de reclamación salarial en España. Cuándo usarla, cómo redactarla y pasos si no te responden.
-- **Enlazar a:** /plantillas/, /blog/convenio-colectivo-guia/, /blog/horas-extraordinarias-espana/
-- **Estructura:** Cuándo presentarla → Estructura de la carta → Modelo descargable → Plazos → Si no responden → Papeleta de conciliación → Juicio verbal
-
-### Artículo 22: "Cese de actividad de autónomos: prestación y cómo solicitarla"
-- **Slug:** cese-actividad-autonomos
-- **Categoría:** Autónomos
-- **Tags:** cese actividad, prestación cese, autónomos, Seguridad Social
-- **Descripción:** La prestación por cese de actividad para autónomos en España 2026: requisitos, cuánto cobras y trámites para solicitarla.
-- **Enlazar a:** /blog/autonomo-vs-cuenta-ajena/, /blog/impuestos-autonomos-2026/, /plantillas/factura-autonomo/
-- **Estructura:** Qué es la prestación → Requisitos → Cuánto cobras → Tipos (voluntario/involuntario) → Solicitud → Duración → Compatibilidad con nueva actividad
-
-## Artículos publicados previamente (no reutilizar)
-
-Los siguientes artículos ya existen en `src/pages/blog/` o `blog-articles/`:
-- 01-finiquito-errores
-- 02-permisos-laborales
-- 03-baja-medica
-- 04-autonomo-vs-ajena
-- 05-registro-jornada
-- 06-vacaciones-derechos
-- 07-cuanto-cobro-si-me-despiden
-- 08-baja-voluntaria-sin-preaviso
-- 09-calcular-indemnizacion-despido
-- 10-despido-procedente-improcedente
-- 11-convenio-colectivo-guia
-- 12-baja-maternidad-paternidad-2026
-- 13-contrato-temporal-reforma-laboral
-- 14-accidente-laboral-derechos
-- 15-horas-extraordinarias-espana
-- 16-erte-espana-2026 (calendario de contenidos)
+Commit por pieza: `feat(blog): artículo N — [título corto]`.

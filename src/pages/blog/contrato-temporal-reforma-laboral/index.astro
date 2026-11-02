@@ -1,0 +1,52 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '13-contrato-temporal-reforma-laboral.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Puedo renovar un contrato temporal?',
+    a: 'Un contrato temporal puede prorrogarse siempre que se mantenga dentro del periodo máximo de duración: seis meses para circunstancias imprevisibles y 90 días para previsibles. Alcanzado el máximo no se puede firmar otro contrato temporal para el mismo puesto o causa.',
+  },
+  {
+    q: '¿Qué pasa si me ofrecen un contrato temporal pero las condiciones son permanentes?',
+    a: 'Si las funciones son permanentes y la causa temporal no es real, el contrato puede declararse indefinido por un juez. Conserva toda la documentación que demuestre que el trabajo es permanente.',
+  },
+  {
+    q: '¿Qué indemnización cobro si me finiquitan por fin de contrato?',
+    a: 'Doce días por año trabajado, sobre salario base más pagas extras proporcionales, con un tope de doce mensualidades. Si el contrato es de sustitución, no genera indemnización.',
+  },
+  {
+    q: '¿Puedo reclamar si me despiden con un contrato temporal sin causa?',
+    a: 'Sí. Si te despiden sin justificación durante un contrato temporal puedes impugnarlo ante la jurisdicción social; si se declara improcedente, la indemnización es de 33 días por año trabajado.',
+  },
+];
+---
+
+<BlogLayout
+  title="Contrato temporal en España: tipos, duración e indemnización tras la reforma laboral de 2022"
+  description="Contratos temporales tras la reforma de 2022: tipos, duración máxima, indemnización de 12 días y cómo reclamar si el contrato es fraudulento."
+  category="Contratos"
+  date="26 octubre 2026"
+  readTime="12 min"
+  slug="contrato-temporal-reforma-laboral"
+  datePublished="2026-10-26"
+  dateModified="2026-10-26"
+  faq={faq}
+  cta={{
+    title: 'Calcula lo que te queda al terminar el contrato',
+    description: 'Introduce tu salario y los días trabajados para ver la indemnización por fin de contrato y el finiquito completo.',
+    links: [
+      { href: '/calculadoras/finiquito/', text: 'Calcular finiquito', primary: true },
+      { href: '/calculadoras/indemnizacion-despido/', text: 'Calcular indemnización', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>

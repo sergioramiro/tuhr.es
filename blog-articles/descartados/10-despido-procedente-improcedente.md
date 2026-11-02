@@ -7,7 +7,11 @@ author: "tuhr.es"
 category: "Despido"
 tags: ["despido procedente", "despido improcedente", "indemnización", "derechos trabajador", "despido disciplinario"]
 canonical: "https://tuhr.es/blog/despido-procedente-improcedente/"
+descartado: "2026-10-26"
+motivo_descarte: "Duplicado de /blog/despido-improcedente/ (publicado). Se conserva como material de partida para una futura guía sobre despido procedente, que hoy no cubre ninguna URL del sitio."
 ---
+
+> **DESCARTADO — no publicar.** Este borrador solapa con `/blog/despido-improcedente/`, que ya está publicado y cubre la diferencia entre procedente e improcedente junto con la indemnización. Publicarlo crearía una tercera URL compitiendo por las mismas consultas en un cluster donde ya hay canibalización medida. Se guarda por si se aborda una guía específica de despido procedente, que hoy no existe en el sitio.
 
 # Despido procedente vs improcedente: diferencias y cuánto cobras
 

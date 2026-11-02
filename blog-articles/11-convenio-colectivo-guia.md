@@ -11,7 +11,7 @@ canonical: "https://tuhr.es/blog/convenio-colectivo-guia/"
 
 # Convenio colectivo: qué es, cómo saber cuál te aplica y qué derechos tienes
 
-**Última actualización:** septiembre 2026 · **Lectura:** 13 min
+**Última actualización:** octubre 2026 · **Lectura:** 13 min
 
 ---
 
@@ -256,7 +256,7 @@ No. Los derechos establecidos en convenio colectivo son irrenunciables. La empre
 
 Tu nómina debe reflejar todos los conceptos que establece tu convenio: salario base según categoría, complementos, pagas extras, y cualquier otro concepto que el convenio recoja. Si tu nómina no incluye algún concepto del convenio, la empresa está incumpliendo.
 
-### ¿Puedo reclamar salary differences retroactivas?
+### ¿Puedo reclamar diferencias salariales retroactivas?
 
 Sí, pero con un límite temporal. Para cantidades salariales, el plazo de prescripción es de **1 año**. Esto significa que puedes reclamar las diferencias salariales de los últimos 12 meses, pero no de años anteriores.
 
@@ -273,7 +273,6 @@ Identifica tu convenio, descárgalo, compara con tu nómina y reclama si hay dif
 ---
 
 **Artículos relacionados:**
-- [SMI 2026: cuánto es, a quién afecta y cómo se calcula tu nómina](/blog/smi-2026-salario-minimo/)
 - [Horas extraordinarias en España: límite, pago y cómo reclamarlas](/blog/horas-extraordinarias-espana/)
 
 ---

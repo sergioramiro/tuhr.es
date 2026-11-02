@@ -1,0 +1,56 @@
+---
+import BlogLayout from '../../../layouts/BlogLayout.astro';
+import { marked } from '../../../lib/marked-config';
+import fs from 'fs';
+import path from 'path';
+
+const mdPath = path.join(process.cwd(), 'blog-articles', '12-baja-maternidad-paternidad-2026.md');
+let md = fs.readFileSync(mdPath, 'utf8');
+md = md.replace(/^---[\s\S]*?---/, '').trim();
+const htmlContent = marked.parse(md);
+
+const faq = [
+  {
+    q: '¿Dónde se solicita la prestación?',
+    a: 'La solicitud se presenta ante el Instituto Nacional de la Seguridad Social (INSS). El plazo es de 15 días hábiles desde el nacimiento, adopción o acogida; si se presenta fuera de plazo se pierde el derecho a las semanas no solicitadas.',
+  },
+  {
+    q: '¿Puedo trabajar durante la baja?',
+    a: 'No. La prestación por maternidad o paternidad es incompatible con el trabajo: si trabajas durante el periodo de baja, se suspende la prestación. Puedes iniciar la baja, volver a trabajar y reanudar las semanas restantes dentro del primer año.',
+  },
+  {
+    q: '¿Qué pasa si mi hijo ingresa en el hospital?',
+    a: 'Si el recién nacido es hospitalizado, la madre puede interrumpir la baja y reanudarla al alta del bebé, de modo que disfruta de la baja después. El padre puede iniciar su baja durante la hospitalización.',
+  },
+  {
+    q: '¿Cómo afecta a la jubilación el periodo de baja?',
+    a: 'El periodo de baja por maternidad y paternidad cotiza como si se estuviera trabajando, así que no afecta negativamente a la jubilación. Además hay bonificación del 100 % de la cuota de autónomo durante los doce meses posteriores.',
+  },
+  {
+    q: '¿Puedo solicitar la baja por paternidad en un momento diferente al de la madre?',
+    a: 'Sí. El progenitor puede iniciarla en cualquier momento dentro de los doce primeros meses desde el nacimiento, coincidiendo con la baja de la madre, después o dividiéndola en varios periodos si el convenio lo permite.',
+  },
+];
+---
+
+<BlogLayout
+  title="Baja por maternidad y paternidad en España 2026: duración, prestación y trámites"
+  description="Baja por maternidad y paternidad en 2026: duración, cuánto cobras, cómo se solicita, qué pasa con los autónomos y cómo afecta a tu jubilación."
+  category="Prestaciones"
+  date="26 octubre 2026"
+  readTime="11 min"
+  slug="baja-maternidad-paternidad-2026"
+  datePublished="2026-10-26"
+  dateModified="2026-10-26"
+  faq={faq}
+  cta={{
+    title: 'Calcula lo que cobras durante la baja',
+    description: 'Comprueba la base reguladora y el importe mensual de la prestación con tus bases de cotización reales.',
+    links: [
+      { href: '/calculadoras/nomina/', text: 'Calcular nómina', primary: true },
+      { href: '/blog/baja-medica/', text: 'Baja médica: cuánto cobras', primary: false },
+    ],
+  }}
+>
+  <Fragment set:html={htmlContent} />
+</BlogLayout>
