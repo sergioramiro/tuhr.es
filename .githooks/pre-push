@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Verificación obligatoria antes de cada push.
+# Si algo falla, el push se bloquea. No lo saltes con --no-verify.
+set -euo pipefail
+
+echo "[pre-push] npm run check"
+if ! npm run check; then
+  echo ""
+  echo "[pre-push] VERIFICACIÓN FALLIDA — push bloqueado."
+  echo "[pre-push] Arregla lo que salga y vuelve a intentarlo."
+  exit 1
+fi
+
+echo "[pre-push] OK"
