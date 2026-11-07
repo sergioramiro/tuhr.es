@@ -1,0 +1,17 @@
+# Dueño por defecto de todo el repositorio
+* @sergioramiro
+
+# Cálculos laborales: un error aquí se propaga a todas las calculadoras
+/src/lib/ @sergioramiro
+
+# Plantillas legales descargables
+/src/templates/ @sergioramiro
+
+# Contenido y SEO
+/src/pages/ @sergioramiro
+/blog-articles/ @sergioramiro
+
+# Build, despliegue y redirecciones
+/astro.config.mjs @sergioramiro
+/netlify.toml @sergioramiro
+/package.json @sergioramiro
