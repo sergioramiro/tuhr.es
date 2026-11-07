@@ -21,3 +21,6 @@ Thumbs.db
 
 # astro
 .astro/
+
+# informes de cobertura (se generan con npm run coverage)
+coverage/
