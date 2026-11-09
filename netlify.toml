@@ -17,3 +17,33 @@
   to = "/calculadoras/despido/"
   status = 301
   force = true
+
+# Rutas /guia/<slug> que estuvieron enlazadas desde el bloque "Artículos
+# relacionados" de las 5 guías y devolvían 404 (Search Console, 09/11/2026).
+# La ruta real es /guias/<slug>. Se redirigen en vez de dejarlas en 404 para
+# que cualquier enlace externo antiguo aterrice en la guía buena.
+[[redirects]]
+  from = "/guia/finiquito"
+  to = "/guias/todo-sobre-tu-finiquito/"
+  status = 301
+
+[[redirects]]
+  from = "/guia/calcular-nomina"
+  to = "/guias/como-calcular-nomina/"
+  status = 301
+
+[[redirects]]
+  from = "/guia/contrato-prestacion-servicios"
+  to = "/guias/contrato-prestacion-servicios/"
+  status = 301
+
+[[redirects]]
+  from = "/guia/derechos-trabajador-despido"
+  to = "/guias/derechos-trabajador-despido/"
+  status = 301
+
+[[redirects]]
+  from = "/guia/alquiler-vivienda"
+  to = "/guias/contrato-arrendamiento-guia/"
+  status = 301
+
