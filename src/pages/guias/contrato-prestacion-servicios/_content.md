@@ -243,9 +243,9 @@ En **tuhr.es** encontrarás herramientas y recursos que te ayudarán a entender 
 ---
 
 **Artículos relacionados:**
-- [Todo sobre tu finiquito](/guia/finiquito)
-- [Derechos del trabajador ante un despido](/guia/derechos-trabajador-despido)
-- [Cómo calcular tu nómina paso a paso](/guia/calcular-nomina)
+- [Todo sobre tu finiquito](/guias/todo-sobre-tu-finiquito/)
+- [Derechos del trabajador ante un despido](/guias/derechos-trabajador-despido/)
+- [Cómo calcular tu nómina paso a paso](/guias/como-calcular-nomina/)
 
 ---
 

@@ -280,8 +280,8 @@ No firmes un contrato sin leerlo. No pagues una fianza sin que la depositen. No 
 ---
 
 **Artículos relacionados:**
-- [Contrato de prestación de servicios](/guia/contrato-prestacion-servicios)
-- [Cómo calcular tu nómina paso a paso](/guia/calcular-nomina)
+- [Contrato de prestación de servicios](/guias/contrato-prestacion-servicios/)
+- [Cómo calcular tu nómina paso a paso](/guias/como-calcular-nomina/)
 
 ---
 

@@ -252,9 +252,9 @@ Revisa tu nómina cada mes, verifica que los conceptos son correctos y, si tiene
 ---
 
 **Artículos relacionados:**
-- [Todo sobre tu finiquito](/guia/finiquito)
-- [Derechos del trabajador ante un despido](/guia/derechos-trabajador-despido)
-- [Contrato de prestación de servicios](/guia/contrato-prestacion-servicios)
+- [Todo sobre tu finiquito](/guias/todo-sobre-tu-finiquito/)
+- [Derechos del trabajador ante un despido](/guias/derechos-trabajador-despido/)
+- [Contrato de prestación de servicios](/guias/contrato-prestacion-servicios/)
 
 ---
 

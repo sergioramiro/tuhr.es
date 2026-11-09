@@ -216,9 +216,9 @@ Si has sido despedido y no estás seguro de si te han tratado conforme a la ley,
 ---
 
 **Artículos relacionados:**
-- [Todo sobre tu finiquito](/guia/finiquito)
-- [Cómo calcular tu nómina paso a paso](/guia/calcular-nomina)
-- [Contrato de prestación de servicios](/guia/contrato-prestacion-servicios)
+- [Todo sobre tu finiquito](/guias/todo-sobre-tu-finiquito/)
+- [Cómo calcular tu nómina paso a paso](/guias/como-calcular-nomina/)
+- [Contrato de prestación de servicios](/guias/contrato-prestacion-servicios/)
 
 ---
 

@@ -326,9 +326,9 @@ No dejes dinero en la mesa. Revisa tu finiquito, verifica los cálculos y, si ti
 ---
 
 **Artículos relacionados:**
-- [Derechos del trabajador ante un despido](/guia/derechos-trabajador-despido)
-- [Cómo calcular tu nómina paso a paso](/guia/calcular-nomina)
-- [Guía completa de alquiler de vivienda 2026](/guia/alquiler-vivienda)
+- [Derechos del trabajador ante un despido](/guias/derechos-trabajador-despido/)
+- [Cómo calcular tu nómina paso a paso](/guias/como-calcular-nomina/)
+- [Guía completa de alquiler de vivienda 2026](/guias/contrato-arrendamiento-guia/)
 
 ---
 
