@@ -18,6 +18,34 @@
   status = 301
   force = true
 
+# Rutas antiguas en singular (/calculadora-X) detectadas por Search Console como
+# 404 (medido 09/11/2026: /calculadora-finiquito, rastreada el 6 nov). La ruta
+# actual es /calculadoras/X.
+[[redirects]]
+  from = "/calculadora-finiquito"
+  to = "/calculadoras/finiquito/"
+  status = 301
+
+[[redirects]]
+  from = "/calculadora-nomina"
+  to = "/calculadoras/nomina/"
+  status = 301
+
+[[redirects]]
+  from = "/calculadora-paro"
+  to = "/calculadoras/paro/"
+  status = 301
+
+[[redirects]]
+  from = "/calculadora-despido"
+  to = "/calculadoras/despido/"
+  status = 301
+
+[[redirects]]
+  from = "/calculadora-antiguedad"
+  to = "/calculadoras/antiguedad/"
+  status = 301
+
 # Rutas /guia/<slug> que estuvieron enlazadas desde el bloque "Artículos
 # relacionados" de las 5 guías y devolvían 404 (Search Console, 09/11/2026).
 # La ruta real es /guias/<slug>. Se redirigen en vez de dejarlas en 404 para
