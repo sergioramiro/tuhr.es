@@ -4,8 +4,8 @@ import CalculadoraHorasExtra from '../../../components/calculadoras/CalculadoraH
 ---
 
 <Layout
-  title="Calculadora de horas extra — Cuánto cobrar 2026 | tuhr.es"
-  description="Calcula cuánto cobrarás por tus horas extra. Multiplicador 1.5× normal, 2× nocturno. Herramienta gratuita con fórmulas oficiales del Estatuto de los Trabajadores."
+  title="Calculadora de horas extra 2026: cuánto se paga cada hora | tuhr.es"
+  description="Calcula cuánto cobrar por tus horas extra: precio de la hora, recargo del convenio y límite de 80 al año. Con ejemplos y cómo reclamarlas si no te las pagan."
 >
   <Fragment slot="json-ld">
     <script type="application/ld+json">
@@ -16,8 +16,56 @@ import CalculadoraHorasExtra from '../../../components/calculadoras/CalculadoraH
       "url": "https://tuhr.es/calculadoras/horas-extra/",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
-      "description": "Calcula cuánto cobrarás por tus horas extra con multiplicadores oficiales",
+      "description": "Calcula cuánto cobrarás por tus horas extra con los recargos de tu convenio",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Es obligatorio hacer horas extra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, salvo tres excepciones: que las haya pactado individualmente o en convenio, que sean necesarias para prevenir o reparar siniestros y daños extraordinarios, o que se trate de casos de fuerza mayor. Fuera de ahí, negarte a hacerlas no es incumplimiento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuántas horas extra se pueden hacer al año?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El límite legal es de 80 horas al año, salvo que el convenio fije uno menor. No cuentan las compensadas con descanso dentro de los cuatro meses siguientes ni las abonadas por fuerza mayor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto se paga una hora extra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El Estatuto solo garantiza que se pague como mínimo igual que una hora ordinaria; el recargo (1,25×, 1,5×, 2×) lo fija tu convenio colectivo. Si no hay convenio ni pacto, se paga a razón de la hora normal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se pueden compensar con descanso en vez de con dinero?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, si hay acuerdo entre empresa y trabajador. La compensación con descanso debe hacerse dentro de los cuatro meses siguientes a la realización de las horas, y esas horas ya no cuentan para el tope de 80 anuales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo reclamo las horas extra que no me han pagado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con el registro horario como prueba (es obligación de la empresa desde 2019), una reclamación interna y, si no hay respuesta, papeleta de conciliación ante el SMAC. El plazo de prescripción es de un año desde que se debieron abonar."
+          }
+        }
+      ]
     }
     </script>
   </Fragment>
@@ -38,7 +86,7 @@ import CalculadoraHorasExtra from '../../../components/calculadoras/CalculadoraH
     <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
       <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de horas extra</h1>
       <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
-        ¿Cuánto cobrarás por tus horas extra? Calcula tu retribución con los multiplicadores oficiales: 1.5× para horas normales y 2× para nocturnas. Herramienta gratuita.
+        ¿Cuánto cobrarás por tus horas extra? Calcula el precio de tu hora, aplica el recargo de tu convenio y comprueba si te están pagando lo que corresponde. Herramienta gratuita.
       </p>
     </section>
 
@@ -47,16 +95,85 @@ import CalculadoraHorasExtra from '../../../components/calculadoras/CalculadoraH
       <CalculadoraHorasExtra client:load />
     </section>
 
-    <!-- Info -->
+    <!-- Info: cómo se calcula -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">¿Cómo se calculan las horas extra?</h2>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula el precio de una hora extra</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>Según el Estatuto de los Trabajadores, las horas extraordinarias son todas aquellas que superen la jornada laboral máxima de 40 horas semanales (o el tope establecido en el convenio).</p>
-          <p><strong>Multiplicador normal:</strong> 1.5× sobre el salario hora base. Se aplica a las horas extra realizadas en jornada diurna.</p>
-          <p><strong>Multiplicador nocturno:</strong> 2× sobre el salario hora base. Se aplica a las horas extra realizadas entre las 22:00 y las 6:00.</p>
-          <p><strong>Salario hora:</strong> Se calcula dividiendo el salario mensual entre las horas mensuales (basado en 40h semanales).</p>
-          <p><strong>Límite legal:</strong> No se pueden realizar más de 80 horas extra al año (salvo que el convenio establezca un tope inferior).</p>
+          <p>Todo sale del <strong>precio de tu hora ordinaria</strong>, y ese precio no es tu salario mensual dividido entre los días que trabajas: se calcula sobre las horas anuales que marca tu convenio.</p>
+          <p><strong>Paso 1 — precio de la hora base.</strong> Toma tu salario bruto anual, incluyendo pagas extras, y divídelo entre las horas anuales de tu jornada. Para una jornada completa de 40 horas semanales lo habitual es 1.760 horas, aunque muchos convenios usan 1.764. Fórmula: <em>salario bruto anual ÷ horas anuales</em>.</p>
+          <p><strong>Paso 2 — aplica el recargo.</strong> Multiplica el precio de la hora por el porcentaje que fije tu convenio. Si el convenio no dice nada, la hora extra se paga igual que la ordinaria: el Estatuto no impone un recargo mínimo, solo prohíbe pagarla por debajo.</p>
+          <p><strong>Paso 3 — comprueba el bruto anual.</strong> Si tu salario está prorrateado en doce pagas, las extras ya van dentro. Si cobras catorce, el bruto anual incluye las dos pagas extraordinarias.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuánto se paga -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cuánto se paga legalmente una hora extra</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Aquí hay un matiz que se repite mal en casi todas las webs: <strong>el Estatuto de los Trabajadores no fija un recargo</strong>. El artículo 35.1 solo dice que las horas extraordinarias se abonan en la cuantía que se fije, y que en ningún caso puede ser inferior al valor de la hora ordinaria. El recargo concreto —1,25×, 1,5×, 1,75×, 2×— lo pone tu convenio colectivo o tu contrato.</p>
+          <p>Por eso la calculadora te deja elegir el multiplicador. Los valores de 1,5× en jornada diurna y 2× en nocturna son los más extendidos en convenios de comercio, hostelería y oficinas, pero no son ley: si tu convenio dice 1,25×, ese es el que te corresponde.</p>
+          <p>La otra vía legal es la <strong>compensación con descanso</strong>: en lugar de cobrarlas, descansarlas. Ese descanso debe disfrutarse dentro de los cuatro meses siguientes, y las horas así compensadas no cuentan para el tope anual.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Límite -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">El límite de 80 horas al año</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>El artículo 35.2 del Estatuto fija un máximo de <strong>80 horas extraordinarias al año</strong>, salvo que el convenio establezca un número menor. Es un tope por trabajador, no por departamento, y la empresa es quien debe llevar la cuenta.</p>
+          <p><strong>Qué no cuenta para esas 80 horas:</strong> las que se compensan con descanso dentro de los cuatro meses siguientes, las realizadas para prevenir siniestros o daños extraordinarios y las de fuerza mayor. Quedan fuera del cómputo, no del derecho a cobrarlas.</p>
+          <p><strong>Jornada reducida:</strong> el límite se aplica en proporción, y el pacto de horas complementarias es una figura distinta que solo existe en los contratos a tiempo parcial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplo -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplo resuelto: 12 horas extra en un mes</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Salario bruto anual de 21.600 € (1.800 € en doce pagas), jornada completa de 1.760 horas anuales y un convenio con recargo del 50 % en diurnas.</p>
+          <p><strong>Precio de la hora ordinaria:</strong> 21.600 ÷ 1.760 = 12,27 €.</p>
+          <p><strong>Hora extra diurna:</strong> 12,27 × 1,5 = 18,41 €.</p>
+          <p><strong>Doce horas en el mes:</strong> 18,41 × 12 = 220,92 € brutos, que se suman al salario del mes y cotizan y tributan como salario normal.</p>
+          <p><strong>Si la mitad fueran nocturnas</strong> (entre las 22:00 y las 6:00) y el convenio pagara el doble: seis horas a 24,54 € más seis a 18,41 €, un total de 257,70 €.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reclamar -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Qué hacer si no te las pagan</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>La baza más fuerte es el <strong>registro horario</strong>: desde 2019 la empresa está obligada a registrar la jornada diaria de cada persona, con hora de inicio y de fin. Debe conservarlo cuatro años y tienes derecho a consultar tu propio registro, así que pídelo por escrito antes que nada.</p>
+          <p>Con eso, reclamación interna por escrito y, si no hay respuesta en un plazo razonable, papeleta de conciliación ante el SMAC. El plazo para reclamar cantidades es de <strong>un año</strong> desde que debieron abonarse, así que las horas de hace más de doce meses están prescritas salvo que hayas interrumpido la prescripción.</p>
+          <p>Si la empresa no lleva registro horario no pierdes el derecho: puedes probar las horas con correos, mensajes, fichajes de compañeros o testigos, y la ausencia de registro perjudica a la empresa, no a ti.</p>
+          <p>Para el detalle legal completo, tienes la <a href="/blog/horas-extraordinarias-espana/" class="text-primary hover:underline font-medium">guía de horas extraordinarias</a>, y si estas horas van dentro de una salida, <a href="/calculadoras/finiquito/" class="text-primary hover:underline font-medium">calcula el finiquito completo</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <h3 class="font-bold text-on-surface">¿Es obligatorio hacer horas extra?</h3>
+          <p>No, salvo que las hayas pactado individual o colectivamente, que sean necesarias para prevenir o reparar siniestros y daños extraordinarios, o que se trate de fuerza mayor. Fuera de esos casos, negarte no es un incumplimiento.</p>
+          <h3 class="font-bold text-on-surface">¿Cuántas horas extra se pueden hacer al año?</h3>
+          <p>80 como máximo, salvo que tu convenio fije menos. No cuentan las compensadas con descanso en los cuatro meses siguientes ni las de fuerza mayor.</p>
+          <h3 class="font-bold text-on-surface">¿Cuánto se paga una hora extra?</h3>
+          <p>Como mínimo, lo mismo que una hora ordinaria. El recargo lo fija el convenio; si no hay convenio ni pacto, se paga a razón de la hora normal.</p>
+          <h3 class="font-bold text-on-surface">¿Se pueden compensar con descanso en vez de con dinero?</h3>
+          <p>Sí, si hay acuerdo. El descanso debe disfrutarse en los cuatro meses siguientes y esas horas dejan de contar para el tope de 80.</p>
+          <h3 class="font-bold text-on-surface">¿Cómo reclamo las horas extra que no me han pagado?</h3>
+          <p>Con el registro horario como prueba, reclamación escrita y papeleta de conciliación en el SMAC si no hay respuesta. El plazo es de un año desde que debieron abonarse.</p>
         </div>
       </div>
     </section>

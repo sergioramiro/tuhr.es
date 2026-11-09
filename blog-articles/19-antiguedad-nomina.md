@@ -89,7 +89,7 @@ A estas tres se suma el **certificado de empresa** que te entregan con el finiqu
 No es burocracia por burocracia: cada año de antigüedad bien documentado mueve dinero en cuatro sitios.
 
 - **Plus de antigüedad mensual**, si tu convenio lo recoge. El importe por año y cuatrienio sale de la [calculadora de antigüedad](/calculadoras/antiguedad/).
-- **Indemnización por despido**: en un despido improcedente son 33 días por año con tope de 24 mensualidades; en un despido objetivo, 20 días por año con tope de 12; al acabar un contrato temporal, 12 días por año con tope de 24. Lo calcula la [calculadora de indemnización por despido](/calculadoras/indemnizacion-despido/) y el detalle está en [cómo se calcula la indemnización por despido](/blog/calcular-indemnizacion-despido/).
+- **Indemnización por despido**: en un despido improcedente son 33 días por año con tope de 24 mensualidades; en un despido objetivo, 20 días por año con tope de 12; al acabar un contrato temporal, 12 días por año con tope de 24. Lo calcula la [calculadora de indemnización por despido](/calculadoras/despido/) y el detalle está en [cómo se calcula la indemnización por despido](/blog/calcular-indemnizacion-despido/).
 - **Días de vacaciones**: muchos convenios encadenan tramos de antigüedad con días extra. La tabla completa está en [cómo se calculan los días de vacaciones laborales](/blog/dias-vacaciones-laborales/).
 - **Cualquier reclamación futura**: indemnización, finiquito o prestaciones se leen con las fechas que consten hoy. Revisa qué firmas en el finiquito en [los errores más frecuentes al cobrar el finiquito](/blog/finiquito-errores/).
 
@@ -158,4 +158,4 @@ En la [calculadora de antigüedad](/calculadoras/antiguedad/), con tu salario y 
 
 ## Herramientas de tuhr.es
 
-Leer la antigüedad es la parte tranquila; calcular su importe y reclamarlo, la que da resultado. Pasa por la [calculadora de antigüedad](/calculadoras/antiguedad/) para ver tu plus por tramos, por la [calculadora de nómina](/calculadoras/nomina/) para entender cada línea del recibo y por la [calculadora de indemnización por despido](/calculadoras/indemnizacion-despido/) para saber cuántos años tienes ya convertidos en dinero. Si necesitas el marco completo, la [guía de antigüedad laboral](/guias/antiguedad-laboral/) y el [índice de calculadoras](/calculadoras/) están a un clic.
+Leer la antigüedad es la parte tranquila; calcular su importe y reclamarlo, la que da resultado. Pasa por la [calculadora de antigüedad](/calculadoras/antiguedad/) para ver tu plus por tramos, por la [calculadora de nómina](/calculadoras/nomina/) para entender cada línea del recibo y por la [calculadora de indemnización por despido](/calculadoras/despido/) para saber cuántos años tienes ya convertidos en dinero. Si necesitas el marco completo, la [guía de antigüedad laboral](/guias/antiguedad-laboral/) y el [índice de calculadoras](/calculadoras/) están a un clic.

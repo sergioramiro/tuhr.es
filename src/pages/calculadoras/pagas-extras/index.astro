@@ -4,8 +4,8 @@ import ComparativaPagas from '../../../components/calculadoras/ComparativaPagas'
 ---
 
 <Layout
-  title="Calculadora de pagas extras — 12 vs 14 pagas | tuhr.es"
-  description="Compara 12 pagas vs 14 pagas y descubre qué opción te conviene más. Calcula la diferencia mensual y anual según tu salario bruto."
+  title="Calculadora de pagas extras 2026: cuánto es y si te conviene prorratear | tuhr.es"
+  description="Calcula tu paga extra completa y la parte proporcional que te corresponde. Compara 12 pagas frente a 14 y descubre cuánto pierdes o ganas al prorratear."
 >
   <Fragment slot="json-ld">
     <script type="application/ld+json">
@@ -16,8 +16,56 @@ import ComparativaPagas from '../../../components/calculadoras/ComparativaPagas'
       "url": "https://tuhr.es/calculadoras/pagas-extras/",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
-      "description": "Compara 12 pagas vs 14 pagas y calcula la diferencia según tu salario",
+      "description": "Calcula tu paga extra y compara 12 frente a 14 pagas",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuántas pagas extras son obligatorias?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dos al año como mínimo: una antes de Navidad y otra en el mes que fije el convenio colectivo. El convenio puede establecer una tercera o fijar un importe superior, pero no puede bajar de esas dos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es legal prorratear las pagas extras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, si lo autoriza el convenio colectivo o se pacta individualmente con el trabajador. El prorrateo consiste en dividir las pagas entre doce y cobrarlas cada mes. Sin convenio ni pacto, la empresa no puede imponerlo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo se calcula la parte proporcional si entro a mitad de año?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se divide el importe de la paga entre los días del periodo de devengo y se multiplica por los días trabajados. Si el convenio no dice otra cosa, el devengo es semestral: del 1 de enero al 30 de junio y del 1 de julio al 31 de diciembre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cambia el IRPF si elijo 12 o 14 pagas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El total anual retenido es el mismo, porque el IRPF se calcula sobre el bruto anual. Lo que cambia es la retención mes a mes: con doce pagas el porcentaje mensual es igual, pero en los meses con paga extra la retención de esa nómina es más alta."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cobro la paga extra si me voy antes de que llegue?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, la parte proporcional devengada hasta el día de la baja. Aparece en el finiquito como paga extra prorrateada, igual que las vacaciones no disfrutadas."
+          }
+        }
+      ]
     }
     </script>
   </Fragment>
@@ -38,7 +86,7 @@ import ComparativaPagas from '../../../components/calculadoras/ComparativaPagas'
     <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
       <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de pagas extras</h1>
       <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
-        ¿Te conviene cobrar 12 o 14 pagas? Compara ambas opciones y descubre cuál se adapta mejor a tus necesidades financieras.
+        Calcula cuánto es tu paga extra, cuánto has devengado si entraste o te fuiste a mitad de periodo y si te conviene más cobrar 12 o 14 pagas.
       </p>
     </section>
 
@@ -47,15 +95,82 @@ import ComparativaPagas from '../../../components/calculadoras/ComparativaPagas'
       <ComparativaPagas client:load />
     </section>
 
-    <!-- Info -->
+    <!-- Cuánto -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">12 vs 14 pagas: ¿cuál elegir?</h2>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cuánto es la paga extra y de dónde sale</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>En España, los trabajadores pueden optar entre cobrar en 12 o 14 pagas al año. La diferencia no está en el total, sino en <strong>cómo se distribuye el dinero</strong>.</p>
-          <p><strong>12 pagas:</strong> Recibes un importe mayor cada mes. Las 2 pagas extras se incluyen en cada mensualidad, por lo que tu cheque es más gordo pero no recibes extras en junio y diciembre.</p>
-          <p><strong>14 pagas:</strong> Recibes 12 mensualidades iguales más 2 pagas extraordinarias (generalmente en junio y diciembre). El cheque mensual es menor, pero tienes 2 pagas extra que pueden servir para vacaciones o gastos extraordinarios.</p>
-          <p>El tipo de retención IRPF es el mismo en ambos casos, ya que se calcula sobre la base anual. La única diferencia real es el flujo de caja mensual.</p>
+          <p>El Estatuto de los Trabajadores fija <strong>dos gratificaciones extraordinarias al año</strong> como mínimo: una antes de Navidad y otra en el mes que establezca el convenio, que en la práctica suele ser junio o julio. Tu convenio puede mejorar ese mínimo, con una tercera paga o con un importe superior, pero no puede reducirlo.</p>
+          <p><strong>Cuánto se cobra.</strong> La paga extra no es "un sueldo más" por definición: su importe lo fija el convenio. Lo habitual es que equivalga a una mensualidad de salario base más complementos, pero hay convenios que pagan una cantidad fija anual, y ahí la paga es esa cantidad dividida entre dos.</p>
+          <p><strong>Cuándo se devenga.</strong> El devengo es el periodo en el que generas el derecho a cobrarla. Si el convenio no dice nada, se entiende semestral: del 1 de enero al 30 de junio la de verano, y del 1 de julio al 31 de diciembre la de Navidad. Por eso quien entra en marzo no cobra la paga completa en junio, sino la mitad aproximadamente.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proporcional -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula la parte proporcional</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>La fórmula es una regla de tres: <em>importe de la paga × días trabajados ÷ días del periodo de devengo</em>.</p>
+          <p>Para una paga semestral, el divisor son 182 días (o 183 en el segundo semestre). Si entras el 1 de abril, has trabajado 91 días de ese semestre: cobras la mitad de la paga.</p>
+          <p><strong>Si te vas antes.</strong> La parte devengada y no cobrada se abona en el finiquito. Es un concepto que mucha gente no revisa y que en un salario medio son varios cientos de euros.</p>
+          <p><strong>Si te suben el sueldo a mitad de periodo.</strong> La paga se calcula con el salario vigente en el momento del devengo, salvo que el convenio diga otra cosa. Si la subida es retroactiva, la paga se regulariza con ella.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 vs 14 -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">12 frente a 14 pagas: qué cambia de verdad</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>El total anual no cambia. Cobres en doce o en catorce, tu bruto anual es el mismo y también lo es lo que se retiene de IRPF al final del año, porque el cálculo se hace sobre la base anual.</p>
+          <p><strong>Lo que cambia es el flujo de caja.</strong> Con catorce pagas cobras menos cada mes y recibes dos golpes de dinero al año. Con doce, el mismo dinero repartido en mensualidades más altas. Para quien tiene problemas de liquidez mensual, el prorrateo es una ayuda real; para quien sabe gestionarse, las pagas completas funcionan como un ahorro forzoso.</p>
+          <p><strong>Ojo con dos efectos secundarios.</strong> El primero: con doce pagas, la base de cotización mensual es más alta, lo que puede elevar ligeramente la prestación por desempleo o baja en los meses previos al cese. El segundo: la indemnización por despido no cambia, porque se calcula sobre el salario anual, no sobre cómo lo repartes.</p>
+          <p><strong>¿Puede la empresa imponer el prorrateo?</strong> No. El prorrateo necesita autorización del convenio o pacto individual. Si tu nómina viene prorrateada sin que hayas firmado nada ni lo prevea el convenio, puedes reclamar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplo -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplo resuelto</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Salario base de 1.400 € con complemento de 200 €, dos pagas de 1.600 € cada una y alta en la empresa el 15 de abril.</p>
+          <p><strong>Paga de verano (devengo 1 enero - 30 junio):</strong> has trabajado 77 días de 182. Importe: 1.600 × 77 ÷ 182 = 677 €.</p>
+          <p><strong>Paga de Navidad:</strong> devengo completo, 1.600 €.</p>
+          <p><strong>Total del año:</strong> 2.277 € en pagas, frente a los 3.200 € de quien lleva todo el año. La diferencia es exactamente lo devengado antes de tu entrada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <h3 class="font-bold text-on-surface">¿Cuántas pagas extras son obligatorias?</h3>
+          <p>Dos al año como mínimo: una antes de Navidad y otra en el mes que fije el convenio. El convenio puede mejorar esa cifra, nunca reducirla.</p>
+          <h3 class="font-bold text-on-surface">¿Es legal prorratear las pagas?</h3>
+          <p>Sí, si lo autoriza el convenio o se pacta individualmente. Sin convenio ni pacto, la empresa no puede imponerlo.</p>
+          <h3 class="font-bold text-on-surface">¿Cómo calculo la parte proporcional si entro a mitad de año?</h3>
+          <p>Importe de la paga por días trabajados dividido entre los días del periodo de devengo, que en semestral son 182 o 183 días.</p>
+          <h3 class="font-bold text-on-surface">¿Cambia el IRPF con 12 o 14 pagas?</h3>
+          <p>El total anual retenido es el mismo; cambia cómo se reparte mes a mes. Con doce pagas la retención mensual es más alta que con catorce en los meses sin extra.</p>
+          <h3 class="font-bold text-on-surface">¿Cobro la paga extra si me voy antes?</h3>
+          <p>Sí, la parte proporcional devengada. Aparece en el finiquito junto a las vacaciones no disfrutadas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Relacionados -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-md font-bold text-on-surface mb-space-md">Sigue calculando</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Si estás calculando una salida, el <a href="/calculadoras/finiquito/" class="text-primary hover:underline font-medium">finiquito</a> incluye las pagas prorrateadas y las vacaciones. Y si lo que quieres es el neto de tu nómina mes a mes, usa la <a href="/calculadoras/nomina/" class="text-primary hover:underline font-medium">calculadora de nómina</a>.</p>
         </div>
       </div>
     </section>

@@ -149,7 +149,7 @@ Tiene la duración que tenga la medida y, en los ETOP, también depende de lo qu
 
 ### ¿Y si me despiden al final del ERTE?
 
-La relación laboral no se rompe por el ERTE, pero si la empresa no te reincorpora o te despide después, los números cambian por completo porque ahí entran indemnización y finiquito. Pásalo por la [calculadora de indemnización por despido](/calculadoras/indemnizacion-despido/) y lee [cuánto cobro si me despiden](/blog/cuanto-cobro-si-me-despiden/).
+La relación laboral no se rompe por el ERTE, pero si la empresa no te reincorpora o te despide después, los números cambian por completo porque ahí entran indemnización y finiquito. Pásalo por la [calculadora de indemnización por despido](/calculadoras/despido/) y lee [cuánto cobro si me despiden](/blog/cuanto-cobro-si-me-despiden/).
 
 ### ¿Qué reviso si el pago no coincide con lo que esperaba?
 
@@ -159,4 +159,4 @@ Compáralo con tu resolución de reconocimiento (ahí está la base reguladora u
 
 ## Tus herramientas de tuhr.es
 
-Calcular el ERTE es la mitad del trabajo; la otra mitad es revisar que lo que te llega coincide con lo que te pertenece. En tuhr.es tienes la [calculadora de paro](/calculadoras/paro/) para la prestación contributiva, la [calculadora de indemnización por despido](/calculadoras/indemnizacion-despido/) para lo que pasa después del expediente y la [calculadora de finiquito](/calculadoras/finiquito/) para las cantidades devengadas al final. Si prefieres leer antes de calcular, empieza por el [índice de calculadoras](/calculadoras/) o por la [guía de derechos del trabajador](/guias/derechos-trabajador-despido/).
+Calcular el ERTE es la mitad del trabajo; la otra mitad es revisar que lo que te llega coincide con lo que te pertenece. En tuhr.es tienes la [calculadora de paro](/calculadoras/paro/) para la prestación contributiva, la [calculadora de indemnización por despido](/calculadoras/despido/) para lo que pasa después del expediente y la [calculadora de finiquito](/calculadoras/finiquito/) para las cantidades devengadas al final. Si prefieres leer antes de calcular, empieza por el [índice de calculadoras](/calculadoras/) o por la [guía de derechos del trabajador](/guias/derechos-trabajador-despido/).

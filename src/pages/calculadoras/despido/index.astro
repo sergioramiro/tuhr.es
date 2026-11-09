@@ -4,20 +4,68 @@ import SimuladorDespido from '../../../components/calculadoras/SimuladorDespido'
 ---
 
 <Layout
-  title="Calculadora de despido: simula tu indemnización 2026 | tuhr.es"
-  description="Calcula tu indemnización por despido (procedente, improcedente u objetivo) y cuánto te corresponde de finiquito. Herramienta gratuita y al instante."
+  title="Calculadora de despido e indemnización 2026: cuánto te corresponde | tuhr.es"
+  description="Calcula tu indemnización por despido: 33 días por año si es improcedente, 20 si es objetivo, y el finiquito completo. Con baremo doble pre y post 2012."
 >
   <Fragment slot="json-ld">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Calculadora de despido",
+      "name": "Calculadora de despido e indemnización",
       "url": "https://tuhr.es/calculadoras/despido/",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
-      "description": "Calcula tu indemnización por despido (procedente, improcedente u objetivo) y cuánto te corresponde de finiquito",
+      "description": "Calcula tu indemnización por despido (procedente, improcedente u objetivo) y el finiquito",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto me pagan por un despido improcedente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "33 días de salario por año trabajado, con un máximo de 24 mensualidades. En la parte de la relación laboral anterior al 12 de febrero de 2012 se aplican 45 días por año, con un tope global de 720 días de salario."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Y por un despido objetivo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "20 días de salario por año trabajado, con un máximo de 12 mensualidades. Requiere causa económica, técnica, organizativa o de producción, comunicación escrita y 15 días de preaviso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo tengo para impugnar el despido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "20 días hábiles desde el día siguiente a la notificación. Antes hay que presentar papeleta de conciliación ante el SMAC, que suspende el plazo. Si no se impugna en plazo, el despido queda consentido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué diferencia hay entre indemnización y finiquito?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El finiquito siempre se cobra: es el saldo pendiente de salario, pagas extras proporcionales y vacaciones no disfrutadas. La indemnización solo existe en determinados despidos y es la compensación por perder el empleo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Debo firmar el finiquito el mismo día del despido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No estás obligado a firmar en el momento ni conforme. Puedes firmar como recibido sin estar de acuerdo, o llevártelo para revisarlo. Firmar conforme no impide impugnar el despido, pero complica reclamar cantidades."
+          }
+        }
+      ]
     }
     </script>
   </Fragment>
@@ -36,9 +84,9 @@ import SimuladorDespido from '../../../components/calculadoras/SimuladorDespido'
 
     <!-- Header -->
     <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
-      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de despido</h1>
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de despido e indemnización</h1>
       <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
-      ¿Te han despedido? Simula tu indemnización según el tipo de despido (improcedente, objetivo, temporal o procedente) y tus años trabajados. Incluye baremo doble para contratos pre/post 2012.
+        ¿Te han despedido y no sabes cuánto te corresponde? Simula la indemnización según el tipo de despido, tus años trabajados y tu salario, con el baremo doble para relaciones anteriores y posteriores a 2012.
       </p>
     </section>
 
@@ -47,15 +95,88 @@ import SimuladorDespido from '../../../components/calculadoras/SimuladorDespido'
       <SimuladorDespido client:load />
     </section>
 
-    <!-- Info -->
+    <!-- Tipos -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Tipos de despido en España</h2>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Los cuatro tipos de despido y lo que paga cada uno</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p><strong>Despido improcedente:</strong> El empresario no puede justificar la causa del despido. La indemnización es de 33 días de salario por año trabajado (para contratos celebrados a partir del 12 de febrero de 2012), con un máximo de 24 mensualidades. Para contratos anteriores a esa fecha, son 45 días/año con tope de 42 mensualidades.</p>
-          <p><strong>Despido objetivo:</strong> Se basa en causas económicas, técnicas, organizativas o de producción. La indemnización es de 20 días de salario por año trabajado, con un máximo de 12 mensualidades.</p>
-          <p><strong>Despido procedente:</strong> Se debe a un incumplimiento grave y culpable del trabajador. No genera indemnización, salvo que el convenio colectivo establezca una mejora.</p>
-          <p>En todos los casos, el trabajador tiene derecho al finiquito (parte proporcional de vacaciones, pagas extras pendientes y día del mes).</p>
+          <p><strong>Improcedente.</strong> La empresa no acredita la causa o se equivoca en la forma. Es el escenario más habitual cuando se impugna y el que mejor paga: <strong>33 días por año trabajado</strong>, con tope de 24 mensualidades. Si la relación empezó antes del 12 de febrero de 2012, los años anteriores a esa fecha se calculan a 45 días por año, con un tope conjunto de 720 días de salario.</p>
+          <p><strong>Objetivo.</strong> Se alega causa económica, técnica, organizativa o de producción. Paga <strong>20 días por año</strong> con tope de 12 mensualidades, y exige carta escrita con la causa, 15 días de preaviso y, si la empresa es grande, el periodo de consultas previo.</p>
+          <p><strong>Procedente.</strong> Hay incumplimiento grave y culpable del trabajador, acreditado. No genera indemnización: solo finiquito. Si el despido se declara procedente, el trabajador no cobra indemnización aunque lleve veinte años.</p>
+          <p><strong>Nulo.</strong> Cuando la causa es discriminatoria o vulnera derechos fundamentales, el despido es nulo: readmisión obligatoria y salarios de tramitación. No es una indemnización, es la vuelta al puesto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo se calcula -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula la indemnización paso a paso</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p><strong>Paso 1 — el salario regulador.</strong> No es tu neto ni tu base de cotización: es el salario diario bruto incluyendo prorrata de pagas extras, más los complementos fijos que percibas habitualmente. Se calcula tomando el bruto anual y dividiéndolo entre 365.</p>
+          <p><strong>Paso 2 — los días por año.</strong> 33 días por año para el despido improcedente, 20 para el objetivo. Se prorratean los meses: si llevas 7 años y 5 meses, esos cinco meses cuentan como 5/12 de año.</p>
+          <p><strong>Paso 3 — el doble baremo.</strong> Si la relación empezó antes del 12 de febrero de 2012, se parte en dos tramos: años antes de esa fecha a 45 días por año y años posteriores a 33. La suma tiene un tope global de 720 días, salvo que el tramo antiguo por sí solo ya supere ese número.</p>
+          <p><strong>Paso 4 — el tope.</strong> Improcedente: 24 mensualidades. Objetivo: 12 mensualidades. Si el resultado lo supera, se recorta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Salario regulador -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">El salario regulador: donde se pierde más dinero</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Casi todas las discusiones sobre una indemnización acaban en el mismo sitio: qué salario se toma como base. La empresa suele ofrecer el salario base pelado; lo correcto es el <strong>salario bruto anual dividido entre 365</strong>, incluyendo todo lo que percibes de forma habitual.</p>
+          <p><strong>Qué suma:</strong> salario base, complementos fijos (antigüedad, plus convenio, turnicidad, nocturnidad), prorrata de pagas extras y la media de los variables de los últimos doce meses (comisiones, incentivos, horas extra habituales).</p>
+          <p><strong>Qué no suma:</strong> dietas y pluses extrasalariales, gastos de desplazamiento, ni conceptos que dependen de circunstancias que ya no concurren.</p>
+          <p>La diferencia no es menor. Con un salario base de 1.500 € y 300 € de complementos más pagas prorrateadas, el salario regulador diario pasa de 49,3 € a 59,1 €. Sobre 264 días de indemnización son <strong>2.587 € de diferencia</strong> en el mismo despido.</p>
+          <p>Antes de firmar nada, reúne las doce últimas nóminas y comprueba qué conceptos se repitieron todos los meses: esos entran.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ejemplo -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplo resuelto</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>Salario bruto anual de 28.000 € (76,71 € al día), ocho años de antigüedad completos y despido declarado improcedente.</p>
+          <p><strong>Cálculo:</strong> 8 años × 33 días = 264 días.</p>
+          <p><strong>Importe:</strong> 264 × 76,71 = 20.251 €.</p>
+          <p><strong>El mismo caso como objetivo:</strong> 8 × 20 = 160 días, que son 12.274 €, y el tope de 12 mensualidades no llega a aplicarse.</p>
+          <p><strong>Si llevara 22 años</strong> y hubiera empezado en 2001, la parte de 2001 a 2012 iría a 45 días por año y el resto a 33, con la comprobación del tope de 720 días.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qué hacer -->
+    <section class="px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Qué hacer en los 20 días siguientes</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <p>El plazo para impugnar es de <strong>20 días hábiles</strong> desde el día siguiente a la notificación, y corren rápido. Antes de demandar hay que presentar papeleta de conciliación ante el SMAC, que suspende el plazo mientras se celebra el acto.</p>
+          <p>Antes de eso, tres cosas: pide copia de la carta de despido y del finiquito, descarga tu informe de vida laboral y guarda cualquier prueba de la relación real (correos, horarios, testigos). Si el despido es objetivo, revisa que la carta explique la causa con números: sin causa acreditada, se convierte en improcedente.</p>
+          <p>Y no firmes el finiquito como conforme si no estás de acuerdo con las cantidades. Puedes firmar "recibido sin estar de acuerdo", que no te quita derechos.</p>
+          <p>Para el detalle de cada concepto del finiquito, la guía <a href="/guias/todo-sobre-tu-finiquito/" class="text-primary hover:underline font-medium">todo sobre tu finiquito</a> y la <a href="/calculadoras/finiquito/" class="text-primary hover:underline font-medium">calculadora de finiquito</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
+      <div class="max-w-[72rem] mx-auto">
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
+        <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
+          <h3 class="font-bold text-on-surface">¿Cuánto me pagan por un despido improcedente?</h3>
+          <p>33 días de salario por año trabajado, con tope de 24 mensualidades. La parte anterior al 12 de febrero de 2012 va a 45 días por año, con tope global de 720 días.</p>
+          <h3 class="font-bold text-on-surface">¿Y por un despido objetivo?</h3>
+          <p>20 días por año, con tope de 12 mensualidades. Exige causa acreditada, carta escrita y 15 días de preaviso.</p>
+          <h3 class="font-bold text-on-surface">¿Cuánto tiempo tengo para impugnar?</h3>
+          <p>20 días hábiles desde la notificación. La papeleta de conciliación ante el SMAC suspende el plazo.</p>
+          <h3 class="font-bold text-on-surface">¿Qué diferencia hay entre indemnización y finiquito?</h3>
+          <p>El finiquito siempre se cobra (salario, extras y vacaciones pendientes). La indemnización solo existe en determinados despidos.</p>
+          <h3 class="font-bold text-on-surface">¿Debo firmar el finiquito el mismo día?</h3>
+          <p>No estás obligado. Puedes firmar como recibido sin estar de acuerdo o llevártelo para revisarlo.</p>
         </div>
       </div>
     </section>

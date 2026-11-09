@@ -7,3 +7,13 @@
   from = "/blog/finiquito-errores/"
   to = "/guias/todo-sobre-tu-finiquito/"
   status = 301
+
+# Consolidación del cluster de despido: /calculadoras/despido/ es la URL canónica
+# (más enlaces internos y simulador completo). La calculadora de indemnización
+# duplicaba la intención y las dos se repartían las mismas consultas en GSC.
+# force = true es necesario porque la página existe como archivo estático.
+[[redirects]]
+  from = "/calculadoras/indemnizacion-despido/"
+  to = "/calculadoras/despido/"
+  status = 301
+  force = true
