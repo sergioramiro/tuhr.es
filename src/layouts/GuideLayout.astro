@@ -9,6 +9,8 @@ export interface Props {
   readTime?: string;
   authorName?: string;
   authorRole?: string;
+  /** Destino del CTA «Abrir simulador gratuito». */
+  ctaHref?: string;
 }
 
 const {
@@ -19,6 +21,7 @@ const {
   readTime = '5 min de lectura',
   authorName = 'Gabinete Jurídico tuhr.es',
   authorRole = 'Especialistas en Estatuto de los Trabajadores',
+  ctaHref = '/calculadoras/',
 } = Astro.props;
 
 const breadcrumbSchema = JSON.stringify({
@@ -129,13 +132,13 @@ const breadcrumbSchema = JSON.stringify({
           <div class="bg-primary rounded-xl p-space-lg text-on-primary shadow-md">
             <div class="flex items-center gap-2 text-primary-fixed mb-space-xs font-caption text-caption font-bold">
               <span class="material-symbols-outlined text-[16px]">verified</span>
-              Herramienta oficial tuhr.es
+              Herramienta de tuhr.es
             </div>
             <h3 class="font-headline-h3 text-headline-h3 text-on-primary mb-2">Calculadora Laboral</h3>
             <p class="font-body-small text-body-small text-on-primary-container mb-space-md">
-              Genera tu borrador oficial en PDF introduciendo tus datos laborales.
+              Genera tu borrador en PDF introduciendo tus datos laborales.
             </p>
-            <a class="w-full flex items-center justify-center gap-2 px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary-fixed font-body-bold text-body-small hover:bg-secondary-fixed transition-colors" href="/calculadoras/">
+            <a class="w-full flex items-center justify-center gap-2 px-space-md py-2.5 rounded-full bg-secondary-container text-on-secondary-fixed font-body-bold text-body-small hover:bg-secondary-fixed transition-colors" href={ctaHref}>
               <span>Abrir simulador gratuito</span>
               <span class="material-symbols-outlined text-[18px]">launch</span>
             </a>

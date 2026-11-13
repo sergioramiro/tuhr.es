@@ -3,22 +3,23 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
 ---
 
 <GuideLayout
-  title="Antigüedad laboral: tramos, cuánto se cobra por año y cuatrienio | tuhr.es"
-  description="Guía completa sobre antigüedad laboral: tramos de antigüedad, cuánto se cobra por año trabajado, cuatrienio, plus de antigüedad y tabla de cálculo actualizada 2026."
+  title="Antigüedad laboral: tramos y plus según tu convenio | tuhr.es"
+  description="Qué es la antigüedad laboral, cómo se cuentan bienios, trienios y cuatrienios, y por qué el plus depende de tu convenio y no de una tabla general."
   readTime="8 min de lectura"
   category="Derechos Laborales"
+  ctaHref="/calculadoras/antiguedad/"
 >
   <Fragment slot="lead">
-    <p>La antigüedad laboral determina tu indemnización, tu indemnización por despido y derechos como trabajador. En esta guía explicamos los tramos, el cuatrienio, cómo se calcula el plus y qué pasa si te despiden.</p>
+    <p>La antigüedad laboral determina tu indemnización por despido y, en algunos convenios, un complemento salarial. Aquí explicamos cómo se cuentan los tramos, cómo se calcula el plus y por qué no existe un porcentaje general aplicable a todo el mundo.</p>
   </Fragment>
 
   <Fragment slot="toc">
     <a href="#que-es-antiguedad" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Qué es la antigüedad laboral</a>
-    <a href="#tramos" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Tabla de tramos por antigüedad</a>
-    <a href="#cuatrienio" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Cómo se calcula el cuatrienio</a>
-    <a href="#plus-antiguedad" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Plus de antigüedad: fórmula</a>
-    <a href="#ejemplos" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Ejemplos prácticos</a>
-    <a href="#despido" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Antigüedad y despido</a>
+    <a href="#tramos" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Bienios, trienios y cuatrienios</a>
+    <a href="#plus-antiguedad" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">El plus y su base legal</a>
+    <a href="#formula" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Fórmula de cálculo</a>
+    <a href="#ejemplos" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Tres convenios hipotéticos</a>
+    <a href="#despido" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Antigüedad e indemnización</a>
     <a href="#faq" class="block py-1 px-2 rounded hover:bg-surface-container-low transition-colors">Preguntas frecuentes</a>
   </Fragment>
 
@@ -26,109 +27,185 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Antigüedad laboral: tramos, cuánto se cobra por año y cuatrienio",
-    "description": "Guía completa sobre antigüedad laboral: tramos, cuatrienio, plus de antigüedad y tabla de cálculo 2026.",
+    "headline": "Antigüedad laboral: tramos y plus según tu convenio",
+    "description": "Cómo se cuentan los tramos de antigüedad, cómo se calcula el plus según el convenio y qué relación tiene con la indemnización por despido.",
     "url": "https://tuhr.es/guias/antiguedad-laboral/",
     "author": { "@type": "Organization", "name": "tuhr.es" },
     "publisher": { "@type": "Organization", "name": "tuhr.es" }
   }
   </script>
 
-  <!-- Qué es la antigüedad -->
-  <h1 id="que-es-antiguedad" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Antigüedad laboral: tramos, cuánto se cobra por año y cuatrienio</h1>
-  <p class="text-body-default text-text-secondary mb-space-md">La antigüedad laboral es el tiempo que llevas trabajando de forma continua en una empresa. Se mide desde tu fecha de alta en la Seguridad Social hasta la fecha de cálculo (baja, despido o momento presente).</p>
-  <p class="text-body-default text-text-secondary mb-space-md">La antigüedad influye directamente en:</p>
-  <ul class="list-disc list-inside text-body-default text-text-secondary space-y-2 mb-space-lg pl-space-md">
-    <li><strong class="text-on-surface">Indemnización por despido</strong> — cuantos más años, mayor indemnización</li>
-    <li><strong class="text-on-surface">Plus de antigüedad</strong> — si tu convenio lo recoge, cobras más por cada 5 años</li>
-    <li><strong class="text-on-surface">Preaviso en despidos</strong> — 15 días mínimo, puede aumentar por convenio</li>
-    <li><strong class="text-on-surface">Derechos laborales</strong> — ciertos permisos y beneficios dependen de los años trabajados</li>
-  </ul>
+  <h1 id="que-es-antiguedad" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Antigüedad laboral: tramos y plus según tu convenio</h1>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    La antigüedad laboral es el tiempo que llevas trabajando de forma continua en una empresa. Se cuenta desde
+    la fecha de inicio de la relación laboral hasta la fecha de cálculo: hoy, una baja o un despido.
+  </p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Determina la indemnización por despido, la preferencia de permanencia en un despido colectivo, ciertos
+    permisos y, en algunos convenios, un complemento salarial: el plus de antigüedad. Ese plus no es
+    automático ni tiene un porcentaje legal común, y ahí es donde se publican la mayoría de errores.
+  </p>
 
-  <p class="text-body-default text-text-secondary mb-space-lg">💡 <a href="/calculadoras/antiguedad/" class="text-primary hover:underline font-medium">Calcula tu antigüedad y plus con nuestra herramienta gratuita</a>.</p>
+  <p class="text-body-default text-text-secondary mb-space-lg">
+    <a
+      href="/calculadoras/antiguedad/"
+      class="inline-block bg-primary text-white font-semibold px-space-lg py-space-sm rounded-button hover:opacity-90 transition-opacity no-underline"
+    >
+      Abrir simulador gratuito
+    </a>
+  </p>
 
-  <!-- Tramos -->
-  <h2 id="tramos" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Tabla de tramos por antigüedad</h2>
-  <p class="text-body-default text-text-secondary mb-space-md">El Estatuto de los Trabajadores no establece tramos fijos, pero los convenios colectivos suelen usar esta clasificación estándar para calcular el plus de antigüedad:</p>
+  <h2 id="tramos" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Bienios, trienios y cuatrienios: cómo se cuentan</h2>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Un tramo es el número de años que hay que completar para subir un escalón. Su duración la fija el
+    convenio; el Estatuto no impone ninguna. Los nombres habituales son estos:
+  </p>
 
   <div class="overflow-x-auto mb-space-lg">
     <table class="w-full text-left border-collapse bg-surface-card rounded-xl overflow-hidden shadow-card">
       <thead>
         <tr class="border-b border-outline-variant/30 bg-surface-container-low">
-          <th class="p-space-md text-body-small font-bold text-on-surface">Tramo</th>
-          <th class="p-space-md text-body-small font-bold text-on-surface">Años trabajados</th>
-          <th class="p-space-md text-body-small font-bold text-on-surface">Plus típico (% sobre base)</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Nombre</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Duración</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Qué significa</th>
         </tr>
       </thead>
       <tbody class="text-body-small text-text-secondary">
-        <tr class="border-b border-outline-variant/20"><td class="p-space-md">Inicial</td><td class="p-space-md">1 – 4 años</td><td class="p-space-md">Sin plus / 0%</td></tr>
-        <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">Primer cuatrienio</td><td class="p-space-md">5 – 9 años</td><td class="p-space-md">5% – 10%</td></tr>
-        <tr class="border-b border-outline-variant/20"><td class="p-space-md">Segundo cuatrienio</td><td class="p-space-md">10 – 14 años</td><td class="p-space-md">10% – 15%</td></tr>
-        <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">Tercer cuatrienio</td><td class="p-space-md">15 – 19 años</td><td class="p-space-md">15% – 20%</td></tr>
-        <tr class="border-b border-outline-variant/20"><td class="p-space-md">Cuarto cuatrienio</td><td class="p-space-md">20 – 24 años</td><td class="p-space-md">20% – 25%</td></tr>
-        <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">Quinto cuatrienio</td><td class="p-space-md">25 – 29 años</td><td class="p-space-md">25% – 30%</td></tr>
-        <tr><td class="p-space-md">Máximo</td><td class="p-space-md">30+ años</td><td class="p-space-md">30% – 40%</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="p-space-md">Bienio</td><td class="p-space-md">2 años</td><td class="p-space-md">Un escalón cada dos años completos</td></tr>
+        <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md">Trienio</td><td class="p-space-md">3 años</td><td class="p-space-md">Un escalón cada tres años completos</td></tr>
+        <tr class="border-b border-outline-variant/20"><td class="p-space-md">Cuatrienio</td><td class="p-space-md">4 años</td><td class="p-space-md">Un escalón cada cuatro años completos</td></tr>
+        <tr><td class="p-space-md">Quinquenio</td><td class="p-space-md">5 años</td><td class="p-space-md">Un escalón cada cinco años completos</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="text-body-small text-text-muted mb-space-lg">* Los porcentajes varían según el convenio colectivo de cada sector. Consulta el tuyo para datos exactos.</p>
 
-  <!-- Cuatrienio -->
-  <h2 id="cuatrienio" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Cómo se calcula el cuatrienio</h2>
-  <p class="text-body-default text-text-secondary mb-space-md">El <strong class="text-on-surface">cuatrienio</strong> es el periodo de 4 años que se usa como unidad de medida para incrementar el plus de antigüedad. Cada vez que acumulas 4 años de antigüedad, pasas al siguiente tramo y tu plus aumenta.</p>
-  <p class="text-body-default text-text-secondary mb-space-md">El cálculo es sencillo:</p>
-  <div class="bg-surface-container-low rounded-xl p-space-lg mb-space-lg">
-    <p class="text-body-bold text-on-surface mb-space-sm">Fórmula del cuatrienio</p>
-    <p class="text-body-default text-text-secondary">Número de cuatrienios = Años de antigüedad ÷ 4</p>
-    <p class="text-body-small text-text-muted mt-2">Ejemplo: 14 años de antigüedad = 3 cuatrienios completos (14 ÷ 4 = 3,5 → se redondea hacia abajo a 3).</p>
-  </div>
-  <p class="text-body-default text-text-secondary mb-space-lg">Los meses restantes (menos de 4 años) no generan incremento hasta completar el siguiente cuatrienio.</p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    La cuenta se hace con años completos y se acumula. Con un cuatrienio, a los 4 años tienes un tramo, a los
+    8 dos, a los 12 tres. Si llevas 7 años y 10 meses tienes un cuatrienio, no dos: los meses del tramo en
+    curso no suman hasta completarlo, salvo que el convenio reconozca expresamente la parte proporcional.
+  </p>
+  <p class="text-body-default text-text-secondary mb-space-lg">
+    Esta tabla no lleva porcentajes a propósito. Si has visto tablas con «5 % a los cinco años, 10 % a los
+    diez», proceden de un convenio concreto presentado como si fuera la norma general, y no lo es.
+  </p>
 
-  <!-- Plus de antigüedad -->
-  <h2 id="plus-antiguedad" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Plus de antigüedad: fórmula</h2>
-  <p class="text-body-default text-text-secondary mb-space-md">El plus de antigüedad es una retribución extra que reconocen muchos convenios colectivos. No es un derecho universal del Estatuto, sino que depende de lo que diga tu convenio.</p>
+  <h2 id="plus-antiguedad" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">El plus de antigüedad y su base legal</h2>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    El artículo 25.1 del Estatuto de los Trabajadores establece que el trabajador «podrá tener derecho a una
+    promoción económica en los términos fijados en convenio colectivo o contrato individual». Esa es toda la
+    regla legal: no hay porcentaje, ni tramo, ni base de cálculo. Todo lo demás lo pone el convenio.
+  </p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    El apartado 25.2 añade que esto se entiende «sin perjuicio de los derechos adquiridos o en curso de
+    adquisición en el tramo temporal correspondiente». La ley sí reconoce que existen tramos y que lo ya
+    generado no se pierde, pero remite su contenido al convenio.
+  </p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Consecuencia práctica: si tu convenio no recoge un plus de antigüedad, no existe y no hay cantidad que
+    reclamar por esa vía. Y si lo recoge, es obligatorio y no renunciable: la empresa no puede dejar de
+    aplicarlo ni pactar su supresión con un trabajador por separado.
+  </p>
+
+  <h2 id="formula" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Cómo se calcula: fórmula</h2>
   <div class="bg-surface-container-low rounded-xl p-space-lg mb-space-lg">
     <p class="text-body-bold text-on-surface mb-space-sm">Fórmula general</p>
-    <p class="text-body-default text-text-secondary">Plus = (Salario base × Porcentaje del tramo) × (Años completos en empresa ÷ Total años del tramo)</p>
-    <p class="text-body-small text-text-muted mt-2">En la práctica, muchos convenios aplican el porcentaje completo una vez alcanzado el tramo, sin prorratear por años intermedios.</p>
+    <p class="text-body-default text-text-secondary">
+      Tramos completados = años de antigüedad ÷ duración del tramo (redondeando hacia abajo)
+    </p>
+    <p class="text-body-default text-text-secondary mt-2">
+      Plus anual = base del convenio × (tramos × incremento por tramo), si el incremento es un porcentaje
+    </p>
+    <p class="text-body-default text-text-secondary mt-2">
+      Plus anual = tramos × importe por tramo, si el incremento es una cantidad fija
+    </p>
+    <p class="text-body-small text-text-muted mt-3">
+      Si el convenio fija un límite, se aplica al final: el porcentaje o el importe no puede superarlo.
+    </p>
   </div>
-  <p class="text-body-default text-text-secondary mb-space-lg">⚠️ <strong class="text-on-surface">Importante:</strong> El plus de antigüedad tributa como rendimiento del trabajo sujeto a IRPF y cotiza a la Seguridad Social.</p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Hay tres decisiones que cambian el resultado y que solo el convenio puede resolver:
+  </p>
+  <ul class="list-disc list-inside text-body-default text-text-secondary space-y-2 mb-space-md pl-space-md">
+    <li><strong class="text-on-surface">La base.</strong> Casi siempre el salario base del grupo y nivel, no el bruto anual con complementos. Aplicar el porcentaje sobre el bruto infla el resultado.</li>
+    <li><strong class="text-on-surface">El prorrateo del tramo en curso.</strong> Lo normal es que no cuente; algunos convenios sí reconocen la parte proporcional.</li>
+    <li><strong class="text-on-surface">El límite.</strong> Muchos convenios topan el plus, y a partir de ahí el complemento deja de crecer aunque sigas sumando años.</li>
+  </ul>
+  <p class="text-body-default text-text-secondary mb-space-lg">
+    ⚠️ El plus de antigüedad es salario: cotiza a la Seguridad Social y tributa por IRPF como rendimiento del
+    trabajo.
+  </p>
 
-  <!-- Ejemplos -->
-  <h2 id="ejemplos" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Ejemplos prácticos</h2>
-  <p class="text-body-default text-text-secondary mb-space-md">Veamos cuánto cobrarías de plus de antigüedad según tu salario y años trabajados, usando un convenio con escalón del 5% por cuatrienio:</p>
+  <h2 id="ejemplos" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Tres convenios hipotéticos con la misma antigüedad</h2>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Los tres convenios de esta tabla son inventados y sirven solo para ilustrar. Los tres trabajadores llevan
+    exactamente 10 años en la empresa:
+  </p>
 
   <div class="overflow-x-auto mb-space-lg">
     <table class="w-full text-left border-collapse bg-surface-card rounded-xl overflow-hidden shadow-card">
       <thead>
         <tr class="border-b border-outline-variant/30 bg-surface-container-low">
-          <th class="p-space-md text-body-small font-bold text-on-surface">Salario base</th>
-          <th class="p-space-md text-body-small font-bold text-on-surface">5 años</th>
-          <th class="p-space-md text-body-small font-bold text-on-surface">10 años</th>
-          <th class="p-space-md text-body-small font-bold text-on-surface">15 años</th>
-          <th class="p-space-md text-body-small font-bold text-on-surface">20 años</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Convenio hipotético</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Regla</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Cálculo</th>
+          <th class="p-space-md text-body-small font-bold text-on-surface">Plus anual</th>
         </tr>
       </thead>
       <tbody class="text-body-small text-text-secondary">
-        <tr class="border-b border-outline-variant/20"><td class="p-space-md font-semibold text-on-surface">25.000€/año</td><td class="p-space-md">104€/mes</td><td class="p-space-md">208€/mes</td><td class="p-space-md">313€/mes</td><td class="p-space-md">417€/mes</td></tr>
-        <tr class="border-b border-outline-variant/20 bg-surface-container-low/30"><td class="p-space-md font-semibold text-on-surface">35.000€/año</td><td class="p-space-md">146€/mes</td><td class="p-space-md">292€/mes</td><td class="p-space-md">438€/mes</td><td class="p-space-md">583€/mes</td></tr>
-        <tr><td class="p-space-md font-semibold text-on-surface">50.000€/año</td><td class="p-space-md">208€/mes</td><td class="p-space-md">417€/mes</td><td class="p-space-md">625€/mes</td><td class="p-space-md">833€/mes</td></tr>
+        <tr class="border-b border-outline-variant/20">
+          <td class="p-space-md">A</td>
+          <td class="p-space-md">5 % por cuatrienio sobre 18.000 € de salario base, sin tope</td>
+          <td class="p-space-md">2 tramos → 10 % sobre 18.000 €</td>
+          <td class="p-space-md font-semibold text-on-surface">1.800 €</td>
+        </tr>
+        <tr class="border-b border-outline-variant/20 bg-surface-container-low/30">
+          <td class="p-space-md">B</td>
+          <td class="p-space-md">3 % por bienio sobre 20.000 € de salario base, sin tope</td>
+          <td class="p-space-md">5 tramos → 15 % sobre 20.000 €</td>
+          <td class="p-space-md font-semibold text-on-surface">3.000 €</td>
+        </tr>
+        <tr>
+          <td class="p-space-md">C</td>
+          <td class="p-space-md">400 € al año por trienio, sin base porcentual</td>
+          <td class="p-space-md">3 tramos → 3 × 400 €</td>
+          <td class="p-space-md font-semibold text-on-surface">1.200 €</td>
+        </tr>
       </tbody>
     </table>
   </div>
-  <p class="text-body-small text-text-muted mb-space-lg">* Cálculo: (salario base anual ÷ 12) × 5% × número de cuatrienios. Resultado mensual aproximado.</p>
 
-  <!-- Antigüedad y despido -->
-  <h2 id="despido" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Antigüedad y despido</h2>
-  <p class="text-body-default text-text-secondary mb-space-md">Tu antigüedad es el factor más importante para calcular la indemnización por despido. Cuantos más años, mayor cantidad cobras:</p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Misma antigüedad, tres importes distintos: 1.800 €, 3.000 € y 1.200 €. Eso es exactamente lo que significa
+    que la ley remita al convenio. Cualquier calculadora que te dé una cifra sin preguntarte las reglas te
+    está aplicando el convenio de otra persona.
+  </p>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    Y el límite también muerde. Si el convenio A tuviera un tope del 6 %, esos 10 años darían un 10 % teórico
+    que se quedaría en el 6 %, es decir 1.080 € al año en lugar de 1.800 €. A partir de ahí, seguir sumando
+    años no cambia nada.
+  </p>
+  <p class="text-body-default text-text-secondary mb-space-lg">
+    Puedes probar tus propios datos, incluido el tope, en el
+    <a href="/calculadoras/antiguedad/" class="text-primary hover:underline font-medium">simulador de antigüedad</a>.
+  </p>
+
+  <h2 id="despido" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Antigüedad e indemnización</h2>
+  <p class="text-body-default text-text-secondary mb-space-md">
+    La antigüedad es el factor que más pesa en una indemnización, porque se multiplica por días de salario.
+    Estos son los supuestos y sus cuantías legales:
+  </p>
   <ul class="list-disc list-inside text-body-default text-text-secondary space-y-2 mb-space-md pl-space-md">
-    <li><strong class="text-on-surface">Despido improcedente:</strong> 33 días por año trabajado (tope 24 mensualidades)</li>
-    <li><strong class="text-on-surface">Despido objetivo/procedente:</strong> 20 días por año trabajado (tope 12 mensualidades)</li>
-    <li><strong class="text-on-surface">Fin contrato temporal:</strong> 12 días por año trabajado (tope 24 mensualidades)</li>
+    <li><strong class="text-on-surface">Despido improcedente:</strong> 33 días de salario por año de servicio, con un máximo de 24 mensualidades (art. 56.1 ET). Por los años anteriores al 12 de febrero de 2012 se aplican 45 días por año, con el tope conjunto de la disposición transitoria undécima.</li>
+    <li><strong class="text-on-surface">Despido objetivo:</strong> 20 días de salario por año de servicio, con un máximo de 12 mensualidades (art. 53.1.b ET).</li>
+    <li><strong class="text-on-surface">Despido procedente:</strong> no genera indemnización; solo se abona el finiquito. Los 20 días son del despido objetivo, no del procedente.</li>
+    <li><strong class="text-on-surface">Fin de contrato temporal:</strong> 12 días de salario por año de servicio (art. 49.1.c ET), salvo en los contratos formativos y en los de sustitución, que no la generan.</li>
   </ul>
-  <p class="text-body-default text-text-secondary mb-space-lg">📖 <a href="/guias/derechos-trabajador-despido/" class="text-primary hover:underline font-medium">Consulta nuestra guía completa de derechos del trabajador en caso de despido</a> para entender todos tus derechos.</p>
+  <p class="text-body-default text-text-secondary mb-space-lg">
+    📖 Para el detalle de cada caso tienes la
+    <a href="/guias/derechos-trabajador-despido/" class="text-primary hover:underline font-medium">guía de derechos ante un despido</a>
+    y la <a href="/calculadoras/despido/" class="text-primary hover:underline font-medium">calculadora de despido</a>.
+  </p>
 
-  <!-- FAQ -->
   <h2 id="faq" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Preguntas frecuentes</h2>
   <div class="space-y-space-sm mb-space-lg">
     <details class="bg-surface-card rounded-xl border border-outline-variant/30 shadow-sm group">
@@ -137,7 +214,9 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
         <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
       </summary>
       <div class="px-space-md pb-space-md text-body-default text-text-secondary border-t border-outline-variant/20 pt-space-sm">
-        Sí. La antigüedad se calcula por empresa. Si cambias de trabajo, vuelves a empezar desde cero. La única excepción es el encadenamiento de contratos temporales, donde se puede computar la antigüedad acumulada.
+        Sí, la antigüedad se calcula por empresa. Si te vas y vuelves a entrar, en principio se empieza de
+        cero en la nueva relación. Las excepciones son la sucesión o subrogación empresarial, donde se
+        mantiene, y los encadenamientos de contratos temporales que la ley trata como continuidad.
       </div>
     </details>
     <details class="bg-surface-card rounded-xl border border-outline-variant/30 shadow-sm group">
@@ -146,16 +225,22 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
         <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
       </summary>
       <div class="px-space-md pb-space-md text-body-default text-text-secondary border-t border-outline-variant/20 pt-space-sm">
-        No. El Estatuto de los Trabajadores no obliga a pagar plus de antigüedad. Solo es obligatorio si tu convenio colectivo lo recoge. Muchos convenios industriales y de hostelería sí lo incluyen.
+        No. El Estatuto no obliga a pagarlo: el artículo 25.1 remite a lo que fije el convenio colectivo o el
+        contrato individual. Solo es exigible si tu convenio lo recoge, y entonces la empresa no puede
+        suprimirlo ni pactar su renuncia con cada trabajador.
       </div>
     </details>
     <details class="bg-surface-card rounded-xl border border-outline-variant/30 shadow-sm group">
       <summary class="p-space-md cursor-pointer font-headline-h4 text-headline-h4 text-on-surface hover:text-primary transition-colors list-none flex items-center justify-between">
-        <span>¿Se computan los contratos temporales?</span>
+        <span>¿Se computan los contratos temporales encadenados?</span>
         <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
       </summary>
       <div class="px-space-md pb-space-md text-body-default text-text-secondary border-t border-outline-variant/20 pt-space-sm">
-        Sí, si están encadenados. La Reforma Laboral 2022 (RDL 32/2021) establece que si superas 24 meses en 2 años con la misma empresa mediante contratos temporales, se presume contrato indefinido y la antigüedad se computa desde el primer contrato.
+        En determinados supuestos sí. El artículo 15.5 del Estatuto establece que quien en un periodo de
+        veinticuatro meses haya estado contratado durante más de dieciocho meses, con o sin solución de
+        continuidad, para el mismo o distinto puesto con la misma empresa o grupo, mediante dos o más
+        contratos por circunstancias de la producción, adquiere la condición de fijo. Hay que cumplir todos
+        los requisitos: no basta con sumar meses sueltos de cualquier tipo de contrato.
       </div>
     </details>
     <details class="bg-surface-card rounded-xl border border-outline-variant/30 shadow-sm group">
@@ -164,7 +249,10 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
         <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
       </summary>
       <div class="px-space-md pb-space-md text-body-default text-text-secondary border-t border-outline-variant/20 pt-space-sm">
-        La indemnización se calcula multiplicando los días por año trabajado × tu salario diario. Con 10 años de antigüedad y salario de 35.000€, una indemnización improcedente sería: 33 días × 10 años × 95,89€/día = 31.644€.
+        Multiplicando días de salario por año de servicio. Con 10 años de antigüedad y un salario de 35.000 €
+        brutos al año (95,89 € al día), un despido improcedente son 33 × 10 × 95,89 = 31.643 €, siempre que la
+        relación haya empezado después del 12 de febrero de 2012. Si empezó antes, los años previos a esa
+        fecha van a 45 días por año.
       </div>
     </details>
     <details class="bg-surface-card rounded-xl border border-outline-variant/30 shadow-sm group">
@@ -173,21 +261,32 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
         <span class="material-symbols-outlined text-on-surface/40 group-open:rotate-180 transition-transform">expand_more</span>
       </summary>
       <div class="px-space-md pb-space-md text-body-default text-text-secondary border-t border-outline-variant/20 pt-space-sm">
-        Solo si hay una interrupción en la relación laboral (baja y nuevo alta). Un cambio de categoría o un ERE no rompen la antigüedad. Tampoco la reducción de jornada por guarda legal.
+        Solo si se rompe la continuidad de la relación: una baja definitiva y un alta posterior como relación
+        nueva. No la rompen un cambio de categoría, una reducción de jornada por guarda legal ni un despido
+        declarado improcedente con readmisión.
       </div>
     </details>
   </div>
 
-  <!-- Referencias legales -->
-  <h2 class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Referencias legales</h2>
+  <h2 id="referencias" class="font-headline-h2 text-headline-h2 text-text-primary mt-space-2xl mb-space-md">Referencias legales</h2>
   <ul class="space-y-space-sm text-body-small text-text-secondary mb-space-lg">
-    <li><strong>Art. 24 ET</strong> — Antigüedad en la empresa</li>
-    <li><strong>Art. 49 ET</strong> — Extinción del contrato (indemnización por despido)</li>
-    <li><strong>RDL 32/2021</strong> — Reforma Laboral (encadenamiento de contratos temporales)</li>
-    <li><strong>Convenios colectivos</strong> — Cada sector regula su propio plus de antigüedad</li>
+    <li><strong>Art. 25.1 y 25.2 ET</strong> — promoción económica: remisión íntegra al convenio o al contrato individual, sin perjuicio de los derechos en curso de adquisición.</li>
+    <li><strong>Art. 15.5 ET</strong> — más de 18 meses contratado en un periodo de 24 mediante dos o más contratos por circunstancias de la producción.</li>
+    <li><strong>Art. 56.1 ET</strong> — indemnización por despido improcedente: 33 días por año, máximo 24 mensualidades.</li>
+    <li><strong>Art. 53.1.b ET</strong> — indemnización por despido objetivo: 20 días por año, máximo 12 mensualidades.</li>
+    <li><strong>Art. 49.1.c ET</strong> — fin de contrato temporal: 12 días por año de servicio.</li>
+    <li><strong>Disposición transitoria undécima ET</strong> — 45 días por año por los servicios anteriores al 12 de febrero de 2012.</li>
+    <li><strong>Convenio colectivo aplicable</strong> — única fuente del plus: tramo, incremento, base y límite.</li>
   </ul>
 
-  <p class="text-body-default text-text-secondary">💡 <a href="/calculadoras/antiguedad/" class="text-primary hover:underline font-medium">Calcula tu plus de antigüedad con nuestra herramienta gratuita</a>.</p>
+  <p class="text-body-default text-text-secondary mb-space-lg">
+    <a
+      href="/calculadoras/antiguedad/"
+      class="inline-block bg-primary text-white font-semibold px-space-lg py-space-sm rounded-button hover:opacity-90 transition-opacity no-underline"
+    >
+      Abrir simulador gratuito
+    </a>
+  </p>
 
 <script type="application/ld+json">
 {
@@ -199,7 +298,7 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
       "name": "¿La antigüedad se pierde si cambio de empresa?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí. La antigüedad se calcula por empresa. Si cambias de trabajo, vuelves a empezar desde cero. La única excepción es el encadenamiento de contratos temporales, donde se puede computar la antigüedad acumulada."
+        "text": "Sí, la antigüedad se calcula por empresa. Si te vas y vuelves a entrar, en principio se empieza de cero en la nueva relación. Las excepciones son la sucesión o subrogación empresarial, donde se mantiene, y los encadenamientos de contratos temporales que la ley trata como continuidad."
       }
     },
     {
@@ -207,15 +306,15 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
       "name": "¿El plus de antigüedad es obligatorio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. El Estatuto de los Trabajadores no obliga a pagar plus de antigüedad. Solo es obligatorio si tu convenio colectivo lo recoge. Muchos convenios industriales y de hostelería sí lo incluyen."
+        "text": "No. El Estatuto no obliga a pagarlo: el artículo 25.1 remite a lo que fije el convenio colectivo o el contrato individual. Solo es exigible si tu convenio lo recoge, y entonces la empresa no puede suprimirlo ni pactar su renuncia con cada trabajador."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Se computan los contratos temporales?",
+      "name": "¿Se computan los contratos temporales encadenados?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, si están encadenados. La Reforma Laboral 2022 (RDL 32/2021) establece que si superas 24 meses en 2 años con la misma empresa mediante contratos temporales, se presume contrato indefinido y la antigüedad se computa desde el primer contrato."
+        "text": "En determinados supuestos sí. El artículo 15.5 establece que quien en un periodo de veinticuatro meses haya estado contratado durante más de dieciocho meses, con o sin solución de continuidad, para el mismo o distinto puesto con la misma empresa o grupo, mediante dos o más contratos por circunstancias de la producción, adquiere la condición de fijo. Hay que cumplir todos los requisitos."
       }
     },
     {
@@ -223,7 +322,7 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
       "name": "¿Cómo afecta la antigüedad a la indemnización?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La indemnización se calcula multiplicando los días por año trabajado × tu salario diario. Con 10 años de antigüedad y salario de 35.000€, una indemnización improcedente sería: 33 días × 10 años × 95,89€/día = 31.644€."
+        "text": "Multiplicando días de salario por año de servicio. Con 10 años de antigüedad y un salario de 35.000 € brutos al año, un despido improcedente son 33 × 10 × 95,89 = 31.643 €, siempre que la relación haya empezado después del 12 de febrero de 2012. Si empezó antes, los años previos a esa fecha van a 45 días por año."
       }
     },
     {
@@ -231,11 +330,10 @@ import GuideLayout from '../../../layouts/GuideLayout.astro';
       "name": "¿Puedo perder la antigüedad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Solo si hay una interrupción en la relación laboral (baja y nuevo alta). Un cambio de categoría o un ERE no rompen la antigüedad. Tampoco la reducción de jornada por guarda legal."
+        "text": "Solo si se rompe la continuidad de la relación: una baja definitiva y un alta posterior como relación nueva. No la rompen un cambio de categoría, una reducción de jornada por guarda legal ni un despido declarado improcedente con readmisión."
       }
     }
   ]
 }
 </script>
-
 </GuideLayout>

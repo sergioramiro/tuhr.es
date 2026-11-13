@@ -4,8 +4,8 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
 ---
 
 <Layout
-  title="Calculadora de antigüedad laboral 2026: plus y tramos por años | tuhr.es"
-  description="Calcula tu plus de antigüedad según tus años en la empresa y tu salario. Tramos, cuatrienios y qué hacer si tu empresa no te lo paga. Gratis y sin registro."
+  title="Calculadora de antigüedad laboral 2026: plus según tu convenio | tuhr.es"
+  description="Calcula tu plus de antigüedad con las reglas de tu convenio: tramo, porcentaje o importe y tope. Sin porcentajes inventados y sin cifras si faltan datos."
 >
   <Fragment slot="json-ld">
     <script type="application/ld+json">
@@ -16,7 +16,7 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
       "url": "https://tuhr.es/calculadoras/antiguedad/",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
-      "description": "Calcula tu plus de antigüedad según tus años trabajados y tu salario",
+      "description": "Calcula el plus de antigüedad con las reglas del convenio: duración del tramo, incremento y límite",
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
     }
     </script>
@@ -30,15 +30,15 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
           "name": "¿Es obligatorio pagar el plus de antigüedad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. No existe un derecho general en el Estatuto de los Trabajadores: el plus de antigüedad lo crea el convenio colectivo o el contrato. Si tu convenio no lo recoge, la empresa no está obligada a pagarlo."
+            "text": "No. El Estatuto de los Trabajadores no crea un complemento por años trabajados: el artículo 25.1 deja la promoción económica en los términos que fijen el convenio colectivo o el contrato individual. Si tu convenio no lo recoge, no hay cantidad que reclamar por esa vía."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Cada cuánto sube el plus de antigüedad?",
+          "name": "¿Qué porcentaje de plus me corresponde?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Depende del convenio. Lo más habitual es que suba cada dos años (bienio) o cada cuatro (cuatrienio), con un porcentaje fijo sobre el salario base y un tope máximo que suele estar entre el 10 % y el 25 %."
+            "text": "No existe un porcentaje legal común. Cada convenio fija su duración de tramo, el incremento y, si lo hay, un límite máximo, y además decide sobre qué base se aplica. Por eso esta calculadora pide esos datos en vez de aplicar un porcentaje por defecto."
           }
         },
         {
@@ -46,7 +46,7 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
           "name": "¿Desde cuándo cuenta la antigüedad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Desde la fecha de alta inicial en la empresa, no desde la firma del último contrato. Los encadenamientos de contratos temporales y las sucesiones de empresa suman, y los periodos de excedencia forzosa también computan."
+            "text": "Desde la fecha de inicio de la relación laboral, no desde la firma del último contrato. Los encadenamientos de contratos temporales y las sucesiones de empresa suman cuando concurren los requisitos legales, y la excedencia forzosa también computa."
           }
         },
         {
@@ -54,7 +54,7 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
           "name": "¿La antigüedad cuenta para la indemnización por despido?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, y es lo que más pesa. La indemnización se calcula multiplicando días por año trabajado, así que la fecha de alta determina el importe. Se computan todos los años desde el inicio, incluidas las interrupciones cortas."
+            "text": "Sí, y es el factor que más pesa: la indemnización se calcula en días de salario por año de servicio. En el despido improcedente son 33 días por año hasta un máximo de 24 mensualidades (artículo 56.1), con el régimen transitorio de 45 días por los años anteriores al 12 de febrero de 2012."
           }
         },
         {
@@ -62,7 +62,7 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
           "name": "¿Qué hago si mi nómina no refleja mi antigüedad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pide el certificado de empresa y compara con tu informe de vida laboral. Si hay diferencias, reclama por escrito a la empresa y, si no corrige, acude al SMAC. Las cantidades reclamables prescriben al año."
+            "text": "Compara el certificado de empresa con tu informe de vida laboral, pide por escrito el artículo del convenio que regula el plus y reclama a la empresa. Si no corrige, papeleta de conciliación ante el SMAC. Las cantidades salariales prescriben al año."
           }
         }
       ]
@@ -86,7 +86,9 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
     <section class="max-w-[72rem] mx-auto px-gutter-desktop pb-space-xl">
       <h1 class="font-headline text-headline-xl font-extrabold text-on-surface">Calculadora de antigüedad laboral</h1>
       <p class="mt-space-md text-body-lg text-on-surface/70 max-w-2xl">
-        ¿Cuánto te corresponde de plus de antigüedad? Introduce tus años en la empresa y tu salario para ver el porcentaje que te aplica y lo que supone al año y al mes.
+        Calcula el plus de antigüedad con las reglas de tu convenio. Necesitas tres datos: cada cuántos años
+        sube el tramo, cuánto sube y sobre qué base se aplica. Si no los tienes a mano, la herramienta no te
+        inventa una cifra.
       </p>
     </section>
 
@@ -95,40 +97,40 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
       <CalculadoraAntiguedad client:load />
     </section>
 
-    <!-- Qué es -->
+    <!-- Por qué no hay porcentaje -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Qué es el plus de antigüedad y quién lo paga</h2>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Por qué no hay un porcentaje general</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>El plus de antigüedad, también llamado plus de permanencia o complemento personal, es una cantidad que se suma al salario base por llevar años en la empresa. Su función es premiar la permanencia y, en la práctica, compensar que un trabajador antiguo ha ido perdiendo poder adquisitivo frente a las nuevas contrataciones.</p>
-          <p><strong>No es un derecho legal general.</strong> El Estatuto de los Trabajadores no obliga a pagarlo. Solo existe si lo crea tu convenio colectivo, tu contrato o una decisión unilateral de la empresa que se haya consolidado en el tiempo. Si tu convenio no lo recoge, no hay nada que reclamar por esa vía.</p>
-          <p>Eso sí: cuando el convenio lo establece, es <strong>obligatorio y no renunciable</strong>. La empresa no puede dejar de aplicarlo ni pactar con un trabajador su supresión, y si no lo paga está incumpliendo una norma convencional.</p>
+          <p>Si has buscado antes esta calculadora, probablemente hayas visto tablas con porcentajes cerrados: un 5 % a los cinco años, un 10 % a los diez. Esas tablas se copian de un convenio concreto y se presentan como si fueran la norma, y no lo son.</p>
+          <p>El artículo 25.1 del Estatuto de los Trabajadores dice literalmente que el trabajador «podrá tener derecho a una promoción económica en los términos fijados en convenio colectivo o contrato individual». No hay porcentaje, no hay tramo y no hay base legal común: el plus de antigüedad nace del convenio, y cada convenio lo configura a su manera.</p>
+          <p>El artículo 25.2 añade algo importante: lo anterior se entiende «sin perjuicio de los derechos adquiridos o en curso de adquisición en el tramo temporal correspondiente». La ley reconoce que existen tramos y que lo ya generado no se pierde, pero remite su contenido al convenio.</p>
+          <p>Por eso esta herramienta te pide las reglas en vez de aplicarte una. Un resultado sin tus datos no sería una estimación: sería una invención.</p>
         </div>
       </div>
     </section>
 
-    <!-- Cómo se calcula -->
+    <!-- Los tres datos -->
     <section class="px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Cómo se calcula: tramos, bienios y cuatrienios</h2>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Los tres datos que necesitas de tu convenio</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>El cálculo tiene dos piezas: <strong>cada cuánto sube</strong> y <strong>sobre qué base</strong> se aplica. Lo primero lo fija tu convenio; lo segundo es la trampa donde más gente se equivoca.</p>
-          <p><strong>Cada cuánto sube.</strong> Los dos esquemas habituales son el bienio, un escalón cada dos años, y el cuatrienio, un escalón cada cuatro. En ambos casos el porcentaje se acumula por tramos: a los dos años un 5 %, a los cuatro un 10 %, a los seis un 15 %, hasta el tope que marque el convenio. Esos porcentajes son un ejemplo frecuente, no una regla legal: hay convenios que pagan el 3 % por bienio y otros que llegan al 25 %.</p>
-          <p><strong>Sobre qué base.</strong> Lo normal es que el porcentaje se aplique solo al <strong>salario base</strong>, no al total de la nómina. Por eso el plus de antigüedad suele ser más pequeño de lo que la gente calcula a ojo. Algunos convenios lo aplican también sobre complementos, y ahí la diferencia es notable.</p>
-          <p><strong>El tope.</strong> Casi todos los convenios fijan un máximo, entre el 10 % y el 25 %, que se alcanza a una edad o a un número de años determinado. Alcanzado el tope, el plus deja de crecer aunque sigas sumando años.</p>
+          <p><strong>1. Cada cuántos años sube el tramo.</strong> Puede ser cada año, cada dos (bienio), cada tres (trienio), cada cuatro (cuatrienio) o cada cinco (quinquenio). También hay convenios que no usan tramos y pagan un complemento fijo por permanencia.</p>
+          <p><strong>2. Cuánto sube en cada tramo.</strong> Un porcentaje sobre la base o un importe fijo anual. Algunos convenios lo expresan como porcentaje acumulativo por tramo y otros como un incremento único que se alcanza y ya no vuelve a subir.</p>
+          <p><strong>3. Sobre qué base se aplica.</strong> Aquí está el error más caro. Casi todos los convenios aplican el plus sobre el <strong>salario base</strong> de tu grupo y nivel, no sobre tu bruto anual con complementos ni sobre la base de cotización. Si metes el bruto completo, el resultado sale inflado.</p>
+          <p>Y un cuarto dato opcional que cambia el resultado: el <strong>límite máximo</strong>. Muchos convenios topan el plus en un porcentaje o en una cantidad, de modo que a partir de cierta antigüedad el complemento deja de crecer.</p>
         </div>
       </div>
     </section>
 
-    <!-- Ejemplo -->
+    <!-- Qué es un tramo -->
     <section class="bg-surface-container-low/50 px-gutter-desktop py-space-3xl">
       <div class="max-w-[72rem] mx-auto">
-        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Ejemplo resuelto con dos antigüedades</h2>
+        <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Qué es un bienio, un trienio y un cuatrienio</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>Convenio con un 5 % por bienio sobre el salario base, tope del 25 %, y un salario base de 1.200 € mensuales.</p>
-          <p><strong>Con 6 años:</strong> tres bienios, un 15 %. El plus son 180 € al mes, 2.160 € al año.</p>
-          <p><strong>Con 8 años:</strong> cuatro bienios, un 20 %, que son 240 € al mes y 2.880 € al año.</p>
-          <p><strong>Con 14 años:</strong> tocaría un 35 %, pero el tope lo deja en el 25 %. El plus son 300 € al mes, no los 420 € que saldrían sin tope. Ese tope es la razón por la que a partir de cierta antigüedad el complemento se queda congelado.</p>
+          <p>Son simplemente la duración del escalón: dos, tres o cuatro años. «Tengo tres cuatrienios» significa que llevas doce años completos en la empresa, no que hayas cumplido tres veces cuatro años de forma independiente.</p>
+          <p>La cuenta se hace con años completos: si tu tramo es de cuatro años y llevas siete años y diez meses, tienes un cuatrienio, no dos. Los meses del tramo en curso no suman hasta completarlo, salvo que tu convenio reconozca expresamente la parte proporcional, que es la casilla que puedes marcar en la calculadora.</p>
+          <p>Esto explica una confusión habitual: dos personas con la misma antigüedad pueden cobrar distinto si una cumple el tramo en enero y la otra en diciembre. El complemento no se devenga día a día, se devenga al completar el escalón.</p>
         </div>
       </div>
     </section>
@@ -138,9 +140,9 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
       <div class="max-w-[72rem] mx-auto">
         <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Antigüedad y plus no son lo mismo</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>Conviene separar dos cosas que se mezclan todo el rato. La <strong>antigüedad</strong> es una fecha: el día en que empezaste a trabajar para la empresa. El <strong>plus</strong> es el dinero que, si tu convenio lo prevé, se deriva de esa fecha.</p>
-          <p>La fecha importa aunque no cobres plus, porque determina la indemnización por despido, la preferencia de permanencia en un ERE y el cálculo de la excedencia. Y ojo con los encadenamientos: si has ido firmando contratos temporales uno detrás de otro, la antigüedad se cuenta desde el primero, no desde el último.</p>
-          <p>Para saber qué fecha consta y qué conceptos te están pagando, la <a href="/blog/antiguedad-nomina/" class="text-primary hover:underline font-medium">antigüedad en la nómina</a> se lee en el recibo. Y para los tramos completos, con la tabla de correspondencias entre años y porcentaje, tienes la <a href="/guias/antiguedad-laboral/" class="text-primary hover:underline font-medium">guía de antigüedad laboral</a>.</p>
+          <p>La <strong>antigüedad</strong> es una fecha: el día en que empezaste a trabajar para la empresa. El <strong>plus</strong> es el dinero que, si tu convenio lo prevé, se deriva de esa fecha.</p>
+          <p>La fecha importa aunque no cobres plus, porque condiciona la indemnización por despido, la preferencia de permanencia en un despido colectivo y el cálculo de la excedencia. Y ojo con los encadenamientos: si has ido firmando contratos temporales uno detrás de otro, la antigüedad se cuenta desde el primero en los supuestos que contempla la ley.</p>
+          <p>Para saber qué fecha consta y qué conceptos te están pagando, la <a href="/blog/antiguedad-nomina/" class="text-primary hover:underline font-medium">antigüedad en la nómina</a> se lee en el recibo de salarios. Los tramos, la fórmula y las cautelas legales están en la <a href="/guias/antiguedad-laboral/" class="text-primary hover:underline font-medium">guía de antigüedad laboral</a>.</p>
         </div>
       </div>
     </section>
@@ -150,9 +152,9 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
       <div class="max-w-[72rem] mx-auto">
         <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Si tu empresa no te paga el plus</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
-          <p>Primero comprueba tres cosas: qué dice exactamente tu convenio, en qué grupo y nivel estás encuadrado y desde qué fecha constas de alta. Los tres datos están en el recibo de salario y en el certificado de empresa.</p>
-          <p>Si el convenio reconoce el plus y no aparece en la nómina, reclama por escrito a la empresa con la referencia del artículo del convenio. Si no corrige, papeleta de conciliación ante el SMAC. Las cantidades que puedes reclamar son las de los últimos <strong>doce meses</strong>, porque la reclamación de salarios prescribe al año.</p>
-          <p>Y una advertencia útil: hay empresas que pagan el plus como "complemento voluntario" para poder retirarlo después. Si lleva años en nómina sin interrupción y sin condición escrita de revocabilidad, ese complemento se ha consolidado y su retirada es una modificación sustancial de condiciones.</p>
+          <p>Primero comprueba tres cosas: qué dice exactamente tu convenio, en qué grupo y nivel profesional estás encuadrado y desde qué fecha constas de alta. Los tres datos están en el recibo de salario y en el certificado de empresa.</p>
+          <p>Si el convenio reconoce el plus y no aparece en la nómina, reclama por escrito citando el artículo concreto. Si no corrige, papeleta de conciliación ante el SMAC. Las cantidades que puedes reclamar son las de los últimos <strong>doce meses</strong>, porque la reclamación de salarios prescribe al año.</p>
+          <p>Y una advertencia útil: hay empresas que pagan el plus como «complemento voluntario» para poder retirarlo después. Si lleva años en nómina sin interrupción y sin condición escrita de revocabilidad, ese complemento se ha consolidado.</p>
         </div>
       </div>
     </section>
@@ -163,15 +165,15 @@ import CalculadoraAntiguedad from '../../../components/calculadoras/CalculadoraA
         <h2 class="font-headline text-headline-lg font-bold text-on-surface mb-space-lg">Preguntas frecuentes</h2>
         <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
           <h3 class="font-bold text-on-surface">¿Es obligatorio pagar el plus de antigüedad?</h3>
-          <p>No. No existe un derecho general en el Estatuto: lo crea el convenio o el contrato. Si tu convenio no lo recoge, la empresa no está obligada.</p>
-          <h3 class="font-bold text-on-surface">¿Cada cuánto sube el plus?</h3>
-          <p>Lo habitual es cada dos años (bienio) o cada cuatro (cuatrienio), con un porcentaje fijo sobre el salario base y un tope que suele estar entre el 10 % y el 25 %.</p>
+          <p>No. El Estatuto no crea un complemento por años trabajados: el artículo 25.1 lo deja a lo que fijen el convenio o el contrato individual. Si tu convenio no lo recoge, no hay cantidad que reclamar por esa vía.</p>
+          <h3 class="font-bold text-on-surface">¿Qué porcentaje de plus me corresponde?</h3>
+          <p>No existe un porcentaje legal común. Cada convenio fija su tramo, su incremento, su base y, si lo hay, su límite. Por eso la calculadora te pide esos datos en vez de aplicar uno por defecto.</p>
           <h3 class="font-bold text-on-surface">¿Desde cuándo cuenta la antigüedad?</h3>
-          <p>Desde la fecha de alta inicial, no desde el último contrato. Los encadenamientos temporales y las sucesiones de empresa suman.</p>
+          <p>Desde el inicio de la relación laboral, no desde el último contrato. Los encadenamientos temporales y las sucesiones de empresa suman cuando concurren los requisitos legales.</p>
           <h3 class="font-bold text-on-surface">¿La antigüedad cuenta para la indemnización?</h3>
-          <p>Sí, y es lo que más pesa: la indemnización se calcula en días por año trabajado desde la fecha de alta.</p>
+          <p>Sí, es el factor que más pesa. En el despido improcedente, 33 días por año con un máximo de 24 mensualidades (artículo 56.1), con el régimen transitorio de 45 días por los años anteriores al 12 de febrero de 2012.</p>
           <h3 class="font-bold text-on-surface">¿Qué hago si mi nómina no refleja mi antigüedad?</h3>
-          <p>Compara el certificado de empresa con tu vida laboral, reclama por escrito y, si no corrigen, acude al SMAC. Las cantidades prescriben al año.</p>
+          <p>Compara el certificado de empresa con tu vida laboral, pide el artículo del convenio por escrito y reclama. Si no corrigen, SMAC. Las cantidades salariales prescriben al año.</p>
         </div>
       </div>
     </section>
