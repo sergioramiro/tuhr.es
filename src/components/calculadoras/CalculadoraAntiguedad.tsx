@@ -173,7 +173,7 @@ export default function CalculadoraAntiguedad() {
             className="w-full px-space-md py-space-sm border border-outline-variant rounded-input text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none"
           />
           <p className="mt-space-sm text-body-sm text-on-surface/50">
-            No es lo mismo que tu salario bruto anual. Casi todos los convenios aplican el plus sobre el{' '}
+            No es lo mismo que tu salario bruto anual. Lo habitual es que el plus se aplique sobre el{' '}
             <strong className="text-on-surface/70">salario base</strong>, sin complementos ni pagas extras. Si
             metes el bruto con complementos, el resultado saldrá más alto de lo que te corresponde.
           </p>
