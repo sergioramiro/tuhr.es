@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { titular } from '../../data/titular';
 ---
 
 <Layout
@@ -11,8 +12,8 @@ import Layout from '../../layouts/Layout.astro';
       <h1 class="font-headline text-headline-xl font-extrabold text-on-surface mb-space-xl">Política de privacidad</h1>
       <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
         <h2 class="font-headline text-headline-md font-bold text-on-surface">1. Responsable del tratamiento</h2>
-        <p><strong>Titular:</strong> <span class="blank blank-wide"></span></p>
-        <p><strong>Email:</strong> <span class="blank blank-wide"></span></p>
+        <p><strong>Titular:</strong> <span class="blank blank-wide">{titular.nombre}</span></p>
+        <p><strong>Email:</strong> <span class="blank blank-wide">{titular.email}</span></p>
 
         <h2 class="font-headline text-headline-md font-bold text-on-surface">2. Datos que recopilamos</h2>
         <p>tuhr.es funciona como una herramienta estática que opera 100% en el navegador del usuario. <strong>No recopilamos datos personales directamente.</strong></p>

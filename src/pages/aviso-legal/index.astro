@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { titular } from '../../data/titular';
 ---
 
 <Layout
@@ -12,10 +13,10 @@ import Layout from '../../layouts/Layout.astro';
       <div class="prose max-w-none text-body-md text-on-surface/70 space-y-space-md">
         <h2 class="font-headline text-headline-md font-bold text-on-surface">1. Datos del titular</h2>
         <p>En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa a los usuarios de que:</p>
-        <p><strong>Titular de la web:</strong> <span class="blank blank-wide"></span></p>
-        <p><strong>NIF/CIF:</strong> <span class="blank"></span></p>
-        <p><strong>Domicilio:</strong> <span class="blank blank-wide"></span></p>
-        <p><strong>Email de contacto:</strong> <span class="blank blank-wide"></span></p>
+        <p><strong>Titular de la web:</strong> <span class="blank blank-wide">{titular.nombre}</span></p>
+        <p><strong>NIF/CIF:</strong> <span class="blank">{titular.nif}</span></p>
+        <p><strong>Domicilio:</strong> <span class="blank blank-wide">{titular.domicilio}</span></p>
+        <p><strong>Email de contacto:</strong> <span class="blank blank-wide">{titular.email}</span></p>
 
         <h2 class="font-headline text-headline-md font-bold text-on-surface">2. Condiciones de uso</h2>
         <p>El acceso y uso de esta web atribuye la condición de Usuario e implica la aceptación plena de todas las condiciones establecidas en este Aviso Legal. El Usuario se compromete a hacer un uso adecuado de la web conforme a la ley, la buena fe y el orden público.</p>

@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { titular } from '../../data/titular';
+---
+
+<Layout
+  title="Contacto — tuhr.es"
+  description="Formulario de contacto de tuhr.es. Escribe tu consulta y el titular te responde. Información básica sobre el tratamiento de tus datos."
+  canonical="https://tuhr.es/contacto/"
+>
+  <main class="pt-16">
+    <section class="max-w-[40rem] mx-auto px-gutter-desktop py-space-3xl">
+      <h1 class="font-headline text-headline-xl font-extrabold text-on-surface mb-space-md">Contacto</h1>
+      <p class="text-body-md text-on-surface/70">
+        Escribe tu consulta. Te respondemos en el correo que indiques.
+      </p>
+
+      <form
+        name="contacto"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="mt-space-xl space-y-space-lg"
+      >
+        <input type="hidden" name="form-name" value="contacto" />
+
+        <p class="hidden" aria-hidden="true">
+          <label>
+            No rellenes este campo
+            <input name="bot-field" tabindex="-1" autocomplete="off" />
+          </label>
+        </p>
+
+        <div>
+          <label for="nombre" class="block font-semibold text-on-surface">Nombre</label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            required
+            autocomplete="name"
+            class="mt-space-sm w-full min-h-11 rounded-input border border-outline-variant bg-surface-card px-space-md text-on-surface"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block font-semibold text-on-surface">Correo electrónico</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            inputmode="email"
+            class="mt-space-sm w-full min-h-11 rounded-input border border-outline-variant bg-surface-card px-space-md text-on-surface"
+          />
+        </div>
+
+        <div>
+          <label for="mensaje" class="block font-semibold text-on-surface">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            required
+            rows="6"
+            class="mt-space-sm w-full rounded-input border border-outline-variant bg-surface-card px-space-md py-space-sm text-on-surface"
+          ></textarea>
+        </div>
+
+        <div class="space-y-space-md rounded-card border border-outline-variant/40 bg-surface-container-low p-space-md">
+          <p id="aviso-rgpd" class="text-body-sm text-on-surface/80">
+            <span class="block"><strong class="text-on-surface">Responsable:</strong> {titular.nombre} ({titular.email}).</span>
+            <span class="block"><strong class="text-on-surface">Finalidad:</strong> responder la consulta.</span>
+            <span class="block"><strong class="text-on-surface">Base:</strong> consentimiento.</span>
+            <span class="block"><strong class="text-on-surface">Derechos:</strong> acceso, rectificación, supresión, oposición, limitación y portabilidad.</span>
+            <span class="block">Más información en la <a href="/politica-privacidad/" class="text-primary underline underline-offset-2">política de privacidad</a>.</span>
+          </p>
+
+          <div class="flex items-start gap-space-sm">
+            <input
+              id="consentimiento"
+              name="consentimiento"
+              type="checkbox"
+              required
+              value="aceptado"
+              aria-describedby="aviso-rgpd"
+              class="mt-1 h-5 w-5 shrink-0 accent-primary"
+            />
+            <label for="consentimiento" class="text-body-sm text-on-surface">
+              Acepto que se traten estos datos para responder a mi consulta. Casilla obligatoria.
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="inline-flex min-h-11 items-center bg-primary text-on-primary font-semibold px-space-xl py-space-md rounded-button hover:bg-primary-container transition-colors"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+</Layout>
