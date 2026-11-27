@@ -1,7 +1,7 @@
 ---
-title: "Antigüedad en tu nómina: cómo se calcula y qué hacer si no te la pagan"
+title: "Antigüedad en tu nómina: cómo se calcula el plus"
 slug: "antiguedad-nomina"
-description: "Cómo se calcula la antigüedad en una nómina: desde la fecha de alta hasta el cierre de cada periodo, qué conceptos del recibo te la confirman, cómo verificarla con tu vida laboral y los pasos para reclamarla si no consta."
+description: "Qué es el plus o complemento de antigüedad en tu recibo, cómo se calcula desde la fecha de alta y qué hacer si no aparece o no te lo pagan."
 date: 2026-10-20
 author: "tuhr.es"
 category: "Nómina"
@@ -14,13 +14,13 @@ tags:
 canonical: "https://tuhr.es/blog/antiguedad-nomina/"
 ---
 
-# Antigüedad en tu nómina: cómo se calcula y qué hacer si no te la pagan
+# Antigüedad en tu nómina: cómo se calcula el plus
 
 **Última actualización:** octubre 2026 · **Lectura:** 11 min
 
 ---
 
-Abre tu recibo de salario y busca la palabra «antigüedad». En muchas nóminas no está, y en otras aparece un número que nadie te ha explicado nunca. Ese número decide cuanto menos tres cosas: lo que cobras de plus si tu convenio lo recoge, lo que te pagan si te despiden y en qué tramo de días de vacaciones entras.
+Abre tu recibo de salario y busca la palabra «antigüedad». En muchas nóminas no está, y en otras aparece un número que nadie te ha explicado nunca. Ese número decide cuando menos tres cosas: lo que cobras de plus si tu convenio lo recoge, lo que te pagan si te despiden y en qué tramo de días de vacaciones entras.
 
 Esta guía va solo sobre eso: cómo se hace la cuenta de tu antigüedad, dónde se mira en la nómina, con qué documentos la verificas y qué hacer exactamente si no consta o si llevas meses sin cobrar el plus que te corresponde. Los tramos, el cuatrienio y la fórmula del plus están explicados aparte en la [guía de antigüedad laboral](/guias/antiguedad-laboral/) y calculables en la [calculadora de antigüedad](/calculadoras/antiguedad/); aquí no los repetimos.
 
